@@ -225,7 +225,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 }
 
 function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[], onClose: () => void }) {
+  const [activeTab, setActiveTab] = useState<'产品动态' | '融资动态'>('产品动态');
+  
   if (!game) return null;
+  
+  const filteredEvents = gameEvents.filter(e => e.event_type === activeTab);
 
   return (
     <div className="fixed inset-0 bg-neutral-900/40 backdrop-blur-[2px] z-50 flex items-center justify-center p-4">
@@ -315,18 +319,27 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
           </div>
 
           <div className="md:w-[55%] flex flex-col bg-white overflow-hidden relative">
-            <div className="p-5 pb-3 border-b border-neutral-100 bg-white shrink-0">
-              <h3 className="text-[10px] uppercase tracking-widest text-neutral-400 font-bold font-mono">
-                Timeline / Updates
-              </h3>
+            <div className="flex border-b border-neutral-100 bg-white shrink-0 px-5 pt-3">
+              <button 
+                onClick={() => setActiveTab('产品动态')}
+                className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold font-mono border-b-2 transition-colors ${activeTab === '产品动态' ? 'border-neutral-900 text-neutral-900' : 'border-transparent text-neutral-400 hover:text-neutral-600'}`}
+              >
+                产品动态
+              </button>
+              <button 
+                onClick={() => setActiveTab('融资动态')}
+                className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold font-mono border-b-2 transition-colors ${activeTab === '融资动态' ? 'border-neutral-900 text-neutral-900' : 'border-transparent text-neutral-400 hover:text-neutral-600'}`}
+              >
+                融资动态
+              </button>
             </div>
             
             <div className="flex-1 overflow-y-auto p-5 bg-neutral-50/50">
-              {gameEvents.length === 0 ? (
-                <div className="text-center py-10 text-neutral-400 text-xs font-mono">NO TIMELINE EVENTS RECORDED.</div>
+              {filteredEvents.length === 0 ? (
+                <div className="text-center py-10 text-neutral-400 text-xs font-mono">NO {activeTab === '产品动态' ? 'PRODUCT' : 'FUNDING'} EVENTS RECORDED.</div>
               ) : (
                 <div className="space-y-4 relative border-l-2 border-neutral-200 ml-2 pl-4">
-                  {gameEvents.map(evt => (
+                  {filteredEvents.map(evt => (
                     <div key={evt.id} className="relative group">
                       <div className="absolute w-2 h-2 rounded-full bg-neutral-900 -left-[21px] top-1.5 border-2 border-white"></div>
                       <div className="bg-white border border-neutral-200 p-3 shadow-sm">
