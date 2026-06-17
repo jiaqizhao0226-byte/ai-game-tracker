@@ -47,7 +47,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             <Search className="absolute left-3 top-2.5 h-4 w-4 text-neutral-400" />
             <input 
               type="text" 
-              placeholder="Search..." 
+              placeholder="搜索产品、公司、标签..." 
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full pl-9 pr-4 py-1.5 bg-white border border-neutral-300 shadow-sm text-sm focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono"
@@ -61,7 +61,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={e => setFilterRegion(e.target.value)}
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
             >
-              <option value="All">国内/海外</option>
+              <option value="All">全部区域</option>
               <option value="国内">国内</option>
               <option value="海外">海外</option>
               <option value="未知">未知</option>
@@ -72,7 +72,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={e => { setFilterMainType(e.target.value); setFilterSubType('All'); }}
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[120px] truncate"
             >
-              <option value="All">玩法大类 (All)</option>
+              <option value="All">所有玩法大类</option>
               <option value="AI陪伴">AI陪伴</option>
               <option value="传统玩法+AI">传统玩法+AI</option>
               <option value="AI原生玩法">AI原生玩法</option>
@@ -86,7 +86,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={e => setFilterSubType(e.target.value)}
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[120px] truncate"
             >
-              <option value="All">玩法子类 (All)</option>
+              <option value="All">所有玩法子类</option>
               {uniqueSubTypes.map(t => <option key={t as string} value={t as string}>{t as string}</option>)}
             </select>
 
@@ -95,7 +95,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={e => setFilterSize(e.target.value)}
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
             >
-              <option value="All">All Sizes</option>
+              <option value="All">全部规模</option>
               <option value="大厂">大厂</option>
               <option value="中小团队">中小团队</option>
               <option value="独立开发者">独立开发者</option>
@@ -108,7 +108,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={e => setFilterStatus(e.target.value)}
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
             >
-              <option value="All">All Status</option>
+              <option value="All">全部状态</option>
               <option value="已上线">已上线</option>
               <option value="测试中">测试中</option>
               <option value="研发中">研发中</option>
@@ -123,7 +123,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={e => setFilterFunding(e.target.value)}
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
             >
-              <option value="All">All Funding</option>
+              <option value="All">全部融资阶段</option>
               <option value="未融资">未融资</option>
               <option value="天使/种子轮">天使/种子轮</option>
               <option value="A轮">A轮</option>
@@ -137,7 +137,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
         </div>
 
         <div className="flex gap-2 text-xs font-mono text-neutral-400 border border-neutral-200 px-3 py-1.5 bg-white shadow-sm">
-          <span>READ ONLY MODE (GITHUB PAGES)</span>
+          <span>静态看板模式 (只读)</span>
         </div>
       </div>
 
@@ -206,8 +206,8 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             </div>
             
             <div className="px-5 py-3 border-t border-neutral-100 bg-neutral-50 flex items-center justify-between text-[10px] text-neutral-400 font-mono uppercase tracking-wider group-hover:bg-neutral-100 transition-colors shrink-0">
-              <span className="flex items-center gap-1"><TerminalSquare className="h-3 w-3" /> Inspect Data</span>
-              <span>ID:{game.id.toString().padStart(4, '0')}</span>
+              <span className="flex items-center gap-1"><TerminalSquare className="h-3 w-3" /> 查看详情</span>
+              <span>编号:{game.id.toString().padStart(4, '0')}</span>
             </div>
           </div>
         )})}
@@ -238,7 +238,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
         <div className="flex justify-between items-center px-5 py-4 border-b border-neutral-200 bg-neutral-50">
           <h2 className="text-sm font-bold font-mono uppercase tracking-widest text-neutral-900 flex items-center gap-2">
             <TerminalSquare className="w-4 h-4" />
-            Data Record // {game.product_name}
+            数据档案 // {game.product_name}
           </h2>
           <button onClick={onClose} className="text-neutral-400 hover:text-neutral-900 transition-colors">
             <X className="h-4 w-4" />
@@ -248,48 +248,48 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
         <div className="flex-1 overflow-hidden flex flex-col md:flex-row">
           <div className="overflow-y-auto p-5 md:w-[45%] border-r border-neutral-200">
             <h3 className="text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-4 font-mono border-b border-neutral-100 pb-2">
-              Core Attributes
+              核心属性
             </h3>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Product Name</label>
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">产品名称</label>
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.product_name}</div>
               </div>
               
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Company / Team</label>
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">公司 / 团队</label>
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.company_name}</div>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Company Size</label>
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">团队规模</label>
                   <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.company_size || '未知'}</div>
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Funding Round</label>
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">融资轮次</label>
                   <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.funding_round || '未知'}</div>
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Gameplay Type</label>
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">玩法类型</label>
                   <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` (${game.gameplay_sub})` : ""}</div>
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Status</label>
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">当前状态</label>
                   <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.status}</div>
                 </div>
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Summary / Intelligence</label>
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">核心简介</label>
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 whitespace-pre-wrap leading-relaxed max-h-64 overflow-y-auto">{game.description}</div>
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Image URL (Logo / Cover)</label>
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">产品配图</label>
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 break-all">
                   {game.image_url ? (
                     <div className="flex flex-col gap-2">
@@ -302,7 +302,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">URL / Related Link</label>
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">相关链接</label>
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 break-all">
                   {game.url ? (
                     <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{game.url}</a>
@@ -311,7 +311,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
               </div>
                   
               <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Custom Tags</label>
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">自定义标签</label>
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">
                   {game.tags || '-'}
                 </div>
@@ -337,7 +337,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
             
             <div className="flex-1 overflow-y-auto p-5 bg-neutral-50/50">
               {filteredEvents.length === 0 ? (
-                <div className="text-center py-10 text-neutral-400 text-xs font-mono">NO {activeTab === '产品动态' ? 'PRODUCT' : 'FUNDING'} EVENTS RECORDED.</div>
+                <div className="text-center py-10 text-neutral-400 text-xs font-mono">暂无{activeTab}记录。</div>
               ) : (
                 <div className="grid grid-cols-1 gap-3">
                   {filteredEvents.map(evt => {
@@ -361,12 +361,12 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                       </p>
                       {!isExpanded && evt.content.length > 50 && (
                         <div className="mt-2 text-[10px] text-neutral-400 font-mono flex items-center">
-                          CLICK TO EXPAND
+                          点击展开
                         </div>
                       )}
                       {isExpanded && (
                         <div className="mt-2 text-[10px] text-neutral-400 font-mono flex items-center">
-                          CLICK TO COLLAPSE
+                          点击收起
                         </div>
                       )}
                     </div>
