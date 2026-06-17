@@ -1,17 +1,14 @@
-import { getDb } from '@/lib/db';
+import data from '../../data.json';
 
 export default function InsightsPage() {
-  const db = getDb();
-  
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const insights = db.prepare('SELECT * FROM insights ORDER BY id DESC').all() as any[];
+  const { insights } = data;
 
   return (
     <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
       <header className="mb-8 border-b-2 border-neutral-800 pb-4 flex justify-between items-end">
         <div>
           <h1 className="text-2xl font-bold font-sans text-neutral-900 tracking-tight flex items-center gap-2">
-            Trend Insights
+            趋势洞察
           </h1>
           <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">专题报告与趋势判断 / 光子策略分析组</p>
         </div>

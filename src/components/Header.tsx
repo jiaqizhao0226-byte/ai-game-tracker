@@ -27,14 +27,14 @@ export default function Header() {
               className={`px-4 py-2 text-sm font-bold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2 ${pathname === '/' ? 'bg-neutral-100 text-neutral-900' : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50'}`}
             >
               <Database className="w-4 h-4" />
-              Intelligence Board
+              产品情报看板
             </Link>
             <Link 
               href="/insights" 
               className={`px-4 py-2 text-sm font-bold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2 ${pathname === '/insights' ? 'bg-neutral-100 text-neutral-900' : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50'}`}
             >
               <Lightbulb className="w-4 h-4" />
-              Trend Insights
+              趋势洞察
             </Link>
           </nav>
         </div>
