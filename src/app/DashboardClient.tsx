@@ -200,7 +200,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 )}
               </div>
               
-              <p className="text-xs text-neutral-600 line-clamp-6 leading-relaxed flex-1">
+              <p className="text-xs text-neutral-600 line-clamp-3 leading-relaxed flex-1">
                 {game.description}
               </p>
             </div>
