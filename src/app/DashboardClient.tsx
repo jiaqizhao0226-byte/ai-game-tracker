@@ -90,9 +90,15 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
           <div 
             key={game.id} 
             onClick={() => setViewingGame(game)}
-            className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-[240px] relative group"
+            className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
-            <div className="p-5">
+            {game.image_url && (
+              <div className="w-full h-32 bg-neutral-100 border-b border-neutral-100 shrink-0 relative">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={game.image_url} alt={game.product_name} className="w-full h-full object-cover" />
+              </div>
+            )}
+            <div className="p-5 flex-1 flex flex-col">
               <div className="flex justify-between items-start mb-1">
                 <div className="flex items-center gap-2 pr-2">
                   <h3 className="font-bold text-base text-neutral-900 truncate">{game.product_name}</h3>
@@ -135,12 +141,12 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 )}
               </div>
               
-              <p className="text-xs text-neutral-600 line-clamp-4 leading-relaxed">
+              <p className="text-xs text-neutral-600 line-clamp-6 leading-relaxed flex-1">
                 {game.description}
               </p>
             </div>
             
-            <div className="px-5 py-3 border-t border-neutral-100 bg-neutral-50 flex items-center justify-between text-[10px] text-neutral-400 font-mono uppercase tracking-wider group-hover:bg-neutral-100 transition-colors">
+            <div className="px-5 py-3 border-t border-neutral-100 bg-neutral-50 flex items-center justify-between text-[10px] text-neutral-400 font-mono uppercase tracking-wider group-hover:bg-neutral-100 transition-colors shrink-0">
               <span className="flex items-center gap-1"><TerminalSquare className="h-3 w-3" /> Inspect Data</span>
               <span>ID:{game.id.toString().padStart(4, '0')}</span>
             </div>
@@ -213,24 +219,37 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Summary / Intelligence</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 whitespace-pre-wrap leading-relaxed">{game.description}</div>
-                </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Summary / Intelligence</label>
+                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 whitespace-pre-wrap leading-relaxed max-h-64 overflow-y-auto">{game.description}</div>
+              </div>
 
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">URL / Related Link</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 break-all">
-                    {game.url ? (
-                      <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{game.url}</a>
-                    ) : '-'}
-                  </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Image URL (Logo / Cover)</label>
+                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 break-all">
+                  {game.image_url ? (
+                    <div className="flex flex-col gap-2">
+                      <a href={game.image_url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{game.image_url}</a>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={game.image_url} alt="Cover Preview" className="h-20 w-auto rounded border border-neutral-200 object-cover" />
+                    </div>
+                  ) : '-'}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">URL / Related Link</label>
+                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 break-all">
+                  {game.url ? (
+                    <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{game.url}</a>
+                  ) : '-'}
+                </div>
+              </div>
                   
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide mt-2">Custom Tags</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">
-                    {game.tags || '-'}
-                  </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Custom Tags</label>
+                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">
+                  {game.tags || '-'}
                 </div>
               </div>
             </div>
