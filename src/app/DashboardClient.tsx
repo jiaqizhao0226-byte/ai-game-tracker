@@ -9,7 +9,8 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [events] = useState<any[]>(initialEvents);
   
   const [search, setSearch] = useState('');
-  const [filterType, setFilterType] = useState('All');
+  const [filterMainType, setFilterMainType] = useState('All');
+  const [filterSubType, setFilterSubType] = useState('All');
   const [filterSize, setFilterSize] = useState('All');
   const [filterFunding, setFilterFunding] = useState('All');
   const [filterRegion, setFilterRegion] = useState('All');
@@ -22,7 +23,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       g.gameplay_type.toLowerCase().includes(search.toLowerCase()) ||
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
     
-    const matchType = filterType === 'All' || g.gameplay_type === filterType;
+    const matchType = (filterMainType === 'All' || g.gameplay_main === filterMainType) && (filterSubType === 'All' || g.gameplay_sub === filterSubType);
     const matchSize = filterSize === 'All' || g.company_size === filterSize;
     const matchFunding = filterFunding === 'All' || g.funding_round === filterFunding;
     const matchRegion = filterRegion === 'All' || g.region === filterRegion;
@@ -31,7 +32,8 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     return matchSearch && matchType && matchSize && matchFunding && matchRegion && matchStatus;
   });
 
-  const uniqueTypes = Array.from(new Set(games.map(g => g.gameplay_type))).filter(Boolean);
+  const uniqueMainTypes = Array.from(new Set(games.map(g => g.gameplay_main))).filter(Boolean);
+  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainType === 'All' || g.gameplay_main === filterMainType).map(g => g.gameplay_sub))).filter(Boolean);
   const uniqueSizes = Array.from(new Set(games.map(g => g.company_size))).filter(Boolean);
   const uniqueFunding = Array.from(new Set(games.map(g => g.funding_round))).filter(Boolean);
   const uniqueRegions = Array.from(new Set(games.map(g => g.region))).filter(Boolean);
@@ -66,23 +68,26 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             </select>
 
             <select 
-              value={filterType} 
-              onChange={e => setFilterType(e.target.value)}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[150px] truncate"
+              value={filterMainType} 
+              onChange={e => { setFilterMainType(e.target.value); setFilterSubType('All'); }}
+              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[120px] truncate"
             >
-              <option value="All">All Types</option>
+              <option value="All">玩法大类 (All)</option>
               <option value="AI陪伴">AI陪伴</option>
-              <option value="传统玩法+AI NPC">传统玩法+AI NPC</option>
-              <option value="传统玩法+AI队友">传统玩法+AI队友</option>
-              <option value="AI原生玩法 (对话模拟)">AI原生玩法 (对话模拟)</option>
-              <option value="AI原生玩法 (派对游戏)">AI原生玩法 (派对游戏)</option>
-              <option value="AI原生玩法 (机制/卡牌)">AI原生玩法 (机制/卡牌)</option>
-              <option value="初代Chatbot (AI陪伴)">初代Chatbot (AI陪伴)</option>
+              <option value="传统玩法+AI">传统玩法+AI</option>
+              <option value="AI原生玩法">AI原生玩法</option>
               <option value="生成式AI驱动UGC">生成式AI驱动UGC</option>
               <option value="可交互视频">可交互视频</option>
-              <option value="Agent类/通用AI智能体">Agent类/通用AI智能体</option>
+              <option value="Agent类/通用AI智能体">Agent类/通用智能体</option>
               <option value="其他">其他</option>
-              {uniqueTypes.filter(t => !["AI陪伴", "传统玩法+AI NPC", "传统玩法+AI队友", "AI原生玩法 (对话模拟)", "AI原生玩法 (派对游戏)", "AI原生玩法 (机制/卡牌)", "初代Chatbot (AI陪伴)", "生成式AI驱动UGC", "可交互视频", "Agent类/通用AI智能体", "其他"].includes(t as string)).map(t => <option key={t as string} value={t as string}>{t as string}</option>)}
+            </select>
+            <select 
+              value={filterSubType} 
+              onChange={e => setFilterSubType(e.target.value)}
+              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[120px] truncate"
+            >
+              <option value="All">玩法子类 (All)</option>
+              {uniqueSubTypes.map(t => <option key={t as string} value={t as string}>{t as string}</option>)}
             </select>
 
             <select 
@@ -170,7 +175,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               
               <div className="mb-3 flex flex-wrap gap-1">
                 <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-800 text-neutral-100">
-                  {game.gameplay_type}
+                  {game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` - ${game.gameplay_sub}` : ""}
                 </span>
                 {game.company_size && game.company_size !== '未知' && (
                   <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
@@ -265,7 +270,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Gameplay Type</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.gameplay_type}</div>
+                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` (${game.gameplay_sub})` : ""}</div>
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">Status</label>
