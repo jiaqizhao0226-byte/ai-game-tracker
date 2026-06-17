@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  experimental: {
-    serverComponentsExternalPackages: ["better-sqlite3", "pdf-parse"],
+  basePath: '/ai-game-tracker',
+  assetPrefix: '/ai-game-tracker/',
+  images: {
+    unoptimized: true,
   },
 };
 

@@ -1,0 +1,10 @@
+const Database = require('better-sqlite3');
+const fs = require('fs');
+const path = require('path');
+const dbPath = path.join('/Users/zhaojiaqi/Desktop/ai-game-tracker', 'data.db');
+const db = new Database(dbPath);
+const games = db.prepare('SELECT * FROM games ORDER BY id DESC').all();
+const events = db.prepare('SELECT * FROM game_events ORDER BY event_date DESC, id DESC').all();
+const outPath = path.join('/Users/zhaojiaqi/Desktop/ai-game-tracker', 'src', 'data.json');
+fs.writeFileSync(outPath, JSON.stringify({ games, events }, null, 2));
+console.log('Successfully exported to src/data.json');

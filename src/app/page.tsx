@@ -1,11 +1,8 @@
-import { getDb, GameRecord, GameEvent } from '@/lib/db';
 import DashboardClient from './DashboardClient';
+import data from '../data.json';
 
 export default function Home() {
-  const db = getDb();
-  
-  const games = db.prepare('SELECT * FROM games ORDER BY id DESC').all() as GameRecord[];
-  const events = db.prepare('SELECT * FROM game_events ORDER BY event_date DESC, id DESC').all() as GameEvent[];
+  const { games, events } = data;
 
   return (
     <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
@@ -22,7 +19,7 @@ export default function Home() {
         </div>
       </header>
       
-      <DashboardClient initialGames={games} initialEvents={events} />
+      <DashboardClient initialGames={games as any} initialEvents={events as any} />
     </main>
   );
 }
