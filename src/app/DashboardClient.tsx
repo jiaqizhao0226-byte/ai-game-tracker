@@ -1,20 +1,66 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import { useState } from 'react';
-import { Search, TerminalSquare, Activity, ExternalLink, Filter, X } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { Search, TerminalSquare, Activity, ExternalLink, Filter, X, ChevronDown, Check } from 'lucide-react';
+
+function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: string[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const toggle = (opt: string) => {
+    if (selected.includes(opt)) {
+      onChange(selected.filter(x => x !== opt));
+    } else {
+      onChange([...selected, opt]);
+    }
+  };
+
+  return (
+    <div className="relative" ref={dropdownRef}>
+      <button 
+        onClick={() => setIsOpen(!isOpen)} 
+        className={`bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none hover:border-neutral-400 font-mono shadow-sm flex items-center justify-between gap-2 min-w-[110px] max-w-[150px] ${className}`}
+      >
+        <span className="truncate flex-1 text-left">{selected.length === 0 ? label : `${label} (${selected.length})`}</span>
+        <ChevronDown className="w-3 h-3 text-neutral-400 shrink-0" />
+      </button>
+      {isOpen && (
+        <div className="absolute top-full left-0 mt-1 bg-white border border-neutral-200 shadow-lg z-20 min-w-[150px] max-h-60 overflow-y-auto">
+          {options.map(opt => (
+            <div key={opt} className="px-3 py-2 flex items-center gap-2 hover:bg-neutral-50 cursor-pointer" onClick={() => toggle(opt)}>
+              <div className={`w-3 h-3 border flex items-center justify-center shrink-0 ${selected.includes(opt) ? 'bg-neutral-900 border-neutral-900' : 'border-neutral-300'}`}>
+                {selected.includes(opt) && <Check className="w-2 h-2 text-white" />}
+              </div>
+              <span className="text-xs font-mono truncate text-neutral-700">{opt}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function DashboardClient({ initialGames, initialEvents }: { initialGames: any[], initialEvents: any[] }) {
   const [games] = useState<any[]>(initialGames);
   const [events] = useState<any[]>(initialEvents);
   
   const [search, setSearch] = useState('');
-  const [filterMainType, setFilterMainType] = useState('All');
-  const [filterSubType, setFilterSubType] = useState('All');
-  const [filterSize, setFilterSize] = useState('All');
-  const [filterFunding, setFilterFunding] = useState('All');
-  const [filterRegion, setFilterRegion] = useState('All');
-  const [filterStatus, setFilterStatus] = useState('All');
+  const [filterMainTypes, setFilterMainTypes] = useState<string[]>([]);
+  const [filterSubTypes, setFilterSubTypes] = useState<string[]>([]);
+  const [filterSizes, setFilterSizes] = useState<string[]>([]);
+  const [filterRegions, setFilterRegions] = useState<string[]>([]);
+  const [filterStatuses, setFilterStatuses] = useState<string[]>([]);
   const [viewingGame, setViewingGame] = useState<any | null>(null);
 
   const filteredGames = games.filter(g => {
@@ -23,19 +69,18 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       g.gameplay_type.toLowerCase().includes(search.toLowerCase()) ||
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
     
-    const matchType = (filterMainType === 'All' || g.gameplay_main === filterMainType) && (filterSubType === 'All' || g.gameplay_sub === filterSubType);
-    const matchSize = filterSize === 'All' || g.company_size === filterSize;
-    const matchFunding = filterFunding === 'All' || g.funding_round === filterFunding;
-    const matchRegion = filterRegion === 'All' || g.region === filterRegion;
-    const matchStatus = filterStatus === 'All' || g.status === filterStatus;
+    const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || filterSubTypes.includes(g.gameplay_sub));
+    const matchSize = filterSizes.length === 0 || filterSizes.includes(g.company_size);
+    const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
+    const matchStatus = filterStatuses.length === 0 || filterStatuses.includes(g.status);
 
-    return matchSearch && matchType && matchSize && matchFunding && matchRegion && matchStatus;
+    return matchSearch && matchType && matchSize && matchRegion && matchStatus;
   });
 
   
-  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainType === 'All' || g.gameplay_main === filterMainType).map(g => g.gameplay_sub))).filter(Boolean);
+  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).map(g => g.gameplay_sub))).filter(Boolean);
   const uniqueSizes = Array.from(new Set(games.map(g => g.company_size))).filter(Boolean);
-  const uniqueFunding = Array.from(new Set(games.map(g => g.funding_round))).filter(Boolean);
+  
   
   const uniqueStatuses = Array.from(new Set(games.map(g => g.status))).filter(Boolean);
 
@@ -56,83 +101,40 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
           
           <div className="flex flex-wrap items-center gap-2">
             <Filter className="h-4 w-4 text-neutral-400 shrink-0" />
-            <select 
-              value={filterRegion} 
-              onChange={e => setFilterRegion(e.target.value)}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
-            >
-              <option value="All">全部区域</option>
-              <option value="国内">国内</option>
-              <option value="海外">海外</option>
-              <option value="未知">未知</option>
-            </select>
-
-            <select 
-              value={filterMainType} 
-              onChange={e => { setFilterMainType(e.target.value); setFilterSubType('All'); }}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[120px] truncate"
-            >
-              <option value="All">所有玩法大类</option>
-              <option value="AI陪伴">AI陪伴</option>
-              <option value="传统玩法+AI">传统玩法+AI</option>
-              <option value="AI原生玩法">AI原生玩法</option>
-              <option value="生成式AI驱动UGC">生成式AI驱动UGC</option>
-              <option value="可交互视频">可交互视频</option>
-              <option value="Agent类/通用AI智能体">Agent类/通用智能体</option>
-              <option value="其他">其他</option>
-            </select>
-            <select 
-              value={filterSubType} 
-              onChange={e => setFilterSubType(e.target.value)}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[120px] truncate"
-            >
-              <option value="All">所有玩法子类</option>
-              {uniqueSubTypes.map(t => <option key={t as string} value={t as string}>{t as string}</option>)}
-            </select>
-
-            <select 
-              value={filterSize} 
-              onChange={e => setFilterSize(e.target.value)}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
-            >
-              <option value="All">全部规模</option>
-              <option value="大厂">大厂</option>
-              <option value="中小团队">中小团队</option>
-              <option value="独立开发者">独立开发者</option>
-              <option value="未知">未知</option>
-              {uniqueSizes.filter(s => !["大厂", "中小团队", "独立开发者", "未知"].includes(s as string)).map(s => <option key={s as string} value={s as string}>{s as string}</option>)}
-            </select>
-
-            <select 
-              value={filterStatus} 
-              onChange={e => setFilterStatus(e.target.value)}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
-            >
-              <option value="All">全部状态</option>
-              <option value="已上线">已上线</option>
-              <option value="测试中">测试中</option>
-              <option value="研发中">研发中</option>
-              <option value="早期/原型">早期/原型</option>
-              <option value="停止开发">停止开发</option>
-              <option value="未知">未知</option>
-              {uniqueStatuses.filter(st => !["已上线", "测试中", "研发中", "早期/原型", "停止开发", "未知"].includes(st as string)).map(st => <option key={st as string} value={st as string}>{st as string}</option>)}
-            </select>
-
-            <select 
-              value={filterFunding} 
-              onChange={e => setFilterFunding(e.target.value)}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
-            >
-              <option value="All">全部融资阶段</option>
-              <option value="未融资">未融资</option>
-              <option value="天使/种子轮">天使/种子轮</option>
-              <option value="A轮">A轮</option>
-              <option value="B轮及以上">B轮及以上</option>
-              <option value="已上市">已上市</option>
-              <option value="被收购/大厂内部孵化">被收购/大厂内部孵化</option>
-              <option value="未知">未知</option>
-              {uniqueFunding.filter(f => !["未融资", "天使/种子轮", "A轮", "B轮及以上", "已上市", "被收购/大厂内部孵化", "未知", "被收购"].includes(f as string)).map(f => <option key={f as string} value={f as string}>{f as string}</option>)}
-            </select>
+            <MultiSelect 
+              label="全部区域" 
+              options={["国内", "海外", "未知"]} 
+              selected={filterRegions} 
+              onChange={setFilterRegions} 
+            />
+            
+            <MultiSelect 
+              label="玩法大类" 
+              options={["AI陪伴", "传统玩法+AI", "AI原生玩法", "生成式AI驱动UGC", "可交互视频", "Agent类/通用智能体", "其他"]} 
+              selected={filterMainTypes} 
+              onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }} 
+            />
+            
+            <MultiSelect 
+              label="玩法子类" 
+              options={uniqueSubTypes as string[]} 
+              selected={filterSubTypes} 
+              onChange={setFilterSubTypes} 
+            />
+            
+            <MultiSelect 
+              label="团队规模" 
+              options={["大厂", "中小团队", "独立开发者", "未知", ...(uniqueSizes.filter(s => !["大厂", "中小团队", "独立开发者", "未知"].includes(s as string)) as string[])]} 
+              selected={filterSizes} 
+              onChange={setFilterSizes} 
+            />
+            
+            <MultiSelect 
+              label="当前状态" 
+              options={["已上线", "测试中", "研发中", "早期/原型", "停止开发", "未知", ...(uniqueStatuses.filter(st => !["已上线", "测试中", "研发中", "早期/原型", "停止开发", "未知"].includes(st as string)) as string[])]} 
+              selected={filterStatuses} 
+              onChange={setFilterStatuses} 
+            />
           </div>
         </div>
 
