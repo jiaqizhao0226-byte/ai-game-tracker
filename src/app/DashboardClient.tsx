@@ -54,7 +54,18 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
             >
               <option value="All">All Types</option>
-              {uniqueTypes.map(t => <option key={t as string} value={t as string}>{t as string}</option>)}
+              <option value="AI陪伴">AI陪伴</option>
+              <option value="传统玩法+AI NPC">传统玩法+AI NPC</option>
+              <option value="传统玩法+AI队友">传统玩法+AI队友</option>
+              <option value="AI原生玩法 (对话模拟)">AI原生玩法 (对话模拟)</option>
+              <option value="AI原生玩法 (派对游戏)">AI原生玩法 (派对游戏)</option>
+              <option value="AI原生玩法 (机制/卡牌)">AI原生玩法 (机制/卡牌)</option>
+              <option value="初代Chatbot (AI陪伴)">初代Chatbot (AI陪伴)</option>
+              <option value="生成式AI驱动UGC">生成式AI驱动UGC</option>
+              <option value="可交互视频">可交互视频</option>
+              <option value="Agent类/通用AI智能体">Agent类/通用AI智能体</option>
+              <option value="其他">其他</option>
+              {uniqueTypes.filter(t => !["AI陪伴", "传统玩法+AI NPC", "传统玩法+AI队友", "AI原生玩法 (对话模拟)", "AI原生玩法 (派对游戏)", "AI原生玩法 (机制/卡牌)", "初代Chatbot (AI陪伴)", "生成式AI驱动UGC", "可交互视频", "Agent类/通用AI智能体", "其他"].includes(t as string)).map(t => <option key={t as string} value={t as string}>{t as string}</option>)}
             </select>
 
             <select 
