@@ -32,11 +32,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     return matchSearch && matchType && matchSize && matchFunding && matchRegion && matchStatus;
   });
 
-  const uniqueMainTypes = Array.from(new Set(games.map(g => g.gameplay_main))).filter(Boolean);
+  
   const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainType === 'All' || g.gameplay_main === filterMainType).map(g => g.gameplay_sub))).filter(Boolean);
   const uniqueSizes = Array.from(new Set(games.map(g => g.company_size))).filter(Boolean);
   const uniqueFunding = Array.from(new Set(games.map(g => g.funding_round))).filter(Boolean);
-  const uniqueRegions = Array.from(new Set(games.map(g => g.region))).filter(Boolean);
+  
   const uniqueStatuses = Array.from(new Set(games.map(g => g.status))).filter(Boolean);
 
   return (
@@ -226,6 +226,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 
 function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[], onClose: () => void }) {
   const [activeTab, setActiveTab] = useState<'产品动态' | '融资动态'>('产品动态');
+  const [expandedEventId, setExpandedEventId] = useState<number | null>(null);
   
   if (!game) return null;
   
@@ -338,23 +339,38 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
               {filteredEvents.length === 0 ? (
                 <div className="text-center py-10 text-neutral-400 text-xs font-mono">NO {activeTab === '产品动态' ? 'PRODUCT' : 'FUNDING'} EVENTS RECORDED.</div>
               ) : (
-                <div className="space-y-4 relative border-l-2 border-neutral-200 ml-2 pl-4">
-                  {filteredEvents.map(evt => (
-                    <div key={evt.id} className="relative group">
-                      <div className="absolute w-2 h-2 rounded-full bg-neutral-900 -left-[21px] top-1.5 border-2 border-white"></div>
-                      <div className="bg-white border border-neutral-200 p-3 shadow-sm">
-                        <div className="flex justify-between items-start mb-2">
-                          <div className="flex items-center gap-2">
-                            <span className={`text-[9px] uppercase font-bold tracking-widest px-1.5 py-0.5 ${evt.event_type === '融资动态' ? 'bg-emerald-100 text-emerald-800' : 'bg-indigo-100 text-indigo-800'}`}>
-                              {evt.event_type}
-                            </span>
-                            <span className="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5">{evt.event_date}</span>
-                          </div>
+                <div className="grid grid-cols-1 gap-3">
+                  {filteredEvents.map(evt => {
+                    const isExpanded = expandedEventId === evt.id;
+                    return (
+                    <div 
+                      key={evt.id} 
+                      onClick={() => setExpandedEventId(isExpanded ? null : evt.id)}
+                      className="bg-white border border-neutral-200 p-4 shadow-sm hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col"
+                    >
+                      <div className="flex justify-between items-start mb-3">
+                        <div className="flex items-center gap-2">
+                          <span className={`text-[9px] uppercase font-bold tracking-widest px-1.5 py-0.5 ${evt.event_type === '融资动态' ? 'bg-emerald-100 text-emerald-800' : 'bg-indigo-100 text-indigo-800'}`}>
+                            {evt.event_type}
+                          </span>
+                          <span className="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5">{evt.event_date}</span>
                         </div>
-                        <p className="text-xs text-neutral-700 leading-relaxed">{evt.content}</p>
                       </div>
+                      <p className={`text-xs text-neutral-700 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
+                        {evt.content}
+                      </p>
+                      {!isExpanded && evt.content.length > 50 && (
+                        <div className="mt-2 text-[10px] text-neutral-400 font-mono flex items-center">
+                          CLICK TO EXPAND
+                        </div>
+                      )}
+                      {isExpanded && (
+                        <div className="mt-2 text-[10px] text-neutral-400 font-mono flex items-center">
+                          CLICK TO COLLAPSE
+                        </div>
+                      )}
                     </div>
-                  ))}
+                  )})}
                 </div>
               )}
             </div>
