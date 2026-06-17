@@ -10,7 +10,7 @@ export default function Home() {
       <header className="mb-8 border-b-2 border-neutral-800 pb-4 flex justify-between items-end">
         <div>
           <h1 className="text-2xl font-bold font-sans text-neutral-900 tracking-tight flex items-center gap-2">
-            Intelligence Board
+            AI游戏产品情报看板
           </h1>
           <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">产品数据库 / 光子策略分析组</p>
         </div>
