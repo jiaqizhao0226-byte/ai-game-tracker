@@ -74,7 +74,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
             >
               <option value="All">All Sizes</option>
-              {uniqueSizes.map(s => <option key={s as string} value={s as string}>{s as string}</option>)}
+              <option value="大厂">大厂</option>
+              <option value="中小团队">中小团队</option>
+              <option value="独立开发者">独立开发者</option>
+              <option value="未知">未知</option>
+              {uniqueSizes.filter(s => !["大厂", "中小团队", "独立开发者", "未知"].includes(s as string)).map(s => <option key={s as string} value={s as string}>{s as string}</option>)}
             </select>
 
             <select 
@@ -83,7 +87,14 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
             >
               <option value="All">All Funding</option>
-              {uniqueFunding.map(f => <option key={f as string} value={f as string}>{f as string}</option>)}
+              <option value="未融资">未融资</option>
+              <option value="天使/种子轮">天使/种子轮</option>
+              <option value="A轮">A轮</option>
+              <option value="B轮及以上">B轮及以上</option>
+              <option value="已上市">已上市</option>
+              <option value="被收购/大厂内部孵化">被收购/大厂内部孵化</option>
+              <option value="未知">未知</option>
+              {uniqueFunding.filter(f => !["未融资", "天使/种子轮", "A轮", "B轮及以上", "已上市", "被收购/大厂内部孵化", "未知", "被收购"].includes(f as string)).map(f => <option key={f as string} value={f as string}>{f as string}</option>)}
             </select>
           </div>
         </div>
