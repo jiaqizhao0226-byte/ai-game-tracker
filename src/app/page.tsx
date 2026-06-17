@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import DashboardClient from './DashboardClient';
 import data from '../data.json';
 
