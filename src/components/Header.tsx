@@ -11,7 +11,17 @@ export default function Header() {
     <header className="bg-white border-b border-neutral-200 sticky top-0 z-40 shadow-sm">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-12 lg:px-16 h-16 flex items-center justify-between">
         <div className="flex items-center gap-8">
-          <div className="flex items-center gap-2">
+          <Link 
+            href="/"
+            onClick={(e) => {
+              if (window.location.pathname === '/' || window.location.pathname === '/ai-game-tracker' || window.location.pathname === '/ai-game-tracker/') {
+                e.preventDefault();
+                window.location.reload();
+              }
+            }}
+            className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+            title="点击返回并重置筛选"
+          >
             <div className="w-8 h-8 bg-neutral-900 flex items-center justify-center rounded-sm shadow-inner">
               <Database className="w-4 h-4 text-white" />
             </div>
@@ -19,7 +29,7 @@ export default function Header() {
               <h1 className="font-bold text-sm tracking-tight text-neutral-900 leading-tight">AI+游戏玩法</h1>
               <p className="text-[10px] uppercase tracking-widest text-neutral-500 font-mono">常态化监控</p>
             </div>
-          </div>
+          </Link>
           
           <nav className="hidden sm:flex items-center gap-1">
             <Link 
