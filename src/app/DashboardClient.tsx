@@ -12,6 +12,8 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterType, setFilterType] = useState('All');
   const [filterSize, setFilterSize] = useState('All');
   const [filterFunding, setFilterFunding] = useState('All');
+  const [filterRegion, setFilterRegion] = useState('All');
+  const [filterStatus, setFilterStatus] = useState('All');
   const [viewingGame, setViewingGame] = useState<any | null>(null);
 
   const filteredGames = games.filter(g => {
@@ -23,13 +25,17 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     const matchType = filterType === 'All' || g.gameplay_type === filterType;
     const matchSize = filterSize === 'All' || g.company_size === filterSize;
     const matchFunding = filterFunding === 'All' || g.funding_round === filterFunding;
+    const matchRegion = filterRegion === 'All' || g.region === filterRegion;
+    const matchStatus = filterStatus === 'All' || g.status === filterStatus;
 
-    return matchSearch && matchType && matchSize && matchFunding;
+    return matchSearch && matchType && matchSize && matchFunding && matchRegion && matchStatus;
   });
 
   const uniqueTypes = Array.from(new Set(games.map(g => g.gameplay_type))).filter(Boolean);
   const uniqueSizes = Array.from(new Set(games.map(g => g.company_size))).filter(Boolean);
   const uniqueFunding = Array.from(new Set(games.map(g => g.funding_round))).filter(Boolean);
+  const uniqueRegions = Array.from(new Set(games.map(g => g.region))).filter(Boolean);
+  const uniqueStatuses = Array.from(new Set(games.map(g => g.status))).filter(Boolean);
 
   return (
     <div>
@@ -46,12 +52,23 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             />
           </div>
           
-          <div className="flex items-center gap-2">
-            <Filter className="h-4 w-4 text-neutral-400" />
+          <div className="flex flex-wrap items-center gap-2">
+            <Filter className="h-4 w-4 text-neutral-400 shrink-0" />
+            <select 
+              value={filterRegion} 
+              onChange={e => setFilterRegion(e.target.value)}
+              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
+            >
+              <option value="All">国内/海外</option>
+              <option value="国内">国内</option>
+              <option value="海外">海外</option>
+              <option value="未知">未知</option>
+            </select>
+
             <select 
               value={filterType} 
               onChange={e => setFilterType(e.target.value)}
-              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
+              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm max-w-[150px] truncate"
             >
               <option value="All">All Types</option>
               <option value="AI陪伴">AI陪伴</option>
@@ -79,6 +96,21 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               <option value="独立开发者">独立开发者</option>
               <option value="未知">未知</option>
               {uniqueSizes.filter(s => !["大厂", "中小团队", "独立开发者", "未知"].includes(s as string)).map(s => <option key={s as string} value={s as string}>{s as string}</option>)}
+            </select>
+
+            <select 
+              value={filterStatus} 
+              onChange={e => setFilterStatus(e.target.value)}
+              className="bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono shadow-sm"
+            >
+              <option value="All">All Status</option>
+              <option value="已上线">已上线</option>
+              <option value="测试中">测试中</option>
+              <option value="研发中">研发中</option>
+              <option value="早期/原型">早期/原型</option>
+              <option value="停止开发">停止开发</option>
+              <option value="未知">未知</option>
+              {uniqueStatuses.filter(st => !["已上线", "测试中", "研发中", "早期/原型", "停止开发", "未知"].includes(st as string)).map(st => <option key={st as string} value={st as string}>{st as string}</option>)}
             </select>
 
             <select 
