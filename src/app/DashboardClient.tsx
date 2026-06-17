@@ -385,7 +385,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
             onClick={onClose}
             className="px-6 py-2 text-xs font-bold uppercase tracking-wider bg-neutral-900 text-white hover:bg-neutral-800"
           >
-            Close
+            关闭
           </button>
         </div>
       </div>
