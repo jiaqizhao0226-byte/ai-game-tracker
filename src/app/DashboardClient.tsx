@@ -79,7 +79,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 
   
   const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).map(g => g.gameplay_sub))).filter(Boolean);
-  const uniqueSizes = Array.from(new Set(games.map(g => g.company_size))).filter(Boolean);
+  
   
   
   const uniqueStatuses = Array.from(new Set(games.map(g => g.status))).filter(Boolean);
@@ -124,7 +124,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             
             <MultiSelect 
               label="团队规模" 
-              options={["大厂", "中小团队", "独立开发者", "未知", ...(uniqueSizes.filter(s => !["大厂", "中小团队", "独立开发者", "未知"].includes(s as string)) as string[])]} 
+              options={["大厂", "创业公司", "独立开发者", "未知"]} 
               selected={filterSizes} 
               onChange={setFilterSizes} 
             />
