@@ -67,7 +67,7 @@
     {
       "id": 21,
       "product_name": "Whispers from the Star",
-      "company_name": "Anuttacon (米哈游蔡浩宇带队)",
+      "company_name": "Anuttacon",
       "status": "已上线 (Steam)",
       "description": "由米哈游联合创始人蔡浩宇在美国创立的AI公司Anuttacon于2025年3月推出的互动科幻生存游戏。玩家通过语音、文字或视频与外星落难女大学生Stella进行实时无剧本的AI动态对话，玩家的选择决定了角色的生存与故事走向。",
       "updated_at": "2026-06-17 07:23:42",
@@ -339,9 +339,9 @@
     {
       "id": 4,
       "product_name": "麦琪的花园",
-      "company_name": "AutoGame (前腾讯《和平精英》AI策划创办)",
+      "company_name": "AutoGame",
       "status": "测试中",
-      "description": "国内少有的高自由度AI原生沙盒RPG。支持玩家导入图片实时生成AI伙伴，NPC能在AI驱动下动态生成剧情、对话并派发专属任务，甚至涌现新功能。团队愿景是打造AI版RPG Maker。",
+      "description": "由前腾讯《和平精英》AI策划创办。国内少有的高自由度AI原生沙盒RPG。支持玩家导入图片实时生成AI伙伴，NPC能在AI驱动下动态生成剧情、对话并派发专属任务，甚至涌现新功能。团队愿景是打造AI版RPG Maker。",
       "updated_at": "2026-06-17 07:18:35",
       "url": null,
       "company_size": "初创团队",
