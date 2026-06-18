@@ -287,8 +287,22 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
 
               <div className="flex flex-col gap-1.5">
                 <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">核心简介</label>
-                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 whitespace-pre-wrap leading-relaxed max-h-64 overflow-y-auto">{game.description}</div>
+                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 whitespace-pre-wrap leading-relaxed">{game.description}</div>
               </div>
+
+              {game.team_background && (
+                <div className="flex flex-col gap-1.5 mt-2">
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide text-indigo-700">团队背景</label>
+                  <div className="px-3 py-3 text-sm bg-indigo-50/30 border border-indigo-100 text-neutral-800 whitespace-pre-wrap leading-relaxed rounded-sm">{game.team_background}</div>
+                </div>
+              )}
+
+              {game.product_intro && (
+                <div className="flex flex-col gap-1.5 mt-2">
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide text-emerald-700">详细产品介绍</label>
+                  <div className="px-3 py-3 text-sm bg-emerald-50/30 border border-emerald-100 text-neutral-800 whitespace-pre-wrap leading-relaxed rounded-sm">{game.product_intro}</div>
+                </div>
+              )}
 
               <div className="flex flex-col gap-1.5">
                 <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">产品配图</label>

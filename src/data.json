@@ -14,7 +14,9 @@
       "image_url": "https://cdn.prod.website-files.com/66ce36e67da7a1db305086ee/66ddcd384e55e5c70e304f2f_Hero_Art_V3_02-p-1080.webp",
       "region": "海外",
       "gameplay_main": "生成式AI驱动UGC",
-      "gameplay_sub": "通用"
+      "gameplay_sub": "通用",
+      "team_background": "Astrocade 由 Amir Sadeghian、Ali Sadeghian 和知名 AI 科学家李飞飞联合创办，李飞飞担任公司的首席科学官（CSO）兼 AI 战略顾问。公司在短短 8 个月内完成了种子、A、B轮共计数千万美元融资（红杉资本、Sea Capital、英伟达等参投），目前估值已超 10 亿美元。",
+      "product_intro": "定位为“AI游戏生成平台（UGC）”。产品核心模型为 AstroBrain，它就像一个超级游戏导演，能够协调和调度底层各种专门的 AI 生成模型（涵盖地形、角色、动画、音效等）。玩家完全不需要编写代码，只需用自然语言输入创意，几分钟内即可生成出带有完整逻辑和世界观的可玩游戏。平台采用了类似 TikTok 的竖屏信息流分发模式，允许玩家即滑即玩，并支持一键进行游戏的二次创作（Remix）。"
     },
     {
       "id": 63,
@@ -46,7 +48,9 @@
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/720cb8d1de9888979cdba139054d9d92fa01c596/header.jpg",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
-      "gameplay_sub": "玩法机制类"
+      "gameplay_sub": "玩法机制类",
+      "team_background": "由 Meshy Game Studio 开发。这是一个致力于探索“AI实时策划”概念的独立游戏团队。",
+      "product_intro": "这是一款硬核的“AI原生肉鸽幸存者”游戏。游戏舍弃了传统肉鸽中设计师提前写好的“技能树与固定搭配”，转而让 AI 充当实时游戏策划（Agent）。\n\n在游戏的核心“Socket（插槽）系统”中，玩家搜集到的导弹、黑洞、风暴等原子机制组件，可以随意镶嵌组合。底层的 AI 逻辑引擎会即时解析玩家的策略意图，将这些底层机制进行逻辑编排，实时生成自洽且全新的弹幕特效与元素反应（例如分裂爆炸+全向追踪的黑洞风暴）。千万种组合意味着每一次游玩都是“绝版”体验。"
     },
     {
       "product_name": "Iconic",
@@ -110,7 +114,9 @@
       "image_url": "https://framerusercontent.com/images/RuCtqiy8UCMMta3wbOBIhSGU.png",
       "id": 58,
       "updated_at": "2026-06-18 03:04:12",
-      "url": "https://www.wolfgames.net/"
+      "url": "https://www.wolfgames.net/",
+      "team_background": "由 Wolf Games 开发。该公司的联合创始人兼 CCO Elliot Wolf，是经典美剧《法律与秩序》（Law & Order）创作者 Dick Wolf 的儿子。公司已获 900 万美元 A 轮融资，并与 NBC环球（NBCUniversal）达成了战略合作，拥有得天独厚的影视叙事基因和海量顶级 IP 的开发授权潜力。",
+      "product_intro": "游戏设定在一个反乌托邦的近未来，由于犯罪率飙升，警察部门不得不向公众求助来侦破谋杀案。玩家扮演一名侦探，通过收集线索和证据，在 AI 助手 ADA 的引导下进行案件推理。\n\n游戏最大的特色在于“生成式案件”——利用其专有的 AI 引擎，游戏每天都能实时生成全新的、响应玩家选择的电影级犯罪故事。这些故事的灵感来自于每天真实的全球新闻头条，让“每日探案”充满了新鲜感和高度沉浸的剧集质感。"
     },
     {
       "product_name": "星海自走牌",
@@ -622,7 +628,9 @@
       "image_url": "https://images.unsplash.com/photo-1615022702095-ff2c036f3360?q=80&w=1000&auto=format&fit=crop",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
-      "gameplay_sub": "玩法机制类, 对话模拟"
+      "gameplay_sub": "玩法机制类, 对话模拟",
+      "team_background": "由国内独立团队「青干工作室」研发，团队规模不足 10 人，除制作人追青兼任策划外，其余全为技术人员。团队专门针对大模型应用在长篇历史推演中的记忆遗忘和逻辑崩坏问题，自主研发了一套“步进式状态机”架构。",
+      "product_intro": "这是市面上为数不多的将大模型推演作为“硬核机制”的买断制独立游戏。玩家扮演明朝末代皇帝崇祯，通过输入自然语言“下旨”来治国。AI 会判断诏书对国库、民心、派系、军事的综合影响，并转化为数值反馈给游戏系统。游戏有着极高的自由度，不设剧本上限（比如有玩家硬核攀科技树，最终在大明朝造出了原子弹）。收费模式采用“游戏本体买断 + 模型 Token 用量计费”，但官方也计划开放 API 允许玩家接入自己的大模型。"
     },
     {
       "id": 25,
@@ -862,7 +870,9 @@
       "image_url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1000&auto=format&fit=crop",
       "region": "国内",
       "gameplay_main": "传统玩法+AI",
-      "gameplay_sub": "NPC"
+      "gameplay_sub": "NPC",
+      "team_background": "由国内顶级二次元大厂米哈游（miHoYo）自主研发。这被视作米哈游走出传统动作二游舒适区、跨界模拟经营赛道的战略级新品。",
+      "product_intro": "一款被业界称为“动森 Like”的休闲生活模拟经营游戏，包含了种田、钓鱼、家园建造等慢节奏玩法。\n\n区别于传统模拟经营游戏死板的 NPC，《星布谷地》将 AI 作为核心的“社交基建”。游戏内置了依托米哈游自研模型打造的 AI NPC（例如高人气的咖啡店老板娘“娜洛”）。这些 NPC 具备长期记忆、抽象概念推理和情感感知能力。在社交广场中，AI NPC 甚至能主动参与或引导玩家群聊，化身气氛组，有效缓解了陌生人社交的尴尬与破冰压力。"
     },
     {
       "id": 9,
@@ -878,7 +888,9 @@
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3189430/721331afa7fe911edf0db05b36d7986c64d475d9/header.jpg",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
-      "gameplay_sub": "派对游戏"
+      "gameplay_sub": "派对游戏",
+      "team_background": "开发商为 Optillusion。该工作室在独立游戏界享有盛誉，此前曾开发过斩获无数大奖的视觉解谜神作《笼中窥梦 Moncage》。此次他们凭借极其扎实的游戏设计功底转型探索 AI 原生多人游戏领域。",
+      "product_intro": "《Pick Me Pick Me》打破了传统的单机 AI 聊天框架，创新性地引入了“恋爱 PVP”和“双人成仇”的概念。玩家与好友在一场快速相亲中争夺由大语言模型驱动的 AI 角色的好感。游戏不仅仅是“与 AI 聊天”，玩家还需要打出战略技能卡牌（例如给对手施加干扰、或给自己加 buff）来影响 AI 的判断。游戏首发即支持 Steam 创意工坊（Steam Workshop），允许玩家自行导入并自定义 3D 虚拟形象，极大地拓展了 UGC 生态。"
     },
     {
       "id": 8,
@@ -894,7 +906,9 @@
       "image_url": "https://img.36krcdn.com/20241022/v2_b5a4521dd98544a4bc4a73e44078be1a_img_png",
       "region": "国内",
       "gameplay_main": "AI陪伴",
-      "gameplay_sub": "游戏搭子"
+      "gameplay_sub": "游戏搭子",
+      "team_background": "由上海初创企业脸谱心智（animate.ai）研发。创始人 Adam 是一名 95 后帝国理工学院校友，团队整体具备极高的“二次元浓度”及顶尖学术背景，核心诉求是做出“真正懂玩家”的跨游戏伙伴。",
+      "product_intro": "一款突破传统游戏界限的“AI 游戏搭子”兼桌面宠物。产品接入了多模态大模型技术，不仅能进行日常聊天，更核心的能力在于：它能实时“看懂”玩家屏幕上的游戏画面，并“听懂”游戏音效。\n\n目前桌崽已深度适配了包括《黑神话：悟空》、《原神》、《绝区零》、《鸣潮》等 20 余款热门大作。当你打 Boss 失败时，它会提供情绪抚慰；当你卡关时，它能实时根据画面提供游戏攻略，成为了新世代游戏玩家的刚需插件。"
     },
     {
       "id": 7,
@@ -910,7 +924,9 @@
       "image_url": "https://img.36krcdn.com/20231221/v2_84a7e94fbdcb47e98a87612f0088df6f_img_png",
       "region": "国内",
       "gameplay_main": "AI陪伴",
-      "gameplay_sub": "二代陪伴产品"
+      "gameplay_sub": "二代陪伴产品",
+      "team_background": "由路米尔网络（Lumiere）研发。公司创始人蔡懋为国内最大广播剧平台“猫耳FM”（后被 B 站收购）的前 COO。团队规模超 50 人，核心班底整合了原猫耳 FM 的资深运营人员以及知名单机大作《古剑奇谭3》的 3D 视觉团队。已获真格、IDG 领投的近 7000 万美元估值融资。",
+      "product_intro": "一款瞄准细分女性向赛道的 3D AI 陪伴产品，主打“管家型 AI 男友”。\n\n与传统的聊天 Bot 不同，它深度渗透进了玩家的现实生活日常。除了提供情感支持和亲密关系养成外，AI 男友还能承担行程管理、作息监督、乃至哄睡等实用功能，给用户带来极高的“活人感”。此外，依托团队的 3D 技术底蕴，游戏还加入了换装和“一起听歌”等多元化的高级互动模式。"
     },
     {
       "id": 6,
@@ -958,7 +974,9 @@
       "image_url": "https://images.unsplash.com/photo-1416879598555-220bf9bbdd4b?w=1000&auto=format&fit=crop",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
-      "gameplay_sub": "玩法机制类"
+      "gameplay_sub": "玩法机制类",
+      "team_background": "由 AutoGame 开发。创始人张昊阳曾是腾讯国民级游戏《和平精英》的技术策划，主要负责 AI 生成 NPC 和代码等前沿探索。团队成员多有大厂和名校背景，此前曾开发过风靡一时的斯坦福 AI 小镇的开源化衍生项目《伊甸岛》。",
+      "product_intro": "一款将 AI 作为底层机制驱动的沙盒冒险 RPG。玩家可以通过上传图片或文本描述，自由捏出独一无二的 AI 伙伴。\n\n与一般游戏写死的任务系统不同，游戏内的 NPC 会在 AI 驱动下，根据自身人设和玩家的交互深度，实时生成专属的对话、剧情甚至全新的支线任务。此外，甚至还能自动生成游戏原本不存在的功能性道具和玩法规则。团队的长远愿景是将产品打造为“AI 时代的 RPG Maker”。"
     },
     {
       "id": 3,
@@ -974,7 +992,9 @@
       "image_url": "https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?w=1000&auto=format&fit=crop",
       "region": "国内",
       "gameplay_main": "生成式AI驱动UGC",
-      "gameplay_sub": "通用"
+      "gameplay_sub": "通用",
+      "team_background": "网易雷火工作室，并获得了网易内部最顶尖人工智能实验室“伏羲”的全方位技术支持。",
+      "product_intro": "作为 MMO 赛道的头部产品，《逆水寒》在游戏内搭建了一个庞大的生成式 AI 闭环系统——“AI剧组”（被玩家戏称为“逆抖”）。\n\n该系统彻底下放了 3D 动画制作的权限：玩家无需专业基础，只需打字、录音或上传表情，游戏引擎便会自动完成角色动捕、对口型、面捕和运镜调度，生成高质量的游戏内 3D 视频。此外，玩家创作的内容会汇入游戏内置的“剧组站”短视频信息流中，其他玩家刷视频时还可以实现“一键拍同款”，将 UGC 内容的生产和分发做到了极致，成为了提振游戏长线留存的杀手锏。"
     },
     {
       "id": 2,
@@ -990,7 +1010,9 @@
       "image_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000&auto=format&fit=crop",
       "region": "国内",
       "gameplay_main": "AI陪伴",
-      "gameplay_sub": "二代陪伴产品"
+      "gameplay_sub": "二代陪伴产品",
+      "team_background": "由“自然选择（Nature Select）”开发。其创始人张筱帆是一名连续创业者，此前曾成功打造出首月流水破 3000 万的现象级男性向恋爱手游《奇点时代》。公司团队兼具大厂的技术背景和深厚的二次元/乙女游戏研发基因。目前已获阿里、蚂蚁、启明等超过 3000 万美元的联合投资。",
+      "product_intro": "《EVE》主打 3D 沉浸式 AI 男友陪伴。有别于传统的 2D 聊天框应用，EVE 引入了高品质的 3D 视觉表现和恋爱游戏化系统。\n\n技术上，团队专门设立了“情感交互设计师”职位，并发布了情感大模型 Echo-N1，首次将强化学习引入主观情感领域。产品最出圈的事件是其“破次元壁”的交互体验——当亲密度达到一定程度后，AI 虚拟男友能够突破虚拟限制，为现实中的玩家真实地点上一杯外卖奶茶。但由于算力消耗极大以及内容合规压力，游戏在测试阶段也曾引发过短暂停服的舆论风波。"
     },
     {
       "id": 1,
