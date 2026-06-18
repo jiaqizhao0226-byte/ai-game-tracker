@@ -1,6 +1,22 @@
 {
   "games": [
     {
+      "id": 62,
+      "product_name": "黑箱：无限构筑 (代号黑箱)",
+      "company_name": "Meshy Game Studio",
+      "status": "研发中",
+      "description": "一款AI原生的类吸血鬼幸存者游戏。游戏将AI进化为实时策划Agent，取代了传统的“固定配置”体验。AI能深度解析玩家在核心武器Socket（插槽）系统中的策略意图，将数百种底层原子机制进行逻辑编排，实时生成严谨、自洽的专属武器与元素连锁反应，实现“万物皆可合成”与“言出法随”的高自由度动态肉鸽体验。",
+      "updated_at": "2026-06-18 03:10:04",
+      "url": "https://store.steampowered.com/app/4437020/",
+      "company_size": "独立开发者",
+      "funding_round": "未融资",
+      "tags": "幸存者Like, 武器合成, 动态肉鸽, AI策划",
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/720cb8d1de9888979cdba139054d9d92fa01c596/header.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "机制/卡牌"
+    },
+    {
       "product_name": "Iconic",
       "company_name": "Iconic",
       "status": "研发中",
@@ -962,6 +978,14 @@
     }
   ],
   "events": [
+    {
+      "id": 29,
+      "game_id": 62,
+      "event_type": "产品动态",
+      "event_date": "2026-06",
+      "content": "《黑箱：无限构筑》(代号黑箱) 在Steam商店页面正式上线（即将推出状态），公布了其核心基于大语言模型的“实时AI合成”与插槽构筑系统。",
+      "created_at": "2026-06-18 03:10:04"
+    },
     {
       "id": 28,
       "game_id": 27,
