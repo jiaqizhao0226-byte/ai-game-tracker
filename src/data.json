@@ -1,6 +1,22 @@
 {
   "games": [
     {
+      "id": 63,
+      "product_name": "Fortnite AI维达",
+      "company_name": "Epic Games",
+      "status": "已上线",
+      "description": "Epic在Fortnite中上线的“指挥官玩法”尝试。玩家可以使用游戏内货币雇佣AI NPC（达斯·维达）跟随作战。该功能利用大语言模型（如Gemini）和语音模型（ElevenLabs），结合顶级IP角色为玩家提供高度拟真的RPG体验与战斗辅助。",
+      "updated_at": "2026-06-18 03:16:29",
+      "url": "https://www.fortnite.com/",
+      "company_size": "大厂",
+      "funding_round": "已上市",
+      "tags": "大逃杀, AI指挥官, 顶级IP, 语音交互",
+      "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1000&auto=format&fit=crop",
+      "region": "海外",
+      "gameplay_main": "传统玩法+AI",
+      "gameplay_sub": "队友"
+    },
+    {
       "id": 62,
       "product_name": "黑箱：无限构筑 (代号黑箱)",
       "company_name": "Meshy Game Studio",
