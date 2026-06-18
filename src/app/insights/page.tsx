@@ -40,9 +40,16 @@ export default function InsightsPage() {
                     <span className="text-[10px] font-bold uppercase tracking-widest bg-indigo-50 text-indigo-700 px-2 py-1">
                       {insight.category}
                     </span>
-                    <span className="text-xs font-mono text-neutral-400">
-                      {insight.date}
-                    </span>
+                    <div className="flex flex-col items-end gap-0.5">
+                      <span className="text-xs font-mono text-neutral-600 font-bold" title="所属期间">
+                        {insight.date}
+                      </span>
+                      {insight.created_at && (
+                        <span className="text-[9px] font-mono text-neutral-400" title="最新更新时间">
+                          更新:{insight.created_at.split(' ')[0]}
+                        </span>
+                      )}
+                    </div>
                   </div>
 
                   <h3 className="text-lg font-bold text-neutral-900 mb-3 leading-tight font-serif">

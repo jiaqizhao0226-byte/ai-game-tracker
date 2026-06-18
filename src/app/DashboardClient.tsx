@@ -209,7 +209,10 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             
             <div className="px-5 py-3 border-t border-neutral-100 bg-neutral-50 flex items-center justify-between text-[10px] text-neutral-400 font-mono uppercase tracking-wider group-hover:bg-neutral-100 transition-colors shrink-0">
               <span className="flex items-center gap-1"><TerminalSquare className="h-3 w-3" /> 查看详情</span>
-              <span>编号:{game.id.toString().padStart(4, '0')}</span>
+              <div className="flex items-center gap-3">
+                <span title="最新数据更新时间">更新:{game.updated_at ? game.updated_at.split(' ')[0] : '未知'}</span>
+                <span>编号:{game.id.toString().padStart(4, '0')}</span>
+              </div>
             </div>
           </div>
         )})}
