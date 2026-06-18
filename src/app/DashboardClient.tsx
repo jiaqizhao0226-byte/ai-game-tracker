@@ -160,9 +160,9 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               </div>
             )}
             <div className="p-5 flex-1 flex flex-col">
-              <div className="flex justify-between items-start mb-1">
-                <div className="flex items-center gap-2 pr-2">
-                  <h3 className="font-bold text-base text-neutral-900 truncate">{game.product_name}</h3>
+              <div className="flex justify-between items-start mb-1 gap-2">
+                <div className="flex items-center gap-2 min-w-0 flex-1">
+                  <h3 className="font-bold text-base text-neutral-900 truncate" title={game.product_name}>{game.product_name}</h3>
                   {game.url && (
                     <a href={game.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="text-neutral-400 hover:text-indigo-600 transition-colors" title="访问外部链接">
                       <ExternalLink className="h-4 w-4" />
