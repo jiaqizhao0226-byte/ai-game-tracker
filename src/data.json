@@ -1,6 +1,22 @@
 {
   "games": [
     {
+      "id": 26,
+      "product_name": "历史模拟器：崇祯",
+      "company_name": "青干工作室",
+      "status": "已上线",
+      "description": "一款AI原生的文字策略模拟游戏。玩家通过自然语言下达圣旨，AI大模型会判断诏书对国库、民心、官员关系等各维度的影响，并反写进世界状态数值中。高自由度下甚至可以点出原子弹科技。游戏于Steam上线，采用买断制+token计费（后期计划开放API）。",
+      "updated_at": "2026-06-18 02:30:14",
+      "url": "https://store.steampowered.com/",
+      "company_size": "独立开发者",
+      "funding_round": "未融资",
+      "tags": "文字模拟, 历史推演, Steam, 大模型",
+      "image_url": "https://images.unsplash.com/photo-1615022702095-ff2c036f3360?q=80&w=1000&auto=format&fit=crop",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "机制/卡牌"
+    },
+    {
       "id": 25,
       "product_name": "织之&镜土 AI+TRPG",
       "company_name": "上海秘墟科技 (镜土TRPG)",
@@ -402,6 +418,14 @@
     }
   ],
   "events": [
+    {
+      "id": 27,
+      "game_id": 26,
+      "event_type": "产品动态",
+      "event_date": "2026-05",
+      "content": "游戏《历史模拟器：崇祯》于5月8日在Steam正式发售。上线不到一周已有700多条玩家评测，最高同时在线达千人级别，次日留存率高达75.1%。",
+      "created_at": "2026-06-18 02:30:14"
+    },
     {
       "id": 12,
       "game_id": 4,
