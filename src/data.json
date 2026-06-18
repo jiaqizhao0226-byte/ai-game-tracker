@@ -1,6 +1,22 @@
 {
   "games": [
     {
+      "id": 27,
+      "product_name": "LoveyDovey",
+      "company_name": "TainAI, Inc.",
+      "status": "已上线",
+      "description": "一款来自韩国的AI情感陪伴应用，在早期AI陪伴产品中脱颖而出。凭借细致的角色设定、阶梯式好感度机制与NSFW模式，LoveyDovey精准击中了东亚（特别是梦女群体）的情感需求，主打情感放大而非现实模拟。其仅有15人的团队创造了极高的商业效率，年化订阅收入达1689万美元，曾入选a16z移动端AI应用Top 100榜单且位列亚洲第一。",
+      "updated_at": "2026-06-18 02:50:39",
+      "url": "https://apps.apple.com/us/app/loveydovey-dream-ai-chats/id6468766519",
+      "company_size": "创业公司",
+      "funding_round": "未融资",
+      "tags": "情感陪伴, a16z, 韩国, 高收入, 梦女向",
+      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/91/f7/8091f7f4-8691-9bab-b95a-07c6e203419f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "region": "海外",
+      "gameplay_main": "AI陪伴",
+      "gameplay_sub": "初代Chatbot"
+    },
+    {
       "id": 26,
       "product_name": "历史模拟器：崇祯",
       "company_name": "青干工作室",
@@ -418,6 +434,14 @@
     }
   ],
   "events": [
+    {
+      "id": 28,
+      "game_id": 27,
+      "event_type": "产品动态",
+      "event_date": "2024-05",
+      "content": "入选 a16z 发布的《Top 100 Gen Gen AI Consumer Apps》榜单，位居亚洲第一，当时月流水达 76 万美元，年化订阅收入达1689万美元。",
+      "created_at": "2026-06-18 02:50:39"
+    },
     {
       "id": 27,
       "game_id": 26,
