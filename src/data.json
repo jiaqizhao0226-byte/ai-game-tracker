@@ -609,22 +609,6 @@
       "gameplay_sub": "通用"
     },
     {
-      "id": 23,
-      "product_name": "超参数AI游戏",
-      "company_name": "超参数科技 / 阁道科技",
-      "status": "研发中",
-      "description": "超参数科技自2019年起专注游戏AI，曾推出《活的长安城》等演示Demo。其全资子公司阁道科技正在开发太空探索模拟经营类AI原生游戏《遥远行星：建造师》，由原腾讯极光计划制作人刘寒负责，通过AI驱动NPC行为、动态世界与剧情体验。",
-      "updated_at": "2026-06-17 07:23:42",
-      "url": "https://www.parameter.ai/",
-      "company_size": "创业公司",
-      "funding_round": "B轮及以上",
-      "tags": "AI底座, AI NPC, 动态世界",
-      "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-      "region": "国内",
-      "gameplay_main": "传统玩法+AI",
-      "gameplay_sub": "NPC"
-    },
-    {
       "id": 22,
       "product_name": "星野",
       "company_name": "MiniMax (稀宇科技)",
@@ -1044,7 +1028,7 @@
     },
     {
       "id": 17,
-      "game_id": 23,
+      "game_id": 13,
       "event_type": "融资动态",
       "event_date": "2025-H2",
       "content": "本轮融资金额3000万人民币，估值约3000万美金。",
