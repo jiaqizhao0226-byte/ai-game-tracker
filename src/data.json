@@ -1,6 +1,22 @@
 {
   "games": [
     {
+      "id": 64,
+      "product_name": "Astrocade",
+      "company_name": "Astrocade AI Ltd",
+      "status": "已上线",
+      "description": "由李飞飞担任CSO（首席科学官）参与创办的AI生成游戏平台。核心逻辑为“Zero-code”，用户仅需自然语言描述，几分钟内AstroBrain核心模型便能自动调度各种专门的AI模型生成地形、角色、音效与逻辑，打造出可玩的游戏。产品采用TikTok式的竖屏信息流分发模式，上线8个月用户突破2000万，月游玩量1.4亿次。",
+      "updated_at": "2026-06-18 03:18:39",
+      "url": "https://www.astrocade.com/",
+      "company_size": "创业公司",
+      "funding_round": "B轮及以上",
+      "tags": "游戏生成, UGC, 零代码, 李飞飞, 独角兽",
+      "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&auto=format&fit=crop",
+      "region": "海外",
+      "gameplay_main": "生成式AI驱动UGC",
+      "gameplay_sub": "通用"
+    },
+    {
       "id": 63,
       "product_name": "Fortnite AI维达",
       "company_name": "Epic Games",
@@ -994,6 +1010,14 @@
     }
   ],
   "events": [
+    {
+      "id": 30,
+      "game_id": 64,
+      "event_type": "融资动态",
+      "event_date": "2026-05",
+      "content": "正式宣布完成5600万美元A、B轮合并融资（估值跻身独角兽），由红杉资本和Sea Capital领投，参投方包括Google AI Futures Fund、英伟达等。此前2024年6月曾完成1200万美元种子轮融资。",
+      "created_at": "2026-06-18 03:18:39"
+    },
     {
       "id": 29,
       "game_id": 62,
