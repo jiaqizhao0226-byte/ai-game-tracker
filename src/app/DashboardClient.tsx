@@ -227,7 +227,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 }
 
 function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[], onClose: () => void }) {
-  const [activeTab, setActiveTab] = useState<'产品动态' | '融资动态'>('产品动态');
+  const [activeTab, setActiveTab] = useState<'产品动态' | '融资动态' | '相关文章'>('产品动态');
   const [expandedEventId, setExpandedEventId] = useState<number | null>(null);
   
   if (!game) return null;
@@ -335,6 +335,12 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
               >
                 融资动态
               </button>
+              <button 
+                onClick={() => setActiveTab('相关文章')}
+                className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold font-mono border-b-2 transition-colors ${activeTab === '相关文章' ? 'border-neutral-900 text-neutral-900' : 'border-transparent text-neutral-400 hover:text-neutral-600'}`}
+              >
+                相关文章
+              </button>
             </div>
             
             <div className="flex-1 overflow-y-auto p-5 bg-neutral-50/50">
@@ -352,15 +358,21 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                     >
                       <div className="flex justify-between items-start mb-3">
                         <div className="flex items-center gap-2">
-                          <span className={`text-[9px] uppercase font-bold tracking-widest px-1.5 py-0.5 ${evt.event_type === '融资动态' ? 'bg-emerald-100 text-emerald-800' : 'bg-indigo-100 text-indigo-800'}`}>
+                          <span className={`text-[9px] uppercase font-bold tracking-widest px-1.5 py-0.5 ${evt.event_type === '融资动态' ? 'bg-emerald-100 text-emerald-800' : evt.event_type === '相关文章' ? 'bg-amber-100 text-amber-800' : 'bg-indigo-100 text-indigo-800'}`}>
                             {evt.event_type}
                           </span>
                           <span className="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5">{evt.event_date}</span>
                         </div>
                       </div>
-                      <p className={`text-xs text-neutral-700 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
-                        {evt.content}
-                      </p>
+                      {evt.url ? (
+                        <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 hover:text-indigo-800 hover:underline leading-relaxed flex items-center gap-1 font-semibold" onClick={(e) => e.stopPropagation()}>
+                          {evt.content} <ExternalLink className="w-3 h-3 inline" />
+                        </a>
+                      ) : (
+                        <p className={`text-xs text-neutral-700 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
+                          {evt.content}
+                        </p>
+                      )}
                       {!isExpanded && evt.content.length > 50 && (
                         <div className="mt-2 text-[10px] text-neutral-400 font-mono flex items-center">
                           点击展开

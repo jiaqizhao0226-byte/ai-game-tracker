@@ -1011,6 +1011,96 @@
   ],
   "events": [
     {
+      "id": 40,
+      "game_id": 2,
+      "event_type": "相关文章",
+      "event_date": "2024-10",
+      "content": "千万月流水乙男手游创始人打造3D AI女友，PV刚上线、估值已破亿",
+      "url": "https://www.sohu.com/a/817896046_116132",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 39,
+      "game_id": 8,
+      "event_type": "相关文章",
+      "event_date": "2024-10",
+      "content": "95后创业AI游戏陪玩，留存付费双高！已适配《黑神话》，团队全员二次元",
+      "url": "https://www.qbitai.com/2024/10/197945.html",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 38,
+      "game_id": 3,
+      "event_type": "相关文章",
+      "event_date": "2025-08",
+      "content": "1000万UGC！《逆水寒》“AI剧组”如何重塑MMO，并引燃一场“同门之争”？",
+      "url": "http://www.gamelook.com.cn/2025/08/576436/",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 37,
+      "game_id": 62,
+      "event_type": "相关文章",
+      "event_date": "2026-06",
+      "content": "Steam页面：黑箱：无限构筑 (The AI-Native Survivor-like)",
+      "url": "https://store.steampowered.com/app/4437020/",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 36,
+      "game_id": 12,
+      "event_type": "相关文章",
+      "event_date": "2025-12",
+      "content": "三本院校出身，逆袭拿下诺奖？两位95后博士生写了部“神人游戏”",
+      "url": "https://www.huxiu.com/article/4824698.html",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 35,
+      "game_id": 4,
+      "event_type": "相关文章",
+      "event_date": "2025-10",
+      "content": "获三轮数千万融资，前腾讯技术策划创业：“这一行舍我其谁？”",
+      "url": "https://www.163.com/dy/article/KGGS3O7U05268BP2.html",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 34,
+      "game_id": 58,
+      "event_type": "相关文章",
+      "event_date": "2025-03",
+      "content": "Wolf Games, backed by ‘Law & Order’ creator, uses AI to create murder mystery games",
+      "url": "https://techcrunch.com/2025/03/12/wolf-games-backed-by-law-order-creator-uses-ai-to-create-murder-mystery-games/",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 33,
+      "game_id": 27,
+      "event_type": "相关文章",
+      "event_date": "2024-05",
+      "content": "EP#09 蚂蚁AI战略、多邻国、恋爱陪伴、东方命理、Arc复盘等 (提及LoveyDovey商业成就)",
+      "url": "https://www.zengzhang.ai/p/ep09-aiarc",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 32,
+      "game_id": 64,
+      "event_type": "相关文章",
+      "event_date": "2026-05",
+      "content": "红杉、谷歌、英伟达联手押注，李飞飞站台的AI游戏平台Astrocade获5600万美元融资",
+      "url": "https://finance.sina.com.cn/stock/aigcy/2026-05-09/doc-inhxhqpf1492773.shtml",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
+      "id": 31,
+      "game_id": 26,
+      "event_type": "相关文章",
+      "event_date": "2026-05",
+      "content": "重生之我是崇祯，但满朝文武皆 AI ｜对话 AI 原生游戏《历史模拟器：崇祯》制作人",
+      "url": "https://www.pingwest.com/a/313764",
+      "created_at": "2026-06-18 03:31:53"
+    },
+    {
       "id": 30,
       "game_id": 64,
       "event_type": "融资动态",
