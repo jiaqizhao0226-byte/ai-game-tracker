@@ -236,7 +236,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
 
   return (
     <div className="fixed inset-0 bg-neutral-900/40 backdrop-blur-[2px] z-50 flex items-center justify-center p-4">
-      <div className="bg-white border border-neutral-300 shadow-2xl w-full max-w-5xl flex flex-col max-h-[85vh]">
+      <div className="bg-white border border-neutral-300 shadow-2xl w-full max-w-[90vw] xl:max-w-7xl flex flex-col max-h-[85vh]">
         <div className="flex justify-between items-center px-5 py-4 border-b border-neutral-200 bg-neutral-50">
           <h2 className="text-sm font-bold font-mono uppercase tracking-widest text-neutral-900 flex items-center gap-2">
             <TerminalSquare className="w-4 h-4" />
@@ -248,7 +248,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
         </div>
         
         <div className="flex-1 overflow-hidden flex flex-col md:flex-row">
-          <div className="overflow-y-auto p-5 md:w-[45%] border-r border-neutral-200">
+          <div className="overflow-y-auto p-5 md:w-[50%] border-r border-neutral-200">
             <h3 className="text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-4 font-mono border-b border-neutral-100 pb-2">
               核心属性
             </h3>
@@ -285,10 +285,12 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                 </div>
               </div>
 
+              {!game.team_background && !game.product_intro && (
               <div className="flex flex-col gap-1.5">
                 <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">核心简介</label>
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 whitespace-pre-wrap leading-relaxed">{game.description}</div>
               </div>
+            )}
 
               {game.team_background && (
                 <div className="flex flex-col gap-1.5 mt-2">
@@ -335,7 +337,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
             </div>
           </div>
 
-          <div className="md:w-[55%] flex flex-col bg-white overflow-hidden relative">
+          <div className="md:w-[50%] flex flex-col bg-white overflow-hidden relative">
             <div className="flex border-b border-neutral-100 bg-white shrink-0 px-5 pt-3">
               <button 
                 onClick={() => setActiveTab('产品动态')}
