@@ -99,18 +99,18 @@
     {
       "product_name": "Public Eye",
       "company_name": "Wolf Games",
-      "status": "研发中",
-      "description": "AI生成的“每日谋杀谜题/侦探”类游戏。公司获400万美元种子轮融资。",
+      "status": "测试中",
+      "description": "一款由知名犯罪题材美剧《法律与秩序》（Law & Order）创作者之子 Elliot Wolf 创办的 Wolf Games 开发的生成式 AI 探案游戏。玩家在反乌托邦近未来扮演侦探，通过收集线索和 AI 助手（ADA）的指引，每天解决由 AI 引擎实时生成的谋杀谜题案。由于与NBC环球达成合作，其具有丰富的影视IP资源基础。目前游戏完成900万美元A轮融资。",
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "A轮",
       "tags": "推理探案",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "对话模拟",
-      "image_url": "https://images.unsplash.com/photo-1509248961158-e54f6934749c?w=1000&auto=format&fit=crop",
+      "image_url": "https://framerusercontent.com/images/RuCtqiy8UCMMta3wbOBIhSGU.png",
       "id": 58,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null
+      "url": "https://www.wolfgames.net/"
     },
     {
       "product_name": "星海自走牌",
