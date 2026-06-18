@@ -69,7 +69,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       g.gameplay_type.toLowerCase().includes(search.toLowerCase()) ||
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
     
-    const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || filterSubTypes.includes(g.gameplay_sub));
+    const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
     const matchSize = filterSizes.length === 0 || filterSizes.includes(g.company_size);
     const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
     const matchStatus = filterStatuses.length === 0 || filterStatuses.includes(g.status);
@@ -78,7 +78,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   });
 
   
-  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).map(g => g.gameplay_sub))).filter(Boolean);
+  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
   
   
   
