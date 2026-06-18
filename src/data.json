@@ -1,6 +1,24 @@
 {
   "games": [
     {
+      "id": 65,
+      "product_name": "Ubisoft AI Teammates (Pablo & Sofia)",
+      "company_name": "育碧 (Ubisoft)",
+      "status": "早期/原型",
+      "description": "育碧（Ubisoft）推出的实验性AI队友项目（代表原型角色为 Pablo 和 Sofia）。该项目底层接入 Google 的 Gemini 大语言模型，并通过行为树（Behavior Tree）与现有游戏AI无缝连接。在技术落地方面，它创新性地使用环境查询系统（EQS）来确定战术位置，并结合资产标记与同义词库技术，成功解决并使得AI能精准理解玩家语音中诸如“蓝色箱子”等模糊名词，展现了极强的指令解析与环境感知能力。",
+      "updated_at": "2026-06-18 03:44:28",
+      "url": null,
+      "company_size": "大厂",
+      "funding_round": "已上市",
+      "tags": "AI队友, Gemini, 行为树, 实验项目",
+      "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800",
+      "region": "海外",
+      "gameplay_main": "传统玩法+AI",
+      "gameplay_sub": "队友",
+      "team_background": "由全球知名游戏开发商育碧（Ubisoft）巴黎工作室负责研发，作为其实验性 AI 探索矩阵（如前期的 NEO NPCs 项目）的重要延续部分，进一步探索大模型在 3D 复杂环境下的战术执行能力。",
+      "product_intro": "此原型并非单纯的“聊天机器人在游戏中”，而是致力于解决大模型与传统游戏控制逻辑结合的核心痛点。团队引入了 Google Gemini 2 大模型，并通过“环境查询系统 (EQS)”让大模型拥有空间概念。配合底层预设的同义词库和资产标记，AI 队友能够像真实玩家一样解析极具模糊性的语音指令（例如“去那个蓝色箱子后面掩护我”），并将其转化为具体的行为树动作去执行。"
+    },
+    {
       "id": 64,
       "product_name": "Astrocade",
       "company_name": "Astrocade AI Ltd",
@@ -856,6 +874,14 @@
     }
   ],
   "events": [
+    {
+      "id": 41,
+      "game_id": 65,
+      "event_type": "产品动态",
+      "event_date": "2025-11",
+      "content": "11月22日，育碧正式公布并演示了其最新的实验性AI队友 Pablo 和 Sofia。该原型展示了如何利用 Gemini 模型、环境查询系统(EQS)及资产标记来解析模糊的语音战术指令。",
+      "created_at": "2026-06-18 03:44:28"
+    },
     {
       "id": 40,
       "game_id": 2,
