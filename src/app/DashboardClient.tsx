@@ -61,28 +61,27 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterSizes, setFilterSizes] = useState<string[]>([]);
   const [filterRegions, setFilterRegions] = useState<string[]>([]);
   const [filterStatuses, setFilterStatuses] = useState<string[]>([]);
+  const [filterPlatforms, setFilterPlatforms] = useState<string[]>([]);
   const [viewingGame, setViewingGame] = useState<any | null>(null);
 
   const filteredGames = games.filter(g => {
     const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) || 
       g.company_name.toLowerCase().includes(search.toLowerCase()) ||
-      g.gameplay_type.toLowerCase().includes(search.toLowerCase()) ||
+      (g.gameplay_main && g.gameplay_main.toLowerCase().includes(search.toLowerCase())) ||
+      (g.gameplay_sub && g.gameplay_sub.toLowerCase().includes(search.toLowerCase())) ||
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
     
     const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
     const matchSize = filterSizes.length === 0 || filterSizes.includes(g.company_size);
     const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
     const matchStatus = filterStatuses.length === 0 || filterStatuses.includes(g.status);
+    const matchPlatform = filterPlatforms.length === 0 || filterPlatforms.includes(g.platform);
 
-    return matchSearch && matchType && matchSize && matchRegion && matchStatus;
+    return matchSearch && matchType && matchSize && matchRegion && matchStatus && matchPlatform;
   });
 
   
   const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
-  
-  
-  
-  const uniqueStatuses = Array.from(new Set(games.map(g => g.status))).filter(Boolean);
 
   return (
     <div>
@@ -131,9 +130,16 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             
             <MultiSelect 
               label="当前状态" 
-              options={["已上线", "测试中", "研发中", "早期/原型", "停止开发", "未知", ...(uniqueStatuses.filter(st => !["已上线", "测试中", "研发中", "早期/原型", "停止开发", "未知"].includes(st as string)) as string[])]} 
+              options={["已上线", "测试中", "研发中", "早期·原型", "未知"]} 
               selected={filterStatuses} 
               onChange={setFilterStatuses} 
+            />
+            
+            <MultiSelect 
+              label="平台" 
+              options={["Steam", "移动端", "网页", "PC", "桌面端", "多平台", "未知"]} 
+              selected={filterPlatforms} 
+              onChange={setFilterPlatforms} 
             />
           </div>
         </div>
@@ -179,6 +185,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-800 text-neutral-100">
                   {game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` - ${game.gameplay_sub}` : ""}
                 </span>
+                {game.platform && game.platform !== '未知' && (
+                  <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
+                    {game.platform}
+                  </span>
+                )}
                 {game.company_size && game.company_size !== '未知' && (
                   <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
                     {game.company_size}
@@ -186,7 +197,12 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 )}
                 {game.funding_round && game.funding_round !== '未知' && (
                   <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
-                    {game.funding_round}
+                    {game.funding_round}{game.funding_amount ? ` ${game.funding_amount}` : ""}
+                  </span>
+                )}
+                {game.launch_date && (
+                  <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-amber-50 text-amber-700 border border-amber-100">
+                    {game.launch_date}
                   </span>
                 )}
                 {game.tags && game.tags.split(',').filter((t: string) => t.trim()).map((tag: string, i: number) => (
@@ -266,7 +282,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                 <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.company_name}</div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">团队规模</label>
                   <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.company_size || '未知'}</div>
@@ -275,7 +291,24 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                   <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">融资轮次</label>
                   <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.funding_round || '未知'}</div>
                 </div>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">平台</label>
+                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.platform || '未知'}</div>
+                </div>
               </div>
+
+              {(game.funding_amount || game.funding_detail) && (
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">融资金额</label>
+                    <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.funding_amount || '-'}</div>
+                  </div>
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">融资详情</label>
+                    <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.funding_detail || '-'}</div>
+                  </div>
+                </div>
+              )}
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
@@ -287,6 +320,13 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                   <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.status}</div>
                 </div>
               </div>
+
+              {game.launch_date && (
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">上线 / 预计时间</label>
+                  <div className="px-3 py-2 text-sm bg-amber-50 border border-amber-100 text-amber-800">{game.launch_date}</div>
+                </div>
+              )}
 
               {!game.team_background && !game.product_intro && (
               <div className="flex flex-col gap-1.5">
