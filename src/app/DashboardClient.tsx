@@ -2,7 +2,8 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Search, TerminalSquare, Activity, ExternalLink, Filter, X, ChevronDown, Check } from 'lucide-react';
+import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check } from 'lucide-react';
+import Link from 'next/link';
 
 function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: string[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +63,6 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterRegions, setFilterRegions] = useState<string[]>([]);
   const [filterStatuses, setFilterStatuses] = useState<string[]>([]);
   const [filterPlatforms, setFilterPlatforms] = useState<string[]>([]);
-  const [viewingGame, setViewingGame] = useState<any | null>(null);
 
   const filteredGames = games.filter(g => {
     const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) || 
@@ -154,9 +154,9 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
           const gameEvents = events.filter(e => e.game_id === game.id);
           const hasRecentEvents = gameEvents.length > 0;
           return (
-          <div 
-            key={game.id} 
-            onClick={() => setViewingGame(game)}
+          <Link
+            key={game.id}
+            href={`/game/${game.id}`}
             className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
             {game.image_url ? (
@@ -234,236 +234,10 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 <span>编号:{game.id.toString().padStart(4, '0')}</span>
               </div>
             </div>
-          </div>
+          </Link>
         )})}
       </div>
-
-      {viewingGame && (
-        <GameModal 
-          game={viewingGame} 
-          gameEvents={events.filter(e => e.game_id === viewingGame.id)}
-          onClose={() => setViewingGame(null)} 
-        />
-      )}
     </div>
   );
 }
 
-function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[], onClose: () => void }) {
-  const [activeTab, setActiveTab] = useState<'产品动态' | '融资动态' | '相关文章'>('产品动态');
-  const [expandedEventId, setExpandedEventId] = useState<number | null>(null);
-  
-  if (!game) return null;
-  
-  const filteredEvents = gameEvents.filter(e => e.event_type === activeTab);
-
-  return (
-    <div className="fixed inset-0 bg-neutral-900/40 backdrop-blur-[2px] z-50 flex items-center justify-center p-4">
-      <div className="bg-white border border-neutral-300 shadow-2xl w-full max-w-[90vw] xl:max-w-7xl flex flex-col max-h-[85vh]">
-        <div className="flex justify-between items-center px-5 py-4 border-b border-neutral-200 bg-neutral-50">
-          <h2 className="text-sm font-bold font-mono uppercase tracking-widest text-neutral-900 flex items-center gap-2">
-            <TerminalSquare className="w-4 h-4" />
-            数据档案 // {game.product_name}
-          </h2>
-          <button onClick={onClose} className="text-neutral-400 hover:text-neutral-900 transition-colors">
-            <X className="h-4 w-4" />
-          </button>
-        </div>
-        
-        <div className="flex-1 overflow-hidden flex flex-col md:flex-row">
-          <div className="overflow-y-auto p-5 md:w-[50%] border-r border-neutral-200">
-            <h3 className="text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-4 font-mono border-b border-neutral-100 pb-2">
-              核心属性
-            </h3>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">产品名称</label>
-                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.product_name}</div>
-              </div>
-              
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">公司 / 团队</label>
-                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.company_name}</div>
-              </div>
-
-              <div className="grid grid-cols-3 gap-4">
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">团队规模</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.company_size || '未知'}</div>
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">融资轮次</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.funding_round || '未知'}</div>
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">平台</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.platform || '未知'}</div>
-                </div>
-              </div>
-
-              {(game.funding_amount || game.funding_detail) && (
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex flex-col gap-1.5">
-                    <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">融资金额</label>
-                    <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.funding_amount || '-'}</div>
-                  </div>
-                  <div className="flex flex-col gap-1.5">
-                    <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">融资详情</label>
-                    <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.funding_detail || '-'}</div>
-                  </div>
-                </div>
-              )}
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">玩法类型</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` (${game.gameplay_sub})` : ""}</div>
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">当前状态</label>
-                  <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">{game.status}</div>
-                </div>
-              </div>
-
-              {game.launch_date && (
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">上线 / 预计时间</label>
-                  <div className="px-3 py-2 text-sm bg-amber-50 border border-amber-100 text-amber-800">{game.launch_date}</div>
-                </div>
-              )}
-
-              {!game.team_background && !game.product_intro && (
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">核心简介</label>
-                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 whitespace-pre-wrap leading-relaxed">{game.description}</div>
-              </div>
-            )}
-
-              {game.team_background && (
-                <div className="flex flex-col gap-1.5 mt-2">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide text-indigo-700">团队背景</label>
-                  <div className="px-3 py-3 text-sm bg-indigo-50/30 border border-indigo-100 text-neutral-800 whitespace-pre-wrap leading-relaxed rounded-sm">{game.team_background}</div>
-                </div>
-              )}
-
-              {game.product_intro && (
-                <div className="flex flex-col gap-1.5 mt-2">
-                  <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide text-emerald-700">详细产品介绍</label>
-                  <div className="px-3 py-3 text-sm bg-emerald-50/30 border border-emerald-100 text-neutral-800 whitespace-pre-wrap leading-relaxed rounded-sm">{game.product_intro}</div>
-                </div>
-              )}
-
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">产品配图</label>
-                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 break-all">
-                  {game.image_url ? (
-                    <div className="flex flex-col gap-2">
-                      <a href={game.image_url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{game.image_url}</a>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={game.image_url} alt="Cover Preview" className="h-20 w-auto rounded border border-neutral-200 object-cover" />
-                    </div>
-                  ) : <span className="text-neutral-400">暂无公开图片（产品处于内测/小程序阶段）</span>}
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">相关链接</label>
-                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800 break-all">
-                  {game.url ? (
-                    <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">{game.url}</a>
-                  ) : '-'}
-                </div>
-              </div>
-                  
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[11px] font-bold text-neutral-600 uppercase tracking-wide">自定义标签</label>
-                <div className="px-3 py-2 text-sm bg-neutral-50 border border-neutral-200 text-neutral-800">
-                  {game.tags || '-'}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="md:w-[50%] flex flex-col bg-white overflow-hidden relative">
-            <div className="flex border-b border-neutral-100 bg-white shrink-0 px-5 pt-3">
-              <button 
-                onClick={() => setActiveTab('产品动态')}
-                className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold font-mono border-b-2 transition-colors ${activeTab === '产品动态' ? 'border-neutral-900 text-neutral-900' : 'border-transparent text-neutral-400 hover:text-neutral-600'}`}
-              >
-                产品动态
-              </button>
-              <button 
-                onClick={() => setActiveTab('融资动态')}
-                className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold font-mono border-b-2 transition-colors ${activeTab === '融资动态' ? 'border-neutral-900 text-neutral-900' : 'border-transparent text-neutral-400 hover:text-neutral-600'}`}
-              >
-                融资动态
-              </button>
-              <button 
-                onClick={() => setActiveTab('相关文章')}
-                className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold font-mono border-b-2 transition-colors ${activeTab === '相关文章' ? 'border-neutral-900 text-neutral-900' : 'border-transparent text-neutral-400 hover:text-neutral-600'}`}
-              >
-                相关文章
-              </button>
-            </div>
-            
-            <div className="flex-1 overflow-y-auto p-5 bg-neutral-50/50">
-              {filteredEvents.length === 0 ? (
-                <div className="text-center py-10 text-neutral-400 text-xs font-mono">暂无{activeTab}记录。</div>
-              ) : (
-                <div className="grid grid-cols-1 gap-3">
-                  {filteredEvents.map(evt => {
-                    const isExpanded = expandedEventId === evt.id;
-                    return (
-                    <div 
-                      key={evt.id} 
-                      onClick={() => setExpandedEventId(isExpanded ? null : evt.id)}
-                      className="bg-white border border-neutral-200 p-4 shadow-sm hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col"
-                    >
-                      <div className="flex justify-between items-start mb-3">
-                        <div className="flex items-center gap-2">
-                          <span className={`text-[9px] uppercase font-bold tracking-widest px-1.5 py-0.5 ${evt.event_type === '融资动态' ? 'bg-emerald-100 text-emerald-800' : evt.event_type === '相关文章' ? 'bg-amber-100 text-amber-800' : 'bg-indigo-100 text-indigo-800'}`}>
-                            {evt.event_type}
-                          </span>
-                          <span className="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5">{evt.event_date}</span>
-                        </div>
-                      </div>
-                      {evt.url ? (
-                        <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 hover:text-indigo-800 hover:underline leading-relaxed flex items-center gap-1 font-semibold" onClick={(e) => e.stopPropagation()}>
-                          {evt.content} <ExternalLink className="w-3 h-3 inline" />
-                        </a>
-                      ) : (
-                        <p className={`text-xs text-neutral-700 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
-                          {evt.content}
-                        </p>
-                      )}
-                      {!isExpanded && evt.content.length > 50 && (
-                        <div className="mt-2 text-[10px] text-neutral-400 font-mono flex items-center">
-                          点击展开
-                        </div>
-                      )}
-                      {isExpanded && (
-                        <div className="mt-2 text-[10px] text-neutral-400 font-mono flex items-center">
-                          点击收起
-                        </div>
-                      )}
-                    </div>
-                  )})}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-
-        <div className="px-5 py-3 bg-neutral-100 border-t border-neutral-200 flex justify-end items-center shrink-0">
-          <button 
-            type="button" 
-            onClick={onClose}
-            className="px-6 py-2 text-xs font-bold uppercase tracking-wider bg-neutral-900 text-white hover:bg-neutral-800"
-          >
-            关闭
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
