@@ -219,7 +219,7 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
             <div className="relative pl-6">
               {/* Vertical line */}
               <div className="absolute left-[7px] top-2 bottom-2 w-px bg-neutral-200" />
-              {allEvents.map((evt, idx) => {
+              {allEvents.map((evt) => {
                 const dotColor = evt.event_type === '融资动态' ? 'bg-emerald-500' :
                   evt.event_type === '相关文章' ? 'bg-amber-500' : 'bg-indigo-500';
                 const badgeBg = evt.event_type === '融资动态' ? 'bg-emerald-100 text-emerald-700' :
