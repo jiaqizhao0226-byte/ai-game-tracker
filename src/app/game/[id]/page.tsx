@@ -152,10 +152,9 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
             )}
           </div>
 
-          {/* Right sidebar: attributes + events */}
-          <div className="lg:w-[380px] shrink-0">
-            {/* Attributes card */}
-            <div className="bg-white border border-neutral-200 p-5 mb-6">
+          {/* Right sidebar: attributes only */}
+          <div className="lg:w-[340px] shrink-0">
+            <div className="bg-white border border-neutral-200 p-5">
               <h3 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-4 font-mono border-b border-neutral-100 pb-2">
                 核心属性
               </h3>
@@ -205,47 +204,44 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                 )}
               </div>
             </div>
-
-            {/* Events timeline */}
-            <div className="bg-white border border-neutral-200 p-5">
-              <h3 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-4 font-mono border-b border-neutral-100 pb-2">
-                动态时间线 ({allEvents.length})
-              </h3>
-              {allEvents.length === 0 ? (
-                <div className="text-center py-6 text-neutral-400 text-xs font-mono">暂无动态记录。</div>
-              ) : (
-                <div className="flex flex-col gap-3">
-                  {allEvents.map(evt => {
-                    const colorClass = evt.event_type === '融资动态' ? 'bg-emerald-500' :
-                      evt.event_type === '相关文章' ? 'bg-amber-500' : 'bg-indigo-500';
-                    return (
-                      <div key={evt.id} className="flex gap-3">
-                        <div className="flex flex-col items-center shrink-0">
-                          <div className={`w-2 h-2 rounded-full ${colorClass} mt-1.5`} />
-                          <div className="w-px flex-1 bg-neutral-200" />
-                        </div>
-                        <div className="flex-1 pb-3">
-                          <div className="flex items-center gap-2 mb-1">
-                            <span className={`text-[9px] uppercase font-bold tracking-wider text-white px-1.5 py-0.5 ${colorClass}`}>
-                              {evt.event_type}
-                            </span>
-                            <span className="text-[10px] font-mono text-neutral-500">{evt.event_date}</span>
-                          </div>
-                          {evt.url ? (
-                            <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 hover:underline leading-relaxed flex items-start gap-1">
-                              {evt.content} <ExternalLink className="w-3 h-3 shrink-0 mt-0.5" />
-                            </a>
-                          ) : (
-                            <p className="text-xs text-neutral-600 leading-relaxed">{evt.content}</p>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
           </div>
+        </div>
+
+        {/* Events timeline - full width section */}
+        <div className="mt-8">
+          <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-4 font-mono border-b-2 border-neutral-800 pb-2 flex items-center justify-between">
+            <span>动态时间线</span>
+            <span className="text-neutral-400">共 {allEvents.length} 条</span>
+          </h3>
+          {allEvents.length === 0 ? (
+            <div className="text-center py-10 text-neutral-400 text-sm font-mono bg-white border border-neutral-200">暂无动态记录。</div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+              {allEvents.map(evt => {
+                const colorClass = evt.event_type === '融资动态' ? 'bg-emerald-500' :
+                  evt.event_type === '相关文章' ? 'bg-amber-500' : 'bg-indigo-500';
+                const borderClass = evt.event_type === '融资动态' ? 'border-l-emerald-500' :
+                  evt.event_type === '相关文章' ? 'border-l-amber-500' : 'border-l-indigo-500';
+                return (
+                  <div key={evt.id} className={`bg-white border border-neutral-200 border-l-4 ${borderClass} p-4 flex flex-col`}>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className={`text-[9px] uppercase font-bold tracking-wider text-white px-2 py-0.5 ${colorClass}`}>
+                        {evt.event_type}
+                      </span>
+                      <span className="text-xs font-mono text-neutral-500">{evt.event_date}</span>
+                    </div>
+                    {evt.url ? (
+                      <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline leading-relaxed flex items-start gap-1">
+                        {evt.content} <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                      </a>
+                    ) : (
+                      <p className="text-sm text-neutral-700 leading-relaxed">{evt.content}</p>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
 
         {/* Back button */}
