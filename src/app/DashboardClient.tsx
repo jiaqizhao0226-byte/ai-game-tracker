@@ -159,10 +159,14 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             onClick={() => setViewingGame(game)}
             className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
-            {game.image_url && (
+            {game.image_url ? (
               <div className="w-full h-32 bg-neutral-100 border-b border-neutral-100 shrink-0 relative">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={game.image_url} alt={game.product_name} className="w-full h-full object-cover" />
+              </div>
+            ) : (
+              <div className="w-full h-32 bg-gradient-to-br from-neutral-800 to-neutral-600 border-b border-neutral-100 shrink-0 relative flex items-center justify-center">
+                <span className="text-white font-bold text-lg tracking-tight px-4 text-center line-clamp-2">{game.product_name}</span>
               </div>
             )}
             <div className="p-5 flex-1 flex flex-col">
@@ -358,7 +362,7 @@ function GameModal({ game, gameEvents, onClose }: { game: any, gameEvents: any[]
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={game.image_url} alt="Cover Preview" className="h-20 w-auto rounded border border-neutral-200 object-cover" />
                     </div>
-                  ) : '-'}
+                  ) : <span className="text-neutral-400">暂无公开图片（产品处于内测/小程序阶段）</span>}
                 </div>
               </div>
 
