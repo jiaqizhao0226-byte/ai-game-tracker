@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import data from '../../../data.json';
 import Link from 'next/link';
-import { ArrowLeft, ChevronLeft, Calendar, Building2, DollarSign, Gamepad2, Link2 } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, Link2 } from 'lucide-react';
 import EventsTabs from './EventsTabs';
 
 export function generateStaticParams() {
@@ -68,39 +68,6 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
             <h1 className="text-3xl font-bold text-neutral-900 tracking-tight mb-2">{game.product_name}</h1>
             <p className="text-sm text-neutral-500 mb-3">{game.company_name}</p>
             <p className="text-sm text-neutral-600 leading-relaxed">{game.description}</p>
-          </div>
-        </div>
-
-        {/* Info cards row */}
-        <div className="mb-8 grid grid-cols-2 md:grid-cols-4 gap-3">
-          <div className="bg-white border border-neutral-200 p-4">
-            <div className="flex items-center gap-1.5 mb-2 text-neutral-400">
-              <Building2 className="w-3.5 h-3.5" />
-              <span className="text-[10px] uppercase tracking-wider font-mono font-bold">团队规模</span>
-            </div>
-            <p className="text-sm font-semibold text-neutral-900">{game.company_size || '未知'}</p>
-          </div>
-          <div className="bg-white border border-neutral-200 p-4">
-            <div className="flex items-center gap-1.5 mb-2 text-neutral-400">
-              <DollarSign className="w-3.5 h-3.5" />
-              <span className="text-[10px] uppercase tracking-wider font-mono font-bold">融资</span>
-            </div>
-            <p className="text-sm font-semibold text-neutral-900">{game.funding_round || '未知'}</p>
-            {game.funding_amount && <p className="text-xs text-neutral-500 mt-0.5">{game.funding_amount}</p>}
-          </div>
-          <div className="bg-white border border-neutral-200 p-4">
-            <div className="flex items-center gap-1.5 mb-2 text-neutral-400">
-              <Calendar className="w-3.5 h-3.5" />
-              <span className="text-[10px] uppercase tracking-wider font-mono font-bold">上线时间</span>
-            </div>
-            <p className="text-sm font-semibold text-neutral-900">{game.launch_date || '未知'}</p>
-          </div>
-          <div className="bg-white border border-neutral-200 p-4">
-            <div className="flex items-center gap-1.5 mb-2 text-neutral-400">
-              <Gamepad2 className="w-3.5 h-3.5" />
-              <span className="text-[10px] uppercase tracking-wider font-mono font-bold">区域</span>
-            </div>
-            <p className="text-sm font-semibold text-neutral-900">{game.region || '未知'}</p>
           </div>
         </div>
 
