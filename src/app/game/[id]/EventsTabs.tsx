@@ -47,8 +47,8 @@ export default function EventsTabs({ productEvents, fundingEvents, articleEvents
         ))}
       </div>
 
-      {/* Timeline */}
-      <div className="relative pl-6">
+      {/* Timeline - fixed min height to prevent page jump */}
+      <div className="relative pl-6 min-h-[200px]">
         <div className={`absolute left-[7px] top-2 bottom-2 w-px ${current.line}`} />
         {current.events.map((evt: any) => (
           <div key={evt.id} className="relative pb-5 last:pb-0">
