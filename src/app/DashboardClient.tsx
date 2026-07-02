@@ -107,11 +107,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={setFilterRegions} 
             />
             
-            <MultiSelect 
-              label="玩法大类" 
-              options={["AI陪伴", "传统玩法+AI", "AI原生玩法", "生成式AI驱动UGC", "可交互视频", "Agent类/通用智能体", "其他"]} 
-              selected={filterMainTypes} 
-              onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }} 
+            <MultiSelect
+              label="玩法大类"
+              options={["AI陪伴", "传统玩法+AI", "AI原生玩法", "生成式AI驱动UGC", "可交互视频", "其他"]}
+              selected={filterMainTypes}
+              onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }}
             />
             
             <MultiSelect 
