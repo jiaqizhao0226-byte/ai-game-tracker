@@ -90,7 +90,7 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                 <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-4 font-mono border-b-2 border-neutral-800 pb-2">
                   核心团队
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                   {game.team_members.map((member: any, i: number) => (
                     <div key={i} className="bg-white border border-neutral-200 p-4">
                       <div className="flex items-center gap-3 mb-2">
@@ -106,13 +106,16 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                     </div>
                   ))}
                 </div>
+                {game.team_background && (
+                  <p className="text-sm text-neutral-500 leading-relaxed">{game.team_background}</p>
+                )}
               </div>
             )}
 
-            {game.team_background && (
+            {!game.team_members && game.team_background && (
               <div className="mb-6">
                 <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-3 font-mono border-b-2 border-neutral-800 pb-2">
-                  公司背景
+                  团队背景
                 </h3>
                 <div className="text-sm text-neutral-700 whitespace-pre-wrap leading-7">{game.team_background}</div>
               </div>
