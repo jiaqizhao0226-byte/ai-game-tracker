@@ -207,47 +207,49 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
           </div>
         </div>
 
-        {/* Events timeline - full width vertical timeline */}
+        {/* Events - split into 3 sections */}
         <div className="mt-8">
-          <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-6 font-mono border-b-2 border-neutral-800 pb-2 flex items-center justify-between">
-            <span>动态时间线</span>
-            <span className="text-neutral-400">共 {allEvents.length} 条</span>
+          <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-6 font-mono border-b-2 border-neutral-800 pb-2">
+            动态记录
           </h3>
+
           {allEvents.length === 0 ? (
             <div className="text-center py-10 text-neutral-400 text-sm font-mono bg-white border border-neutral-200">暂无动态记录。</div>
           ) : (
-            <div className="relative pl-6">
-              {/* Vertical line */}
-              <div className="absolute left-[7px] top-2 bottom-2 w-px bg-neutral-200" />
-              {allEvents.map((evt) => {
-                const dotColor = evt.event_type === '融资动态' ? 'bg-emerald-500' :
-                  evt.event_type === '相关文章' ? 'bg-amber-500' : 'bg-indigo-500';
-                const badgeBg = evt.event_type === '融资动态' ? 'bg-emerald-100 text-emerald-700' :
-                  evt.event_type === '相关文章' ? 'bg-amber-100 text-amber-700' : 'bg-indigo-100 text-indigo-700';
-                return (
-                  <div key={evt.id} className="relative pb-8 last:pb-0">
-                    {/* Dot */}
-                    <div className={`absolute -left-[22px] top-1 w-3.5 h-3.5 rounded-full ${dotColor} border-2 border-white shadow-sm`} />
-                    {/* Date label */}
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-mono font-bold text-neutral-900">{evt.event_date}</span>
-                      <span className={`text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 ${badgeBg}`}>
-                        {evt.event_type}
-                      </span>
-                    </div>
-                    {/* Content */}
-                    <div className="bg-white border border-neutral-200 p-4">
-                      {evt.url ? (
-                        <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline leading-relaxed flex items-start gap-1">
-                          {evt.content} <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" />
-                        </a>
-                      ) : (
-                        <p className="text-sm text-neutral-700 leading-relaxed">{evt.content}</p>
-                      )}
-                    </div>
+            <div className="flex flex-col gap-8">
+              {[
+                { title: '产品动态', events: productEvents, dot: 'bg-indigo-500', badge: 'bg-indigo-100 text-indigo-700' },
+                { title: '融资动态', events: fundingEvents, dot: 'bg-emerald-500', badge: 'bg-emerald-100 text-emerald-700' },
+                { title: '相关文章', events: articleEvents, dot: 'bg-amber-500', badge: 'bg-amber-100 text-amber-700' },
+              ].filter(section => section.events.length > 0).map(section => (
+                <div key={section.title}>
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className={`w-2.5 h-2.5 rounded-full ${section.dot}`} />
+                    <h4 className="text-sm font-bold text-neutral-900">{section.title}</h4>
+                    <span className="text-xs text-neutral-400 font-mono">{section.events.length} 条</span>
                   </div>
-                );
-              })}
+                  <div className="relative pl-6">
+                    <div className={`absolute left-[7px] top-2 bottom-2 w-px ${section.dot.replace('bg-', 'bg-').replace('500', '200')}`} />
+                    {section.events.map((evt) => (
+                      <div key={evt.id} className="relative pb-5 last:pb-0">
+                        <div className={`absolute -left-[22px] top-1.5 w-3 h-3 rounded-full ${section.dot} border-2 border-white shadow-sm`} />
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <span className="text-xs font-mono font-bold text-neutral-700">{evt.event_date}</span>
+                        </div>
+                        <div className="bg-white border border-neutral-200 p-3.5">
+                          {evt.url ? (
+                            <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline leading-relaxed flex items-start gap-1">
+                              {evt.content} <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                            </a>
+                          ) : (
+                            <p className="text-sm text-neutral-700 leading-relaxed">{evt.content}</p>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>
