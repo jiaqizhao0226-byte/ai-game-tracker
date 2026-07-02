@@ -189,12 +189,6 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                     <span className="text-neutral-900 text-right">{game.funding_amount || '-'}</span>
                   </div>
                 )}
-                {game.funding_detail && (
-                  <div className="pt-2 border-t border-neutral-100">
-                    <span className="text-neutral-500 text-xs block mb-1">融资详情</span>
-                    <span className="text-neutral-700 text-xs leading-relaxed block">{game.funding_detail}</span>
-                  </div>
-                )}
                 {game.url && (
                   <div className="pt-2 border-t border-neutral-100">
                     <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline text-xs flex items-center gap-1 break-all">
