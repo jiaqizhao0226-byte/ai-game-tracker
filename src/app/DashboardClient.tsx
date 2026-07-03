@@ -144,6 +144,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             href={`/game/${game.id}`}
             className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
+            {game.featured && (
+              <div className="absolute top-0 left-0 z-10 bg-amber-500 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 shadow-sm">
+                重点关注
+              </div>
+            )}
             {game.image_url ? (
               <div className="w-full h-32 bg-neutral-100 border-b border-neutral-100 shrink-0 relative">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
