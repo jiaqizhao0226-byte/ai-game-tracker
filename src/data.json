@@ -755,28 +755,6 @@
       "launch_date": ""
     },
     {
-      "id": 24,
-      "product_name": "Sreal互动视频",
-      "company_name": "Sreal",
-      "status": "早期·原型",
-      "description": "初创团队，主攻生成式交互视频领域，对标海外Decart等实时生成式游戏体验。底层模型基于Wan 2.2等视频大模型进行研发。",
-      "updated_at": "2026-06-17 07:23:42",
-      "url": null,
-      "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
-      "tags": "互动视频, 视频大模型, Wan 2.2",
-      "image_url": "https://app.semireal.app/assets/logo.png",
-      "region": "国内",
-      "gameplay_main": "可交互视频",
-      "gameplay_sub": "",
-      "team_background": "一家尚处于天使/种子轮阶段的初创技术公司，团队主攻前沿的生成式视频与交互控制技术的结合，在当前视频大模型爆发的背景下具有一定的技术红利优势。",
-      "product_intro": "一款对标海外爆款产品（如 Decart 生成的实时可玩 Minecraft）的生成式互动视频产品。\n\n与传统的基于引擎渲染 3D 模型或 2D 贴图的游戏不同，该产品尝试将最前沿的视频大模型（如 Wan 2.2 等）作为底座。玩家的操控指令将直接作为 Prompt 实时输入给大模型，模型进而每秒无缝生成出下一帧的视频画面，实现一种完全基于视频流预测的“云游戏”新范式。目前由于算力和延迟限制，仍属于早期的概念性探索。",
-      "funding_amount": "",
-      "funding_detail": "",
-      "platform": "未知",
-      "launch_date": ""
-    },
-    {
       "id": 22,
       "product_name": "星野",
       "company_name": "MiniMax (稀宇科技)",
@@ -1483,14 +1461,6 @@
       "event_type": "产品动态",
       "event_date": "2025-08",
       "content": "项目重大Pivot：目标不再是做AI原生游戏，转向AI情感陪伴模型。WFTS有效玩家3万人，平均时长1.5-2h，高粘性群体以35-55岁男性为主。",
-      "created_at": "2026-06-17 07:23:42"
-    },
-    {
-      "id": 18,
-      "game_id": 24,
-      "event_type": "融资动态",
-      "event_date": "2025",
-      "content": "完成天使轮融资。",
       "created_at": "2026-06-17 07:23:42"
     },
     {
