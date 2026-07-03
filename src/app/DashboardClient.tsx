@@ -213,7 +213,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               </div>
               
               <p className="text-xs text-neutral-500 line-clamp-2 leading-relaxed flex-1">
-                {game.description}
+                {game.description.length > 80 ? game.description.substring(0, 80) + '...' : game.description}
               </p>
             </div>
             
