@@ -129,22 +129,6 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                 <div className="text-sm text-neutral-700 whitespace-pre-wrap leading-7">{game.description}</div>
               </div>
             )}
-
-            {/* Tags */}
-            {game.tags && (
-              <div className="mb-6">
-                <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-3 font-mono border-b-2 border-neutral-800 pb-2">
-                  标签
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {game.tags.split(',').filter((t: string) => t.trim()).map((tag: string, i: number) => (
-                    <span key={i} className="text-xs font-mono px-2.5 py-1 bg-neutral-100 text-neutral-700 border border-neutral-200">
-                      {tag.trim()}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Right sidebar: attributes only */}
@@ -189,6 +173,18 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                     <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline text-xs flex items-center gap-1 break-all">
                       <Link2 className="w-3 h-3 shrink-0" /> {game.url}
                     </a>
+                  </div>
+                )}
+                {game.tags && (
+                  <div className="pt-3 border-t border-neutral-100">
+                    <div className="text-neutral-500 text-xs mb-2">标签</div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {game.tags.split(',').filter((t: string) => t.trim()).map((tag: string, i: number) => (
+                        <span key={i} className="text-[11px] font-mono px-2 py-0.5 bg-neutral-100 text-neutral-700 border border-neutral-200">
+                          {tag.trim()}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
