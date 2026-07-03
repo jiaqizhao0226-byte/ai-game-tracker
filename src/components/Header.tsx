@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Database, Lightbulb } from 'lucide-react';
+import { Database, Lightbulb, BarChart3 } from 'lucide-react';
 
 export default function Header() {
   const pathname = usePathname();
@@ -39,12 +39,19 @@ export default function Header() {
               <Database className="w-4 h-4" />
               产品情报看板
             </Link>
-            <Link 
-              href="/insights" 
+            <Link
+              href="/insights"
               className={`px-4 py-2 text-sm font-bold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2 ${pathname === '/insights' ? 'bg-neutral-100 text-neutral-900' : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50'}`}
             >
               <Lightbulb className="w-4 h-4" />
               趋势洞察
+            </Link>
+            <Link
+              href="/analytics"
+              className={`px-4 py-2 text-sm font-bold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2 ${pathname === '/analytics' ? 'bg-neutral-100 text-neutral-900' : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50'}`}
+            >
+              <BarChart3 className="w-4 h-4" />
+              量化分析
             </Link>
           </nav>
         </div>
