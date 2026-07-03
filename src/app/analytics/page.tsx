@@ -1,12 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import data from '../../data.json';
 
 export default function AnalyticsPage() {
-  const { games } = data;
+  const { games }: { games: any[] } = data;
 
   // 统计函数
-  const countBy = (key: string) => {
+  const countBy = (key: string): [string, number][] => {
     const result = {};
-    games.forEach(g => {
+    games.forEach((g: any) => {
       const val = g[key] || '未知';
       result[val] = (result[val] || 0) + 1;
     });
