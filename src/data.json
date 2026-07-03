@@ -440,7 +440,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "模拟经营"
     },
     {
       "product_name": "PUBG Ally",
@@ -728,7 +729,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "Steam",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 25,
@@ -971,7 +973,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 11,
