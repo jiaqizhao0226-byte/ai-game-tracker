@@ -37,18 +37,9 @@ export default function InsightsPage() {
                 <Link
                   key={insight.id}
                   href={`/insight/${insight.id}`}
-                  className="bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:border-neutral-900 transition-all flex flex-col h-full relative group cursor-pointer overflow-hidden"
+                  className="bg-white border border-neutral-200 p-6 shadow-sm hover:shadow-md hover:border-neutral-900 transition-all flex flex-col h-full relative group cursor-pointer"
                 >
                   <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
-
-                  {/* Cover image */}
-                  {insight.image_url && (
-                    <div className="w-full h-40 bg-neutral-100 border-b border-neutral-200 shrink-0 relative overflow-hidden">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={insight.image_url} alt={insight.title} className="w-full h-full object-cover" />
-                    </div>
-                  )}
-
                   <div className="p-6 flex-1 flex flex-col">
                     <div className="flex justify-between items-start mb-4">
                       <span className="text-[10px] font-bold uppercase tracking-widest bg-indigo-50 text-indigo-700 px-2 py-1">
