@@ -1,4 +1,5 @@
 import data from '../../data.json';
+import Link from 'next/link';
 
 export default function InsightsPage() {
   const { insights } = data;
@@ -33,9 +34,13 @@ export default function InsightsPage() {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
               {insightsByYear[year].map((insight) => (
-                <div key={insight.id} className="bg-white border border-neutral-200 p-6 shadow-sm hover:shadow-md hover:border-neutral-900 transition-all flex flex-col h-full relative group">
+                <Link
+                  key={insight.id}
+                  href={`/insight/${insight.id}`}
+                  className="bg-white border border-neutral-200 p-6 shadow-sm hover:shadow-md hover:border-neutral-900 transition-all flex flex-col h-full relative group cursor-pointer"
+                >
                   <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  
+
                   <div className="flex justify-between items-start mb-4">
                     <span className="text-[10px] font-bold uppercase tracking-widest bg-indigo-50 text-indigo-700 px-2 py-1">
                       {insight.category}
@@ -61,11 +66,14 @@ export default function InsightsPage() {
                   </p>
 
                   <div className="mt-auto pt-4 border-t border-neutral-100">
-                    <p className="text-sm text-neutral-600 leading-relaxed">
+                    <p className="text-sm text-neutral-500 leading-relaxed line-clamp-3">
                       {insight.content}
                     </p>
+                    <div className="mt-3 text-xs text-indigo-600 font-mono uppercase tracking-wider group-hover:text-indigo-800 transition-colors">
+                      查看详情 →
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </section>
