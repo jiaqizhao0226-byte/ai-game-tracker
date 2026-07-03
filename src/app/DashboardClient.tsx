@@ -59,25 +59,19 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [search, setSearch] = useState('');
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>([]);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>([]);
-  const [filterSizes, setFilterSizes] = useState<string[]>([]);
   const [filterRegions, setFilterRegions] = useState<string[]>([]);
-  const [filterStatuses, setFilterStatuses] = useState<string[]>([]);
-  const [filterPlatforms, setFilterPlatforms] = useState<string[]>([]);
 
   const filteredGames = games.filter(g => {
-    const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) || 
+    const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) ||
       g.company_name.toLowerCase().includes(search.toLowerCase()) ||
       (g.gameplay_main && g.gameplay_main.toLowerCase().includes(search.toLowerCase())) ||
       (g.gameplay_sub && g.gameplay_sub.toLowerCase().includes(search.toLowerCase())) ||
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
-    
-    const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
-    const matchSize = filterSizes.length === 0 || filterSizes.includes(g.company_size);
-    const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
-    const matchStatus = filterStatuses.length === 0 || filterStatuses.includes(g.status);
-    const matchPlatform = filterPlatforms.length === 0 || filterPlatforms.includes(g.platform);
 
-    return matchSearch && matchType && matchSize && matchRegion && matchStatus && matchPlatform;
+    const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
+    const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
+
+    return matchSearch && matchType && matchRegion;
   });
 
   
@@ -120,27 +114,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               selected={filterSubTypes} 
               onChange={setFilterSubTypes} 
             />
-            
-            <MultiSelect 
-              label="团队规模" 
-              options={["大厂", "创业公司", "独立开发者", "未知"]} 
-              selected={filterSizes} 
-              onChange={setFilterSizes} 
-            />
-            
-            <MultiSelect 
-              label="当前状态" 
-              options={["已上线", "测试中", "研发中", "早期·原型", "未知"]} 
-              selected={filterStatuses} 
-              onChange={setFilterStatuses} 
-            />
-            
-            <MultiSelect 
-              label="平台" 
-              options={["Steam", "移动端", "网页", "PC", "桌面端", "多平台", "未知"]} 
-              selected={filterPlatforms} 
-              onChange={setFilterPlatforms} 
-            />
+
           </div>
         </div>
 
