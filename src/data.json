@@ -262,7 +262,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "派对游戏"
     },
     {
       "product_name": "推演：七日谈",
@@ -394,7 +395,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "Steam",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "派对游戏"
     },
     {
       "product_name": "月匣",
@@ -504,7 +506,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "PC",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "AI男/女友"
     },
     {
       "product_name": "如意情探",
@@ -526,7 +529,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": "2025-11"
+      "launch_date": "2025-11",
+      "gameplay_theme": "AI男/女友"
     },
     {
       "product_name": "妹居物语",
@@ -548,7 +552,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "Steam",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "AI男/女友"
     },
     {
       "product_name": "星眠",
@@ -570,7 +575,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "AI男/女友"
     },
     {
       "product_name": "Altera Bots",
@@ -876,7 +882,8 @@
       "funding_amount": "$2M",
       "funding_detail": "",
       "platform": "网页",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "派对游戏"
     },
     {
       "id": 17,
@@ -986,7 +993,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "Steam",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 10,
@@ -1008,7 +1016,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 9,
@@ -1030,7 +1039,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "Steam",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "派对游戏"
     },
     {
       "id": 8,
@@ -1074,7 +1084,8 @@
       "funding_amount": "",
       "funding_detail": "估值近7000万美元",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "AI男/女友"
     },
     {
       "id": 6,
@@ -1184,7 +1195,8 @@
       "funding_amount": "$3000万",
       "funding_detail": "阿里/蚂蚁/启明等",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "gameplay_theme": "AI男/女友"
     },
     {
       "id": 1,

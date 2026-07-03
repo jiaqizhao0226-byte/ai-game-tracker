@@ -59,6 +59,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [search, setSearch] = useState('');
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>([]);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>([]);
+  const [filterThemes, setFilterThemes] = useState<string[]>([]);
   const [filterRegions, setFilterRegions] = useState<string[]>([]);
 
   const filteredGames = games.filter(g => {
@@ -69,13 +70,16 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
 
     const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
+    const matchTheme = filterThemes.length === 0 || filterThemes.includes(g.gameplay_theme);
     const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
 
-    return matchSearch && matchType && matchRegion;
+    return matchSearch && matchType && matchTheme && matchRegion;
   });
 
   
   const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
+
+  const uniqueThemes = Array.from(new Set(games.map(g => g.gameplay_theme).filter(Boolean)));
 
   return (
     <div>
@@ -107,12 +111,19 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               selected={filterMainTypes}
               onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }}
             />
-            
+
             <MultiSelect
               label="玩法子类"
               options={uniqueSubTypes as string[]}
               selected={filterSubTypes}
               onChange={setFilterSubTypes}
+            />
+
+            <MultiSelect
+              label="玩法主题"
+              options={uniqueThemes as string[]}
+              selected={filterThemes}
+              onChange={setFilterThemes}
             />
 
           </div>
