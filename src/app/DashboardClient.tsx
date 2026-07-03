@@ -108,11 +108,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }}
             />
             
-            <MultiSelect 
-              label="玩法子类" 
-              options={uniqueSubTypes as string[]} 
-              selected={filterSubTypes} 
-              onChange={setFilterSubTypes} 
+            <MultiSelect
+              label="玩法子类"
+              options={uniqueSubTypes as string[]}
+              selected={filterSubTypes}
+              onChange={setFilterSubTypes}
             />
 
           </div>
