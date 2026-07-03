@@ -45,10 +45,21 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
             <span className="text-xs font-mono text-neutral-500">{insight.date}</span>
           </div>
           <h1 className="text-3xl font-bold text-neutral-900 tracking-tight mb-4 leading-tight">{insight.title}</h1>
-          <div className="text-lg font-semibold text-neutral-600 border-l-4 border-indigo-200 pl-4 leading-relaxed">
+          <div className="text-lg font-semibold text-neutral-600 border-l-4 border-indigo-200 pl-4 leading-relaxed mb-6">
             {insight.summary}
           </div>
         </div>
+
+        {/* Cover image */}
+        {insight.image_url && (
+          <div className="mb-8 border border-neutral-200 overflow-hidden bg-white">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={insight.image_url} alt={insight.title} className="w-full h-auto" />
+            <div className="px-4 py-2 text-[10px] text-neutral-400 font-mono bg-neutral-50 border-t border-neutral-200">
+              信息来源：策略组分析，公开资料整理
+            </div>
+          </div>
+        )}
 
         {/* Content */}
         <div className="bg-white border border-neutral-200 p-8">
