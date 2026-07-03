@@ -2,7 +2,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check } from 'lucide-react';
+import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check, Star } from 'lucide-react';
 import Link from 'next/link';
 
 function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: string[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
@@ -145,8 +145,8 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
             {game.featured && (
-              <div className="absolute top-0 left-0 z-10 bg-amber-500 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 shadow-sm">
-                重点关注
+              <div className="absolute top-0 left-0 z-10 bg-amber-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 shadow-md rounded-br-lg">
+                ★ 重点关注
               </div>
             )}
             {game.image_url ? (
