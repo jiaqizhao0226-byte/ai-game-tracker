@@ -19,6 +19,7 @@ export function getDb() {
         gameplay_type TEXT DEFAULT '',
         gameplay_main TEXT DEFAULT '',
         gameplay_sub TEXT DEFAULT '',
+        ai_role TEXT DEFAULT '',
         status TEXT NOT NULL,
         description TEXT NOT NULL,
         product_intro TEXT DEFAULT '',
@@ -70,6 +71,7 @@ export interface GameRecord {
   gameplay_type: string;
   gameplay_main: string;
   gameplay_sub: string;
+  ai_role: string;
   status: string;
   description: string;
   product_intro: string;

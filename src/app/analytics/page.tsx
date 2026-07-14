@@ -30,14 +30,9 @@ export default function AnalyticsPage() {
   });
   const subList = Object.entries(subTypes).sort((a, b) => b[1] - a[1]);
 
-  // 玩法主题
-  const themes: Record<string, number> = {};
-  games.forEach((g: any) => {
-    if (g.gameplay_theme) {
-      themes[g.gameplay_theme] = (themes[g.gameplay_theme] || 0) + 1;
-    }
-  });
-  const themeList = Object.entries(themes).sort((a, b) => b[1] - a[1]);
+  // AI 介入度
+  const aiRoles = countBy('ai_role');
+  const coreDriven = games.filter((g: any) => g.ai_role === '核心驱动').length;
 
   // Bar chart component
   const BarChart = ({ title, data, color = 'bg-neutral-800' }: { title: string; data: [string, number][]; color?: string }) => {
@@ -90,8 +85,8 @@ export default function AnalyticsPage() {
           <p className="text-xs text-neutral-500 mt-1">玩法子类</p>
         </div>
         <div className="bg-white border border-neutral-200 p-4">
-          <p className="text-3xl font-bold text-neutral-900">{themeList.length}</p>
-          <p className="text-xs text-neutral-500 mt-1">玩法主题</p>
+          <p className="text-3xl font-bold text-neutral-900">{coreDriven}</p>
+          <p className="text-xs text-neutral-500 mt-1">AI核心驱动</p>
         </div>
       </div>
 
@@ -99,7 +94,7 @@ export default function AnalyticsPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <BarChart title="玩法大类分布" data={mainTypes} color="bg-neutral-800" />
         <BarChart title="玩法子类分布" data={subList} color="bg-indigo-700" />
-        <BarChart title="玩法主题分布" data={themeList.length > 0 ? themeList : [['暂无', 0]]} color="bg-emerald-600" />
+        <BarChart title="AI 介入度分布" data={aiRoles} color="bg-emerald-600" />
         <BarChart title="产品状态分布" data={statuses} color="bg-amber-600" />
         <BarChart title="区域分布" data={regions} color="bg-blue-600" />
         <BarChart title="平台分布" data={platforms} color="bg-purple-600" />

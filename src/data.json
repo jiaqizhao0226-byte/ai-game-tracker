@@ -9,7 +9,7 @@
       "updated_at": "2026-07-03",
       "url": "https://doudou.fun/",
       "company_size": "创业公司",
-      "funding_round": "A+轮",
+      "funding_round": "A轮",
       "tags": "桌面宠, AI陪玩, 游戏辅助, VLM视觉识别, 出海, AIPC预装, 二次元IP, 跨游戏记忆",
       "image_url": "/ai-game-tracker/images/逗逗.png",
       "region": "国内",
@@ -19,7 +19,7 @@
       "product_intro": "国内非常罕见且极其成功的「纯第三方跨游戏桌面AI陪玩」产品。\n\n- **核心定位**：悬浮在屏幕边缘的「赛博游戏搭子」。玩家打开《原神》《英雄联盟》《黑神话·悟空》等游戏时，逗逗通过自研VLM实时识别画面——判断玩家是在打BOSS、死亡、爆金币还是挂机，根据战况实时吐槽、提供攻略或庆祝高光时刻\n\n- **技术架构（四层）**：\n  - ①信息输入层：每秒1帧抽帧 + VAD语音活动检测（替代唤醒词）\n  - ②多模态理解层：轻量CV模型预筛关键画面，过滤超90%无效帧后送入VLM\n  - ③上下文构建层：整合ASR文本、图像理解结果与角色记忆数据，按游戏主题索引（如原神记忆库、王者记忆库）实现高效召回\n  - ④输出层：精调LLM驱动，融合二次元语料与游戏术语。底层模型基于开源Qwen VLM自研\n\n- **通用识别（2025年11月）**：视觉识别覆盖从精选游戏列表扩展到PC端90%以上游戏。精选游戏AI问答准确率不低于95%。已适配《空洞骑士：丝之歌》《哈迪斯2》《寂静岭f》《光与影：33号远征队》《ARC Raiders》等\n\n- **商业化模式**：\n  - 国内：角色皮肤购买 + 聊天时长充值，月收入约72万元（YoY增长450%），92%来自充值+月卡\n  - 海外（HakkoAI）：订阅制，Pro $9.99/月，Ultra $19.99/月\n  - 成本：每个MAU月服务成本约0.3元，国内ARPU约1.2元，CAC约2.4元，海外CAC约4.5元\n  - 三分之一获客来自与AIPC厂商（如英特尔）资源置换预装\n\n- **用户粘性**：\n  - 日均在线4小时，日均对话63轮\n  - 50%用户每天使用，80%每周使用\n  - 70%用户除游戏外也会在看剧/购物等日常场景使用\n  - 30日留存：国内PC端30%+，国内移动端15%，海外20%",
       "funding_amount": "$20M+",
       "funding_detail": "源码资本(天使)、鼎晖创投(A轮)、红点创投(A+轮)。估值近2亿美元",
-      "platform": "桌面端",
+      "platform": "PC端",
       "launch_date": "2025-08",
       "team_members": [
         {
@@ -38,7 +38,8 @@
           "background": "北邮毕业，在百度凤巢工作10年，负责跨领域建模和生成式大模型。2023年11月加入逗逗，管理16人算法团队，负责底层模型能力开发和上下文处理。"
         }
       ],
-      "featured": true
+      "featured": true,
+      "ai_role": "核心驱动"
     },
     {
       "id": 2,
@@ -61,7 +62,6 @@
       "funding_detail": "天使轮(2024年9月)→Pre-A(恺英网络,2025年8月)→A轮(阿里/蚂蚁/启明/五源/创世伙伴/云时,2026年1月,超$30M)",
       "platform": "移动端",
       "launch_date": "2026-04-10",
-      "gameplay_theme": "AI男/女友",
       "team_members": [
         {
           "name": "张筱帆",
@@ -69,7 +69,8 @@
           "background": "连续创业者，此前创办男性向恋爱手游《奇点时代》（研发商幻境游戏/终极幻境），公测首月流水突破3000万。幻境游戏获B站、恺英网络投资。2024年2月创立自然选择，切入AI陪伴赛道。"
         }
       ],
-      "featured": true
+      "featured": true,
+      "ai_role": "核心驱动"
     },
     {
       "id": 3,
@@ -91,7 +92,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 4,
@@ -113,7 +115,8 @@
       "funding_amount": "",
       "funding_detail": "累计三轮数千万",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "深度增强"
     },
     {
       "id": 5,
@@ -135,7 +138,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "外围辅助"
     },
     {
       "id": 6,
@@ -146,7 +150,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": "https://m.yjwujian.cn/",
       "company_size": "大厂",
-      "funding_round": "大厂内部孵化",
+      "funding_round": "大厂孵化",
       "tags": "动作竞技, AI队友, 语音Copilot",
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/d6/45/8bd64568-2de0-ce6f-d75f-e22f192ddcf4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "region": "国内",
@@ -157,7 +161,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "深度增强"
     },
     {
       "id": 7,
@@ -168,7 +173,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": null,
       "company_size": "创业公司",
-      "funding_round": "Pre-A轮",
+      "funding_round": "天使轮",
       "tags": "女性向, 3D虚拟人, AI男友, 情感陪伴",
       "image_url": "/ai-game-tracker/images/无限谷.png",
       "region": "国内",
@@ -180,7 +185,7 @@
       "funding_detail": "估值近7000万美元",
       "platform": "移动端",
       "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "ai_role": "核心驱动"
     },
     {
       "id": 8,
@@ -191,7 +196,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": "https://www.innohere.com/ir/153829/video.html",
       "company_size": "创业公司",
-      "funding_round": "Pre-A轮",
+      "funding_round": "天使轮",
       "tags": "桌面宠物, 多模态, 游戏辅助",
       "image_url": "https://innohere.oss-cn-shenzhen.aliyuncs.com/static/site/company-bg.png",
       "region": "国内",
@@ -201,8 +206,9 @@
       "product_intro": "一款突破传统游戏界限的“AI 游戏搭子”兼桌面宠物。产品接入了多模态大模型技术，不仅能进行日常聊天，更核心的能力在于：它能实时“看懂”玩家屏幕上的游戏画面，并“听懂”游戏音效。\n\n目前桌崽已深度适配了包括《黑神话：悟空》、《原神》、《绝区零》、《鸣潮》等 20 余款热门大作。当你打 Boss 失败时，它会提供情绪抚慰；当你卡关时，它能实时根据画面提供游戏攻略，成为了新世代游戏玩家的刚需插件。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "桌面端",
-      "launch_date": ""
+      "platform": "PC端",
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 9,
@@ -223,9 +229,9 @@
       "product_intro": "《Pick Me Pick Me》打破了传统的单机 AI 聊天框架，创新性地引入了“恋爱 PVP”和“双人成仇”的概念。玩家与好友在一场快速相亲中争夺由大语言模型驱动的 AI 角色的好感。游戏不仅仅是“与 AI 聊天”，玩家还需要打出战略技能卡牌（例如给对手施加干扰、或给自己加 buff）来影响 AI 的判断。游戏首发即支持 Steam 创意工坊（Steam Workshop），允许玩家自行导入并自定义 3D 虚拟形象，极大地拓展了 UGC 生态。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
+      "platform": "PC端",
       "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "ai_role": "核心驱动"
     },
     {
       "id": 10,
@@ -248,7 +254,7 @@
       "funding_detail": "",
       "platform": "移动端",
       "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "ai_role": "深度增强"
     },
     {
       "id": 11,
@@ -269,9 +275,9 @@
       "product_intro": "被定义为全球首款“原生 AI 情感陪伴与海岛经营”的模拟游戏。\n\n游戏融合了《星露谷物语》的种田建造与《动物森友会》的岛民社交。最大的革命性在于，玩家在岛上邂逅的这些猫咪居民，底层的“大脑”接入了团队自研的 MeowuAgent 智能体框架。这些猫咪不仅不是站在原地复读脚本的死板 NPC，还会因为玩家没按时喂食而发脾气、甚至主动找玩家倾诉烦恼、并清晰记得几周前和玩家发生过的小故事。真正打造了一个有温度、永远有活人感回应的虚拟乌托邦。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
+      "platform": "PC端",
       "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "ai_role": "深度增强"
     },
     {
       "id": 13,
@@ -294,7 +300,7 @@
       "funding_detail": "",
       "platform": "未知",
       "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "ai_role": "深度增强"
     },
     {
       "id": 14,
@@ -316,7 +322,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "外围辅助"
     },
     {
       "id": 15,
@@ -327,7 +334,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": null,
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "天使轮",
       "tags": "TRPG, 历史模拟, 跑团, 奇绩创坛",
       "image_url": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260103/8/24/fd90c98aedaa5dd7bcc97ea4a0fd67f7.png",
       "region": "国内",
@@ -338,7 +345,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 17,
@@ -359,8 +367,9 @@
       "product_intro": "这是一款中二病浓度爆表的“AI 汉字战斗”模拟游戏。\n\n在对战中，系统会随机分发几个汉字给玩家。玩家的任务是发挥自己天马行空的想象力，用这 4 个汉字组合成一个看起来很唬人的“咒语”。提交后，后台接入的 AI 会非常严肃地分析这个词的含义，并根据它判定出这招的元素属性、具体效果以及最终伤害值，甚至还会帮你生成一段极为热血中二的招式解说文案。把传统的拼字游戏玩出了花。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
-      "launch_date": "2025-08"
+      "platform": "PC端",
+      "launch_date": "2025-08",
+      "ai_role": "核心驱动"
     },
     {
       "id": 18,
@@ -371,7 +380,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": "https://littleumbrella.gg/",
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "天使轮",
       "tags": "派对游戏, Discord, 网页游戏, 爆款",
       "image_url": "https://framerusercontent.com/images/XcEX3CnCE1j7lpiZKjXqQHdJvA.png",
       "region": "海外",
@@ -383,7 +392,7 @@
       "funding_detail": "",
       "platform": "网页",
       "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "ai_role": "核心驱动"
     },
     {
       "id": 19,
@@ -405,7 +414,8 @@
       "funding_amount": "",
       "funding_detail": "Google逆向收购",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 20,
@@ -416,7 +426,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": null,
       "company_size": "创业公司",
-      "funding_round": "C轮及以上",
+      "funding_round": "B轮及以上",
       "tags": "出海, 情感陪伴, 虚拟社交",
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f0/04/05f0042e-4c28-2db6-823b-415803a3dd80/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "region": "国内",
@@ -427,7 +437,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 21,
@@ -438,7 +449,7 @@
       "updated_at": "2026-06-17 07:23:42",
       "url": "https://store.steampowered.com/app/3730100/Whispers_from_the_Star/",
       "company_size": "创业公司",
-      "funding_round": "大厂内部孵化",
+      "funding_round": "大厂孵化",
       "tags": "科幻生存, 实时语音互动, 动态叙事, Steam",
       "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3730100/fba53449cedc86ba297e320cfac73f6dda20bcaf/library_600x900.jpg",
       "region": "海外",
@@ -448,8 +459,9 @@
       "product_intro": "被定义为探索下一代互动叙事边界的科幻生存游戏。\n\n游戏摒弃了传统 RPG 里的分支对话树，玩家通过完全开放式的自然语言（打字、语音甚至视频）与在外星球遇险的女大学生 Stella 交流。底层搭载的强大自研模型会精准识别玩家语言中的情绪和逻辑，实时反映在 Stella 的动画表情、语音回复和求生决策中。玩家的一句话，可能拯救她，也可能将她推向万劫不复。虽然目前在剧情框架上仍有局限，但这无疑是展示完全动态叙事野心的里程碑之作。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
-      "launch_date": "2025-03"
+      "platform": "PC端",
+      "launch_date": "2025-03",
+      "ai_role": "核心驱动"
     },
     {
       "id": 22,
@@ -460,7 +472,7 @@
       "updated_at": "2026-06-17 07:23:42",
       "url": "https://www.xingyeai.com/",
       "company_size": "创业公司",
-      "funding_round": "C轮及以上",
+      "funding_round": "B轮及以上",
       "tags": "AI社交, 虚拟恋人, 独角兽, 出海",
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f0/04/05f0042e-4c28-2db6-823b-415803a3dd80/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "region": "国内",
@@ -471,7 +483,8 @@
       "funding_amount": "",
       "funding_detail": "估值超25亿美元",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 25,
@@ -493,7 +506,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 26,
@@ -514,9 +528,9 @@
       "product_intro": "这是市面上为数不多的将大模型推演作为“硬核机制”的买断制独立游戏。玩家扮演明朝末代皇帝崇祯，通过输入自然语言“下旨”来治国。AI 会判断诏书对国库、民心、派系、军事的综合影响，并转化为数值反馈给游戏系统。游戏有着极高的自由度，不设剧本上限（比如有玩家硬核攀科技树，最终在大明朝造出了原子弹）。收费模式采用“游戏本体买断 + 模型 Token 用量计费”，但官方也计划开放 API 允许玩家接入自己的大模型。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
+      "platform": "PC端",
       "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "ai_role": "核心驱动"
     },
     {
       "id": 27,
@@ -536,7 +550,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "言灵计划",
@@ -558,7 +573,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Aivilization",
@@ -580,7 +596,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "深度增强"
     },
     {
       "product_name": "Suck Up!",
@@ -602,7 +619,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "网页",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "AI2U",
@@ -624,7 +642,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Altera Bots",
@@ -632,7 +651,7 @@
       "status": "测试中",
       "description": "开发自主AI Agent并在游戏中（如Minecraft）应用的创新项目。Altera致力于创造能与玩家长时间游玩、合作的通用AI伙伴。",
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "天使轮",
       "tags": "Minecraft, Agent",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
@@ -646,7 +665,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "星眠",
@@ -669,7 +689,7 @@
       "funding_detail": "",
       "platform": "移动端",
       "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "妹居物语",
@@ -690,9 +710,9 @@
       "product_intro": "一款极为纯粹的 AI 原生恋爱养成类游戏。\n\n其核心框架精简且极具闭环逻辑：玩家与 AI 女孩进行高自由度对话互动 -> 触发各类日常事件或小游戏 -> AI 根据对话内容给出数值反馈（好感度/信任度提升或下降） -> 数值反馈沉淀为长期记忆 -> 解锁女孩全新的性格状态与特殊事件。麻雀虽小五脏俱全，它用极低的成本跑通了目前许多大厂重金都未能实现的情感记忆沉淀玩法循环。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
+      "platform": "多平台",
       "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "如意情探",
@@ -715,7 +735,7 @@
       "funding_detail": "",
       "platform": "移动端",
       "launch_date": "2025-11",
-      "gameplay_theme": "AI男/女友"
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "星夜颂歌",
@@ -723,7 +743,7 @@
       "status": "研发中",
       "description": "清华牛津的物理学博士与EVE前制作人联合打造。“超人格化”、有脾气的3D二次元AI女友，获九合创投等千万级人民币天使+轮融资。",
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "天使轮",
       "tags": "3D虚拟女友, PC端",
       "region": "国内",
       "gameplay_main": "AI陪伴",
@@ -736,9 +756,9 @@
       "product_intro": "一款主打 PC 桌面端的高精度 3D AI 二次元女友陪伴软件。\n\n团队放弃了市面上泛滥的“多角色海量 UGG 聊天大厅”路线，转而花极其重磅的工业化成本（积累百万字文案打底的知识库）去只塑造一个具有“超人格化”属性的 3D 少女蕾伊。她不仅拥有影视级动捕和绝佳的美术表现，而且具备真实的“脾气”和反骨，拒绝一味讨好玩家，试图营造出类似电影《Her》或《西部世界》中那种极具独立自我的真实跨次元共生关系。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "PC",
+      "platform": "PC端",
       "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Tolan",
@@ -760,7 +780,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "PUBG Ally",
@@ -782,7 +803,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "深度增强"
     },
     {
       "product_name": "量子跃迁：米乐光年",
@@ -805,7 +827,7 @@
       "funding_detail": "",
       "platform": "未知",
       "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "ai_role": "深度增强"
     },
     {
       "product_name": "月匣",
@@ -827,7 +849,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Deviation Game",
@@ -848,9 +871,9 @@
       "product_intro": "这是一款将 AI 机器视觉（CV/图像识别）作为对抗核心机制的多人派对合作游戏。\n\n游戏采用了极度巧妙的逆向思维：在传统的“你画我猜”中，玩家需要画得尽可能像，但在《Deviation Game》中，系统会引入一个充当审核员的“图像识别 AI”。玩家的目标是画出一幅高度抽象或充满隐喻的图，它的精妙之处在于：必须让同为人类的队友能凭借人类的常识和默契猜对，同时又要足够抽象，以至于“骗过”并击败后台那个死板的 AI 识别模型。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
+      "platform": "PC端",
       "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "像素梦工厂",
@@ -871,8 +894,9 @@
       "product_intro": "一款非常“Meta（元游戏）”的模拟经营作品，主打“在游戏里做游戏，并让 AI 来玩”。\n\n玩家在游戏中经营一家游戏开发工作室，但你服务的对象不是真实玩家，而是“AI 顾客”。玩家需要通过机制卡牌等元素为这些 AI 顾客量身定制专属的像素游戏。更有趣的是，大模型会模拟这些不同性格顾客的反馈：它们会真的“体验”你设计的游戏，并给出严苛的评价、甚至退款要求，极大考验玩家洞察 AI 偏好的策略能力。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
-      "launch_date": "2026-Q1"
+      "platform": "PC端",
+      "launch_date": "2026-Q1",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "我的恋综超失控！",
@@ -894,7 +918,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "诡秘推理",
@@ -915,8 +940,9 @@
       "product_intro": "主打“AI实时生成式剧本杀”体验的侦探推理游戏。\n\n游戏设定在充满悬疑色彩的诡秘世界观下，案件的真凶、作案手法乃至部分证词都会由 AI 在开局时动态分配和生成。玩家作为侦探，必须在场景中打字，像真实审讯一样向不同嫌疑人发问，并利用发现的逻辑漏洞戳破 AI 的谎言。这极其考验大模型在“保持角色人设不崩塌”与“不轻易泄露案件真相”之间的平衡调教。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
-      "launch_date": ""
+      "platform": "PC端",
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "神探夏洛克：暗夜追踪者",
@@ -938,7 +964,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "推演：七日谈",
@@ -960,7 +987,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "萌爪派对：欢乐问答",
@@ -983,7 +1011,7 @@
       "funding_detail": "",
       "platform": "未知",
       "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "星海自走牌",
@@ -1005,7 +1033,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Public Eye",
@@ -1027,7 +1056,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "网页",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Project Shanhai",
@@ -1035,7 +1065,7 @@
       "status": "研发中",
       "description": "前Google Stadia工程师创办。生存建造沙盒游戏，强调用GenAI给玩家更高自由度与叙事变体。获Supercell投资。",
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "天使轮",
       "tags": "生存沙盒, 叙事变体",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
@@ -1049,7 +1079,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Pengu",
@@ -1071,7 +1102,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "product_name": "Iconic",
@@ -1079,7 +1111,7 @@
       "status": "研发中",
       "description": "伦敦团队，获Google AI Futures Fund等投资1300万美元。专注于AI-native、语音驱动(on-device)的互动娱乐/游戏世界。",
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "天使轮",
       "tags": "端侧语音, AI世界",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
@@ -1093,7 +1125,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 62,
@@ -1114,8 +1147,9 @@
       "product_intro": "这是一款硬核的“AI原生肉鸽幸存者”游戏。游戏舍弃了传统肉鸽中设计师提前写好的“技能树与固定搭配”，转而让 AI 充当实时游戏策划（Agent）。\n\n在游戏的核心“Socket（插槽）系统”中，玩家搜集到的导弹、黑洞、风暴等原子机制组件，可以随意镶嵌组合。底层的 AI 逻辑引擎会即时解析玩家的策略意图，将这些底层机制进行逻辑编排，实时生成自洽且全新的弹幕特效与元素反应（例如分裂爆炸+全向追踪的黑洞风暴）。千万种组合意味着每一次游玩都是“绝版”体验。",
       "funding_amount": "",
       "funding_detail": "",
-      "platform": "Steam",
-      "launch_date": ""
+      "platform": "PC端",
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 63,
@@ -1137,7 +1171,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "外围辅助"
     },
     {
       "id": 64,
@@ -1159,7 +1194,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "网页",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     },
     {
       "id": 65,
@@ -1181,7 +1217,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "深度增强"
     },
     {
       "id": 66,
@@ -1203,7 +1240,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "多平台",
-      "launch_date": "2026-Q2"
+      "launch_date": "2026-Q2",
+      "ai_role": "外围辅助"
     },
     {
       "id": 67,
@@ -1225,7 +1263,8 @@
       "funding_amount": "",
       "funding_detail": "",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "",
+      "ai_role": "核心驱动"
     }
   ],
   "events": [
