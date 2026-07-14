@@ -6,7 +6,7 @@ export default function AnalyticsPage() {
 
   // 统计函数
   const countBy = (key: string): [string, number][] => {
-    const result = {};
+    const result: Record<string, number> = {};
     games.forEach((g: any) => {
       const val = g[key] || '未知';
       result[val] = (result[val] || 0) + 1;
@@ -22,8 +22,8 @@ export default function AnalyticsPage() {
   const sizes = countBy('company_size');
 
   // 玩法子类
-  const subTypes = {};
-  games.forEach(g => {
+  const subTypes: Record<string, number> = {};
+  games.forEach((g: any) => {
     if (g.gameplay_sub) {
       subTypes[g.gameplay_sub] = (subTypes[g.gameplay_sub] || 0) + 1;
     }
@@ -31,8 +31,8 @@ export default function AnalyticsPage() {
   const subList = Object.entries(subTypes).sort((a, b) => b[1] - a[1]);
 
   // 玩法主题
-  const themes = {};
-  games.forEach(g => {
+  const themes: Record<string, number> = {};
+  games.forEach((g: any) => {
     if (g.gameplay_theme) {
       themes[g.gameplay_theme] = (themes[g.gameplay_theme] || 0) + 1;
     }
