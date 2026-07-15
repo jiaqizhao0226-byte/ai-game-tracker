@@ -39,6 +39,12 @@ function MultiSelect({ label, options, selected, onChange, className = "" }: { l
       </button>
       {isOpen && (
         <div className="absolute top-full left-0 mt-1 bg-white border border-neutral-200 shadow-lg z-20 min-w-[150px] max-h-60 overflow-y-auto">
+          <div className="px-3 py-2 flex items-center gap-2 hover:bg-neutral-50 cursor-pointer border-b border-neutral-100" onClick={() => onChange([])}>
+            <div className={`w-3 h-3 border flex items-center justify-center shrink-0 ${selected.length === 0 ? 'bg-neutral-900 border-neutral-900' : 'border-neutral-300'}`}>
+              {selected.length === 0 && <Check className="w-2 h-2 text-white" />}
+            </div>
+            <span className="text-xs font-mono truncate text-neutral-700">全部</span>
+          </div>
           {options.map(opt => (
             <div key={opt} className="px-3 py-2 flex items-center gap-2 hover:bg-neutral-50 cursor-pointer" onClick={() => toggle(opt)}>
               <div className={`w-3 h-3 border flex items-center justify-center shrink-0 ${selected.includes(opt) ? 'bg-neutral-900 border-neutral-900' : 'border-neutral-300'}`}>
