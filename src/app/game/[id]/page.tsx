@@ -2,7 +2,7 @@
 import data from '../../../data.json';
 import Link from 'next/link';
 import GameImage from '../../../components/GameImage';
-import { ArrowLeft, ChevronLeft, Link2, FileText } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, Link2 } from 'lucide-react';
 import EventsTabs from './EventsTabs';
 
 export function generateStaticParams() {
@@ -205,13 +205,6 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                   <div className="pt-2 border-t border-neutral-100">
                     <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline text-xs flex items-center gap-1 break-all">
                       <Link2 className="w-3 h-3 shrink-0" /> {game.url}
-                    </a>
-                  </div>
-                )}
-                {game.bp_url && (
-                  <div className="pt-2 border-t border-neutral-100">
-                    <a href={game.bp_url} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline text-xs flex items-center gap-1.5 font-bold">
-                      <FileText className="w-3.5 h-3.5 shrink-0" /> 查看商业计划书 (BP)
                     </a>
                   </div>
                 )}

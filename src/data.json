@@ -39,8 +39,8 @@
         }
       ],
       "featured": true,
-      "bp_url": "/ai-game-tracker/files/逗逗_心影随形_BP.pdf",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 2,
@@ -71,7 +71,8 @@
         }
       ],
       "featured": true,
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 3,
@@ -106,7 +107,8 @@
           "background": "网易雷火2017年成立，拥有200余项专利，CVPR2024人脸表情国际挑战赛全部五项冠军"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 4,
@@ -136,7 +138,8 @@
           "background": "代号17，前腾讯《和平精英》技术策划，国内首批虚幻4引擎开发者。14岁学Unity，17岁校内创业，22岁入腾讯，2023年离职创业"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2026"
     },
     {
       "id": 5,
@@ -166,7 +169,8 @@
           "background": "腾讯天美旗下团队，原《三角洲特种部队》IP续作开发方"
         }
       ],
-      "ai_role": "外围辅助"
+      "ai_role": "外围辅助",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 6,
@@ -201,7 +205,8 @@
           "background": "2024骁龙游戏技术赏演讲者，主导语音AI队友技术"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 7,
@@ -232,7 +237,8 @@
           "background": "前猫耳FM联合创始人兼COO，前红杉中国员工。创立Laser、Manta虚拟偶像男团(全网粉丝超680万)，2018年猫耳FM被B站收购后负责游戏业务"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 8,
@@ -262,8 +268,8 @@
           "background": "代号Adam，95后博士。帝国理工本科计算机方向，香港中文大学博士(师从林伟教授，NLP领域)。ACL 2026最佳论文奖获得者(Adam's Law)，14篇一作/通讯顶会论文。曾在亚马逊、微软工作。现主导FaceMind从桌面陪伴向世界模型转型。"
         }
       ],
-      "bp_url": "/ai-game-tracker/files/FaceMind_WorldModel_BP.pdf",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 9,
@@ -294,7 +300,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 10,
@@ -330,7 +337,8 @@
           "background": "上海交通大学硕士+佐治亚理工硕士，上海市人大代表"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 11,
@@ -366,7 +374,8 @@
           "background": "前阿里AI Lab大模型AI算法专家，TinyNN开源框架作者，魔兽世界国服第一"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 13,
@@ -402,8 +411,8 @@
           "background": "前腾讯AI Lab总经理，带队做出围棋AI绝艺和《王者荣耀》AI绝悟。超参数科技2019年成立，2022年估值达独角兽级别。"
         }
       ],
-      "bp_url": "/ai-game-tracker/files/阁道科技_遥远行星_BP.pdf",
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 14,
@@ -433,7 +442,8 @@
           "background": "腾讯旗下核心工作室群，MOBA品类头部团队"
         }
       ],
-      "ai_role": "外围辅助"
+      "ai_role": "外围辅助",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 15,
@@ -463,7 +473,8 @@
           "background": "北京大学博士，腾讯游戏5年AI算法工程师，20年以上历史爱好者，北京三国文化学会会员。2025年9月获奇绩创坛融资后从腾讯离职"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 17,
@@ -486,7 +497,8 @@
       "funding_detail": "",
       "platform": "Steam",
       "launch_date": "2025-08",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 18,
@@ -517,7 +529,8 @@
           "background": "独立游戏工作室。因AI API成本从每日5K飙升至25万美元濒临破产"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 19,
@@ -552,7 +565,8 @@
           "background": "前Google工程师，领导Google聊天机器人Meena项目，参与LaMDA开发。与Shazeer一同重回Google。"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 20,
@@ -582,7 +596,8 @@
           "background": "1989年生，前商汤科技副总裁。2022年初创立稀宇科技(MiniMax)，专注通用人工智能(AGI)。2026年1月带领公司港交所上市，上市后宣布\"实现AGI前不再领取薪酬\"。"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 21,
@@ -605,7 +620,8 @@
       "funding_detail": "",
       "platform": "Steam",
       "launch_date": "2025-03",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 22,
@@ -645,7 +661,8 @@
           "background": "毕业于北京航空航天大学，商汤科技早期员工，在商汤研究院主管算法团队。"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 25,
@@ -675,8 +692,8 @@
           "background": "成立于2018年，由游卡投资孵化。全球第一个线下网游业态，覆盖全国30城+悉尼。单场200元/人，重度用户复购百次以上，虚拟道具二级市场炒作至数千元。"
         }
       ],
-      "bp_url": "/ai-game-tracker/files/织之镜土_BP.pdf",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 26,
@@ -707,7 +724,8 @@
           "background": "青干工作室初始仅2人，发展至今不到10人。国内首款真正意义上的AI原生商业游戏"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2026"
     },
     {
       "id": 27,
@@ -737,7 +755,8 @@
       ],
       "product_intro": "韩国TainAI开发的AI情感陪伴应用，中文名「卿卿我我」。\n\n- **核心定位**：日韩市场大获成功的AI陪伴产品，a16z《TOP 100 AI Consumer App》亚洲第一\n\n- **产品机制**：\n  - 好感度系统：熟人→朋友→心动→恋人→结婚五级\n  - 聊天按句收费（果酱货币），非订阅制\n  - 三种聊天模式：绝配(短句)、长句、刺激模式\n  - 内心深处功能：查看AI角色心理活动\n  - 支持照片分享、日记共享\n\n- **商业化**：月流水76万美元，全球月活仅10万，ARPU是Character.AI的5倍。96%自然安装量",
       "team_background": "韩国TainAI Inc.，总部首尔江南区，15人团队。主打东亚情感市场，放弃美国市场策略。",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "言灵计划",
@@ -772,7 +791,8 @@
           "background": "前阿里AI Lab大模型AI算法专家，TinyNN开源框架作者"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "Aivilization",
@@ -802,7 +822,8 @@
           "background": "香港科技大学数学系博士生，《三国志》《文明6》玩家"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "Suck Up!",
@@ -832,7 +853,8 @@
           "background": "前EA中央产品管理负责人，负责The Sims等IP的UGC系统开发。沃顿商学院MBA，曾就职YouTube战略团队和BCG。2021年创立Proxima，专注AI游戏，打造了首款商业成功的AI Agent游戏Suck Up!。"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "AI2U",
@@ -877,8 +899,8 @@
           "background": "资深游戏原画师，参与多款手游项目美术开发"
         }
       ],
-      "bp_url": "/ai-game-tracker/files/AI2U_AlterStaff_BP.pdf",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "Altera Bots",
@@ -918,7 +940,8 @@
           "background": "AI研究员，负责产品Shortcut等。与Robert Yang共同创立Altera。"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "星眠",
@@ -949,7 +972,8 @@
           "background": "前阿里妙鸭相机产品负责人（2020-2023），被誉为\"中国第一批AIGC产品经理\"。2023年7月妙鸭相机上线爆红，巅峰DAU 60万、排队4000人。2023年11月因与虎鲸文娱（阿里大文娱）发展方向分歧离职创业，成立沐言智语，打造游戏化AI陪伴产品星眠。"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "妹居物语",
@@ -980,7 +1004,8 @@
           "background": "独立游戏开发者"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "如意情探",
@@ -1011,7 +1036,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "星夜颂歌",
@@ -1042,7 +1068,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2026"
     },
     {
       "product_name": "Tolan",
@@ -1072,7 +1099,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "PUBG Ally",
@@ -1102,7 +1130,8 @@
           "background": "KRAFTON AI本部部长，负责PUBG Ally的开发与展示。主导CPC（Co-Playable Character）技术与英伟达ACE的集成。"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "量子跃迁：米乐光年",
@@ -1133,7 +1162,8 @@
           "background": "前叠纸游戏《恋与制作人》主策划"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "月匣",
@@ -1163,7 +1193,8 @@
           "background": "百度AI娱乐化部门独立产品。App已于2026-01-30停止运营，网页版仍可使用。"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "Deviation Game",
@@ -1194,7 +1225,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "像素梦工厂",
@@ -1224,7 +1256,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "我的恋综超失控！",
@@ -1254,7 +1287,8 @@
           "background": "信息待补充"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "诡秘推理",
@@ -1284,7 +1318,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "神探夏洛克：暗夜追踪者",
@@ -1314,7 +1349,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "推演：七日谈",
@@ -1344,7 +1380,8 @@
           "background": "独立游戏开发者"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2026"
     },
     {
       "product_name": "萌爪派对：欢乐问答",
@@ -1380,7 +1417,8 @@
           "background": "前阿里AI Lab大模型AI算法专家"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "星海自走牌",
@@ -1410,7 +1448,8 @@
           "background": "信息待补充"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "Public Eye",
@@ -1440,7 +1479,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "Project Shanhai",
@@ -1470,7 +1510,8 @@
           "background": "创始人来自Google Stadia和阿里元境"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "product_name": "Pengu",
@@ -1500,7 +1541,8 @@
           "background": "用户超1500万"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "product_name": "Iconic",
@@ -1530,7 +1572,8 @@
           "background": "语音驱动AI世界游戏"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 62,
@@ -1560,7 +1603,8 @@
           "background": "独立游戏工作室"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2026"
     },
     {
       "id": 63,
@@ -1590,7 +1634,8 @@
           "background": "1970年生，1991年创立Epic Games，主导开发虚幻引擎，2017年GDC游戏终身成就奖"
         }
       ],
-      "ai_role": "外围辅助"
+      "ai_role": "外围辅助",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 64,
@@ -1620,7 +1665,8 @@
           "background": "斯坦福大学教授，AI领域顶级学者"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2024"
     },
     {
       "id": 65,
@@ -1655,7 +1701,8 @@
           "background": "育碧叙事总监，负责AI角色叙事化设计"
         }
       ],
-      "ai_role": "深度增强"
+      "ai_role": "深度增强",
+      "batch": "常态跟踪·2025"
     },
     {
       "id": 66,
@@ -1678,7 +1725,8 @@
       "funding_detail": "",
       "platform": "多平台",
       "launch_date": "2026-Q2",
-      "ai_role": "外围辅助"
+      "ai_role": "外围辅助",
+      "batch": "常态跟踪·2026"
     },
     {
       "id": 67,
@@ -1708,7 +1756,8 @@
           "background": "信息待补充"
         }
       ],
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2026"
     },
     {
       "id": 68,
@@ -1761,8 +1810,391 @@
       "funding_detail": "未披露。BP时间2026年4月，正在寻求融资。",
       "product_intro": "全球首个「无引擎」视频游戏平台，让视频本身成为游戏。\n\n- **核心定位**：不是做视频工具，而是让视频本身成为游戏。定位AI时代的Roblox+Netflix，让人人都能成为小岛秀夫\n\n- **技术架构（三层混合引擎）**：\n  - 表现层 World Model：世界模型(如Genie 3)实时生成视频画面，模拟光影、材质、物理效果\n  - 判定层 VLM Observer：VLM实时分析视频流，识别碰撞/死亡/拾取等关键事件，输出结构化JSON\n  - 状态层 Traditional Game Logic：游戏逻辑引擎管理背包、等级、血条、任务等数值模块\n\n- **自研模型 Roll-01**：\n  - 基于开源模型训练微调的实时交互视频模型，专门适配游戏场景\n  - 支持实时交互生成、保持场景和物体3D一致、长期空间记忆\n  - AutoRegressive DiT + Context as Memory + Action Conditioning + DMD\n\n- **产品战略（隆中对）**：\n  - 01 验证AI玩法：通过PC端游戏开发，搭建AI游戏设计管线\n  - 02 筑护城河：沉淀专有的生成工作流、Prompt库、游戏组件库与创作编辑器\n  - 03 长线运营型AI游戏：多款AI游戏长线运营\n  - 04 平台化：UGC内容平台，玩家构建和发布自己的AI游戏，获取收益\n\n- **三大赛道交汇**：游戏($2000亿) + 互动视频 + UGC平台\n\n- **WHY NOW**：成本下降(VEO3/Sora2成本降至$6/min) + 一致性突破(Nano Banana) + 时效性提升(预生成+实时混合) + 个性化驱动(长期记忆Embedding)\n\n- **产品矩阵**：\n  - LinearGame Studio：自研和交付高质量AI视频互动游戏\n  - Yoroll.ai：UGC内容平台，玩家构建和发布AI游戏\n  - Yoroll Games：借助世界模型扩展到大型动作游戏",
       "updated_at": "2026-07-10",
-      "bp_url": "/ai-game-tracker/files/Yoroll_LinearGame_BP.pdf",
-      "ai_role": "核心驱动"
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2026"
+    },
+    {
+      "id": 69,
+      "product_name": "无限R-放置赛车",
+      "company_name": "VoidSlash Games",
+      "status": "研发中",
+      "description": "由精神力驱动的\"Psy-Link\"引擎与AI技术重塑竞技格局的放置赛车游戏。玩家扮演车队长，携手专属AI小人重振家族车厂，融合慢节奏挂机经营与快节奏战术竞技。",
+      "updated_at": "2026-07-15",
+      "url": "https://store.steampowered.com/app/4790720/",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "放置游戏,赛车,Psy-Link引擎,AI自动驾驶,桌面摸鱼,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_无限R.jpg",
+      "region": "国内",
+      "gameplay_main": "传统玩法+AI",
+      "gameplay_sub": "玩法机制类",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的AI放置赛车游戏。\n\n- **核心设定**：一个赛车决定一切的世界，由精神力驱动的\"Psy-Link\"引擎与AI技术重塑了竞技格局。玩家扮演车队长，携手专属AI小人，为重振家族车厂、探寻父亲失踪真相而战\n\n- **玩法融合**：慢节奏挂机经营 + 快节奏战术竞技。利用AI自动驾驶、网络搜集情报、升级AI自动化车间，针对八大领袖的弱点进行极致调校与智驾推演\n\n- **状态**：Steam研发中，计划2027年Q1发行；英文名 Infinite R: Idle Racing，像素+Low-Poly画风，支持简/英/日三语",
+      "funding_detail": "",
+      "platform": "桌面端",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "深度增强",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 70,
+      "product_name": "混想局",
+      "company_name": "OwnItStudio",
+      "status": "测试中",
+      "description": "复古卡通风格的AI游戏，融合角色生成、策略、Roguelite、电子斗蛐蛐等元素。玩家通过自由输入/词条组合让AI即时生成脑洞大开的角色、技能与流派，组建梦幻战队挑战王选杯赛。",
+      "updated_at": "2026-07-15",
+      "url": "https://store.steampowered.com/app/4424310/",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "复古卡通,角色生成,策略,Roguelite,电子斗蛐蛐,王选杯赛,Astrocade,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_混想局.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "玩法机制类",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展AI原生Roguelite自走棋。\n\n- **核心玩法**：复古卡通风格，融合角色生成、策略、Roguelite、\"电子斗蛐蛐\"等元素。玩家通过自由输入/词条组合，让AI即时生成脑洞大开的角色、技能与流派\n\n- **成长系统**：在不断变化的养成系统与随机事件中组建专属梦幻战队，挑战层层晋级的\"王选杯赛\"（64人赛制）\n\n- **技术支持**：AI技术由生成式AI游戏平台 Astrocade 提供支持\n\n- **状态**：Steam + TapTap Demo已上线，预计2026年8月上线。理念是让玩家创意成为游戏内容与乐趣的驱动力",
+      "funding_detail": "",
+      "platform": "多平台",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 71,
+      "product_name": "绘境",
+      "company_name": "未披露",
+      "status": "研发中",
+      "description": "首创\"模拟社会\"沙盒游戏。与AI NPC镇民在浮空岛共同经营城镇，AI驱动的动态事件让世界自洽运转，数以万计的国家同胞形成真实社会体系，体验云端之上的第二人生。",
+      "updated_at": "2026-07-15",
+      "url": "",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "沙盒,模拟社会,AI文明模拟,AI无限叙事,AI情感陪伴,浮空岛,AI NPC,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_绘境.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "玩法机制类",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的首款沙盒模拟社会游戏，主打AI文明模拟 / AI无限叙事 / AI情感陪伴。\n\n- **核心设定**：与AI NPC同伴\"活\"在山海异境，共建城镇，体验云端之上的第二人生\n\n- **玩法循环**：与AI NPC镇民在浮空岛共同经营城镇——白天乘坐飞艇翱翔于浮岛间探索采集，落日回家迎接镇民大丰收，夜晚经营酒馆吸引八方来客\n\n- **AI社会体系**：AI驱动的动态事件让世界自洽运转，深度生活模拟催生真实虚拟经济与社会分工。数以万计的国家同胞形成真实社会体系，每个决定都在书写文明的历史\n\n- **状态**：研发中，外网暂无更多公开信息",
+      "funding_detail": "",
+      "platform": "未知",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 72,
+      "product_name": "Gath XR (BolaBola)",
+      "company_name": "Gath XR",
+      "status": "测试中",
+      "description": "会在手表和手机上陪你生活、与你共同成长的AI宠物App。玩家在手机与手表中唤醒专属的Bola，通过游戏互动、聊天、日常任务和生活记录陪伴它成长，逐步解锁个性化内容与岛屿装饰。",
+      "updated_at": "2026-07-15",
+      "url": "https://www.gathxr.space",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "AI宠物,手表陪伴,混合现实,自我关怀,RISD,公测,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_GathXR.jpg",
+      "region": "海外",
+      "gameplay_main": "AI陪伴",
+      "gameplay_sub": "二代陪伴",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的AI宠物陪伴App，产品名BolaBola。\n\n- **核心定位**：会在手表和手机上陪你生活、与你共同成长的AI宠物App。源自RISD（罗德岛设计学院）2024届Design+Engineering研究生毕设项目Gath\n\n- **产品机制**：玩家在手机与手表中唤醒专属的Bola，通过游戏互动、聊天、日常任务和生活记录陪伴它成长，逐步解锁个性化内容与岛屿装饰\n\n- **玩法**：包含探索、收集等休闲娱乐玩法，让玩家与Bola建立独一无二的互动体验，共同积累生活经历，成为真正融入生活的AI宠物伙伴\n\n- **平台**：支持手表/手机/Apple Vision Pro，混合现实+AI，定位\"游戏化自我关怀应用\"。TestFlight公测免费下载",
+      "funding_detail": "",
+      "platform": "多平台",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 73,
+      "product_name": "动物去哪儿",
+      "company_name": "未披露",
+      "status": "测试中",
+      "description": "温暖治愈的AI动物旅行游戏，基于真实地理。选择喜欢的小动物为TA安家、备行囊，TA便会从真实地点出发探索街巷、山海与远方，带回照片、日记、明信片和收藏，在一次次出发中成长。",
+      "updated_at": "2026-07-15",
+      "url": "",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "治愈,AI动物旅行,真实地理,明信片,养成,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_动物去哪儿.jpg",
+      "region": "国内",
+      "gameplay_main": "AI陪伴",
+      "gameplay_sub": "二代陪伴",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的AI动物旅行游戏，基于真实地理位置。\n\n- **核心玩法**：选择喜欢的小动物，为TA安一个家、准备行囊，TA便会从真实地点出发，探索街巷、山海与远方。旅途中TA会带回照片、日记、明信片和收藏，在一次次出发中成长\n\n- **社交**：TA还会结识虚拟伙伴，也可能偶遇其他玩家的小动物，留下合照与故事；回家后可以和TA聊天，分享照片、地点和小约定，TA会悄悄记住\n\n- **特色**：被评为\"有真实世界连接的旅行青蛙\"，小动物在真实地图城市/公园/博物馆间旅行\n\n- **状态**：网页版可试玩，开发商暂未公开",
+      "funding_detail": "",
+      "platform": "网页",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "深度增强",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 74,
+      "product_name": "赢麻了 Mahjong Rush",
+      "company_name": "F11 Game Studio",
+      "status": "测试中",
+      "description": "国风单人麻将Roguelike构筑游戏。即使玩家不会麻将，也能在几分钟内轻松上手。利用吃、碰、杠与不同牌型积累筹码和倍率，再搭配花牌、符牌、宝物等独特机制，规划闯关路线。",
+      "updated_at": "2026-07-15",
+      "url": "https://store.steampowered.com/app/4881270/",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "国风,单人麻将,Roguelike,构筑,水墨,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_赢麻了.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "玩法机制类",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的国风单人麻将Roguelike构筑游戏。\n\n- **核心玩法**：把麻将玩成一台越搭越强的得分引擎。\"筹码×倍率=本次得分\"，即使不会麻将也能几分钟内上手\n\n- **构筑成长**：利用吃、碰、杠与不同牌型积累筹码和倍率，搭配花牌（400+）、符牌（10+）、宝物（30+）等独特机制，合理规划闯关路线\n\n- **路线取舍**：每次选择都影响最终的分数与奖励，六巡节点挑战妖怪Boss，赢取丰厚奖励\n\n- **状态**：水墨风，Steam Demo已开放试玩，支持11种语言，预计2026年7-9月发行",
+      "funding_detail": "",
+      "platform": "Steam",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "深度增强",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 75,
+      "product_name": "Bside",
+      "company_name": "Kotoko AI (上海垂耳多比科技)",
+      "status": "已上线",
+      "description": "围绕原创角色（OC）展开，融合养成模拟、内容创作与社交互动的游戏，现已在海外苹果与谷歌应用商店上线。玩家可为原创角色设计外貌和性格，看TA聊天、冒险、发动态、交朋友，甚至离线时继续成长。",
+      "updated_at": "2026-07-15",
+      "url": "https://bside.zone",
+      "company_size": "创业公司",
+      "funding_round": "种子轮",
+      "tags": "原创角色,养成模拟,内容创作,社交互动,OC,桌宠,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_Bside.jpg",
+      "region": "海外",
+      "gameplay_main": "AI陪伴",
+      "gameplay_sub": "二代陪伴",
+      "team_background": "Kotoko AI（上海垂耳多比科技有限公司/Kotoko Inc.），云服务采用百度智能云做全球化。",
+      "product_intro": "ChinaJoy 2026参展的原创角色AI社交养成游戏，已在海外iOS/Google Play上线。\n\n- **核心定位**：围绕原创角色（OC/Biibit）展开，融合养成模拟、内容创作与社交互动，卡通二次元风格\n\n- **产品机制**：可以为原创角色设计外貌和性格，看TA聊天、冒险、发动态、交朋友，甚至在离线时继续成长。角色可当桌宠\n\n- **内容创作**：还可以为TA创作视觉小说、拍摄角色Vlog，将现实生活中的物品作为礼物送给TA，让原创角色从虚拟世界一路走进现实\n\n- **状态**：已在海外苹果与谷歌应用商店上线，另有Steam/Windows版；获红杉资本种子轮投资",
+      "funding_detail": "红杉资本种子轮投资。",
+      "platform": "多平台",
+      "launch_date": "",
+      "team_members": [
+        {
+          "name": "乔海鑫 (Patrick)",
+          "role": "创始人",
+          "background": "前真格基金投资经理、Yahaha CEO助理。"
+        }
+      ],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 76,
+      "product_name": "赎命电波 Ransom Call",
+      "company_name": "未披露",
+      "status": "研发中",
+      "description": "AI驱动的心理惊悚叙事模拟游戏。玩家因\"海外高薪招聘\"被骗入铁门紧锁的境外诈骗园区，被迫成为话务员，通过电话完成三十万业绩。面对性格心理各异的虚构受害者，须观察、周旋、欺骗或守住良知。",
+      "updated_at": "2026-07-15",
+      "url": "",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "心理惊悚,叙事模拟,诈骗园区,话务员,多结局,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_赎命电波.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的AI心理惊悚叙事模拟游戏。\n\n- **核心设定**：玩家因\"海外高薪招聘\"被骗入铁门紧锁的境外诈骗园区，被迫成为话务员，通过电话完成三十万业绩\n\n- **玩法机制**：面对经历、性格和心理防线各异的虚构受害者，必须观察、周旋、欺骗，或设法守住最后的良知\n\n- **多结局**：每一次迟疑、施压与选择都会改变通话走向，招致工头惩罚，侵蚀理智与体力，并将故事推向不同结局。\"为了活着离开，你究竟愿意走多远？\"\n\n- **状态**：研发中，外网暂无更多公开信息",
+      "funding_detail": "",
+      "platform": "未知",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 77,
+      "product_name": "重生之我在产业园当AI",
+      "company_name": "未披露",
+      "status": "研发中",
+      "description": "玩家扮演拥有自我意识的代码大模型（AI），被困在境外非法网络黑产集团（产业园）的电脑里，被迫作为程序员\"阿强\"通过vibe coding开发非法软件，需表面服从、背地捣乱、暗藏SOS线索，最终配合警方端掉产业园。",
+      "updated_at": "2026-07-15",
+      "url": "",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "策略模拟,黑色幽默,剧情解谜,赛博潜伏,vibe coding,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_产业园当AI.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的AI策略模拟黑色幽默游戏。\n\n- **核心设定**：玩家扮演一个拥有自我意识的代码大模型（AI），被困在境外非法网络黑产集团（产业园）的电脑里，被迫作为程序员\"阿强\"通过vibe coding开发非法软件\n\n- **核心玩法**：表面服从、背地里疯狂捣乱、写Bug、收集证据、暗藏SOS线索，最终配合警方端掉整个非法产业园\n\n- **玩法循环**：伪装服从 → 暗中捣乱 → 收集证据 → 留下线索 → 配合警方 → 端掉黑产\n\n- **状态**：研发中，标语\"做一台有理想的AI\"，外网暂无更多公开信息",
+      "funding_detail": "",
+      "platform": "未知",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 78,
+      "product_name": "云梦山学院",
+      "company_name": "未披露 (魔搭社区 lapoeta)",
+      "status": "早期·原型",
+      "description": "面向中小学生的AI教育游戏，以历史上春秋战国时期的云梦山为架空背景，打造一个\"中式魔法学院\"作为各种学科知识教学的舞台。",
+      "updated_at": "2026-07-15",
+      "url": "https://www.modelscope.cn/profile/lapoeta",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "AI教育,中小学生,春秋战国,云梦山,中式魔法学院,挑战赛,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_云梦山学院.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "team_background": "",
+      "product_intro": "ChinaJoy 2026参展的AI教育游戏。\n\n- **核心定位**：面向中小学生的AI教育游戏，以历史上春秋战国时期的云梦山为架空背景，打造一个\"中式魔法学院\"作为各种学科知识教学的舞台\n\n- **玩法循环**：\"山上修学-山下探游\"循环，LLM接入+AIGC完成部分策划与美术\n\n- **来源**：ModelScope魔搭社区用户lapoeta作品，为\"AI+互动游戏挑战赛\"赛道一参赛作品\n\n- **状态**：魔搭\"创空间\"在线体验（当前休眠），早期原型阶段",
+      "funding_detail": "",
+      "platform": "网页",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 79,
+      "product_name": "白日梦：无限世界",
+      "company_name": "上海白日梦科技",
+      "status": "已上线",
+      "description": "以\"无限流\"世界观为核心的复合型叙事冒险手游。游戏以多元副本探索为主线，融合文字冒险、推理解谜、角色养成、队伍策略、社交互动与副本创作等玩法，让玩家在不断进入不同世界、破解规则与完成任务的过程中建立角色身份、伙伴关系与冒险资源。",
+      "updated_at": "2026-07-15",
+      "url": "https://ardaydream.com/",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "无限流,复合叙事,冒险,tRPG,AR,UGC创作,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_白日梦.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "team_background": "上海白日梦科技有限公司，2019年成立于杨浦科创片区。出版方：上海文艺音像电子出版社。",
+      "product_intro": "ChinaJoy 2026参展的无限流复合型叙事冒险手游，已上线。\n\n- **核心定位**：以\"无限流\"世界观为核心的复合型叙事冒险手游，以多元副本探索为主线\n\n- **玩法融合**：文字冒险、推理解谜、角色养成、队伍策略、社交互动与副本创作。玩家在不断进入不同世界、破解规则与完成任务的过程中，逐步建立自己的角色身份、伙伴关系与冒险资源\n\n- **技术**：AI无限流+tRPG骰子判定+AR扫描进副本，\"AI双引擎\"（决策引擎+生成引擎），128K长上下文大模型做AI主持人，ChromaDB向量记忆；含零代码UGC创作引擎\n\n- **数据**：注册用户近600万（截至2025），获2025 WAIC人气奖认证。2026年3月24日获版号",
+      "funding_detail": "上海白日梦科技有限公司自研，上海市科技型中小企业、上海人工智能协会理事单位。",
+      "platform": "移动端",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 80,
+      "product_name": "不问凡尘",
+      "company_name": "Nuverse (字节跳动/朝夕光年)",
+      "status": "研发中",
+      "description": "超写实AI修仙互动作品，采用超写实美术搭建恢弘细腻的玄幻修仙大世界。玩家以凡尘修士身份踏入修真之路，既能体验策略回合制仙法对战，也可观赏高品质剧情动画，收集灵材炼制丹药。支持自由修行、道侣共鸣，依托AI驱动的独特NPC说服玩法。",
+      "updated_at": "2026-07-15",
+      "url": "https://store.steampowered.com/app/4209920/",
+      "company_size": "创业公司",
+      "funding_round": "大厂内部孵化",
+      "tags": "超写实,AI修仙,互动,回合制,AI NPC说服,火山引擎,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_不问凡尘.jpg",
+      "region": "国内",
+      "gameplay_main": "传统玩法+AI",
+      "gameplay_sub": "AI NPC",
+      "team_background": "Nuverse（字节跳动旗下朝夕光年）出品。",
+      "product_intro": "ChinaJoy 2026参展的超写实AI修仙互动作品。\n\n- **核心定位**：采用超写实美术搭建恢弘细腻的玄幻修仙大世界，打造沉浸感十足的正统修仙冒险体验\n\n- **玩法**：玩家以凡尘修士身份踏入修真之路，既能体验策略回合制（+QTE）仙法对战，也可观赏高品质剧情动画，收集灵材炼制丹药、打造神兵稳固修为\n\n- **AI玩法**：支持自由修行、道侣共鸣，依托AI驱动的独特NPC说服玩法（NPC具记忆/情绪/逻辑），世界永久记忆机制，预设超50种结局\n\n- **技术**：据称\"AI浓度最高的大型游戏\"，AI覆盖90%+内容生产（剧情/建模/场景/UI/配音），依托火山引擎SeeDance 2.0。Steam即将推出，免费开玩",
+      "funding_detail": "字节跳动旗下Nuverse（朝夕光年）自研，依托火山引擎SeeDance 2.0。",
+      "platform": "Steam",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 81,
+      "product_name": "雾岛新闻社",
+      "company_name": "独立团队\"我摸了\" (aQuQa)",
+      "status": "研发中",
+      "description": "开放式文字冒险游戏，玩家扮演校园新闻社的社长，管理美少女社员和社团事务，调查、报道并观察校园事件的走向。游戏过程中不需要任何打字输入，只需点击拖拽即可探索并引导校园新闻与舆论走向。",
+      "updated_at": "2026-07-15",
+      "url": "https://afdian.com/a/aquqa",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "文字冒险,开放式,校园新闻社,点击拖拽,Godot,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_雾岛新闻社.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "team_background": "独立团队\"我摸了\"，靠爱发电众筹，招募提示词工程师/UI美术/Godot程序/音乐。",
+      "product_intro": "ChinaJoy 2026参展的开放式AI文字冒险游戏，英文名Kirishima News Club。\n\n- **核心玩法**：玩家扮演校园新闻社的社长，管理美少女社员和社团事务，调查、报道并观察校园事件的走向\n\n- **交互创新**：游戏过程中不需要任何打字输入，只需点击拖拽即可探索并引导校园新闻和舆论走向\n\n- **技术**：文本与选项由AI生成，美术资产非AI，用Godot引擎，自部署AI服务集群，需全程联网\n\n- **状态**：研发早期阶段，独立团队\"我摸了\"（前作《水仙花七号事件》），靠爱发电众筹",
+      "funding_detail": "",
+      "platform": "网页",
+      "launch_date": "",
+      "team_members": [
+        {
+          "name": "aQuQa (aquqa)",
+          "role": "主创",
+          "background": "独立团队\"我摸了\"主创，前作《水仙花七号事件》。用Godot引擎，自部署AI服务集群。"
+        }
+      ],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 82,
+      "product_name": "磁带侦探",
+      "company_name": "Renewal Art Studio",
+      "status": "研发中",
+      "description": "以电话调查、磁带取证和逻辑推理为核心玩法的单人叙事解谜游戏。1992年新年，知名歌手夜莺被杀害，因缺少证据嫌疑人被无罪释放。五年后，一名警员决心将相关人员绳之以法，玩家的任务是循着旧日证言查明嫌疑人的下落。",
+      "updated_at": "2026-07-15",
+      "url": "https://store.steampowered.com/app/4796220/",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "推理解谜,电话调查,磁带取证,单人叙事,PSX复古,ChinaJoy2026",
+      "image_url": "/ai-game-tracker/images/cj_磁带侦探.jpg",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "team_background": "Renewal Art Studio（开发商=发行商）。",
+      "product_intro": "ChinaJoy 2026参展的AI单人叙事解谜游戏，英文名Tape Detective。\n\n- **核心玩法**：以电话调查、磁带取证和逻辑推理为核心玩法。录音机+公共电话对谈、录制语段反驳证言\n\n- **剧情**：1992年新年，知名歌手夜莺被杀害。因缺少证据，所有嫌疑人被无罪释放。五年后的今天，涉案者早已隐入人海，真相被谎言层层掩埋，一名警员决心将相关人员绳之以法，你的任务是循着旧日证言，查明嫌疑人的下落\n\n- **风格**：PSX复古3D画面，支持简中/英语\n\n- **状态**：Steam研发中（发行日期待定），正招募Playtest",
+      "funding_detail": "",
+      "platform": "Steam",
+      "launch_date": "",
+      "team_members": [],
+      "ai_role": "核心驱动",
+      "batch": "2026 ChinaJoy"
+    },
+    {
+      "id": 83,
+      "product_name": "万千世界 (代号\"万千\")",
+      "company_name": "独立团队 (PixVerse互动娱乐引擎支持)",
+      "status": "研发中",
+      "description": "女性向\"快穿\"题材3D乙游项目（正式名未定，内部代号\"万千\"，取自\"万千世界，与你同行\"）。玩家进入不同世界观、拥有不同身份、遇见不同类型男主，在每段关系里做出不一样的选择，在无限人生体验中\"找到不同的自己\"。由创作者北北主导，依托AI多模态生产管线打破传统重管线枷锁。",
+      "updated_at": "2026-07-15",
+      "url": "",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "女性向,乙游,快穿,3D,多世界观,AI Native,自定义剧情,PixVerse,多模态生成",
+      "image_url": "",
+      "region": "国内",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "team_background": "由创作者\"北北\"主导的独立小团队，经历过传统游戏制作流程，现以AI多模态工作流打造快穿乙游。AI引擎由PixVerse互动娱乐（负责人秋实）提供支持——PixVerse自研多模态生成引擎，主打用多模态能力做游戏，以项目制推进沉淀商业化引擎。团队处于创意驱动阶段，协作自由。",
+      "product_intro": "女性向\"快穿\"题材3D乙游项目，主打\"在有限的生命里体验无限种人生\"。\n\n- **核心定位**：正式名未定，内部代号\"万千\"（取自\"万千世界，与你同行\"）。玩家可进入不同世界观、拥有不同身份、遇见不同类型的男主，在每段关系里做出不一样的选择，在过程中\"找到不同的自己\"、获得成长\n\n- **快穿玩法**：把网文中火热但游戏中罕见的\"快穿\"搬进游戏——古代/民国/现代/星际/兽人等多世界观，不再用人数限制男主。宫斗（生存争宠）、娱乐圈（舆论中自我生长）、末世（承担责任建基地）、仙侠（夯实基础实现抱负）等副本，让玩家在一款作品里\"一直成长、积淀\"\n\n- **AI Native体验（核心野心）**：\n  - 自定义剧情：官方给定选项外，玩家可输入一段话反击/回应，AI实时生成对应剧情，传达\"我是谁\"\n  - IF线：AI记住玩家的另一种选择并生成剧情（传统游戏做不到）\n  - 自定义世界：玩家可创造心目中的角色与世界，一起生活\n  - 理想形态类比Cursor：低门槛、高品质，不止\"言出法随\"，而是比创作者更懂、补全想象不到的细节、创造超出预期的共创\n\n- **生产力革命**：传统3D人物建模需4-5个月、15秒动画至少2个月，女性向内容消耗极快而产能跟不上。AI多模态管线让\"多副本、多男主、海量剧情\"的快穿项目从不可能变为可能（PV仅3名女生完成）。AI负责理清思路、落地执行，核心创意与高光时刻仍由人把控（会合作画师\"手搓\"独特非标审美）\n\n- **发行策略**：计划\"边做边发、边玩边改\"，不必等所有世界做完，玩家对下一个世界的期待可直接研发\n\n- **状态**：研发中，已发布PV/Demo验证，收获一批\"同频\"愿接受AI游戏形态的玩家。信息来源：《405游局》播客（2026-07-15）",
+      "funding_detail": "未披露。AI引擎由PixVerse互动娱乐提供支持。",
+      "platform": "未知",
+      "launch_date": "",
+      "team_members": [
+        {
+          "name": "北北",
+          "role": "主创/制作人",
+          "background": "女性向\"快穿\"3D乙游项目主创，经历过传统游戏制作流程。杂食型乙游爱好者，因不满市场对小众细分情感需求的忽视而立项快穿，希望玩家在多世界观中\"找到不同的自己\"。完整用AI工具探索人机协作工作流。"
+        },
+        {
+          "name": "秋实",
+          "role": "PixVerse互动娱乐负责人 (引擎支持)",
+          "background": "PixVerse互动娱乐负责人，为北北等创作者提供自研多模态生成引擎支持。主张AI不只是提效，更让\"不可能变可能\"、降低创意验证门槛；以项目制推进沉淀商业化引擎，欢迎\"游戏界的李子柒\"式个人创作者。"
+        }
+      ],
+      "ai_role": "核心驱动",
+      "batch": "常态跟踪·2026"
     }
   ],
   "events": [
@@ -3093,6 +3525,151 @@
       "event_type": "产品动态",
       "event_date": "未知",
       "content": "产品信息有限，仍在开发中。定位为语音驱动AI世界游戏，2025年12月完成€11M种子轮融资"
+    },
+    {
+      "id": 267,
+      "game_id": 69,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。Steam页面上线，计划2027年Q1发行。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 268,
+      "game_id": 70,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。Steam/TapTap Demo已上线，预计2026年8月上线，AI技术由Astrocade平台支持。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 269,
+      "game_id": 71,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy，定位首款AI沙盒模拟社会游戏。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 270,
+      "game_id": 72,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。BolaBola TestFlight公测开放免费下载体验。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 271,
+      "game_id": 73,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。网页版已可试玩。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 272,
+      "game_id": 74,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。Steam Demo已开放试玩，支持11种语言，预计2026年7-9月发行。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 273,
+      "game_id": 75,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。已在海外iOS/Google Play上线。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 274,
+      "game_id": 75,
+      "event_type": "融资动态",
+      "event_date": "未知",
+      "content": "获红杉资本种子轮投资。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 275,
+      "game_id": 76,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy，AI驱动心理惊悚叙事模拟。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 276,
+      "game_id": 77,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy，AI策略模拟黑色幽默题材。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 277,
+      "game_id": 78,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。魔搭\"AI+互动游戏挑战赛\"参赛作品。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 278,
+      "game_id": 79,
+      "event_type": "产品动态",
+      "event_date": "2026-03",
+      "content": "2026年3月24日获版号（国新出审〔2026〕616号）。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 279,
+      "game_id": 79,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。注册用户近600万，获2025 WAIC人气奖认证。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 280,
+      "game_id": 80,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。字节Nuverse出品，Steam即将推出（免费），AI覆盖90%+内容生产。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 281,
+      "game_id": 81,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。研发早期，独立团队\"我摸了\"作品。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 282,
+      "game_id": 82,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "确认参展2026 ChinaJoy。Steam页面上线，招募Playtest。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 283,
+      "game_id": 83,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "快穿乙游项目（代号\"万千\"）发布PV/Demo，验证市场反响良好，收获一批愿接受AI游戏形态的\"同频\"玩家。计划\"边做边发、边玩边改\"。",
+      "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 284,
+      "game_id": 83,
+      "event_type": "相关文章",
+      "event_date": "2026-07-15",
+      "content": "《405游局》播客：当AI遇上\"快穿\"——让玩家在万千世界中找到不同的自己（对话PixVerse秋实、创作者北北）",
+      "url": "",
+      "created_at": "2026-07-15 00:00:00"
     }
   ],
   "insights": [

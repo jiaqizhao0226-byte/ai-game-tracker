@@ -58,6 +58,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [events] = useState<any[]>(initialEvents);
   
   const [search, setSearch] = useState('');
+  const [filterBatches, setFilterBatches] = useState<string[]>([]);
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>([]);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>([]);
   const [filterAiRoles, setFilterAiRoles] = useState<string[]>([]);
@@ -70,15 +71,23 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       (g.gameplay_sub && g.gameplay_sub.toLowerCase().includes(search.toLowerCase())) ||
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
 
+    const matchBatch = filterBatches.length === 0 || filterBatches.includes(g.batch);
     const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
     const matchAiRole = filterAiRoles.length === 0 || filterAiRoles.includes(g.ai_role);
     const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
 
-    return matchSearch && matchType && matchAiRole && matchRegion;
+    return matchSearch && matchBatch && matchType && matchAiRole && matchRegion;
   });
 
 
   const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
+
+  const uniqueBatches = Array.from(new Set(games.map(g => g.batch).filter(Boolean))).sort((a: string, b: string) => {
+    const ca = a.startsWith('常态跟踪') ? 0 : 1;
+    const cb = b.startsWith('常态跟踪') ? 0 : 1;
+    if (ca !== cb) return ca - cb;
+    return a.localeCompare(b, 'zh');
+  });
 
   return (
     <div>
@@ -97,6 +106,13 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
           
           <div className="flex flex-wrap items-center gap-2">
             <Filter className="h-4 w-4 text-neutral-400 shrink-0" />
+            <MultiSelect
+              label="收录批次"
+              options={uniqueBatches as string[]}
+              selected={filterBatches}
+              onChange={setFilterBatches}
+            />
+
             <MultiSelect 
               label="全部区域" 
               options={["国内", "海外", "未知"]} 
@@ -153,6 +169,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 ★ 重点关注
               </div>
             )}
+            {game.batch && !game.batch.startsWith('常态跟踪') && (
+              <div className="absolute top-0 right-0 z-10 bg-rose-600 text-white text-[10px] font-bold tracking-wider px-2.5 py-1 shadow-md rounded-bl-lg">
+                {game.batch}
+              </div>
+            )}
             <GameImage
               src={game.image_url}
               name={game.product_name}
@@ -191,35 +212,15 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-800 text-neutral-100">
                   {game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` - ${game.gameplay_sub}` : ""}
                 </span>
-                {game.platform && game.platform !== '未知' && (
+                {game.funding_round && game.funding_round !== '未知' && game.funding_round !== '未披露' && (
                   <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
-                    {game.platform}
+                    {game.funding_round}
                   </span>
                 )}
-                {game.company_size && game.company_size !== '未知' && (
-                  <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
-                    {game.company_size}
-                  </span>
-                )}
-                {game.funding_round && game.funding_round !== '未知' && (
-                  <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
-                    {game.funding_round}{game.funding_amount ? ` ${game.funding_amount}` : ""}
-                  </span>
-                )}
-                {game.launch_date && (
-                  <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-amber-50 text-amber-700 border border-amber-100">
-                    {game.launch_date}
-                  </span>
-                )}
-                {game.tags && game.tags.split(',').filter((t: string) => t.trim()).map((tag: string, i: number) => (
-                  <span key={i} className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-200 text-neutral-700">
-                    #{tag.trim()}
-                  </span>
-                ))}
                 {hasRecentEvents && (
                    <span className="inline-flex items-center gap-1 text-[10px] uppercase font-mono px-1.5 py-0.5 bg-blue-50 text-blue-700 border border-blue-100">
                     <Activity className="h-2.5 w-2.5" />
-                    Updates: {gameEvents.length}
+                    {gameEvents.length}
                   </span>
                 )}
               </div>
