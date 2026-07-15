@@ -4,6 +4,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check } from 'lucide-react';
 import Link from 'next/link';
+import GameImage from '../components/GameImage';
 
 function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: string[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -149,24 +150,27 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 ★ 重点关注
               </div>
             )}
-            {game.image_url ? (
-              <div className="w-full h-32 bg-neutral-100 border-b border-neutral-100 shrink-0 relative">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={game.image_url} alt={game.product_name} className="w-full h-full object-cover" />
-              </div>
-            ) : (
-              <div className="w-full h-32 bg-gradient-to-br from-neutral-800 to-neutral-600 border-b border-neutral-100 shrink-0 relative flex items-center justify-center">
-                <span className="text-white font-bold text-lg tracking-tight px-4 text-center line-clamp-2">{game.product_name}</span>
-              </div>
-            )}
+            <GameImage
+              src={game.image_url}
+              name={game.product_name}
+              imgWrapperClassName="w-full h-32 bg-neutral-100 border-b border-neutral-100 shrink-0 relative"
+              placeholderClassName="w-full h-32 bg-gradient-to-br from-neutral-800 to-neutral-600 border-b border-neutral-100 shrink-0 relative flex items-center justify-center"
+              textClassName="text-white font-bold text-lg tracking-tight px-4 text-center line-clamp-2"
+            />
             <div className="p-5 flex-1 flex flex-col">
               <div className="flex justify-between items-start mb-1 gap-2">
                 <div className="flex items-center gap-2 min-w-0 flex-1">
                   <h3 className="font-bold text-base text-neutral-900 truncate" title={game.product_name}>{game.product_name}</h3>
                   {game.url && (
-                    <a href={game.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="text-neutral-400 hover:text-indigo-600 transition-colors" title="访问外部链接">
+                    <span
+                      role="link"
+                      tabIndex={0}
+                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(game.url, '_blank', 'noopener,noreferrer'); }}
+                      className="text-neutral-400 hover:text-indigo-600 transition-colors cursor-pointer"
+                      title="访问外部链接"
+                    >
                       <ExternalLink className="h-4 w-4" />
-                    </a>
+                    </span>
                   )}
                 </div>
                 <span className="text-[10px] uppercase tracking-wider px-1.5 py-0.5 bg-neutral-100 text-neutral-600 border border-neutral-200 font-mono whitespace-nowrap">

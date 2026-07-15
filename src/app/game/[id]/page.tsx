@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import data from '../../../data.json';
 import Link from 'next/link';
-import { ArrowLeft, ChevronLeft, Link2 } from 'lucide-react';
+import GameImage from '../../../components/GameImage';
+import { ArrowLeft, ChevronLeft, Link2, FileText } from 'lucide-react';
 import EventsTabs from './EventsTabs';
 
 export function generateStaticParams() {
@@ -44,16 +45,13 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
       <div className="max-w-[1200px] mx-auto px-6 sm:px-12 py-8">
         {/* Hero section: image + title + key tags */}
         <div className="mb-8 flex flex-col md:flex-row gap-6">
-          {game.image_url ? (
-            <div className="w-full md:w-[400px] h-48 md:h-52 bg-neutral-100 border border-neutral-200 shrink-0 overflow-hidden rounded-sm">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={game.image_url} alt={game.product_name} className="w-full h-full object-cover" />
-            </div>
-          ) : (
-            <div className="w-full md:w-[400px] h-48 md:h-52 bg-gradient-to-br from-neutral-800 to-neutral-600 shrink-0 rounded-sm flex items-center justify-center">
-              <span className="text-white font-bold text-xl tracking-tight px-4 text-center">{game.product_name}</span>
-            </div>
-          )}
+          <GameImage
+            src={game.image_url}
+            name={game.product_name}
+            imgWrapperClassName="w-full md:w-[400px] h-48 md:h-52 bg-neutral-100 border border-neutral-200 shrink-0 overflow-hidden rounded-sm"
+            placeholderClassName="w-full md:w-[400px] h-48 md:h-52 bg-gradient-to-br from-neutral-800 to-neutral-600 shrink-0 rounded-sm flex items-center justify-center"
+            textClassName="text-white font-bold text-xl tracking-tight px-4 text-center"
+          />
           <div className="flex-1 flex flex-col justify-end">
             <div className="flex flex-wrap gap-2 mb-3">
               <span className="text-[10px] uppercase font-mono px-2 py-1 bg-neutral-900 text-white">{game.gameplay_main}</span>
@@ -196,6 +194,13 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                   <div className="pt-2 border-t border-neutral-100">
                     <a href={game.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline text-xs flex items-center gap-1 break-all">
                       <Link2 className="w-3 h-3 shrink-0" /> {game.url}
+                    </a>
+                  </div>
+                )}
+                {game.bp_url && (
+                  <div className="pt-2 border-t border-neutral-100">
+                    <a href={game.bp_url} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline text-xs flex items-center gap-1.5 font-bold">
+                      <FileText className="w-3.5 h-3.5 shrink-0" /> 查看商业计划书 (BP)
                     </a>
                   </div>
                 )}
