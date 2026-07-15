@@ -149,7 +149,7 @@ export async function parseIntelligence(formData: FormData) {
 - company_name (string): 厂商/开发团队（必填）
 - company_size (string): 大厂 / 中小团队 / 独立开发者 / 未知 （从中选一个）
 - funding_round (string): 融资轮次，如 "未融资", "天使/种子轮", "A轮", "B轮及以上", "被收购", "已上市", "未知" 等
-- gameplay_type (string): 玩法选型，从以下分类中选一个最符合的："AI陪伴", "传统玩法+AI NPC", "传统玩法+AI队友", "AI原生玩法 (对话模拟)", "AI原生玩法 (派对游戏)", "AI原生玩法 (机制/卡牌)", "初代Chatbot (AI陪伴)", "生成式AI驱动UGC", "可交互视频", "其他"。如果都不符合就选"其他"
+- gameplay_type (string): 玩法选型，从以下分类中选一个最符合的："AI陪伴", "传统玩法+AI NPC", "传统玩法+AI队友", "AI原生玩法 (对话模拟)", "AI原生玩法 (派对游戏)", "AI原生玩法 (机制/卡牌)", "初代Chatbot (AI陪伴)", "生成式AI驱动UGC", "其他"。如果都不符合就选"其他"
 - status (string): 开发状态，如"已上线", "测试中", "研发中", "早期" 等
 - description (string): 情报摘要/核心机制简述，50-150字，提取产品核心特色、核心数据等。
 - url (string): 产品的官网链接或相关文章链接，如果没有则留空

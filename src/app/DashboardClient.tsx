@@ -60,7 +60,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [search, setSearch] = useState('');
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>([]);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>([]);
-  const [filterThemes, setFilterThemes] = useState<string[]>([]);
+  const [filterAiRoles, setFilterAiRoles] = useState<string[]>([]);
   const [filterRegions, setFilterRegions] = useState<string[]>([]);
 
   const filteredGames = games.filter(g => {
@@ -71,16 +71,14 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
 
     const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
-    const matchTheme = filterThemes.length === 0 || filterThemes.includes(g.gameplay_theme);
+    const matchAiRole = filterAiRoles.length === 0 || filterAiRoles.includes(g.ai_role);
     const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
 
-    return matchSearch && matchType && matchTheme && matchRegion;
+    return matchSearch && matchType && matchAiRole && matchRegion;
   });
 
-  
-  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
 
-  const uniqueThemes = Array.from(new Set(games.map(g => g.gameplay_theme).filter(Boolean)));
+  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
 
   return (
     <div>
@@ -121,10 +119,10 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             />
 
             <MultiSelect
-              label="玩法主题"
-              options={uniqueThemes as string[]}
-              selected={filterThemes}
-              onChange={setFilterThemes}
+              label="AI介入度"
+              options={["核心驱动", "深度增强", "外围辅助"]}
+              selected={filterAiRoles}
+              onChange={setFilterAiRoles}
             />
 
           </div>
@@ -139,6 +137,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
         {filteredGames.map((game) => {
           const gameEvents = events.filter(e => e.game_id === game.id);
           const hasRecentEvents = gameEvents.length > 0;
+          const roleCls = game.ai_role === '核心驱动'
+            ? 'bg-indigo-600 text-white'
+            : game.ai_role === '深度增强'
+            ? 'bg-sky-100 text-sky-700 border border-sky-200'
+            : 'bg-neutral-100 text-neutral-500 border border-neutral-200';
           return (
           <Link
             key={game.id}
@@ -180,6 +183,11 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               <p className="text-xs font-mono text-neutral-500 mb-3">{game.company_name}</p>
               
               <div className="mb-3 flex flex-wrap gap-1">
+                {game.ai_role && (
+                  <span className={`inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 ${roleCls}`} title="AI 介入度">
+                    {game.ai_role}
+                  </span>
+                )}
                 <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-800 text-neutral-100">
                   {game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` - ${game.gameplay_sub}` : ""}
                 </span>
