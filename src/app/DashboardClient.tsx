@@ -4,6 +4,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check } from 'lucide-react';
 import Link from 'next/link';
+import GameImage from '@/components/GameImage';
 
 function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: string[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -152,16 +153,13 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 ★ 重点关注
               </div>
             )}
-            {game.image_url ? (
-              <div className="w-full h-32 bg-neutral-100 border-b border-neutral-100 shrink-0 relative">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={game.image_url} alt={game.product_name} className="w-full h-full object-cover" />
-              </div>
-            ) : (
-              <div className="w-full h-32 bg-gradient-to-br from-neutral-800 to-neutral-600 border-b border-neutral-100 shrink-0 relative flex items-center justify-center">
-                <span className="text-white font-bold text-lg tracking-tight px-4 text-center line-clamp-2">{game.product_name}</span>
-              </div>
-            )}
+            <GameImage
+              src={game.image_url}
+              name={game.product_name}
+              imgWrapperClassName="w-full h-32 bg-neutral-100 border-b border-neutral-100 shrink-0 relative"
+              placeholderClassName="w-full h-32 bg-gradient-to-br from-neutral-800 to-neutral-600 border-b border-neutral-100 shrink-0 relative flex items-center justify-center"
+              textClassName="text-white font-bold text-lg tracking-tight px-4 text-center line-clamp-2"
+            />
             <div className="p-5 flex-1 flex flex-col">
               <div className="flex justify-between items-start mb-1 gap-2">
                 <div className="flex items-center gap-2 min-w-0 flex-1">
