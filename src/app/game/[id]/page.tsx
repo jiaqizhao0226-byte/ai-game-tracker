@@ -4,7 +4,6 @@ import Link from 'next/link';
 import GameImage from '../../../components/GameImage';
 import { ArrowLeft, ChevronLeft, Link2, FileText } from 'lucide-react';
 import EventsTabs from './EventsTabs';
-import GameImage from '@/components/GameImage';
 
 export function generateStaticParams() {
   return data.games.map((game) => ({
