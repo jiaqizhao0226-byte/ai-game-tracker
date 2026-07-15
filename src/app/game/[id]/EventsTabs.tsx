@@ -11,26 +11,18 @@ export default function EventsTabs({ productEvents, fundingEvents, articleEvents
 }) {
   const [activeTab, setActiveTab] = useState<'product' | 'funding' | 'article'>('product');
 
+  // 始终显示3个Tab，不过滤空的
   const tabs = [
     { key: 'product' as const, label: '产品动态', events: productEvents, dot: 'bg-indigo-500', line: 'bg-indigo-200', activeColor: 'border-indigo-500 text-indigo-700' },
     { key: 'funding' as const, label: '融资动态', events: fundingEvents, dot: 'bg-emerald-500', line: 'bg-emerald-200', activeColor: 'border-emerald-500 text-emerald-700' },
     { key: 'article' as const, label: '相关文章', events: articleEvents, dot: 'bg-amber-500', line: 'bg-amber-200', activeColor: 'border-amber-500 text-amber-700' },
-  ].filter(t => t.events.length > 0);
+  ];
 
-  if (tabs.length === 0) {
-    return (
-      <div className="text-center py-10 text-neutral-400 text-sm font-mono bg-white border border-neutral-200">
-        暂无动态记录。
-      </div>
-    );
-  }
-
-  // If current tab has no events, switch to first available
   const current = tabs.find(t => t.key === activeTab) || tabs[0];
 
   return (
     <div>
-      {/* Tab bar */}
+      {/* Tab bar - 始终显示3个Tab */}
       <div className="flex border-b border-neutral-200 mb-6">
         {tabs.map(tab => (
           <button
@@ -49,24 +41,32 @@ export default function EventsTabs({ productEvents, fundingEvents, articleEvents
 
       {/* Timeline - fixed min height to prevent page jump */}
       <div className="relative pl-6 min-h-[200px]">
-        <div className={`absolute left-[7px] top-2 bottom-2 w-px ${current.line}`} />
-        {current.events.map((evt: any) => (
-          <div key={evt.id} className="relative pb-5 last:pb-0">
-            <div className={`absolute -left-[22px] top-1.5 w-3 h-3 rounded-full ${current.dot} border-2 border-white shadow-sm`} />
-            <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-xs font-mono font-bold text-neutral-700">{evt.event_date}</span>
-            </div>
-            <div className="bg-white border border-neutral-200 p-3.5">
-              {evt.url ? (
-                <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline leading-relaxed flex items-start gap-1">
-                  {evt.content} <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" />
-                </a>
-              ) : (
-                <p className="text-sm text-neutral-700 leading-relaxed">{evt.content}</p>
-              )}
-            </div>
+        {current.events.length === 0 ? (
+          <div className="text-center py-12 text-neutral-400 text-sm font-mono">
+            暂无{current.label}记录。
           </div>
-        ))}
+        ) : (
+          <>
+            <div className={`absolute left-[7px] top-2 bottom-2 w-px ${current.line}`} />
+            {current.events.map((evt: any) => (
+              <div key={evt.id} className="relative pb-5 last:pb-0">
+                <div className={`absolute -left-[22px] top-1.5 w-3 h-3 rounded-full ${current.dot} border-2 border-white shadow-sm`} />
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-xs font-mono font-bold text-neutral-700">{evt.event_date}</span>
+                </div>
+                <div className="bg-white border border-neutral-200 p-3.5">
+                  {evt.url ? (
+                    <a href={evt.url} target="_blank" rel="noopener noreferrer" className="text-sm text-indigo-600 hover:underline leading-relaxed flex items-start gap-1">
+                      {evt.content} <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                    </a>
+                  ) : (
+                    <p className="text-sm text-neutral-700 leading-relaxed">{evt.content}</p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </>
+        )}
       </div>
     </div>
   );

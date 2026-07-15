@@ -6,9 +6,9 @@ export default function AnalyticsPage() {
 
   // 统计函数
   const countBy = (key: string): [string, number][] => {
-    const result = {};
+    const result: Record<string, number> = {};
     games.forEach((g: any) => {
-      const val = g[key] || '未知';
+      const val: string = g[key] || '未知';
       result[val] = (result[val] || 0) + 1;
     });
     return Object.entries(result).sort((a, b) => b[1] - a[1]);
@@ -16,14 +16,10 @@ export default function AnalyticsPage() {
 
   const mainTypes = countBy('gameplay_main');
   const statuses = countBy('status');
-  const regions = countBy('region');
-  const platforms = countBy('platform');
-  const fundings = countBy('funding_round');
-  const sizes = countBy('company_size');
 
   // 玩法子类
-  const subTypes = {};
-  games.forEach(g => {
+  const subTypes: Record<string, number> = {};
+  games.forEach((g: any) => {
     if (g.gameplay_sub) {
       subTypes[g.gameplay_sub] = (subTypes[g.gameplay_sub] || 0) + 1;
     }
@@ -31,8 +27,8 @@ export default function AnalyticsPage() {
   const subList = Object.entries(subTypes).sort((a, b) => b[1] - a[1]);
 
   // 玩法主题
-  const themes = {};
-  games.forEach(g => {
+  const themes: Record<string, number> = {};
+  games.forEach((g: any) => {
     if (g.gameplay_theme) {
       themes[g.gameplay_theme] = (themes[g.gameplay_theme] || 0) + 1;
     }
@@ -101,10 +97,6 @@ export default function AnalyticsPage() {
         <BarChart title="玩法子类分布" data={subList} color="bg-indigo-700" />
         <BarChart title="玩法主题分布" data={themeList.length > 0 ? themeList : [['暂无', 0]]} color="bg-emerald-600" />
         <BarChart title="产品状态分布" data={statuses} color="bg-amber-600" />
-        <BarChart title="区域分布" data={regions} color="bg-blue-600" />
-        <BarChart title="平台分布" data={platforms} color="bg-purple-600" />
-        <BarChart title="融资轮次分布" data={fundings} color="bg-rose-600" />
-        <BarChart title="团队规模分布" data={sizes} color="bg-teal-600" />
       </div>
     </main>
   );
