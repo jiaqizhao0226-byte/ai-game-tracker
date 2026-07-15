@@ -169,11 +169,6 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 ★ 重点关注
               </div>
             )}
-            {game.batch && !game.batch.startsWith('常态跟踪') && (
-              <div className="absolute top-0 right-0 z-10 bg-rose-600 text-white text-[10px] font-bold tracking-wider px-2.5 py-1 shadow-md rounded-bl-lg">
-                {game.batch}
-              </div>
-            )}
             <GameImage
               src={game.image_url}
               name={game.product_name}
