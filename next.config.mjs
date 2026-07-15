@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-
+// Cloudflare Pages 在根路径伺服，不需要 basePath/assetPrefix
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/ai-game-tracker' : '',
-  assetPrefix: isProd ? '/ai-game-tracker/' : '',
   images: {
     unoptimized: true,
   },

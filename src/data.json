@@ -11,7 +11,7 @@
       "company_size": "创业公司",
       "funding_round": "A轮",
       "tags": "桌面宠, AI陪玩, 游戏辅助, VLM视觉识别, 出海, AIPC预装, 二次元IP, 跨游戏记忆",
-      "image_url": "/ai-game-tracker/images/逗逗.png",
+      "image_url": "/images/逗逗.png",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
@@ -83,7 +83,7 @@
       "company_size": "大厂",
       "funding_round": "已上市",
       "tags": "MMO, AI剧组, UGC, 逆抖",
-      "image_url": "/ai-game-tracker/images/逆水寒.png",
+      "image_url": "/images/逆水寒.png",
       "region": "国内",
       "gameplay_main": "生成式AI驱动UGC",
       "gameplay_sub": "",
@@ -175,7 +175,7 @@
       "company_size": "创业公司",
       "funding_round": "天使轮",
       "tags": "女性向, 3D虚拟人, AI男友, 情感陪伴",
-      "image_url": "/ai-game-tracker/images/无限谷.png",
+      "image_url": "/images/无限谷.png",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
@@ -244,7 +244,7 @@
       "company_size": "大厂",
       "funding_round": "未融资",
       "tags": "模拟经营, AI NPC, 动森Like",
-      "image_url": "/ai-game-tracker/images/星布谷地.jpg",
+      "image_url": "/images/星布谷地.jpg",
       "region": "国内",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
@@ -290,7 +290,7 @@
       "company_size": "创业公司",
       "funding_round": "未知",
       "tags": "",
-      "image_url": "/ai-game-tracker/images/遥远行星.jpg",
+      "image_url": "/images/遥远行星.jpg",
       "region": "未知",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
@@ -520,7 +520,7 @@
       "company_size": "独立开发者",
       "funding_round": "未融资",
       "tags": "文字模拟, 历史推演, Steam, 大模型",
-      "image_url": "/ai-game-tracker/images/崇祯.jpg",
+      "image_url": "/images/崇祯.jpg",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "对话模拟类",
@@ -587,7 +587,7 @@
       "region": "海外",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
-      "image_url": "/ai-game-tracker/images/Aivilization.jpg",
+      "image_url": "/images/Aivilization.jpg",
       "id": 29,
       "updated_at": "2026-06-18 03:04:12",
       "url": null,
@@ -656,7 +656,7 @@
       "region": "海外",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "AI Agent",
-      "image_url": "/ai-game-tracker/images/AlteraBots.png",
+      "image_url": "/images/AlteraBots.png",
       "id": 32,
       "updated_at": "2026-06-18 03:04:12",
       "url": null,
@@ -679,7 +679,7 @@
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
-      "image_url": "/ai-game-tracker/images/星眠.jpg",
+      "image_url": "/images/星眠.jpg",
       "id": 33,
       "updated_at": "2026-06-18 03:04:12",
       "url": null,
@@ -817,7 +817,7 @@
       "region": "国内",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
-      "image_url": "/ai-game-tracker/images/米乐光年.jpg",
+      "image_url": "/images/米乐光年.jpg",
       "id": 39,
       "updated_at": "2026-06-18 03:04:12",
       "url": null,
@@ -909,7 +909,7 @@
       "region": "国内",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "对话模拟类",
-      "image_url": "/ai-game-tracker/images/恋综超失控.jpg",
+      "image_url": "/images/恋综超失控.jpg",
       "id": 46,
       "updated_at": "2026-06-18 03:04:12",
       "url": null,
@@ -1231,7 +1231,7 @@
       "company_size": "大厂",
       "funding_round": "未融资",
       "tags": "二次元, 内置AI, 问答, 智能伴游",
-      "image_url": "/ai-game-tracker/images/帕姆问问.png",
+      "image_url": "/images/帕姆问问.png",
       "region": "国内",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
@@ -1254,7 +1254,7 @@
       "company_size": "创业公司",
       "funding_round": "未融资",
       "tags": "实时联机, PVP, 大模型评分, 沙盘推演, 小游戏, 直播互动",
-      "image_url": "/ai-game-tracker/images/王国战争.png",
+      "image_url": "/images/王国战争.png",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "玩法机制类",
@@ -1652,7 +1652,7 @@
       "content": "AI-native的轻量社交游戏存在机会，本身就偏向恶搞无厘头。派对游戏天然是短单局、强社交、低学习成本，适合让AI来当“内容引擎、主持或表演者”。社交关系链本身能掩盖AI的不稳定性（不好笑也能靠朋友互相起哄把局撑住）。但这类产品留存深度及单个爆款的天花板有限，长期可复玩性不足，最终更可能跑出来的是“平台型/工具型”的赢家集合。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight5.png"
+      "image_url": "/images/insight5.png"
     },
     {
       "id": 4,
@@ -1662,7 +1662,7 @@
       "content": "模拟经营具有天然的AI融合优势：①低竞技压力，②高叙事容错（NPC胡说八道也能被包装成性格或随机事件），③高长尾内容需求，需要大量任务、事件、对话，AI能补齐内容池，④节奏可控，可做异步或半实时，时延更容易被接受。目前主要AI融入点为NPC生成、对话行为、剧情走向、道具生成，未来还可探索AI融入养殖/烹饪/制造等系统。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight4.png"
+      "image_url": "/images/insight4.png"
     },
     {
       "id": 3,
@@ -1672,7 +1672,7 @@
       "content": "以《逆水寒》AI剧组模式为例，利用视频生动作、TTS等AI技术，允许玩家零门槛创作高质量、个性化游戏短视频。通过游戏内分享平台、一键二创、日常奖励等功能形成闭环的分发与留存机制，占手游总玩家相当可观的比例参与了内容创作，显著激活了社区生态。这为大体量内容向MMO或开放世界游戏提供了一个极其成功的AI落地参考。",
       "date": "2025-10",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight3.png"
+      "image_url": "/images/insight3.png"
     },
     {
       "id": 2,
@@ -1682,7 +1682,7 @@
       "content": "AI陪伴型产品已从初代Chatbot类产品（如C.AI, Talkie等）转向具备IP化、场景化、游戏化特性的第二代产品。商业化路径更为明确：基本摒弃纯AI产品卖token的思路，采用角色爱+游戏化内购的思路。关键成功因素（KSF）在于产品工程层面knowhow及内容品质，如人设一致性、长期记忆、回答情商等，3D内容的体验观感及长期产能也是决胜因素。部分头部厂商已发生重大Pivot，将重心完全转向AI情感陪伴而非复杂的AI原生底层游戏。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight2.png"
+      "image_url": "/images/insight2.png"
     },
     {
       "id": 1,
@@ -1692,7 +1692,7 @@
       "content": "2025年到2026年初，行业整体对于“AI+游戏”的关注度持续提升，是从“概念验证”发展到“产品化落地”的过渡年。决定产品形态的硬约束没有变：成本、延迟、上下文、一致性与可控性。因此，当前阶段的产品普遍采用模型替换、异步玩法、记忆工程、混合架构等方式来规避这些硬约束。以LLM目前的技术进展去做全新游戏可创新的空间很小，要卖座还是需要传统艺能（IP/剧本/策划/美术等）。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight1.png"
+      "image_url": "/images/insight1.png"
     }
   ]
 }
