@@ -72,6 +72,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterBatches, setFilterBatches] = useState<string[]>(savedFilters?.filterBatches ?? []);
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>(savedFilters?.filterMainTypes ?? []);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>(savedFilters?.filterSubTypes ?? []);
+  const [filterThemes, setFilterThemes] = useState<string[]>(savedFilters?.filterThemes ?? []);
   const [filterAiRoles, setFilterAiRoles] = useState<string[]>(savedFilters?.filterAiRoles ?? []);
   const [filterRegions, setFilterRegions] = useState<string[]>(savedFilters?.filterRegions ?? []);
 
@@ -80,12 +81,12 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     if (typeof window === 'undefined') return;
     try {
       sessionStorage.setItem('dashboardFilters', JSON.stringify({
-        search, filterBatches, filterMainTypes, filterSubTypes, filterAiRoles, filterRegions,
+        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterAiRoles, filterRegions,
       }));
     } catch {
       // ignore
     }
-  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterAiRoles, filterRegions]);
+  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterAiRoles, filterRegions]);
 
   const filteredGames = games.filter(g => {
     const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) ||
@@ -96,14 +97,20 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 
     const matchBatch = filterBatches.length === 0 || filterBatches.includes(g.batch);
     const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
+    const matchTheme = filterThemes.length === 0 || (g.gameplay_theme && g.gameplay_theme.split(/[,，]+/).some((t: string) => filterThemes.includes(t.trim())));
     const matchAiRole = filterAiRoles.length === 0 || filterAiRoles.includes(g.ai_role);
     const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
 
-    return matchSearch && matchBatch && matchType && matchAiRole && matchRegion;
+    return matchSearch && matchBatch && matchType && matchTheme && matchAiRole && matchRegion;
   });
 
 
   const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
+
+  // 玩法主题：固定顺序展示，只保留数据中实际存在的
+  const themeOrder = ['二次元', '派对游戏', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
+  const themesInData = new Set(games.flatMap(g => g.gameplay_theme ? g.gameplay_theme.split(/[,，]+/).map((t: string) => t.trim()) : []));
+  const uniqueThemes = themeOrder.filter(t => themesInData.has(t));
 
   const uniqueBatches = Array.from(new Set(games.map(g => g.batch).filter(Boolean))).sort((a: string, b: string) => {
     const ca = a.startsWith('常态跟踪') ? 0 : 1;
@@ -155,6 +162,13 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               options={uniqueSubTypes as string[]}
               selected={filterSubTypes}
               onChange={setFilterSubTypes}
+            />
+
+            <MultiSelect
+              label="玩法主题"
+              options={uniqueThemes as string[]}
+              selected={filterThemes}
+              onChange={setFilterThemes}
             />
 
             <MultiSelect

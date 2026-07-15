@@ -40,7 +40,8 @@
       ],
       "featured": true,
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "二次元"
     },
     {
       "id": 2,
@@ -72,7 +73,8 @@
       ],
       "featured": true,
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "AI女友"
     },
     {
       "id": 3,
@@ -229,7 +231,6 @@
       "funding_detail": "估值近7000万美元",
       "platform": "移动端",
       "launch_date": "2025-12(测试)",
-      "gameplay_theme": "AI男/女友",
       "team_members": [
         {
           "name": "蔡懋",
@@ -238,7 +239,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "AI男友"
     },
     {
       "id": 8,
@@ -292,7 +294,6 @@
       "funding_detail": "未披露",
       "platform": "Steam",
       "launch_date": "2025-05-28",
-      "gameplay_theme": "派对游戏",
       "team_members": [
         {
           "name": "Optillusion",
@@ -301,7 +302,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "派对游戏"
     },
     {
       "id": 10,
@@ -324,7 +326,6 @@
       "funding_detail": "米哈游未上市，私人公司（2023年曾传撤回IPO）",
       "platform": "移动端",
       "launch_date": "2026-Q3(预计)",
-      "gameplay_theme": "模拟经营",
       "team_members": [
         {
           "name": "蔡浩宇",
@@ -338,7 +339,8 @@
         }
       ],
       "ai_role": "深度增强",
-      "batch": "常态跟踪·2024"
+      "batch": "常态跟踪·2024",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 11,
@@ -361,7 +363,6 @@
       "funding_detail": "种子轮(奇绩创坛,2023.10,超百万人民币)",
       "platform": "Steam",
       "launch_date": "2026",
-      "gameplay_theme": "模拟经营",
       "team_members": [
         {
           "name": "李驰",
@@ -375,7 +376,8 @@
         }
       ],
       "ai_role": "深度增强",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 13,
@@ -398,7 +400,6 @@
       "funding_detail": "阁道科技由超参数科技全资控股，正在进行天使轮融资。母公司超参数科技融资历程：A轮(2019,千万美元)→A+轮(2021,万)→B轮(2022,亿)，估值达独角兽级别。投资方含五源资本、高榕创投、红杉资本等。",
       "platform": "未知",
       "launch_date": "2026-05-26",
-      "gameplay_theme": "模拟经营",
       "team_members": [
         {
           "name": "刘寒 (LH)",
@@ -412,7 +413,8 @@
         }
       ],
       "ai_role": "深度增强",
-      "batch": "常态跟踪·2024"
+      "batch": "常态跟踪·2024",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 14,
@@ -474,7 +476,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "历史模拟"
     },
     {
       "id": 17,
@@ -521,7 +524,6 @@
       "funding_detail": "种子轮$2M(2025.01)",
       "platform": "网页",
       "launch_date": "2024",
-      "gameplay_theme": "派对游戏",
       "team_members": [
         {
           "name": "Little Umbrella",
@@ -530,7 +532,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2024"
+      "batch": "常态跟踪·2024",
+      "gameplay_theme": "派对游戏"
     },
     {
       "id": 19,
@@ -716,7 +719,6 @@
       "funding_detail": "未披露（疑似关联公司：北京闻和网络科技）",
       "platform": "Steam",
       "launch_date": "2026-05-08",
-      "gameplay_theme": "模拟经营",
       "team_members": [
         {
           "name": "追青",
@@ -725,7 +727,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2026"
+      "batch": "常态跟踪·2026",
+      "gameplay_theme": "历史模拟"
     },
     {
       "id": 27,
@@ -964,7 +967,6 @@
       "funding_detail": "4轮融资近3亿人民币。投资方含高榕创投、智谱AI、万物资本、砺思资本、明势资本、蓝驰资本等。估值超1亿美元。",
       "platform": "移动端",
       "launch_date": "2025-12",
-      "gameplay_theme": "AI男/女友",
       "team_members": [
         {
           "name": "张月光",
@@ -973,7 +975,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "AI男友,模拟经营"
     },
     {
       "product_name": "妹居物语",
@@ -996,7 +999,6 @@
       "funding_detail": "未披露(独立开发者)",
       "platform": "Steam",
       "launch_date": "未知",
-      "gameplay_theme": "AI男/女友",
       "team_members": [
         {
           "name": "独立开发者",
@@ -1005,7 +1007,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "AI女友"
     },
     {
       "product_name": "如意情探",
@@ -1028,7 +1031,6 @@
       "funding_detail": "未披露",
       "platform": "移动端",
       "launch_date": "2025-11",
-      "gameplay_theme": "AI男/女友",
       "team_members": [
         {
           "name": "CyberPinky",
@@ -1037,7 +1039,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "AI男友"
     },
     {
       "product_name": "星夜颂歌",
@@ -1060,7 +1063,6 @@
       "funding_detail": "未披露",
       "platform": "PC",
       "launch_date": "未知",
-      "gameplay_theme": "AI男/女友",
       "team_members": [
         {
           "name": "奇点摄动",
@@ -1069,7 +1071,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2026"
+      "batch": "常态跟踪·2026",
+      "gameplay_theme": "AI女友"
     },
     {
       "product_name": "Tolan",
@@ -1154,7 +1157,6 @@
       "funding_detail": "未明确披露（公司2024年被认定为高新技术企业）",
       "platform": "未知",
       "launch_date": "2026-Q3(预计)",
-      "gameplay_theme": "模拟经营",
       "team_members": [
         {
           "name": "白芷",
@@ -1163,7 +1165,8 @@
         }
       ],
       "ai_role": "深度增强",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "模拟经营"
     },
     {
       "product_name": "月匣",
@@ -1217,7 +1220,6 @@
       "funding_detail": "未披露(独立自发行)",
       "platform": "Steam",
       "launch_date": "2025-12-12",
-      "gameplay_theme": "派对游戏",
       "team_members": [
         {
           "name": "Playfool",
@@ -1226,7 +1228,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2025"
+      "batch": "常态跟踪·2025",
+      "gameplay_theme": "派对游戏"
     },
     {
       "product_name": "像素梦工厂",
@@ -1404,7 +1407,6 @@
       "funding_detail": "种子轮(奇绩创坛,2023.10,超百万人民币)",
       "platform": "未知",
       "launch_date": "未知",
-      "gameplay_theme": "派对游戏",
       "team_members": [
         {
           "name": "李驰",
@@ -1418,7 +1420,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2024"
+      "batch": "常态跟踪·2024",
+      "gameplay_theme": "派对游戏"
     },
     {
       "product_name": "星海自走牌",
@@ -1726,7 +1729,8 @@
       "platform": "多平台",
       "launch_date": "2026-Q2",
       "ai_role": "外围辅助",
-      "batch": "常态跟踪·2026"
+      "batch": "常态跟踪·2026",
+      "gameplay_theme": "二次元"
     },
     {
       "id": 67,
@@ -1883,7 +1887,8 @@
       "launch_date": "",
       "team_members": [],
       "ai_role": "核心驱动",
-      "batch": "2026 ChinaJoy"
+      "batch": "2026 ChinaJoy",
+      "gameplay_theme": "模拟经营"
     },
     {
       "id": 72,
@@ -2194,7 +2199,8 @@
         }
       ],
       "ai_role": "核心驱动",
-      "batch": "常态跟踪·2026"
+      "batch": "常态跟踪·2026",
+      "gameplay_theme": "AI男友"
     }
   ],
   "events": [
