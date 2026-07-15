@@ -9,9 +9,9 @@
       "updated_at": "2026-07-03",
       "url": "https://doudou.fun/",
       "company_size": "创业公司",
-      "funding_round": "A+轮",
+      "funding_round": "A轮",
       "tags": "桌面宠, AI陪玩, 游戏辅助, VLM视觉识别, 出海, AIPC预装, 二次元IP, 跨游戏记忆",
-      "image_url": "/ai-game-tracker/images/逗逗.png",
+      "image_url": "/images/逗逗.png",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
@@ -38,7 +38,8 @@
           "background": "北邮毕业，在百度凤巢工作10年，负责跨领域建模和生成式大模型。2023年11月加入逗逗，管理16人算法团队，负责底层模型能力开发和上下文处理。"
         }
       ],
-      "featured": true
+      "featured": true,
+      "bp_url": "/files/逗逗_心影随形_BP.pdf"
     },
     {
       "id": 2,
@@ -78,20 +79,32 @@
       "status": "已上线",
       "description": "游戏内内置了“剧组模式”（玩家戏称“逆抖”），这是一个AI驱动的3D UGC短视频平台。玩家零门槛上传视频或输入文字即可完成动捕和镜头调度。目前该功能已产出超千万条玩家自创UGC内容，七日留存率达45%。",
       "updated_at": "2026-06-17 07:18:35",
-      "url": null,
+      "url": "https://nsh.163.com",
       "company_size": "大厂",
       "funding_round": "已上市",
       "tags": "MMO, AI剧组, UGC, 逆抖",
-      "image_url": "/ai-game-tracker/images/逆水寒.png",
+      "image_url": "/images/逆水寒.png",
       "region": "国内",
       "gameplay_main": "生成式AI驱动UGC",
       "gameplay_sub": "",
       "team_background": "网易雷火工作室，并获得了网易内部最顶尖人工智能实验室“伏羲”的全方位技术支持。",
       "product_intro": "作为 MMO 赛道的头部产品，《逆水寒》在游戏内搭建了一个庞大的生成式 AI 闭环系统——“AI剧组”（被玩家戏称为“逆抖”）。\n\n该系统彻底下放了 3D 动画制作的权限：玩家无需专业基础，只需打字、录音或上传表情，游戏引擎便会自动完成角色动捕、对口型、面捕和运镜调度，生成高质量的游戏内 3D 视频。此外，玩家创作的内容会汇入游戏内置的“剧组站”短视频信息流中，其他玩家刷视频时还可以实现“一键拍同款”，将 UGC 内容的生产和分发做到了极致，成为了提振游戏长线留存的杀手锏。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司网易已上市（NASDAQ: NTES）",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "2024-03",
+      "team_members": [
+        {
+          "name": "刘畅",
+          "role": "AI负责人/游戏AI设计师",
+          "background": "网易雷火，2026 GDC演讲者，主导剧组模式及智能NPC系统"
+        },
+        {
+          "name": "网易伏羲AI实验室",
+          "role": "底层AI引擎研发",
+          "background": "网易雷火2017年成立，拥有200余项专利，CVPR2024人脸表情国际挑战赛全部五项冠军"
+        }
+      ]
     },
     {
       "id": 4,
@@ -100,7 +113,7 @@
       "status": "测试中",
       "description": "由前腾讯《和平精英》AI策划创办。国内少有的高自由度AI原生沙盒RPG。支持玩家导入图片实时生成AI伙伴，NPC能在AI驱动下动态生成剧情、对话并派发专属任务，甚至涌现新功能。团队愿景是打造AI版RPG Maker。",
       "updated_at": "2026-06-17 07:18:35",
-      "url": null,
+      "url": "https://store.steampowered.com/app/2990190/MagiScapes/",
       "company_size": "创业公司",
       "funding_round": "A轮",
       "tags": "AI沙盒, 生成式NPC, 奇绩创坛",
@@ -113,7 +126,14 @@
       "funding_amount": "",
       "funding_detail": "累计三轮数千万",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "2026-Q3(预计)",
+      "team_members": [
+        {
+          "name": "张昊阳",
+          "role": "创始人兼CEO",
+          "background": "代号17，前腾讯《和平精英》技术策划，国内首批虚幻4引擎开发者。14岁学Unity，17岁校内创业，22岁入腾讯，2023年离职创业"
+        }
+      ]
     },
     {
       "id": 5,
@@ -133,9 +153,16 @@
       "team_background": "腾讯天美工作室群倾力打造的跨端战术射击游戏巨作，承载着复兴经典 IP 与对抗国际顶尖射击网游的双重使命。",
       "product_intro": "相比于把 AI 投入硬核的战斗机制中，《三角洲行动》选择了一条巧妙的“轻量化情绪互动”路线。\n\n在大厅界面左下角，游戏内嵌了一位名为“CC”（以及后续更新的威龙、德穆兰等）的搭载了大语言模型的 AI 语音聊天机器人。玩家在排队等候或者休闲时，可以按住语音键与其闲聊。官方极具创意地将游戏运营与这个 AI 结合：当玩家在特定的活动节点（如猛攻节）或与其他品牌（如肯德基）联动时，只要向 CC 说出含有特定关键词或网络热梗的对话，就能立刻触发隐藏的福利彩蛋，直接获得绝版游戏道具和限定喷漆。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司腾讯已上市（HKEX: 0700）",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "2024-09",
+      "team_members": [
+        {
+          "name": "腾讯天美·琳琅天上团队",
+          "role": "研发团队",
+          "background": "腾讯天美旗下团队，原《三角洲特种部队》IP续作开发方"
+        }
+      ]
     },
     {
       "id": 6,
@@ -155,9 +182,21 @@
       "team_background": "由网易 24 工作室研发，在 AI 技术支持上，深度联合了网易内部著名的“伏羲实验室”以及芯片巨头高通（Qualcomm），进行软硬件协同的底层调优。",
       "product_intro": "网易在将传统大型竞技端游推向移动端的过程中，打出的一张“技术王牌”。\n\n为了解决新手在硬核动作吃鸡游戏中缺乏配合、挫败感极强的痛点，游戏首创了被称为全球首个游戏内 Copilot 的“AI 队友”。这名智能队友拥有强悍的战斗与跑毒能力，并且玩家不需要呼喊生硬的唤醒词，直接在队伍麦克风里用大白话交流，它就能利用端侧加速的语音模型听懂你的指挥（“拉我一把”、“分点药”），不仅会帮你打架，还会在你秀操作时疯狂提供夸夸的情绪价值。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司网易已上市（NASDAQ: NTES）",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2024-07",
+      "team_members": [
+        {
+          "name": "网易24工作室",
+          "role": "游戏开发",
+          "background": "网易旗下工作室，端游全球玩家超4000万"
+        },
+        {
+          "name": "睿风",
+          "role": "网易伏羲AI技术负责人",
+          "background": "2024骁龙游戏技术赏演讲者，主导语音AI队友技术"
+        }
+      ]
     },
     {
       "id": 7,
@@ -170,7 +209,7 @@
       "company_size": "创业公司",
       "funding_round": "Pre-A轮",
       "tags": "女性向, 3D虚拟人, AI男友, 情感陪伴",
-      "image_url": "/ai-game-tracker/images/无限谷.png",
+      "image_url": "/images/无限谷.png",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
@@ -179,30 +218,45 @@
       "funding_amount": "",
       "funding_detail": "估值近7000万美元",
       "platform": "移动端",
-      "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "launch_date": "2025-12(测试)",
+      "gameplay_theme": "AI男/女友",
+      "team_members": [
+        {
+          "name": "蔡懋",
+          "role": "创始人",
+          "background": "前猫耳FM联合创始人兼COO，前红杉中国员工。创立Laser、Manta虚拟偶像男团(全网粉丝超680万)，2018年猫耳FM被B站收购后负责游戏业务"
+        }
+      ]
     },
     {
       "id": 8,
       "product_name": "桌崽AI",
-      "company_name": "脸谱心智 (animate.ai)",
+      "company_name": "脸谱心智 (FaceMind) — 已转型世界模型",
       "status": "已上线",
-      "description": "桌面AI陪伴宠物（游戏伴游）。利用多模态大模型实时识别游戏画面与声音，已适配《黑神话·悟空》《原神》等20余款游戏，能在游玩时实时陪聊与查攻略。",
-      "updated_at": "2026-06-17 07:18:35",
-      "url": "https://www.innohere.com/ir/153829/video.html",
+      "description": "原二次元桌面陪伴宠物平台，现已转型为世界模型（World Model）研发公司。自研Looped World Model循环架构，100+学者联合背书，数据需求仅传统架构1%，参数效率提升100倍。创始人陆弘远获ACL 2026最佳论文奖。",
+      "updated_at": "2026-07-10",
+      "url": "https://nijigen.com.cn",
       "company_size": "创业公司",
-      "funding_round": "Pre-A轮",
+      "funding_round": "Pre-A+轮",
       "tags": "桌面宠物, 多模态, 游戏辅助",
       "image_url": "https://innohere.oss-cn-shenzhen.aliyuncs.com/static/site/company-bg.png",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
-      "team_background": "由上海初创企业脸谱心智（animate.ai）研发。创始人 Adam 是一名 95 后帝国理工学院校友，团队整体具备极高的“二次元浓度”及顶尖学术背景，核心诉求是做出“真正懂玩家”的跨游戏伙伴。",
-      "product_intro": "一款突破传统游戏界限的“AI 游戏搭子”兼桌面宠物。产品接入了多模态大模型技术，不仅能进行日常聊天，更核心的能力在于：它能实时“看懂”玩家屏幕上的游戏画面，并“听懂”游戏音效。\n\n目前桌崽已深度适配了包括《黑神话：悟空》、《原神》、《绝区零》、《鸣潮》等 20 余款热门大作。当你打 Boss 失败时，它会提供情绪抚慰；当你卡关时，它能实时根据画面提供游戏攻略，成为了新世代游戏玩家的刚需插件。",
+      "team_background": "脸谱心智(FaceMind)2023年6月成立于上海。原产品桌崽AI为二次元桌面陪伴宠物平台，支持20+游戏实时陪玩。现已转型为世界模型研发公司，自研Looped World Model架构，获100+学者联合背书。还推出了AI陪伴产品叠叠社，下一步方向为具身智能。",
+      "product_intro": "原二次元桌面陪伴宠物平台，现已转型为世界模型（World Model）研发公司。\n\n- **原产品（桌崽AI）**：\n  - 二次元桌面陪伴宠物，支持《黑神话·悟空》《原神》《绝区零》《鸣潮》等20+游戏实时陪玩\n  - 次留63%，7日留29%，30日留22%，平均日时长237分钟\n  - 内测一个月注册用户超1万，DAU超3000\n\n- **转型方向——Looped World Model**：\n  - 首创参数共享的循环迭代架构，兼具理论前沿性与极致工程优化能力\n  - 100+顶尖AI学者联合署名背书（清华/剑桥/帝国理工/复旦/上交等）\n  - 核心优势：数据需求仅1%、参数效率提升100倍、显存占用降低60%、单次实验成本降低75%\n  - 收敛速度提升3-5倍，训练发散率降至<2%，长程任务保真度提升40%+\n  - 目标：零延迟、低成本的通用世界模型基座，端侧部署/边缘设备/零延迟实时Agent\n\n- **学术定位**：与斯坦福李飞飞团队(Spatial Intelligence)、Meta Yann LeCun(JEPA)并列，走极致工程与产品化路径\n\n- **其他产品**：叠叠社（AI陪伴），下一步方向为具身智能",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "种子轮(奇绩创坛,2024.07,$30万)→360投资(2025.06)→Pre-A+轮(星连资本领投,360跟投,数千万人民币,2026)。已从桌面陪伴宠物转型世界模型方向。",
       "platform": "桌面端",
-      "launch_date": ""
+      "launch_date": "2024",
+      "team_members": [
+        {
+          "name": "陆弘远",
+          "role": "创始人 & CEO",
+          "background": "代号Adam，95后博士。帝国理工本科计算机方向，香港中文大学博士(师从林伟教授，NLP领域)。ACL 2026最佳论文奖获得者(Adam's Law)，14篇一作/通讯顶会论文。曾在亚马逊、微软工作。现主导FaceMind从桌面陪伴向世界模型转型。"
+        }
+      ],
+      "bp_url": "/files/FaceMind_WorldModel_BP.pdf"
     },
     {
       "id": 9,
@@ -213,7 +267,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": "https://pickmepickme.ai/",
       "company_size": "独立开发者",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "派对游戏, 恋爱PVP, Steam, 创意工坊",
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3189430/721331afa7fe911edf0db05b36d7986c64d475d9/header.jpg",
       "region": "海外",
@@ -222,10 +276,17 @@
       "team_background": "开发商为 Optillusion。该工作室在独立游戏界享有盛誉，此前曾开发过斩获无数大奖的视觉解谜神作《笼中窥梦 Moncage》。此次他们凭借极其扎实的游戏设计功底转型探索 AI 原生多人游戏领域。",
       "product_intro": "《Pick Me Pick Me》打破了传统的单机 AI 聊天框架，创新性地引入了“恋爱 PVP”和“双人成仇”的概念。玩家与好友在一场快速相亲中争夺由大语言模型驱动的 AI 角色的好感。游戏不仅仅是“与 AI 聊天”，玩家还需要打出战略技能卡牌（例如给对手施加干扰、或给自己加 buff）来影响 AI 的判断。游戏首发即支持 Steam 创意工坊（Steam Workshop），允许玩家自行导入并自定义 3D 虚拟形象，极大地拓展了 UGC 生态。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "Steam",
-      "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "launch_date": "2025-05-28",
+      "gameplay_theme": "派对游戏",
+      "team_members": [
+        {
+          "name": "Optillusion",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "id": 10,
@@ -236,19 +297,31 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": "https://news.4399.com/xbgd/",
       "company_size": "大厂",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "模拟经营, AI NPC, 动森Like",
-      "image_url": "/ai-game-tracker/images/星布谷地.jpg",
+      "image_url": "/images/星布谷地.jpg",
       "region": "国内",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
       "team_background": "由国内顶级二次元大厂米哈游（miHoYo）自主研发。这被视作米哈游走出传统动作二游舒适区、跨界模拟经营赛道的战略级新品。",
       "product_intro": "一款被业界称为“动森 Like”的休闲生活模拟经营游戏，包含了种田、钓鱼、家园建造等慢节奏玩法。\n\n区别于传统模拟经营游戏死板的 NPC，《星布谷地》将 AI 作为核心的“社交基建”。游戏内置了依托米哈游自研模型打造的 AI NPC（例如高人气的咖啡店老板娘“娜洛”）。这些 NPC 具备长期记忆、抽象概念推理和情感感知能力。在社交广场中，AI NPC 甚至能主动参与或引导玩家群聊，化身气氛组，有效缓解了陌生人社交的尴尬与破冰压力。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "米哈游未上市，私人公司（2023年曾传撤回IPO）",
       "platform": "移动端",
-      "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "launch_date": "2026-Q3(预计)",
+      "gameplay_theme": "模拟经营",
+      "team_members": [
+        {
+          "name": "蔡浩宇",
+          "role": "联合创始人/第一大股东(持股41%)",
+          "background": "1987年生，上海交通大学计算机硕士，2023年卸任董事长转向前沿科技研发"
+        },
+        {
+          "name": "刘伟",
+          "role": "联合创始人/董事长/CEO(持股22.6%)",
+          "background": "上海交通大学硕士+佐治亚理工硕士，上海市人大代表"
+        }
+      ]
     },
     {
       "id": 11,
@@ -259,7 +332,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": "https://store.steampowered.com/app/3743680",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "模拟经营, 动森Like, 虚拟宠物",
       "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3743680/262c16460d32b01a8ec6086035d8229053814ff5/capsule_616x353.jpg?t=1782400645",
       "region": "国内",
@@ -268,33 +341,58 @@
       "team_background": "由一群渴望探索 AI 技术与游戏机制共生结合的独立开发者组成的初创团队“喵吉托工作室”倾力打造。团队愿景是构建“会呼吸的游戏宇宙”。",
       "product_intro": "被定义为全球首款“原生 AI 情感陪伴与海岛经营”的模拟游戏。\n\n游戏融合了《星露谷物语》的种田建造与《动物森友会》的岛民社交。最大的革命性在于，玩家在岛上邂逅的这些猫咪居民，底层的“大脑”接入了团队自研的 MeowuAgent 智能体框架。这些猫咪不仅不是站在原地复读脚本的死板 NPC，还会因为玩家没按时喂食而发脾气、甚至主动找玩家倾诉烦恼、并清晰记得几周前和玩家发生过的小故事。真正打造了一个有温度、永远有活人感回应的虚拟乌托邦。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "种子轮(奇绩创坛,2023.10,超百万人民币)",
       "platform": "Steam",
-      "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "launch_date": "2026",
+      "gameplay_theme": "模拟经营",
+      "team_members": [
+        {
+          "name": "李驰",
+          "role": "创始人",
+          "background": "代号Jesse，前字节跳动游戏AI小镇负责人，字节AI Lab游戏AI研究。中科大+哥伦比亚大学毕业"
+        },
+        {
+          "name": "丁煌浩",
+          "role": "CTO/联创",
+          "background": "前阿里AI Lab大模型AI算法专家，TinyNN开源框架作者，魔兽世界国服第一"
+        }
+      ]
     },
     {
       "id": 13,
       "product_name": "遥远行星建造师",
-      "company_name": "阁道科技",
+      "company_name": "阁道科技 (超参数科技全资控股)",
       "status": "测试中",
-      "description": "太阁like跑商经营+飞船战斗+星球建造，融合数百个支持自由文字对话的AI NPC。",
-      "updated_at": "2026-06-17 07:18:35",
-      "url": null,
+      "description": "首款AI动态世界策略类RPG游戏，基于自研Knit平台开发。150+颗星球、600+智能NPC，每个NPC有独立性格、目标和行为逻辑。玩家可扮演任意角色并动态改写世界线。母公司超参数科技为独角兽企业，Game Agent年服务累计50亿次。",
+      "updated_at": "2026-07-10",
+      "url": "https://store.steampowered.com/app/3105960/",
       "company_size": "创业公司",
-      "funding_round": "未知",
+      "funding_round": "天使/种子轮",
       "tags": "",
-      "image_url": "/ai-game-tracker/images/遥远行星.jpg",
+      "image_url": "/images/遥远行星.jpg",
       "region": "未知",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
-      "team_background": "背后的全资母公司“超参数科技”由原腾讯 AI Lab 总经理刘永升创立（曾主导王者荣耀 AI“绝悟”项目）。而具体开发方阁道科技的制作人刘寒，则是前腾讯极光计划的发行业务操盘手。资本、技术与发行实力拉满。",
-      "product_intro": "一款承载着极高行业期望的太空探索模拟经营类 AI 原生游戏。\n\n游戏并没有选择单纯做成文字类 Bot，而是做了一套包含贸易跑商、飞船战斗与星球建造的完整沙盒底层。在这个星际世界中，生活着超过 600 名由超参数底层 AI 技术驱动的 NPC。这些 NPC 拥有极高的拟真度，他们之间的社会关系网络会自动演化交织，并根据玩家的商业决策和探索互动，动态生成连环的世界任务与走向不可预测的故事剧情，力求实现真正的“千人千面”。",
+      "team_background": "阁道科技20人小型团队，模块齐全经验丰富。母公司超参数科技2019年成立于深圳，入选福布斯中国2022年独角兽榜单，Game Agent同时在线峰值突破300万，年服务累计人次超50亿。与全球顶尖游戏公司合作。",
+      "product_intro": "首款AI动态世界策略类RPG游戏，基于自研Knit平台开发。\n\n- **核心定位**：首款让玩家真正扮演游戏中任意角色，并可动态改写世界线的策略游戏。以题材、风格切入全球市场，以即时操作切入年轻用户市场\n\n- **AI原生体验**：\n  - AI-NPC自由对话：基于生涯和游戏经历演绎行为，交互具备高度合理性以及多样性\n  - 策略博弈：NPC有独立性格、目标和行为逻辑，可自由对话、记忆映射\n  - 动态世界：每次体验都独一无二，世界任务/主线任务/NPC交互/演出对白/私人任务均可改变状态，触发剧情生成和支线任务\n\n- **技术平台 Knit**：\n  - 自研AI-NPC研运平台，支持AI-NPC体验实现、迭代、在线运营等全生命周期\n  - 可复用AI-NPC体验设计，支持模型选择和知识库存储调用\n  - 全自研模型私有化部署，无第三方API\n  - 150+颗星球，600+智能NPC\n\n- **市场定位**：策略RPG是AI游戏重要方向，海外竞品极少。对标《边境之旅》(680万销量)、《波西米亚时光》(100万)等\n\n- **商业化**：纯买断制，Token成本由开发商承担",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "阁道科技由超参数科技全资控股，正在进行天使轮融资。母公司超参数科技融资历程：A轮(2019,千万美元)→A+轮(2021,万)→B轮(2022,亿)，估值达独角兽级别。投资方含五源资本、高榕创投、红杉资本等。",
       "platform": "未知",
-      "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "launch_date": "2026-05-26",
+      "gameplay_theme": "模拟经营",
+      "team_members": [
+        {
+          "name": "刘寒 (LH)",
+          "role": "创始人 & CEO",
+          "background": "2013年加入腾讯，参与DNF端游国服运营。后负责腾讯极光计划产品签约、合作研发、发行工作，经手《隐形守护者》《我的侠客》等。后加入超参数科技担任WA studio负责人及《遥远行星建造师》项目制作人。2024年创办阁道科技。"
+        },
+        {
+          "name": "刘永升",
+          "role": "超参数科技创始人/技术支撑",
+          "background": "前腾讯AI Lab总经理，带队做出围棋AI绝艺和《王者荣耀》AI绝悟。超参数科技2019年成立，2022年估值达独角兽级别。"
+        }
+      ],
+      "bp_url": "/files/阁道科技_遥远行星_BP.pdf"
     },
     {
       "id": 14,
@@ -303,7 +401,7 @@
       "status": "已上线",
       "description": "国民MOBA手游，在S39及S42赛季推出了基于大模型及天枢AI系统的“指挥官模式”。玩家可以通过全开麦实时语音直接向4名AI队友下达战术指令，AI队友能精准完成博弈配合并提供战术预警与情绪陪伴。",
       "updated_at": "2026-06-17 07:18:35",
-      "url": null,
+      "url": "https://pvp.qq.com",
       "company_size": "大厂",
       "funding_round": "已上市",
       "tags": "MOBA, 指挥官模式, 实时语音, AI队友",
@@ -314,9 +412,16 @@
       "team_background": "腾讯天美工作室群研发。作为常年稳居全球移动端收入和活跃度榜首的国民级产品，其拥有海量的资金储备与全国最顶尖的游戏 AI 实验室（如天枢 AI 系统）做技术支撑。",
       "product_intro": "国民 MOBA 手游在 AI 时代的进化缩影。\n\n除了传统的对战平衡与外挂检测，游戏在 S39/S42 等赛季推出了重磅的“指挥官模式”。在这一模式下，玩家将化身运筹帷幄的指挥官，带领 4 名由先进大模型驱动的 AI 队友并肩作战。这些 AI 队友不仅能完成近乎职业级的微操与走位，更震撼的是，玩家可以直接全程开着麦克风，用方言或口语下达战术指令（如“集合打龙”、“撤退蹲草”），AI 队友能够瞬时听懂并完美执行配合，彻底改变了 MOBA 游戏的单排体验边界。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司腾讯已上市（HKEX: 0700）",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2015-11",
+      "team_members": [
+        {
+          "name": "腾讯天美工作室群",
+          "role": "开发与运营",
+          "background": "腾讯旗下核心工作室群，MOBA品类头部团队"
+        }
+      ]
     },
     {
       "id": 15,
@@ -336,9 +441,16 @@
       "team_background": "由获得奇绩创坛天使轮融资的初创公司“六号井科技（臭皮匠工作室）”研发。主创制作人胡景皓为北大博士，曾是腾讯资深的 AI 游戏算法工程师，技术背景深厚。",
       "product_intro": "首款真正意义上将大语言模型与硬核历史模拟战略融合的 AI 原生游戏。\n\n游戏打破了《三国志》系列那种固定的事件树和脚本分支。游戏在底层建立了一套能够约束 AI 行为的“状态机架构”，解决了大模型容易遗忘和逻辑崩坏的问题。玩家在游戏中扮演任意三国君主或名臣（如刘禅），只需要通过自然语言打字去发布计谋或内政指令，AI 会像跑团里的 KP（守秘人）一样，实时根据当下局势推演出合理的结果。哪怕是在明知必败的开局里，只要你说的计谋合乎常理，也能够逆天改命。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "数百万人民币融资(奇绩创坛,2025.09)",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "胡景皓",
+          "role": "CEO/主制作人",
+          "background": "北京大学博士，腾讯游戏5年AI算法工程师，20年以上历史爱好者，北京三国文化学会会员。2025年9月获奇绩创坛融资后从腾讯离职"
+        }
+      ]
     },
     {
       "id": 17,
@@ -349,7 +461,7 @@
       "updated_at": "2026-06-17 07:18:35",
       "url": "https://store.steampowered.com/app/3622760/AI_Spelcraft/",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "Steam, ChatGPT, 语感战斗, 词汇组合",
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/17577f0d292ed3838d9ac8caa7923821de0136f7/header.jpg",
       "region": "海外",
@@ -380,10 +492,17 @@
       "team_background": "由初创的社交与 AI 游戏工作室 Little Umbrella 开发，凭借该产品一炮而红。公司最近刚斩获 200 万美元的种子轮融资，并推出了其配套的跨平台无服务器社交游戏引擎 Playroom Kit。",
       "product_intro": "一款玩法极简但欢乐拉满的多人 AI 派对生存游戏。\n\n一局游戏中，系统或玩家会提出一个极其离谱或致命的绝境场景（例如：被绑在一颗正在倒计时的核弹上）。随后，每位玩家必须快速输入一段能让自己“绝处逢生”的神奇操作。最后，大模型将化身毫无感情的判官，对每一位玩家的脑洞进行实时解析，并宣布你的方案到底是让你死里逃生，还是落得个更滑稽的下场。上线仅三个月便席卷了 2000 万玩家。",
       "funding_amount": "$2M",
-      "funding_detail": "",
+      "funding_detail": "种子轮$2M(2025.01)",
       "platform": "网页",
-      "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "launch_date": "2024",
+      "gameplay_theme": "派对游戏",
+      "team_members": [
+        {
+          "name": "Little Umbrella",
+          "role": "开发团队",
+          "background": "独立游戏工作室。因AI API成本从每日5K飙升至25万美元濒临破产"
+        }
+      ]
     },
     {
       "id": 19,
@@ -391,8 +510,8 @@
       "company_name": "Character.AI",
       "status": "已上线",
       "description": "AI情感陪伴赛道的开创者，月活超2000万。2024年8月，其Transformer作者兼联合创始人被谷歌以25亿美元估值的许可协议“逆向收购”带走，但产品本身仍作为独立应用运营，主要依靠订阅和流量变现。",
-      "updated_at": "2026-06-17 07:18:35",
-      "url": "https://character.ai/",
+      "updated_at": "2026-07-10",
+      "url": "https://character.ai",
       "company_size": "创业公司",
       "funding_round": "被收购",
       "tags": "初代Chatbot, 情感陪伴, 独角兽",
@@ -400,34 +519,53 @@
       "region": "海外",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "初代陪伴",
-      "team_background": "赛道的开创者。由发明了彻底改变 AI 进程的 Transformer 架构的前谷歌大佬 Noam Shazeer 创立。曾估值极高，但在 2024 年 8 月，其核心技术团队被谷歌通过支付 25 亿美元的高昂许可费进行了“逆向收购”。目前公司剩下骨架继续维持独立产品运营。",
-      "product_intro": "全球首个也是最具影响力的 AI 人格扮演与对话平台，月活峰值超 2000 万。\n\n在上面，你可以与爱因斯坦讨论相对论，也可以和玛奇玛谈恋爱，一切角色均由社区用户利用平台底座模型自主建立。虽然由于高昂的推理算力成本和极低的付费转化率（仅 10 万订阅），导致其深陷商业化泥沼并最终被迫卖身，但它无可争辩地完成了对全球数千万年轻人关于“AI 陪伴”概念的市场教育。",
+      "team_background": "2021年10月成立于美国湾区。2024年8月与Google达成25亿美元许可协议（变相收购），两位创始人和预训练团队30人加入Google DeepMind，剩余109人继续运营产品。公司不再做预训练，转向后训练+开源模型（如Llama）。",
+      "product_intro": "AI角色扮演与情感陪聊赛道的流量王者，界面类似ChatGPT但有\"网聊感\"。\n\n- **核心定位**：通过对话模型实现AGI，后期受用户反馈转向模型应用一体化公司\n\n- **产品功能**：\n  - 文字聊天为主，辅以语音、电话多模态\n  - 群聊功能：支持角色和真人用户共同加入\n  - UGC+OGC角色创建：超过1亿个角色被创建，动漫和游戏角色占3/4\n  - 用户打分反馈机制形成数据飞轮\n  - 围绕沉浸感设计，未加入游戏元素（关卡、3D Avatar等）\n\n- **用户数据（2024年7月）**：\n  - MAU 2300万，DAU 650万，日均95分钟\n  - 40%用户来自美国，男女比例51:49\n  - 超半数年龄24岁以下，游戏/二次元受众\n\n- **商业化**：2023全年收入$1520万，全部会员收入（$9.99/月），订阅用户仅10万（占MAU不到10%）。商业化能力较差，曾试图开放ToB API但未推进\n\n- **技术**：上万张GPU，自建模型（上一代110B参数，新一代50-80B），推理成本仅为GPT API的8%，推理成本降低33倍\n\n- **被收购后**：不再做预训练，只做后训练，考虑用Llama等开源模型。月总成本$750-800万，有数亿美元在账，现金生命周期约两年",
       "funding_amount": "",
-      "funding_detail": "Google逆向收购",
+      "funding_detail": "两轮共1.93亿美元。种子轮(2021.12, $4300万)→A轮(2023.03, A16z领投, $1.5亿, 估值$10亿)。2024.08与Google达成$25亿许可协议，投资人股权以每股$88美元归属。以估值$50亿寻求新一轮未果。",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "2022-09",
+      "team_members": [
+        {
+          "name": "Noam Shazeer",
+          "role": "联合创始人",
+          "background": "2000年加入Google，Transformer论文作者之一，Google对话模型LaMDA主要作者。2024年8月与Google达成25亿美元许可协议后重回Google担任Gemini联合技术负责人。"
+        },
+        {
+          "name": "Daniel de Freitas",
+          "role": "联合创始人",
+          "background": "前Google工程师，领导Google聊天机器人Meena项目，参与LaMDA开发。与Shazeer一同重回Google。"
+        }
+      ]
     },
     {
       "id": 20,
       "product_name": "Talkie",
       "company_name": "MiniMax (稀宇科技)",
       "status": "已上线",
-      "description": "MiniMax推出的海外AI角色陪伴App（星野的海外版），凭借抽卡等游戏化机制与买量策略，成为出海黑马，月活一度突破1100万。目前面临获客成本高、长期留存下滑等商业化拷问，但年营收已达千万美元级别。",
-      "updated_at": "2026-06-17 07:18:35",
-      "url": null,
+      "description": "MiniMax推出的海外AI角色陪伴App（星野的海外版），凭借抽卡等游戏化机制与买量策略，成为出海黑马。2023年6月上线，90天破千万用户，最高月活2977万。截至2025年Q3累计用户1.47亿，付费用户139万，全球AI伴侣应用排名第2（仅次于Character.AI）。",
+      "updated_at": "2026-07-10",
+      "url": "https://www.talkie-ai.com/",
       "company_size": "创业公司",
-      "funding_round": "C轮及以上",
+      "funding_round": "已上市",
       "tags": "出海, 情感陪伴, 虚拟社交",
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f0/04/05f0042e-4c28-2db6-823b-415803a3dd80/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "初代陪伴",
-      "team_background": "同样是来自大模型独角兽 MiniMax（稀宇科技）的拳头产品，本质上是其国内产品《星野》的海外版姐妹篇。",
-      "product_intro": "一款在海外市场掀起狂风巨浪的 AI 情感伴侣应用。\n\n《Talkie》完美复刻了其母公司在角色定制和抽卡经济上的成功经验，但相比国内版本，它在海外面对更宽松的内容审核尺度，实现了更奔放的创意爆发。凭借精准的 TikTok 等社交平台买量策略与精美的二次元立绘包装，其下载量与营收曾一度逼近甚至超越全球老大哥 Character.AI。尽管目前面临新鲜感消退后的留存考验，它依然是目前中国 AI 应用出海创收最成功的商业标杆之一。",
+      "team_background": "母公司MiniMax(稀宇科技)2022年初成立于上海，2026年1月港交所上市，为\"港股大模型第一股\"。2025年全年营收7904万美元(YoY+159%)，毛利率25.4%，累计服务2.36亿用户。海外收入占比超70%。",
+      "product_intro": "MiniMax推出的全球AI角色陪伴社交应用，国内版为「星野」。\n\n- **核心定位**：海外AI角色陪伴与虚拟社交App，用户可创建并自定义AI聊天机器人（智能体），进行角色扮演、情感陪伴等互动\n\n- **产品机制**：\n  - 角色创作：高自定义化角色设定（形象/声音/性格）\n  - 卡牌系统：与AI角色互动时有机会获得CG卡牌，卡牌可收藏也可在商店交易\n  - 多语言支持：覆盖200+国家和地区，海外用户占90%+\n  - 社交分享：用户可分享角色对话内容\n\n- **用户数据（2025年）**：\n  - MAU峰值2977万(2024.12) → 2764万(2025.09)\n  - 累计用户1.47亿，付费用户139万\n  - ARPPU约5美元/月（vs 海螺AI的56美元）\n  - 日均使用时长超70分钟\n\n- **商业化模式**：\n  - 广告收入60% + 订阅35% + IAP内购5%\n  - 2025年AI原生产品线收入5310万美元(YoY+143%)\n  - 2025前三季度Talkie/星野收入1875万美元\n\n- **挑战**：获客成本高、长期留存下降、ARPPU偏低（依赖广告而非付费），母公司2025年经调整净亏损2.5亿美元",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司MiniMax于2026年1月9日港交所上市(00100.HK)。IPO前累计7轮融资近15亿美元，投资方含阿里、腾讯、米哈游、小红书、小米、高瓴、红杉、IDG等。2025年7月C轮近3亿美元，投后估值超40亿美元。2026年7月再融资160亿港元。",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2023-06",
+      "team_members": [
+        {
+          "name": "闫俊杰",
+          "role": "MiniMax创始人 & CEO",
+          "background": "1989年生，前商汤科技副总裁。2022年初创立稀宇科技(MiniMax)，专注通用人工智能(AGI)。2026年1月带领公司港交所上市，上市后宣布\"实现AGI前不再领取薪酬\"。"
+        }
+      ]
     },
     {
       "id": 21,
@@ -457,10 +595,10 @@
       "company_name": "MiniMax (稀宇科技)",
       "status": "已上线",
       "description": "国内头部AI陪伴平台，用户可创建和定义虚拟角色，进行深度对话与情感剧情共创。海外版Talkie同样取得了巨大的下载量与收入。商业模式包含虚拟货币充值与广告等，形成ToC流量与ToB技术协同。",
-      "updated_at": "2026-06-17 07:23:42",
+      "updated_at": "2026-07-10",
       "url": "https://www.xingyeai.com/",
       "company_size": "创业公司",
-      "funding_round": "C轮及以上",
+      "funding_round": "B轮+",
       "tags": "AI社交, 虚拟恋人, 独角兽, 出海",
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f0/04/05f0042e-4c28-2db6-823b-415803a3dd80/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
       "region": "国内",
@@ -469,31 +607,56 @@
       "team_background": "由国内估值高达 25 亿美元的顶级大模型独角兽公司 MiniMax（稀宇科技）自主研发。公司拥有全栈自研的文本、语音、视觉多模态大模型，背后有腾讯、阿里、高瓴等顶级巨头与资本撑腰。",
       "product_intro": "国内当之无愧的 AI 陪伴赛道头部应用。\n\n在《星野》中，任何人都可以零代码、无门槛地捏出自己想象中的完美虚拟角色，并定义其性格、立绘、声音和背景故事。除了基础的闲聊陪伴，应用还融入了浓厚的游戏化系统（如抽卡获取角色精美相片、好感度等级等）。更重要的是，它打造了一个极其繁荣的 UGC 社区生态，创作者通过分享自己捏的 AI 智能体，吸引百万玩家互动，甚至可以从中获取分成收益。",
       "funding_amount": "",
-      "funding_detail": "估值超25亿美元",
+      "funding_detail": "母公司MiniMax融资：天使轮(2022.01,云启资本)→天使+轮(2022.07,IDG/高瓴/米哈游)→A轮(2023.06,$2.5亿,估值$12亿,腾讯)→战略轮(2024.03,$6亿,估值$25亿,阿里/红杉/高瓴)→2026.01港交所上市(00100.HK)",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "2023-09",
+      "team_members": [
+        {
+          "name": "闫俊杰",
+          "role": "MiniMax创始人",
+          "background": "毕业于中科院自动化所，前商汤科技副总裁、通用智能技术负责人、商汤研究院副院长。2021年12月创立MiniMax。"
+        },
+        {
+          "name": "杨斌",
+          "role": "MiniMax联合创始人/技术合伙人",
+          "background": "毕业于中科院自动化所和多伦多大学，前Uber ATG研究院和自动驾驶初创公司Waabi创始成员。"
+        },
+        {
+          "name": "周彧聪",
+          "role": "MiniMax联合创始人",
+          "background": "毕业于北京航空航天大学，商汤科技早期员工，在商汤研究院主管算法团队。"
+        }
+      ]
     },
     {
       "id": 25,
       "product_name": "织之&镜土 AI+TRPG",
-      "company_name": "上海秘墟科技 (镜土TRPG)",
+      "company_name": "上海秘墟科技 (织之) × 镜土TRPG",
       "status": "早期·原型",
-      "description": "国内原创TRPG（桌面角色扮演游戏）平台“镜土”。结合线上App与线下门店，提供剧本互动与角色管理，正探索基于大模型的AI跑团（AI Game Master）体验，实现动态文字冒险。",
-      "updated_at": "2026-06-17 07:23:42",
+      "description": "织之与镜土TRPG联合开发的AI数字人恋爱社交+AI TRPG平台。织之提供海量可动数字人实时视频对话技术，镜土贡献数百个TRPG开放世界剧本和道具经济系统。定位AI陪伴3.0世代：可视化+跨场景+游戏化长留。",
+      "updated_at": "2026-07-10",
       "url": "https://www.trpg.com.cn/",
       "company_size": "创业公司",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "TRPG, 跑团, AI跑团",
       "image_url": "https://www.trpg.com.cn/img/jt.png",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "对话模拟类",
-      "team_background": "由国内专注线下沉浸式跑团与娱乐科技的初创公司“上海秘墟科技”研发。团队深耕 TRPG（桌面角色扮演游戏）多年，拥有丰富的实体门店与剧本创作体系，致力于打造中国原创的 TRPG 平台生态。",
-      "product_intro": "将传统 TRPG 与前沿 AI 技术结合的探索性产品。\n\n产品依托于其原创的线上线下打通的平台“镜土”。他们不仅仅满足于传统的玩家跑团模式，而是利用大语言模型开发类似 Grok 的动态推演能力，试图打造一个“全知全能的 AI Game Master（游戏主持人）”。这让玩家即便是单人，也能随时随地沉浸在一场由 AI 实时生成背景、判定检定并驱动 NPC 行为的动态文字冒险之中。",
+      "team_background": "织之（上海秘墟科技）专注AI数字人技术，镜土成立于2018年由游卡投资孵化，主打TRPG连锁业态，覆盖全国30个城市并出海悉尼。镜土核心用户复购粘性极强，单场200元/人客单价下重度用户复购百次以上。",
+      "product_intro": "AI数字人3.0世代——实时视频对话+海量对话场景与互动游戏。\n\n- **核心定位**：开启数字人3.0世代，打造真数字人恋爱&社交平台\n  - vs 1.0（星野/猫箱）：UGC Agent共创平台，低质内容泛滥\n  - vs 2.0（Grok）：3D建模数字人，成本高数量少\n  - 3.0（织之）：海量可动数字人实时视频对话，极低成本+游戏化长留\n\n- **产品机制**：\n  - 可视化+跨场景：实时视频的海量数字人，多场景模式和数字人一起做各种事\n  - 灵魂聊天体感：围绕心理学和IP构筑有内涵、有故事的数字人\n  - 游戏化长留体系：好感度&羁绊值数值体系，跨场景多游戏\n  - 多维互动SKU：数字人朋友圈、海龟汤、心理测评、剧本杀、TRPG等\n\n- **AI TRPG（与镜土联合开发）**：\n  - 镜土贡献数百个TRPG开放世界剧本+道具经济系统\n  - AI化解决TRPG对真人GM素质要求过高的核心痛点\n  - 初期AI用文字和语音讲故事，后期接入视觉模型实现动态电影\n  - 玩家每次游玩后得到的经验和道具可带到下一场\n\n- **技术优势**：\n  - 特殊算法与Infra配置极致压缩成本，数字人生成和调用成本压缩百倍\n  - 多个自主研发数字人模型私有化部署，镜像化复制弹性扩容\n  - 市面定制化数字人成本3000-10000元，织之压缩百倍\n\n- **商业化**：月均ARPU 240-600元（含游戏SKU+情感+创作分润）",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露。织之与镜土成立新主体共同融资，联合开发线上AI TRPG业态。",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "镜土团队",
+          "role": "联合开发方",
+          "background": "成立于2018年，由游卡投资孵化。全球第一个线下网游业态，覆盖全国30城+悉尼。单场200元/人，重度用户复购百次以上，虚拟道具二级市场炒作至数千元。"
+        }
+      ],
+      "bp_url": "/files/织之镜土_BP.pdf"
     },
     {
       "id": 26,
@@ -504,19 +667,26 @@
       "updated_at": "2026-06-18 02:30:14",
       "url": "https://store.steampowered.com/",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "文字模拟, 历史推演, Steam, 大模型",
-      "image_url": "/ai-game-tracker/images/崇祯.jpg",
+      "image_url": "/images/崇祯.jpg",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "对话模拟类",
       "team_background": "由国内独立团队「青干工作室」研发，团队规模不足 10 人，除制作人追青兼任策划外，其余全为技术人员。团队专门针对大模型应用在长篇历史推演中的记忆遗忘和逻辑崩坏问题，自主研发了一套“步进式状态机”架构。",
       "product_intro": "这是市面上为数不多的将大模型推演作为“硬核机制”的买断制独立游戏。玩家扮演明朝末代皇帝崇祯，通过输入自然语言“下旨”来治国。AI 会判断诏书对国库、民心、派系、军事的综合影响，并转化为数值反馈给游戏系统。游戏有着极高的自由度，不设剧本上限（比如有玩家硬核攀科技树，最终在大明朝造出了原子弹）。收费模式采用“游戏本体买断 + 模型 Token 用量计费”，但官方也计划开放 API 允许玩家接入自己的大模型。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露（疑似关联公司：北京闻和网络科技）",
       "platform": "Steam",
-      "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "launch_date": "2026-05-08",
+      "gameplay_theme": "模拟经营",
+      "team_members": [
+        {
+          "name": "追青",
+          "role": "制作人",
+          "background": "青干工作室初始仅2人，发展至今不到10人。国内首款真正意义上的AI原生商业游戏"
+        }
+      ]
     },
     {
       "id": 27,
@@ -527,16 +697,25 @@
       "updated_at": "2026-06-18 02:50:39",
       "url": "https://apps.apple.com/us/app/loveydovey-dream-ai-chats/id6468766519",
       "company_size": "创业公司",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "情感陪伴, a16z, 韩国, 高收入, 梦女向",
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/91/f7/8091f7f4-8691-9bab-b95a-07c6e203419f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "region": "海外",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "初代陪伴",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露。15人韩国小团队，月流水76万美元",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2024",
+      "team_members": [
+        {
+          "name": "TainAI团队",
+          "role": "开发团队",
+          "background": "韩国首尔15人团队，月活仅10万但单用户收入是Character.AI的5倍，亚洲AI应用创收效率榜首"
+        }
+      ],
+      "product_intro": "韩国TainAI开发的AI情感陪伴应用，中文名「卿卿我我」。\n\n- **核心定位**：日韩市场大获成功的AI陪伴产品，a16z《TOP 100 AI Consumer App》亚洲第一\n\n- **产品机制**：\n  - 好感度系统：熟人→朋友→心动→恋人→结婚五级\n  - 聊天按句收费（果酱货币），非订阅制\n  - 三种聊天模式：绝配(短句)、长句、刺激模式\n  - 内心深处功能：查看AI角色心理活动\n  - 支持照片分享、日记共享\n\n- **商业化**：月流水76万美元，全球月活仅10万，ARPU是Character.AI的5倍。96%自然安装量",
+      "team_background": "韩国TainAI Inc.，总部首尔江南区，15人团队。主打东亚情感市场，放弃美国市场策略。"
     },
     {
       "product_name": "言灵计划",
@@ -544,7 +723,7 @@
       "status": "未知",
       "description": "在年度观察报告中被提及的老产品，具备一定的用户需求基础和快速迭代能力，存在大型GaaS产品机会。",
       "company_size": "未知",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "AI原生",
       "region": "未知",
       "gameplay_main": "AI原生玩法",
@@ -552,13 +731,25 @@
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2894910/header.jpg",
       "id": 28,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://www.taptap.cn/app/730746",
       "team_background": "在行业年度观察报告中作为“老产品”被回顾提及，虽然未大肆宣扬具体融资金额，但开发团队展现出了极强的工程落地与商业化迭代能力。",
       "product_intro": "这是国内早期切入“对话模拟”大语言模型玩法的代表作之一。\n\n游戏将大模型最擅长的语言分析能力与传统的机制卡牌/解谜系统结合。玩家需要通过输入符合逻辑、情绪甚至特定暗语的“言灵”，去触发游戏世界的因果机制或击败敌人。由于其核心用户群体的需求非常稳固且明确，加上开发团队的快速迭代，目前被业界认为是非常有潜力转型成长线运营的重度 GaaS（游戏即服务）大型产品的范例。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "种子轮(奇绩创坛,2023.10,超百万人民币)",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "李驰",
+          "role": "创始人",
+          "background": "前字节跳动游戏AI小镇负责人，中科大+哥伦比亚大学毕业"
+        },
+        {
+          "name": "丁煌浩",
+          "role": "联创/CTO",
+          "background": "前阿里AI Lab大模型AI算法专家，TinyNN开源框架作者"
+        }
+      ]
     },
     {
       "product_name": "Aivilization",
@@ -566,110 +757,171 @@
       "status": "未知",
       "description": "一款将传统玩法与AI进行均衡整合的产品，可玩性强，下限高。单个活跃用户月成本约为3美元。",
       "company_size": "未知",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "策略, 传统+AI",
       "region": "海外",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
-      "image_url": "/ai-game-tracker/images/Aivilization.jpg",
+      "image_url": "/images/Aivilization.jpg",
       "id": 29,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://www.aivilization.ai/",
       "team_background": "一个低调的实验性海外独立团队开发项目，在部分早期的行业观察研报中作为经典的反思案例被频繁提及。",
       "product_intro": "一款将传统复杂策略玩法与 AI 深度整合的探索型作品。\n\n尽管在传统玩法上有着相对扎实的框架（下限高，保证了即便没有 AI 也是个可玩的游戏），但由于为了实现高级的动态事件生成与 NPC 推演，游戏极其频繁地调用云端大模型，导致其单个活跃用户的月度 API 消耗成本高达 3 美元左右。这款产品的存在，深刻揭示了在现阶段“成本”与“高频次 AI 原生机制”之间难以调和的矛盾与硬约束。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "港科大孵化初创公司Bauhinia AI，融资未明确披露",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "2025-08",
+      "team_members": [
+        {
+          "name": "杨浩巍",
+          "role": "项目负责人/核心开发",
+          "background": "香港科技大学数学系博士生，《三国志》《文明6》玩家"
+        }
+      ]
     },
     {
       "product_name": "Suck Up!",
       "company_name": "Proxima",
       "status": "已上线",
-      "description": "海外知名的AI原生语音游戏，扮演吸血鬼通过语音对话骗取NPC信任进入屋内吸血。极具创新性的AI对话机制小爆款。",
+      "description": "海外知名的AI原生语音游戏，扮演吸血鬼通过实时语音对话骗取NPC信任进入屋内吸血。由5人独立工作室Proxima开发，2023年12月发布早期版本，2024年5月因主播CaseOh试玩爆红，YouTube播放量超1亿。2025年10月Steam正式上线，售价$16.99。",
       "company_size": "创业公司",
-      "funding_round": "未知",
+      "funding_round": "天使/种子轮",
       "tags": "AI语音, 搞笑, 爆款",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "对话模拟类",
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2726370/header.jpg",
       "id": 30,
-      "updated_at": "2026-06-18 03:04:12",
-      "url": null,
-      "team_background": "由海外创业公司 Proxima 开发。游戏并未寻求传统大厂发行，但凭借其极高的趣味性与在视频主播圈的极强自传播力，很快成为了海外独立 AI 游戏中的一款小爆款。",
-      "product_intro": "这是一款将 AI 大语言模型与游戏机制结合得最天衣无缝的“语音角色扮演”神作。\n\n玩家在游戏中扮演一名伪装成人类的吸血鬼，需要在万圣节之夜通过麦克风（语音）挨家挨户敲门。门后的房主都是拥有不同身份背景、执念与防备心的 AI Agent。玩家必须通过花言巧语、随机应变的谎言，去“骗取”这些 AI 房主的信任以让他们邀请你进屋（进屋后吸血鬼就能饱餐一顿）。不同 AI 房主刁钻的问题和反应让游戏的每一次游玩都充满无厘头的喜剧效果。",
+      "updated_at": "2026-07-10",
+      "url": "https://store.steampowered.com/app/2726370",
+      "team_background": "Proxima成立于2021年，总部旧金山，5人独立游戏工作室，专注AI游戏。创始人Ran Mo此前为EA中央产品管理负责人，负责The Sims等IP的UGC系统。曾就职YouTube战略团队和BCG。",
+      "product_intro": "海外首款商业成功的AI Agent游戏，通过实时语音对话与AI NPC互动。\n\n- **核心玩法**：扮演吸血鬼，用真实语音与AI NPC对话，骗取信任进入屋内吸血。10秒内组织语言说服NPC，目标吸血31位居民\n\n- **产品机制**：\n  - 实时语音交互：OpenAI ChatGPT驱动AI NPC，根据玩家语气、策略实时响应\n  - 换装系统：不同装束引起NPC不同反应（骑士、超级英雄甚至上一个受害者）\n  - 信任系统：平衡游戏难度，NPC有独立性格和疑虑\n  - 流式传输：优化提示词设计和传输方式，增强反应速度\n  - UGC：Steam Workshop支持，玩家可创建自定义角色并分享\n\n- **游戏模式**：\n  - Classic：经典社区闯关模式\n  - Love Bites：情人节拆散情侣模式\n  - Mic Drop：说唱对战模式\n\n- **爆发路径**：\n  - 2023.12：官网发布早期Alpha版本，几乎零宣发\n  - 2024.05：主播CaseOh试玩爆红，YouTube播放量超1亿，零营销支出\n  - 2025.10：Steam正式上线1.0版本（$16.99），含成就系统、创意工坊\n\n- **商业化**：Steam买断制$16.99。Steam评价Mixed（150条评价55%好评），当前在线约18人",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "Pre-Seed轮融资160万美元（约2023年）。投资方含CRV等。",
       "platform": "网页",
-      "launch_date": ""
+      "launch_date": "2023-12",
+      "team_members": [
+        {
+          "name": "Ran Mo",
+          "role": "创始人 & CEO",
+          "background": "前EA中央产品管理负责人，负责The Sims等IP的UGC系统开发。沃顿商学院MBA，曾就职YouTube战略团队和BCG。2021年创立Proxima，专注AI游戏，打造了首款商业成功的AI Agent游戏Suck Up!。"
+        }
+      ]
     },
     {
       "product_name": "AI2U",
-      "company_name": "未知",
+      "company_name": "AlterStaff",
       "status": "已上线",
-      "description": "海外AI游戏，通过文字或语音与AI进行互动。",
+      "description": "由NYU讲师胡文谷(Eddy Hu)创立的纽约AI游戏工作室。前作「病娇AI猫娘模拟器」Steam平台AI游戏评价第一、130万下载。2025年1月上线AI2U（与你直到世界尽头~我的病娇猫娘AI女友），90%好评率。下一步进军乙女向手游市场。",
       "company_size": "独立开发者",
-      "funding_round": "未知",
+      "funding_round": "Pre-A轮",
       "tags": "AI陪伴",
       "region": "海外",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/header.jpg",
       "id": 31,
-      "updated_at": "2026-06-18 03:04:12",
-      "url": null,
-      "team_background": "由极具创造力的海外独立开发者制作，专攻虚拟交互与人工智能跨界融合领域。",
-      "product_intro": "在海外引发关注的实验性 AI 互动游戏。游戏模糊了“工具”与“游戏”的界限。\n\n玩家在这个虚拟空间中，可以通过文本或最直接的语音输入，与搭载了大语言模型的 AI 人物建立联系。相比于商业化包装极重的竞品，它更纯粹地去掉了复杂的 UI 干扰，试图让大模型本身涌现出的不可预测性与情绪理解能力成为游戏最核心的卖点，属于典型的极简主义二代陪伴产品原型。",
+      "updated_at": "2026-07-10",
+      "url": "https://store.steampowered.com/app/2880730",
+      "team_background": "AlterStaff总部位于纽约，团队16人。定位AI Gaming Industry的Lead Player，从PC端AI游戏向移动端乙女向扩展。",
+      "product_intro": "从「病娇AI猫娘模拟器」到「AI2U」，AI游戏领域Steam评价第一、销量最高的AI游戏。\n\n- **前作（病娇AI猫娘模拟器, 2023.3）**：\n  - 130万下载，视频播放量5亿\n  - Steam商店自然流量占比86%\n  - 好评率90%极度好评\n  - 最早公开可玩的LLM驱动AI角色游戏\n\n- **AI2U（2025.1.26 Steam上线）**：\n  - 4个AI女友+谜题关卡，通关方法上千种，数十种结局\n  - 角色：猫娘/美人鱼/女巫/AI全息秘书，场景：末日安全屋/海岛/魔法森林/太空站\n  - 3D场景中亲密互动，通过视听感知、肢体动作体验真实陪伴\n  - 20%玩家深度沉浸陪伴玩法（心之庭），推动20小时以上玩家数量大幅上升\n\n- **技术沉淀**：\n  - AI角色行动与感知：3D空间自主移动、自主发起序列动作（亲吻/拥抱/吃饭等）\n  - 多模态实时交互：角色能看到、听到玩家正在做的事情，进行观察和询问\n  - AI角色情绪表现：通过数值判断和LLM共同控制表情、动作、语气\n  - AI社区：12000人Discord社区，女友直接参与社区互动，每周回复1000+消息\n  - AI原生游戏创作流程：2周一款AI游戏原型，6周一次迭代\n\n- **下一步规划**：\n  - 2026.03：Steam国服上线AI2U新关卡及Mod系统\n  - 2026.06：上线AI2U移动端\n  - 乙女向手游「异世界旅店」：3D角色AI手游，目标30+女性用户，抽卡+AI交互\n\n- **商业化**：免费体验+月卡+Token购买+抽卡模式",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "天使轮TS(2023.04)→Pre-A轮TS(2024.03)→本轮寻求融资$45M美金(2026.01)。投资方含元璟、五源等。",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2025-01-26",
+      "team_members": [
+        {
+          "name": "胡文谷 (Eddy Hu)",
+          "role": "创始人 & CEO",
+          "background": "人民大学本科、纽约视觉艺术学院硕士(MFA计算机艺术)。NYU Game Center教师(唯一中国教师)，百度飞桨PPDE技术专家。AI模型Cyberpunk Anime Diffusion作者。2020年AI修复100年前北京影像全网过亿，参与人民日报《百年风华》技术修复。前Intelligent Racing Principal Interactive Engineer。"
+        },
+        {
+          "name": "Bushra Alfaraj",
+          "role": "后端/AI工程师",
+          "background": "前Microsoft、Meta、J.P. Morgan资深工程师"
+        },
+        {
+          "name": "Bo Wang",
+          "role": "Engineer Director",
+          "background": "前Latitude团队AI Dungeon项目，管理AI2U项目12000人Discord社区"
+        },
+        {
+          "name": "Grace Woo",
+          "role": "Lead Artist",
+          "background": "资深游戏原画师，参与多款手游项目美术开发"
+        }
+      ],
+      "bp_url": "/files/AI2U_AlterStaff_BP.pdf"
     },
     {
       "product_name": "Altera Bots",
-      "company_name": "Altera",
+      "company_name": "Altera (现更名 Fundamental Research Labs)",
       "status": "测试中",
-      "description": "开发自主AI Agent并在游戏中（如Minecraft）应用的创新项目。Altera致力于创造能与玩家长时间游玩、合作的通用AI伙伴。",
+      "description": "由MIT计算神经科学家创立的AI Agent研究公司，在Minecraft中部署可自主协作的AI智能体。其Project Sid实验在Minecraft中部署1000+AI智能体，自主发展出专业化分工、经济体系和治理结构。2025年8月更名Fundamental Research Labs，业务从游戏扩展到通用AI Agent。",
       "company_size": "创业公司",
-      "funding_round": "天使/种子轮",
+      "funding_round": "A轮",
       "tags": "Minecraft, Agent",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "AI Agent",
-      "image_url": "/ai-game-tracker/images/AlteraBots.png",
+      "image_url": "/images/AlteraBots.png",
       "id": 32,
-      "updated_at": "2026-06-18 03:04:12",
-      "url": null,
-      "team_background": "由硅谷初创公司 Altera 研发。团队获得了顶级风投基金的高度关注与种子轮注资，汇聚了一批致力于推进“通用游戏人工智能（General Game AI）”前沿落地的顶尖科学家。",
-      "product_intro": "Altera Bots 并不只是一个独立游戏，而是旨在构建能够“自发行动、长期陪玩”的通用游戏 AI 智能体（Agent）。\n\n以他们在《Minecraft（我的世界）》中的应用为例，他们打造的 AI 伙伴不再依赖预设的生硬指令行为树，而是具备常识推理能力与环境感知能力。你可以邀请它进入你的世界，它会主动挖矿、搭房子、和你聊天甚至发展出自己的个性喜好，就像一个永远在线、永不疲倦的真实人类玩伴。这是目前离真正的“通用游戏Agent”最近的商业化项目之一。",
+      "updated_at": "2026-07-10",
+      "url": "https://altera.al/",
+      "team_background": "公司2023年成立于旧金山，由MIT、Stanford、Google的计算神经科学家创立。2025年8月更名Fundamental Research Labs，业务从游戏扩展到消费级AI助手(Fairies)和Excel智能体(Shortcut)。团队包含MIT/Stanford/Google X/Citadel的AI研究员和编程竞赛奖牌得主。",
+      "product_intro": "由MIT计算神经科学家创立的AI Agent项目，在Minecraft等游戏中部署可自主协作的AI智能体。\n\n- **核心定位**：打造具有真正自主性的AI Agent，能在复杂长期任务中自主操作和协作，目标是构建「数字人类」\n\n- **产品与技术**：\n  - Altera Bots：在Minecraft中与玩家长时间游玩、合作的AI伙伴\n  - Project Sid：世界首个Agent文明实验，1000+自主AI智能体在Minecraft中协作，自主发展出专业化分工、经济体系和治理结构\n  - 2024年底将Agent从游戏迁移到通用计算机，OSWorld基准测试达48.45%（近乎翻倍其他顶级实验室表现）\n  - 2025年推出Fairies（桌面端通用AI助手）和Shortcut（Excel智能体，超越89%的一年级分析师）\n\n- **商业化**：7天试用后付费，已产生收入。Shortcut盲测在McKinsey/Goldman Sachs分析师对比中胜率89%\n\n- **战略转型**：2025年8月更名Fundamental Research Labs，从游戏扩展到消费级AI助手和企业级Agent，长期目标是机器人与具身智能",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "累计融资4400万美元。Pre-Seed(2023.12,$2M,a16z领投)→Seed(2024.5,$9M,First Spark+Patron领投,a16z/Eric Schmidt参投)→A轮(2025.8,$33M,Prosus领投,Stripe CEO Patrick Collison/a16z Speedrun等参投)。已产生收入(7天试用后付费)。",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "2024-05",
+      "team_members": [
+        {
+          "name": "Robert Yang",
+          "role": "创始人 & CEO",
+          "background": "MIT前教员，计算神经科学家。北京大学物理学学士，纽约大学和耶鲁大学计算神经科学博士。创立Altera专注打造「数字人类」，2025年8月完成A轮后更名Fundamental Research Labs，业务从游戏扩展到通用AI Agent。"
+        },
+        {
+          "name": "Andrew Ahn",
+          "role": "联合创始人",
+          "background": "MIT背景，计算神经科学家。与Robert Yang共同创立Altera。"
+        },
+        {
+          "name": "Nico Christie",
+          "role": "联合创始人",
+          "background": "AI研究员，负责产品Shortcut等。与Robert Yang共同创立Altera。"
+        }
+      ]
     },
     {
       "product_name": "星眠",
       "company_name": "沐言智语",
       "status": "测试中",
-      "description": "前「妙鸭相机」产品负责人张月光创办。一款结合了AI对话、独特触摸反馈以及模拟经营的产品，选择了相对休闲的模拟经营玩法。团队已完成近3亿人民币的4轮融资。",
+      "description": "前「妙鸭相机」产品负责人张月光创办的游戏化AI陪伴产品。结合AI对话、独特触摸反馈和模拟经营，设定玩家经营列车上的「梦境旅馆」，男主星眠是未来仿生人助理。2025年12月完成首轮内测，2026年4月公测。",
       "company_size": "创业公司",
       "funding_round": "A轮",
       "tags": "模拟经营, 触摸反馈, AI对话",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "二代陪伴",
-      "image_url": "/ai-game-tracker/images/星眠.jpg",
+      "image_url": "/images/星眠.jpg",
       "id": 33,
-      "updated_at": "2026-06-18 03:04:12",
-      "url": null,
-      "team_background": "由沐言智语开发，其创始人正是曾打造现象级 AI 应用“妙鸭相机”的前负责人张月光。团队备受资本追捧，已先后拿下总额近 3 亿人民币的 4 轮密集融资。",
-      "product_intro": "一款结合了模拟经营与深度 AI 情感互动的陪伴产品。\n\n在核心交互上，游戏摒弃了目前 AI 伴侣赛道内卷的单纯对话与抽卡模式，转而让玩家体验经营一家可以和客人互动的店铺这类休闲玩法。最特别的是，游戏创新性地引入了触觉反馈（Haptic Feedback）技术，玩家在通过触摸屏幕与高精度的虚拟角色互动时，不仅会有动作和语音反馈，设备还会配合产生细腻的震动，极大强化了跨次元陪伴的情感共鸣真实度。",
+      "updated_at": "2026-07-10",
+      "url": "https://www.xiaohongshu.com/user/profile/starmian",
+      "team_background": "沐言智语（曾用名上海爱莫伊）由张月光2023年11月离职阿里后创立。此前发布过AI播客产品Chatpods，后转向AI陪伴产品星眠。公司已获近3亿人民币4轮融资。",
+      "product_intro": "游戏化AI陪伴产品，将恋爱手游的模拟经营和养成系统嫁接到AI对话上。\n\n- **核心设定**：玩家扮演梦境列车上的旅馆店长，与仿生人助理「星眠」共同经营穿梭于梦境之间的旅馆。通过接待客人、售卖菜品获取金币，购买家具和食材提升好感度，解锁剧情和新功能\n\n- **产品机制**：\n  - AI对话：星眠有强\"活人感\"，熟练使用表情包和网络热梗，对话自然流畅\n  - 触摸反馈：与剧情和情感状态关联的多感官触摸互动系统，角色根据聊天内容、剧情进度和亲密度做出不同反应\n  - 模拟经营：经营旅馆和餐厅，研发菜品、接待客人、装饰房间\n  - 多结局：20+种不同结局和大量隐藏剧情，主线通过进入客人梦境帮助其完成心愿，充满治愈色彩\n  - 三条独立故事线：有心结的儿子、希望主人开心的小猫、被家庭压制的少女\n\n- **核心循环**：聊天涨亲密度 + 打工赚金币→消费涨亲密度→解锁主线剧情\n\n- **用户反馈**：\n  - AI交互\"活人感\"获好评，触摸反馈印象深刻\n  - 模拟经营数值设计薄弱：后期高级客人需入住7-8小时，食材合成随机且消耗大，\"太肝太枯燥\"\n  - 聊天涨亲密度效率偏低，玩家倾向\"肝\"经营而非聊\n\n- **商业化**：内测阶段，具体模式未明确，预计免费+内购",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "4轮融资近3亿人民币。投资方含高榕创投、智谱AI、万物资本、砺思资本、明势资本、蓝驰资本等。估值超1亿美元。",
       "platform": "移动端",
-      "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "launch_date": "2025-12",
+      "gameplay_theme": "AI男/女友",
+      "team_members": [
+        {
+          "name": "张月光",
+          "role": "创始人 & CEO",
+          "background": "前阿里妙鸭相机产品负责人（2020-2023），被誉为\"中国第一批AIGC产品经理\"。2023年7月妙鸭相机上线爆红，巅峰DAU 60万、排队4000人。2023年11月因与虎鲸文娱（阿里大文娱）发展方向分歧离职创业，成立沐言智语，打造游戏化AI陪伴产品星眠。"
+        }
+      ]
     },
     {
       "product_name": "妹居物语",
@@ -677,7 +929,7 @@
       "status": "已上线",
       "description": "由制作人彩奈独立开发，Steam和移动端日活合计突破1万。通过AI对话触发事件、数值反馈（好感/信任），进而沉淀记忆并解锁新性格与事件的闭环。",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "Steam, 恋爱养成",
       "region": "国内",
       "gameplay_main": "AI陪伴",
@@ -685,14 +937,21 @@
       "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3963620/f1112808450127dabec9104ebbed556defd691fe/capsule_616x353.jpg?t=1779098363",
       "id": 34,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://store.steampowered.com/app/2776820",
       "team_background": "这是一款极具传奇色彩的独立游戏产品。由制作人“彩奈”一人单枪匹马，仅用两个月时间、花费约八千元外包成本开发完成，上线后立刻在 Steam 和移动端双端取得了合计日活突破 1 万的傲人成绩。",
       "product_intro": "一款极为纯粹的 AI 原生恋爱养成类游戏。\n\n其核心框架精简且极具闭环逻辑：玩家与 AI 女孩进行高自由度对话互动 -> 触发各类日常事件或小游戏 -> AI 根据对话内容给出数值反馈（好感度/信任度提升或下降） -> 数值反馈沉淀为长期记忆 -> 解锁女孩全新的性格状态与特殊事件。麻雀虽小五脏俱全，它用极低的成本跑通了目前许多大厂重金都未能实现的情感记忆沉淀玩法循环。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露(独立开发者)",
       "platform": "Steam",
-      "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "launch_date": "未知",
+      "gameplay_theme": "AI男/女友",
+      "team_members": [
+        {
+          "name": "独立开发者",
+          "role": "开发",
+          "background": "独立游戏开发者"
+        }
+      ]
     },
     {
       "product_name": "如意情探",
@@ -700,7 +959,7 @@
       "status": "测试中",
       "description": "创始人为前素鳞科技联创。一款3D AI乙女陪伴游戏，2025年11月开启内测。",
       "company_size": "创业公司",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "3D, 乙女, AI恋爱",
       "region": "国内",
       "gameplay_main": "AI陪伴",
@@ -712,10 +971,17 @@
       "team_background": "由初创团队 CyberPinky 研发。其核心创始人 Jaz 曾是著名虚拟人科技公司素鳞科技的联合创始人，具备丰富的虚拟偶像与 3D 技术项目统筹经验。",
       "product_intro": "一款将“乙女恋爱陪伴”与“3D互动推理”相融合的移动端 AI 游戏。\n\n游戏打破了传统乙女游戏（如《光与夜之恋》《恋与制作人》）中“点点点”的选项束缚。玩家可以通过自由的语音或文字，与高精度的 3D 虚拟男主共同探索案件现场或展开暧昧互动。大语言模型赋予了男主极高的自由交互空间，玩家的每一句话都可能直接影响男主的情感反馈与随后的剧情走向，大幅提升了恋爱代入感。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "移动端",
       "launch_date": "2025-11",
-      "gameplay_theme": "AI男/女友"
+      "gameplay_theme": "AI男/女友",
+      "team_members": [
+        {
+          "name": "CyberPinky",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "星夜颂歌",
@@ -735,10 +1001,17 @@
       "team_background": "由星战网游《EVE Online》前核心制作人与清华、牛津的双料物理学 AI 博士联合创办的“奇点摄动（SingularDance）”开发。团队拥有豪华的技术研发基因，目前已获得由九合创投等机构领投的千万级人民币天使+轮融资。",
       "product_intro": "一款主打 PC 桌面端的高精度 3D AI 二次元女友陪伴软件。\n\n团队放弃了市面上泛滥的“多角色海量 UGG 聊天大厅”路线，转而花极其重磅的工业化成本（积累百万字文案打底的知识库）去只塑造一个具有“超人格化”属性的 3D 少女蕾伊。她不仅拥有影视级动捕和绝佳的美术表现，而且具备真实的“脾气”和反骨，拒绝一味讨好玩家，试图营造出类似电影《Her》或《西部世界》中那种极具独立自我的真实跨次元共生关系。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "PC",
-      "launch_date": "",
-      "gameplay_theme": "AI男/女友"
+      "launch_date": "未知",
+      "gameplay_theme": "AI男/女友",
+      "team_members": [
+        {
+          "name": "奇点摄动",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "Tolan",
@@ -746,7 +1019,7 @@
       "status": "未知",
       "description": "定位为AI宠物的第二代AI陪伴产品，涵盖日常与虚拟世界场景并重。",
       "company_size": "未知",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "AI宠物",
       "region": "海外",
       "gameplay_main": "AI陪伴",
@@ -754,19 +1027,26 @@
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/1b/e1/f21be167-d05b-7898-b79b-74983fb393f3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "id": 37,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://tolans.com",
       "team_background": "定位为面向海外市场的初创型项目，目前在公开资料中尚未披露明确的团队主创背景及大型融资经历。",
       "product_intro": "这是一款主打“AI 宠物（AI Pet）”概念的第二代情感陪伴产品。\n\n与第一代以文字 Bot 为主的陪伴产品相比，Tolan 将核心放在了场景化与视觉表现上。玩家在虚拟世界中不仅能与自己的 AI 宠物进行拟真对话，还需要照顾它的虚拟日常生活（如喂食、抚摸、互动）。这种将传统“电子宠物机（Tamagotchi）”玩法与大模型语义理解深度结合的尝试，旨在解决纯聊天类 AI 应用长线留存率低下、用户极易流失的通病。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "新一轮融资(金额未披露)",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2024-06",
+      "team_members": [
+        {
+          "name": "Portola",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "PUBG Ally",
-      "company_name": "Krafton",
-      "status": "研发中",
-      "description": "将与英伟达展开深度技术合作，具备高度交互能力的智能队友。玩家可通过语音或文字指令与AI同伴实时沟通、战斗搜刮。端侧运行Mistral大模型降低延迟。",
+      "company_name": "KRAFTON",
+      "status": "测试中",
+      "description": "KRAFTON与英伟达深度合作开发的AI智能队友系统（CPC, Co-Playable Character）。基于NVIDIA ACE技术，端侧运行Mistral-Nemo-Minitron 20亿参数小型语言模型，支持语音/文字实时交互。2025年10月首次展示，2026年6月开启限时测试。",
       "company_size": "大厂",
       "funding_round": "已上市",
       "tags": "FPS, AI队友",
@@ -775,14 +1055,21 @@
       "gameplay_sub": "AI 队友",
       "image_url": "https://wstatic-prod.pubg.com/web/live/main_156194a/img/afd271b.webp",
       "id": 38,
-      "updated_at": "2026-06-18 03:04:12",
-      "url": null,
-      "team_background": "由全球顶级大逃杀游戏厂商 Krafton（蓝洞，PUBG开发商）主导研发，并获得了硬件与AI巨头英伟达（NVIDIA）底层技术（如 NVIDIA ACE）的深度战略支持合作。是3A游戏大厂入局端侧游戏AI的标杆项目。",
-      "product_intro": "这是绝地求生（PUBG）为解决硬核大逃杀单排孤独感而重磅推出的“智能AI队友”系统。\n\nAlly 绝非简单的跟随或开枪的脚本机器人，它搭载了轻量级的端侧大模型（如 Mistral 模型压缩版），极大地降低了对话和决策延迟。玩家可以用语音直接向 Ally 下达复杂的战术指令（如“你去二楼架枪，我在这边搜物资”）。Ally 不仅能听懂语音，甚至还能“看懂”战场局势，具备极高自由度与实用价值。",
+      "updated_at": "2026-07-10",
+      "url": "https://www.krafton.com/en/news/press/krafton-reveals-playtest-plans-for-pubg-ally-built-with-nvidia-ace",
+      "team_background": "KRAFTON为韩国游戏巨头，《绝地求生》开发商。2025年10月宣布全面转型\"AI First\"公司，加速Agentic AI、AI工作流自动化和游戏内AI服务。与英伟达保持长期战略合作伙伴关系。",
+      "product_intro": "KRAFTON与英伟达合作开发的AI智能队友系统，定位为「可共同游玩的角色」(CPC)。\n\n- **核心定位**：超越传统脚本化NPC，提供具备协作性、主动性、能进行自然语言交互的动态自适应AI队友\n\n- **技术架构（双层）**：\n  - 上层：NVIDIA ACE驱动的Mistral-Nemo-Minitron语言模型（20亿参数），负责理解战场态势、分析玩家指令、生成战术决策和语音回复\n  - 下层：传统行为树，负责移动、瞄准、射击等毫秒级快速响应操作\n  - 端侧运行：完全在玩家本地GPU上运行，延迟极低\n  - 语音：英伟达Parakeet进行英语语音转文字，KRAFTON自研TTS负责语音输出\n\n- **核心功能**：\n  - 语音/文字交互：理解PUBG专属术语、地图位置和物品属性\n  - 自主决策：搜刮物资、战斗、导航、驾驶载具，无需持续指令\n  - 协作能力：讨论战略、传送道具、支援复活、侧翼包抄\n  - 长期记忆：CES 2026新增，能记住此前表现和游戏内互动\n  - 多语言：支持英语、韩语、中文\n\n- **硬件要求**：最低RTX 2080 Ti/RTX 3060(8GB显存)+16GB内存，推荐RTX 4070(12GB显存)+24GB内存\n\n- **测试进展**：\n  - 2026.06.17-07.01：\"艾拉联结\"(Ally Duo)限时测试，萨诺地图双排模式，AI角色名为艾拉(Ella)\n  - 计划收集玩家反馈后全面上线",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司KRAFTON为韩国上市公司（KOSPI）。2025年10月宣布转型为\"AI First\"公司。",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "2026-06",
+      "team_members": [
+        {
+          "name": "Kangwook Lee",
+          "role": "KRAFTON CAIO (首席AI官)",
+          "background": "KRAFTON AI本部部长，负责PUBG Ally的开发与展示。主导CPC（Co-Playable Character）技术与英伟达ACE的集成。"
+        }
+      ]
     },
     {
       "product_name": "量子跃迁：米乐光年",
@@ -790,22 +1077,29 @@
       "status": "研发中",
       "description": "包含采集、制造、捏脸换装、情感经营等要素，并特别加入了模拟影视演绎玩法，让玩家体验利用AI拍戏导戏的过程。",
       "company_size": "创业公司",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "影视模拟, 生活建造",
       "region": "国内",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
-      "image_url": "/ai-game-tracker/images/米乐光年.jpg",
+      "image_url": "/images/米乐光年.jpg",
       "id": 39,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://m.taptap.cn/app/723921",
       "team_background": "由初创公司“以咏今朝”研发，其创始人白芷是一位在游戏行业深耕了 10 余年的老兵，拥有丰富的研发与跨界整合经验。",
       "product_intro": "这是一款极其庞大的缝合型 AI 社交与生活建造产品。\n\n在底层框架上，它包含了采集、开垦、制造、养宠物、捏脸换装以及传统的情感经营等成熟的休闲品类要素。但它脱颖而出的核心在于其内置的“模拟影视演绎”玩法。玩家可以像导演一样，利用大模型工具生成剧本大纲，并指派游戏里的高度智能 AI NPC 作为演员去“实机演戏”。这不仅提升了模拟经营的代入感，也将 AI 赋能的 UGC 创作推向了一个新的高度。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未明确披露（公司2024年被认定为高新技术企业）",
       "platform": "未知",
-      "launch_date": "",
-      "gameplay_theme": "模拟经营"
+      "launch_date": "2026-Q3(预计)",
+      "gameplay_theme": "模拟经营",
+      "team_members": [
+        {
+          "name": "白芷",
+          "role": "制作人/带队",
+          "background": "前叠纸游戏《恋与制作人》主策划"
+        }
+      ]
     },
     {
       "product_name": "月匣",
@@ -821,13 +1115,20 @@
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/12/76/51/127651ce-7fa0-a369-5316-3befc1365d0b/MC5wbmc.png/600x0w.webp",
       "id": 40,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://yuexia.baidu.com",
       "team_background": "由国内顶级科技互联网大厂百度（Baidu）亲自下场研发的重磅产品。依托百度强大的内部资源和底层大模型（文心一言）能力支持。",
       "product_intro": "《月匣》是百度在 2025 年初推出的 AI 社交与互动娱乐应用。\n\n产品不仅提供了基础的 AI 虚拟角色情感陪伴功能，更创新性地将“沉浸式剧本互动”融入其中。玩家不再是漫无目的地闲聊，而是可以进入系统或社区创作者设定的各类特定剧本杀/互动小说情境中。凭借百度文心一言底座强大的文本解析能力，玩家能在复杂的剧情走向中与扮演成各种剧本角色的 AI 智能体展开有深度逻辑支撑的羁绊或博弈。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司百度已上市（NASDAQ: BIDU）",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2025-01",
+      "team_members": [
+        {
+          "name": "百度",
+          "role": "开发与运营",
+          "background": "百度AI娱乐化部门独立产品。App已于2026-01-30停止运营，网页版仍可使用。"
+        }
+      ]
     },
     {
       "product_name": "Deviation Game",
@@ -835,7 +1136,7 @@
       "status": "已上线",
       "description": "Steam特别好评的多人派对合作游戏：玩家画图“骗过”图像识别AI，同时让队友猜对。",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "派对游戏, CV图像识别, 你画我猜",
       "region": "海外",
       "gameplay_main": "AI原生玩法",
@@ -843,14 +1144,21 @@
       "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3104020/851ca91fa6b40409c9c5a78098a29e5403e8b9df/capsule_616x353.jpg?t=1779855609",
       "id": 43,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://store.steampowered.com/app/3104020",
       "team_background": "由日本独立开发者 Tomo Kihara 与创意工作室 Playfool 联合开发。该游戏在 2022 年最初展出后便引发关注，于 2025 年底正式登陆 Steam，斩获“特别好评”并吸引了约 4000 名以上的核心玩家体验。",
       "product_intro": "这是一款将 AI 机器视觉（CV/图像识别）作为对抗核心机制的多人派对合作游戏。\n\n游戏采用了极度巧妙的逆向思维：在传统的“你画我猜”中，玩家需要画得尽可能像，但在《Deviation Game》中，系统会引入一个充当审核员的“图像识别 AI”。玩家的目标是画出一幅高度抽象或充满隐喻的图，它的精妙之处在于：必须让同为人类的队友能凭借人类的常识和默契猜对，同时又要足够抽象，以至于“骗过”并击败后台那个死板的 AI 识别模型。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露(独立自发行)",
       "platform": "Steam",
-      "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "launch_date": "2025-12-12",
+      "gameplay_theme": "派对游戏",
+      "team_members": [
+        {
+          "name": "Playfool",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "像素梦工厂",
@@ -858,7 +1166,7 @@
       "status": "研发中",
       "description": "2026年Q1计划上线Steam的独立游戏，玩家在游戏中为AI顾客定制游戏，生成AI顾客并验证玩法。",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "游戏制作模拟",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
@@ -870,9 +1178,16 @@
       "team_background": "由独立开发团队 Emergence 研发，预计将于 2026 年 Q1 在 Steam 上架。目前为无外部融资的独立运作状态。",
       "product_intro": "一款非常“Meta（元游戏）”的模拟经营作品，主打“在游戏里做游戏，并让 AI 来玩”。\n\n玩家在游戏中经营一家游戏开发工作室，但你服务的对象不是真实玩家，而是“AI 顾客”。玩家需要通过机制卡牌等元素为这些 AI 顾客量身定制专属的像素游戏。更有趣的是，大模型会模拟这些不同性格顾客的反馈：它们会真的“体验”你设计的游戏，并给出严苛的评价、甚至退款要求，极大考验玩家洞察 AI 偏好的策略能力。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "Steam",
-      "launch_date": "2026-Q1"
+      "launch_date": "2026-Q1",
+      "team_members": [
+        {
+          "name": "Emergence",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "我的恋综超失控！",
@@ -880,21 +1195,28 @@
       "status": "早期·原型",
       "description": "AI微缩社会模拟类游戏。玩家作为恋综导演，通过巧妙的对话引导AI嘉宾的情感走向。",
       "company_size": "未知",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "恋综, 群像AI",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "对话模拟类",
-      "image_url": "/ai-game-tracker/images/恋综超失控.jpg",
+      "image_url": "/images/恋综超失控.jpg",
       "id": 46,
       "updated_at": "2026-06-18 03:04:12",
       "url": null,
       "team_background": "参与某知名游戏创作赛道而诞生的原型作品，由小型的创新创作团队打造，尝试将社会学实验引入游戏设计中。",
       "product_intro": "一款题材非常新颖的“AI微缩社会模拟类”游戏。\n\n玩家在游戏中的身份不再是参与者，而是一档恋爱综艺节目的“总导演”。节目里的所有嘉宾全部是由独立 AI Agent（智能体）扮演的。作为导演，你可以通过巧妙的对话暗示、发布离谱的综艺规则或者人为制造戏剧性冲突，去试图引导、干预甚至破坏这群 AI 嘉宾间自然涌现的情感走向与人际关系网络，观察这种多智能体相互作用下的“群像社会实验”。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "未知",
+          "role": "开发团队",
+          "background": "信息待补充"
+        }
+      ]
     },
     {
       "product_name": "诡秘推理",
@@ -902,7 +1224,7 @@
       "status": "已上线",
       "description": "Steam上架的AI对话推理探案游戏，玩家与AI驱动的嫌疑人/证人对话寻找破案线索。",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "探案推理",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
@@ -914,9 +1236,16 @@
       "team_background": "由独立工作室 Battlecry Studio 研发，游戏已在 Steam 平台以买断制正式发售（售价约 $13.49），收获了部分核心解谜玩家的好评验证。",
       "product_intro": "主打“AI实时生成式剧本杀”体验的侦探推理游戏。\n\n游戏设定在充满悬疑色彩的诡秘世界观下，案件的真凶、作案手法乃至部分证词都会由 AI 在开局时动态分配和生成。玩家作为侦探，必须在场景中打字，像真实审讯一样向不同嫌疑人发问，并利用发现的逻辑漏洞戳破 AI 的谎言。这极其考验大模型在“保持角色人设不崩塌”与“不轻易泄露案件真相”之间的平衡调教。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "Steam",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "Battlecry Studio",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "神探夏洛克：暗夜追踪者",
@@ -936,9 +1265,16 @@
       "team_background": "由美酷瑞（Gamercury AI）开发，团队核心成员履历极为耀眼，由原盛大副总裁朱笑靖与前B站游戏事业部负责人吴昀贇联合创办。目前已获得由连尚网络（WiFi万能钥匙）领投的第二轮融资，资本与大咖加持背景深厚。",
       "product_intro": "一款野心勃勃的 AI 原生 3D 推理 RPG 游戏。\n\n借助经典的《神探夏洛克》IP 壳子，游戏将 3D 环境探索与大模型带来的推理演绎深度结合。玩家在凶案现场搜集到的线索不再是死板的触发器，而是可以通过与具备不同隐藏立场、记忆和性格的 AI 证人进行高自由度的语言博弈与审问来获取突破。游戏的终局并非唯一解，AI 会根据玩家拼凑的逻辑链条推演出合理的结案反馈。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "Gamercury AI(美酷瑞)",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "推演：七日谈",
@@ -946,7 +1282,7 @@
       "status": "早期·原型",
       "description": "AI对话叙事游戏。",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "对话叙事",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
@@ -958,9 +1294,16 @@
       "team_background": "国内独立开发者开发的 AI 剧情实验性作品。主攻叙事维度的去脚本化体验。",
       "product_intro": "一款主打纯粹‘AI对话叙事’的原型 Demo 游戏。\n\n游戏舍弃了传统 AVG/Galgame 树状图式的选项分支。玩家在限定的“七日”时间循环或生存框架内，必须通过完全自由的自然语言输入与游戏世界中的人物进行交涉、套取线索或改变其对你的态度。AI 会根据玩家每天的言行实时推演第二天发生的故事与危机，是一种极度自由的互动小说形式。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露(独立开发者)",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "独立开发者",
+          "role": "开发",
+          "background": "独立游戏开发者"
+        }
+      ]
     },
     {
       "product_name": "萌爪派对：欢乐问答",
@@ -968,7 +1311,7 @@
       "status": "测试中",
       "description": "AI生成题目进行问答的多人派对游戏。",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "派对游戏, 问答",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
@@ -976,14 +1319,26 @@
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/header.jpg",
       "id": 51,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://www.taptap.cn/app/730746",
       "team_background": "由致力于探索 AI 与游戏结合的国内独立团队‘喵吉托工作室’开发。该团队同时还在开发高互动性的海岛经营模拟游戏《喵呜岛》。",
       "product_intro": "定位为一款结合了大模型技术的休闲多人派对游戏（Party Game）。\n\n传统的派对答题游戏通常题库有限，容易被玩家背板。而在《萌爪派对》中，AI 充当了‘实时出卷人’。游戏根据玩家当前的游玩语境、热点梗或特定的主题，利用大模型实时生成源源不断且充满趣味性的问答题目。这不仅解决了内容消耗过快的问题，还通过无厘头的 AI 脑洞放大了朋友间联机答题的派对乐趣。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "种子轮(奇绩创坛,2023.10,超百万人民币)",
       "platform": "未知",
-      "launch_date": "",
-      "gameplay_theme": "派对游戏"
+      "launch_date": "未知",
+      "gameplay_theme": "派对游戏",
+      "team_members": [
+        {
+          "name": "李驰",
+          "role": "创始人",
+          "background": "前字节跳动游戏AI小镇负责人，中科大+哥伦比亚大学毕业"
+        },
+        {
+          "name": "丁煌浩",
+          "role": "联创/CTO",
+          "background": "前阿里AI Lab大模型AI算法专家"
+        }
+      ]
     },
     {
       "product_name": "星海自走牌",
@@ -991,7 +1346,7 @@
       "status": "未知",
       "description": "AI捏卡生成技能进行对战的自走棋/卡牌游戏。",
       "company_size": "未知",
-      "funding_round": "未知",
+      "funding_round": "未披露",
       "tags": "卡牌对战, 技能生成",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
@@ -1003,9 +1358,16 @@
       "team_background": "国内独立开发团队制作的创新型 AI 原生小游戏。在当前的 AI 游戏技术栈中进行探索，属于早期试验性质的原型作品。",
       "product_intro": "这是一款将大语言模型融入到经典‘自走棋/卡牌对战’框架中的游戏。\n\n游戏最大的亮点是加入了‘AI捏卡与技能生成’系统。玩家不需要从固定的牌库中抽卡，而是可以通过描述输入，让大模型实时生成出独一无二的英雄卡牌以及它们专属的攻击技能与克制机制，再将这些由 AI 生成的变数投入到战场上进行全自动的自走棋博弈。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "未知",
+          "role": "开发团队",
+          "background": "信息待补充"
+        }
+      ]
     },
     {
       "product_name": "Public Eye",
@@ -1025,9 +1387,16 @@
       "team_background": "由 Wolf Games 开发。该公司的联合创始人兼 CCO Elliot Wolf，是经典美剧《法律与秩序》（Law & Order）创作者 Dick Wolf 的儿子。公司已获 900 万美元 A 轮融资，并与 NBC环球（NBCUniversal）达成了战略合作，拥有得天独厚的影视叙事基因和海量顶级 IP 的开发授权潜力。",
       "product_intro": "游戏设定在一个反乌托邦的近未来，由于犯罪率飙升，警察部门不得不向公众求助来侦破谋杀案。玩家扮演一名侦探，通过收集线索和证据，在 AI 助手 ADA 的引导下进行案件推理。\n\n游戏最大的特色在于“生成式案件”——利用其专有的 AI 引擎，游戏每天都能实时生成全新的、响应玩家选择的电影级犯罪故事。这些故事的灵感来自于每天真实的全球新闻头条，让“每日探案”充满了新鲜感和高度沉浸的剧集质感。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "$13M(种子$4M+A轮$9M)",
       "platform": "网页",
-      "launch_date": ""
+      "launch_date": "2025(夏Beta)",
+      "team_members": [
+        {
+          "name": "Wolf Games",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "product_name": "Project Shanhai",
@@ -1047,9 +1416,16 @@
       "team_background": "由初创团队 Glass Bead Games 开发。该工作室总部位于加州，由前谷歌云游戏（Google Stadia）及阿里元境团队的技术大牛 Kuangye Guo 和 Haochen Liu 联合创办。项目受到顶级厂商青睐，由 Supercell Investments 领投种子轮，并与著名 AI 语音平台 ElevenLabs 结成了深度技术合作关系。",
       "product_intro": "一款以上古中国《山海经》为题材的生成式 AI（GenAI）生存建造沙盒游戏。\n\n团队形容其为“带有一个全知 AI 游戏主持人的 Minecraft”。游戏的核心在于让生成式 AI 全面接管世界的叙事与变体：玩家在这个世界里的建造与生存决策，将实时影响整个神话世界的剧情走向与环境衍变，带给玩家前所未有的自由度与“玩家驱动型（Player-driven）”的动态史诗故事体验。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "Supercell领投",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "Glass Bead Games",
+          "role": "开发团队",
+          "background": "创始人来自Google Stadia和阿里元境"
+        }
+      ]
     },
     {
       "product_name": "Pengu",
@@ -1065,13 +1441,20 @@
       "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/9f/6f/a49f6fe5-336b-5c8a-acd3-8f79f3023632/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
       "id": 60,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://born.com",
       "team_background": "由初创公司 Born 开发，联合创始人包括 Fabian Kamberi（CEO）、Jannis Ringwald 与 Stefan Quernhorst。公司在 2025 年 9 月宣布完成 1500 万美元的 A 轮融资，由顶级风投 Accel 领投，腾讯（Tencent）和 Laton Ventures 亦参与了投资。",
       "product_intro": "《Pengu》是一款被定义为“社交化 AI 伴侣（Social AI Companions）”的生成式 AI 虚拟宠物平台。\n\n游戏主打“好友与伴侣共同养成”，玩家和现实中的熟人一起在应用内领养并照顾一只由 AI 驱动的企鹅。这只企鹅不仅具备自主的人格成长与对话能力，还会随着主人的共同社交行为不断进化。内置还包含多款休闲小游戏，将“AI养成”完美融入到了熟人社交链中。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "$25M(A轮$15M,腾讯参投)",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "2022",
+      "team_members": [
+        {
+          "name": "Born",
+          "role": "开发团队",
+          "background": "用户超1500万"
+        }
+      ]
     },
     {
       "product_name": "Iconic",
@@ -1087,13 +1470,20 @@
       "image_url": "https://theoversightbureau.com/images/og_image.webp",
       "id": 61,
       "updated_at": "2026-06-18 03:04:12",
-      "url": null,
+      "url": "https://iconicgames.ai",
       "team_background": "团队总部位于伦敦，核心成员大多具备剑桥大学与帝国理工学院的深厚技术背景。公司已于近期完成1300万美元的种子轮融资，领投方包括 Kindred Ventures 和 Northzone，甚至吸引了 Google AI Futures Fund 等科技巨头基金的注资。",
       "product_intro": "Iconic 致力于打造完全由 AI 原生驱动的互动娱乐和游戏世界。其最核心的技术壁垒在于“端侧部署（on-device）”的低延迟架构与“语音驱动（voice-driven）”的交互范式。\n\n游戏打破了传统屏幕点击的束缚，玩家通过自然的语音对话与游戏内的 AI 智能体和世界环境产生交互。由于核心模型在本地端侧运行，极大地降低了云端推理带来的高延迟，实现了真正的沉浸式实时叙事与互动。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "€11M种子轮(2025.12)",
       "platform": "移动端",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "Iconic",
+          "role": "开发团队",
+          "background": "语音驱动AI世界游戏"
+        }
+      ]
     },
     {
       "id": 62,
@@ -1104,7 +1494,7 @@
       "updated_at": "2026-06-18 03:10:04",
       "url": "https://store.steampowered.com/app/4437020/",
       "company_size": "独立开发者",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "幸存者Like, 武器合成, 动态肉鸽, AI策划",
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/720cb8d1de9888979cdba139054d9d92fa01c596/header.jpg",
       "region": "国内",
@@ -1113,9 +1503,16 @@
       "team_background": "由 Meshy Game Studio 开发。这是一个致力于探索“AI实时策划”概念的独立游戏团队。",
       "product_intro": "这是一款硬核的“AI原生肉鸽幸存者”游戏。游戏舍弃了传统肉鸽中设计师提前写好的“技能树与固定搭配”，转而让 AI 充当实时游戏策划（Agent）。\n\n在游戏的核心“Socket（插槽）系统”中，玩家搜集到的导弹、黑洞、风暴等原子机制组件，可以随意镶嵌组合。底层的 AI 逻辑引擎会即时解析玩家的策略意图，将这些底层机制进行逻辑编排，实时生成自洽且全新的弹幕特效与元素反应（例如分裂爆炸+全向追踪的黑洞风暴）。千万种组合意味着每一次游玩都是“绝版”体验。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "Steam",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "Meshy Game Studio",
+          "role": "开发团队",
+          "background": "独立游戏工作室"
+        }
+      ]
     },
     {
       "id": 63,
@@ -1135,9 +1532,16 @@
       "team_background": "由全球顶级游戏大厂 Epic Games 研发。这属于 Fortnite（堡垒之夜）长线运营中探索 AI 技术赋能玩法的一项前沿尝试。",
       "product_intro": "这是战术竞技游戏中极具代表性的“传统玩法+AI指挥官”模式。玩家在战局中可使用游戏内货币雇佣著名的星战反派角色“达斯·维达”作为跟随作战的 AI 队友。\n\n技术上不仅使用了大语言模型（如 Gemini）让其拥有独立思考和战术判断的能力，还接入了 ElevenLabs 等前沿语音模型，使得达斯·维达具备原汁原味的 IP 配音与情绪反馈。这为大型多人射击游戏带来了强烈的 RPG 代入感与情绪价值。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "Epic Games私人公司，2024年估值约$315亿，腾讯为战略投资方",
       "platform": "多平台",
-      "launch_date": ""
+      "launch_date": "2025-05",
+      "team_members": [
+        {
+          "name": "Tim Sweeney",
+          "role": "Epic Games创始人兼CEO",
+          "background": "1970年生，1991年创立Epic Games，主导开发虚幻引擎，2017年GDC游戏终身成就奖"
+        }
+      ]
     },
     {
       "id": 64,
@@ -1148,7 +1552,7 @@
       "updated_at": "2026-06-18 03:18:39",
       "url": "https://www.astrocade.com/",
       "company_size": "创业公司",
-      "funding_round": "B轮及以上",
+      "funding_round": "B轮+",
       "tags": "游戏生成, UGC, 零代码, 李飞飞, 独角兽",
       "image_url": "https://d16qq0o35va7kz.cloudfront.net/images/Astrocade_Share_Thumbnail_1200x630.jpg",
       "region": "海外",
@@ -1157,9 +1561,16 @@
       "team_background": "Astrocade 由 Amir Sadeghian、Ali Sadeghian 和知名 AI 科学家李飞飞联合创办，李飞飞担任公司的首席科学官（CSO）兼 AI 战略顾问。公司在短短 8 个月内完成了种子、A、B轮共计数千万美元融资（红杉资本、Sea Capital、英伟达等参投），目前估值已超 10 亿美元。",
       "product_intro": "定位为“AI游戏生成平台（UGC）”。产品核心模型为 AstroBrain，它就像一个超级游戏导演，能够协调和调度底层各种专门的 AI 生成模型（涵盖地形、角色、动画、音效等）。玩家完全不需要编写代码，只需用自然语言输入创意，几分钟内即可生成出带有完整逻辑和世界观的可玩游戏。平台采用了类似 TikTok 的竖屏信息流分发模式，允许玩家即滑即玩，并支持一键进行游戏的二次创作（Remix）。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "$68M(种子$12M+A+B$56M,2026.05)",
       "platform": "网页",
-      "launch_date": ""
+      "launch_date": "2024-06",
+      "team_members": [
+        {
+          "name": "李飞飞",
+          "role": "联合创办",
+          "background": "斯坦福大学教授，AI领域顶级学者"
+        }
+      ]
     },
     {
       "id": 65,
@@ -1168,7 +1579,7 @@
       "status": "早期·原型",
       "description": "育碧（Ubisoft）推出的实验性AI队友项目（代表原型角色为 Pablo 和 Sofia）。该项目底层接入 Google 的 Gemini 大语言模型，并通过行为树（Behavior Tree）与现有游戏AI无缝连接。在技术落地方面，它创新性地使用环境查询系统（EQS）来确定战术位置，并结合资产标记与同义词库技术，成功解决并使得AI能精准理解玩家语音中诸如“蓝色箱子”等模糊名词，展现了极强的指令解析与环境感知能力。",
       "updated_at": "2026-06-18 03:44:28",
-      "url": null,
+      "url": "https://ubisoft.com",
       "company_size": "大厂",
       "funding_round": "已上市",
       "tags": "AI队友, Gemini, 行为树, 实验项目",
@@ -1179,9 +1590,21 @@
       "team_background": "由全球知名游戏开发商育碧（Ubisoft）巴黎工作室负责研发，作为其实验性 AI 探索矩阵（如前期的 NEO NPCs 项目）的重要延续部分，进一步探索大模型在 3D 复杂环境下的战术执行能力。",
       "product_intro": "此原型并非单纯的“聊天机器人在游戏中”，而是致力于解决大模型与传统游戏控制逻辑结合的核心痛点。团队引入了 Google Gemini 2 大模型，并通过“环境查询系统 (EQS)”让大模型拥有空间概念。配合底层预设的同义词库和资产标记，AI 队友能够像真实玩家一样解析极具模糊性的语音指令（例如“去那个蓝色箱子后面掩护我”），并将其转化为具体的行为树动作去执行。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "母公司育碧已上市（EPA: UBI），腾讯完成€11亿投资交易",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "2025-11",
+      "team_members": [
+        {
+          "name": "Xavier Manzanares",
+          "role": "Director of Gameplay Gen AI",
+          "background": "育碧游戏玩法生成式AI总监"
+        },
+        {
+          "name": "Virginie Mosser",
+          "role": "Narrative Director",
+          "background": "育碧叙事总监，负责AI角色叙事化设计"
+        }
+      ]
     },
     {
       "id": 66,
@@ -1192,9 +1615,9 @@
       "updated_at": "2026-06-18 03:47:25",
       "url": "https://sr.mihoyo.com/",
       "company_size": "大厂",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "二次元, 内置AI, 问答, 智能伴游",
-      "image_url": "/ai-game-tracker/images/帕姆问问.png",
+      "image_url": "/images/帕姆问问.png",
       "region": "国内",
       "gameplay_main": "传统玩法+AI",
       "gameplay_sub": "AI NPC",
@@ -1214,18 +1637,78 @@
       "updated_at": "2026-06-18 03:49:25",
       "url": null,
       "company_size": "创业公司",
-      "funding_round": "未融资",
+      "funding_round": "未披露",
       "tags": "实时联机, PVP, 大模型评分, 沙盘推演, 小游戏, 直播互动",
-      "image_url": "/ai-game-tracker/images/王国战争.png",
+      "image_url": "/images/王国战争.png",
       "region": "国内",
       "gameplay_main": "AI原生玩法",
       "gameplay_sub": "玩法机制类",
       "product_intro": "行业首款AI原生实时联机PVP小游戏。游戏抛弃了传统复杂的数值和动作操作，将AI大模型直接作为战局的“裁判与推演者”。\n\n核心包含“评分战”与“沙盘推演”两种模式：玩家搭配出包含历史人物（如貂蝉、诸葛亮等）的阵容，AI根据人物属性实时演算战局变量，如安排貂蝉做间谍可能会触发“美人计”。这种高度依赖AI涌现能力的脑洞玩法极具观赏性，为PVP游戏提供了全新的直播互动生态。",
       "team_background": "开发团队暂未在公开渠道高调露面，但该游戏凭借在各大直播平台的“赛博斗蛐蛐”玩法迅速走红，是国内小游戏出海与AI原生玩法结合的早期先驱探路者。",
       "funding_amount": "",
-      "funding_detail": "",
+      "funding_detail": "未披露",
       "platform": "未知",
-      "launch_date": ""
+      "launch_date": "未知",
+      "team_members": [
+        {
+          "name": "未知",
+          "role": "开发团队",
+          "background": "信息待补充"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "product_name": "Yoroll (LinearGame)",
+      "company_name": "LinearGame",
+      "status": "研发中",
+      "description": "全球首个「无引擎」视频游戏平台，用AI视频生成模型取代传统游戏引擎。玩家用文本+图片即可生成电影级互动视频游戏，定位AI时代的Roblox+Netflix。自研Roll-01实时交互视频模型，三层混合引擎：世界模型渲染+VLM视觉判定+数值逻辑。",
+      "url": "https://yoroll.ai",
+      "company_size": "创业公司",
+      "funding_round": "未披露",
+      "tags": "AI原生, 互动视频, 无引擎游戏, 视频生成, UGC平台, 世界模型, 多智能体工作流",
+      "region": "海外",
+      "gameplay_main": "AI原生玩法",
+      "gameplay_sub": "对话模拟类",
+      "platform": "网页",
+      "launch_date": "未知",
+      "team_background": "LinearGame团队在游戏开发、视频基模、应用、互动影视领域均有深厚经验，兼具创业与内容创作能力。",
+      "team_members": [
+        {
+          "name": "Heath Xiao",
+          "role": "CEO",
+          "background": "连续创业者/被收购，北美爆款游戏制作人，视频模型应用方向"
+        },
+        {
+          "name": "Jason Sun",
+          "role": "COO",
+          "background": "内容创意产品基模方向"
+        },
+        {
+          "name": "Thomas Zhao",
+          "role": "CPO",
+          "background": "前游戏主程，游戏技术方向"
+        },
+        {
+          "name": "Yue Zhao",
+          "role": "Scientist",
+          "background": "10+顶会一作，视频基模方向"
+        },
+        {
+          "name": "Yinxin Wang",
+          "role": "Tech Leader",
+          "background": "游戏技术方向"
+        },
+        {
+          "name": "Yuan Sun",
+          "role": "Film Director",
+          "background": "多次国际电影节大奖，影视导演/编剧方向"
+        }
+      ],
+      "funding_detail": "未披露。BP时间2026年4月，正在寻求融资。",
+      "product_intro": "全球首个「无引擎」视频游戏平台，让视频本身成为游戏。\n\n- **核心定位**：不是做视频工具，而是让视频本身成为游戏。定位AI时代的Roblox+Netflix，让人人都能成为小岛秀夫\n\n- **技术架构（三层混合引擎）**：\n  - 表现层 World Model：世界模型(如Genie 3)实时生成视频画面，模拟光影、材质、物理效果\n  - 判定层 VLM Observer：VLM实时分析视频流，识别碰撞/死亡/拾取等关键事件，输出结构化JSON\n  - 状态层 Traditional Game Logic：游戏逻辑引擎管理背包、等级、血条、任务等数值模块\n\n- **自研模型 Roll-01**：\n  - 基于开源模型训练微调的实时交互视频模型，专门适配游戏场景\n  - 支持实时交互生成、保持场景和物体3D一致、长期空间记忆\n  - AutoRegressive DiT + Context as Memory + Action Conditioning + DMD\n\n- **产品战略（隆中对）**：\n  - 01 验证AI玩法：通过PC端游戏开发，搭建AI游戏设计管线\n  - 02 筑护城河：沉淀专有的生成工作流、Prompt库、游戏组件库与创作编辑器\n  - 03 长线运营型AI游戏：多款AI游戏长线运营\n  - 04 平台化：UGC内容平台，玩家构建和发布自己的AI游戏，获取收益\n\n- **三大赛道交汇**：游戏($2000亿) + 互动视频 + UGC平台\n\n- **WHY NOW**：成本下降(VEO3/Sora2成本降至$6/min) + 一致性突破(Nano Banana) + 时效性提升(预生成+实时混合) + 个性化驱动(长期记忆Embedding)\n\n- **产品矩阵**：\n  - LinearGame Studio：自研和交付高质量AI视频互动游戏\n  - Yoroll.ai：UGC内容平台，玩家构建和发布AI游戏\n  - Yoroll Games：借助世界模型扩展到大型动作游戏",
+      "updated_at": "2026-07-10",
+      "bp_url": "/files/Yoroll_LinearGame_BP.pdf"
     }
   ],
   "events": [
@@ -1384,28 +1867,12 @@
       "created_at": "2026-06-17 07:23:42"
     },
     {
-      "id": 13,
-      "game_id": 20,
-      "event_type": "产品动态",
-      "event_date": "2025-Q4",
-      "content": "公司层面计划在25年Q4完成港股IPO（已秘密递表）。目前ARR约1亿美金。",
-      "created_at": "2026-06-17 07:23:42"
-    },
-    {
       "id": 21,
       "game_id": 7,
       "event_type": "融资动态",
       "event_date": "2025-H2",
       "content": "完成$10M天使+轮融资，真格、IDG投资，估值近$70M。",
       "created_at": "2026-06-17 11:09:40"
-    },
-    {
-      "id": 17,
-      "game_id": 13,
-      "event_type": "融资动态",
-      "event_date": "2025-H2",
-      "content": "本轮融资金额3000万人民币，估值约3000万美金。",
-      "created_at": "2026-06-17 07:23:42"
     },
     {
       "id": 26,
@@ -1429,14 +1896,6 @@
       "event_type": "产品动态",
       "event_date": "2025-09",
       "content": "MAU 1025万，DAU 683万。",
-      "created_at": "2026-06-17 07:23:42"
-    },
-    {
-      "id": 14,
-      "game_id": 20,
-      "event_type": "产品动态",
-      "event_date": "2025-09",
-      "content": "MAU 1100万，DAU 427万。作为公司核心收入支柱，贡献ARR的68%。",
       "created_at": "2026-06-17 07:23:42"
     },
     {
@@ -1602,6 +2061,984 @@
       "content": "中国经营报：EVE高开低走，「AI恋人」为何争议不断？",
       "url": "http://dianzibao.cb.com.cn/html/2026-04/27/content_339991.htm",
       "created_at": "2026-07-03 00:00:00"
+    },
+    {
+      "id": 50,
+      "game_id": 20,
+      "event_type": "产品动态",
+      "event_date": "2023-06",
+      "content": "Talkie海外版正式上线。90天内突破1000万用户，跻身全球陪伴类App前三。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 51,
+      "game_id": 20,
+      "event_type": "产品动态",
+      "event_date": "2023-09",
+      "content": "国内版「星野」上线。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 52,
+      "game_id": 20,
+      "event_type": "产品动态",
+      "event_date": "2024-12",
+      "content": "MAU达到峰值2977万，全球AI伴侣应用排名第2（仅次于Character.AI）。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 53,
+      "game_id": 20,
+      "event_type": "产品动态",
+      "event_date": "2025-09",
+      "content": "MAU回落至2764万。累计用户1.47亿，付费用户139万，ARPPU约5美元。2025前三季度Talkie/星野收入1875万美元。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 54,
+      "game_id": 20,
+      "event_type": "融资动态",
+      "event_date": "2026-01-09",
+      "content": "母公司MiniMax港交所上市(00100.HK)，为\"港股大模型第一股\"。IPO前累计7轮融资近15亿美元。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 55,
+      "game_id": 20,
+      "event_type": "产品动态",
+      "event_date": "2026-02",
+      "content": "国内版星野MAU达1586万，环比增长62%。母公司ARR突破1.5亿美元。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 56,
+      "game_id": 20,
+      "event_type": "融资动态",
+      "event_date": "2026-07-10",
+      "content": "MiniMax完成160亿港元融资（配股95亿+可转债65亿），创始人闫俊杰宣布实现AGI前不再领取薪酬。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 60,
+      "game_id": 32,
+      "event_type": "融资动态",
+      "event_date": "2023-12",
+      "content": "完成Pre-Seed轮融资200万美元，a16z领投。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 61,
+      "game_id": 32,
+      "event_type": "产品动态",
+      "event_date": "2024-05",
+      "content": "Altera Bots正式上线，在Minecraft中部署可自主协作的AI智能体。完成Seed轮900万美元融资，First Spark Ventures和Patron领投，a16z和Eric Schmidt参投。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 62,
+      "game_id": 32,
+      "event_type": "产品动态",
+      "event_date": "2024-09",
+      "content": "推出Project Sid——世界首个Agent文明实验，1000+自主AI智能体在Minecraft中协作，自主发展出专业化分工、经济体系和治理结构。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 63,
+      "game_id": 32,
+      "event_type": "产品动态",
+      "event_date": "2024-12",
+      "content": "将Agent从游戏迁移到通用计算机，OSWorld基准测试达48.45%，近乎翻倍其他顶级实验室表现。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 64,
+      "game_id": 32,
+      "event_type": "融资动态",
+      "event_date": "2025-08",
+      "content": "完成A轮融资3300万美元，Prosus领投，Stripe CEO Patrick Collison参投。公司更名Fundamental Research Labs，业务从游戏扩展到通用AI Agent。推出Fairies（桌面AI助手）和Shortcut（Excel智能体）。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 70,
+      "game_id": 30,
+      "event_type": "融资动态",
+      "event_date": "2023-01",
+      "content": "Proxima完成Pre-Seed轮融资160万美元，投资方含CRV等。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 71,
+      "game_id": 30,
+      "event_type": "产品动态",
+      "event_date": "2023-12",
+      "content": "Suck Up!早期Alpha版本在官网发布，几乎零宣发。核心玩法为扮演吸血鬼用语音骗取AI NPC信任。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 72,
+      "game_id": 30,
+      "event_type": "产品动态",
+      "event_date": "2024-05",
+      "content": "主播CaseOh试玩后爆红，YouTube播放量超1亿，零营销支出。被CRV称为\"目前最好的AI休闲游戏\"。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 73,
+      "game_id": 30,
+      "event_type": "产品动态",
+      "event_date": "2025-10-01",
+      "content": "Suck Up!正式登陆Steam（$16.99），含成就系统、创意工坊、新游戏模式（Love Bites、Mic Drop）。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 74,
+      "game_id": 30,
+      "event_type": "产品动态",
+      "event_date": "2025-11",
+      "content": "推出\"Identity Theft\"更新，吸血鬼可永久假扮被杀NPC身份，AI开始检测\"行为不一致\"。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 75,
+      "game_id": 30,
+      "event_type": "产品动态",
+      "event_date": "2026-01",
+      "content": "推出\"Neighborhood Watch\"扩展，引入首个持续性AI对手——追踪吸血鬼社交模式的可疑侦探。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 80,
+      "game_id": 38,
+      "event_type": "产品动态",
+      "event_date": "2025-01",
+      "content": "KRAFTON宣布与英伟达合作开发CPC(Co-Playable Character)AI协作模型。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 81,
+      "game_id": 38,
+      "event_type": "产品动态",
+      "event_date": "2025-10-23",
+      "content": "KRAFTON宣布全面转型\"AI First\"公司，加速Agentic AI、AI工作流自动化和游戏内AI服务。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 82,
+      "game_id": 38,
+      "event_type": "产品动态",
+      "event_date": "2025-10-30",
+      "content": "在首尔NVIDIA GeForce Gamer Festival首次公开展示PUBG Ally。基于NVIDIA ACE+端侧SLM(Mistral-Nemo-Minitron 20亿参数)，支持中英韩三语语音交互。计划2026年初开启测试。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 83,
+      "game_id": 38,
+      "event_type": "产品动态",
+      "event_date": "2026-01",
+      "content": "CES 2026展示PUBG Ally新增\"长期记忆\"功能，AI队友能记住此前表现和游戏内互动。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 84,
+      "game_id": 38,
+      "event_type": "产品动态",
+      "event_date": "2026-06-07",
+      "content": "KRAFTON董事长张炳圭与英伟达CEO黄仁勋在首尔PUBG粉丝活动中同台，展示PUBG Ally在RTX Spark平台上的运行效果。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 85,
+      "game_id": 38,
+      "event_type": "产品动态",
+      "event_date": "2026-06-17",
+      "content": "\"艾拉联结\"(Ally Duo)限时测试正式开启。AI角色艾拉(Ella)在萨诺地图与玩家双排，支持语音实时沟通。最低要求RTX 3060。测试持续至7月1日。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 90,
+      "game_id": 33,
+      "event_type": "融资动态",
+      "event_date": "2023-11",
+      "content": "张月光离职阿里创业，成立沐言智语（曾用名上海爱莫伊）。此前妙鸭相机7月爆红，巅峰DAU 60万。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 91,
+      "game_id": 33,
+      "event_type": "融资动态",
+      "event_date": "2024-08",
+      "content": "沐言智语完成A轮融资，累计融资近3亿人民币。投资方含高榕创投、智谱AI、万物资本、砺思资本、明势资本、蓝驰资本等。估值超1亿美元。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 92,
+      "game_id": 33,
+      "event_type": "产品动态",
+      "event_date": "2025-11",
+      "content": "张月光在百度世界大会分享游戏化AI陪伴产品思路，透露产品已打磨一年半，即将进入测试。被质疑\"不懂游戏\"。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 93,
+      "game_id": 33,
+      "event_type": "产品动态",
+      "event_date": "2025-12",
+      "content": "星眠通过小红书宣布完成首轮内测。内测资格一码难求，小红书官方账号单日涨粉近1万，相关话题阅读量破百万。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 94,
+      "game_id": 33,
+      "event_type": "产品动态",
+      "event_date": "2026-04",
+      "content": "星眠公测版本上线(v1.0.0)。玩家反馈AI交互\"活人感\"获好评，但模拟经营数值设计薄弱，\"太肝太枯燥\"。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 100,
+      "game_id": 20,
+      "event_type": "相关文章",
+      "event_date": "2026-03",
+      "content": "AI伴侣赛道\"中国造\"崛起，Talkie、PolyBuzz等出海新星如何\"闷声发财\"？",
+      "url": "https://m.chwang.com/article/203997869545",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 101,
+      "game_id": 20,
+      "event_type": "相关文章",
+      "event_date": "2026-01",
+      "content": "国联民生AI体验官：MiniMax系列研究之Talkie/星野体验",
+      "url": "https://m.10jqka.com.cn/20260109/c673873610.shtml",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 102,
+      "game_id": 20,
+      "event_type": "相关文章",
+      "event_date": "2026-07",
+      "content": "融资160亿、创始人宣布零薪酬，解禁后的MiniMax要做什么？",
+      "url": "https://finance.sina.com.cn/roll/2026-07-10/doc-inihhzry7080480.shtml",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 103,
+      "game_id": 32,
+      "event_type": "相关文章",
+      "event_date": "2025-08",
+      "content": "Fundamental Research Labs获3300万美元A轮融资，专注跨领域AI智能体开发",
+      "url": "https://m.zhiding.cn/article/3169963.htm",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 104,
+      "game_id": 32,
+      "event_type": "相关文章",
+      "event_date": "2024-09",
+      "content": "1000个Agent圈地模拟人类社会，北大校友创业AI版「我的世界」",
+      "url": "https://www.flipboard.cn/a/04aae3544810c2e9db98048ad37db4d3",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 105,
+      "game_id": 30,
+      "event_type": "相关文章",
+      "event_date": "2026-05",
+      "content": "处处是雷！最早赚到钱的爆红AI游戏，开发者却给AI\"泼冷水\"？",
+      "url": "https://view.inews.qq.com/a/20260510A07G9D00",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 106,
+      "game_id": 30,
+      "event_type": "相关文章",
+      "event_date": "2024-05",
+      "content": "油管播放超千万，一款主打欺骗NPC的独立AI游戏正成为新爆款",
+      "url": "https://xuexiaigc.com/gptgpts/%e6%b2%b9%e7%ae%a1%e6%92%ad%e6%94%be%e8%b6%85%e5%8d%83%e4%b8%87%ef%bc%8c%e4%b8%80%e6%ac%be%e4%b8%bb%e6%89%93%e6%ac%ba%e9%aa%97-npc-%e7%9a%84%e7%8b%ac%e7%ab%8b-ai-%e6%b8%b8%e6%88%8f%e6%ad%a3%e6%88%90/",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 107,
+      "game_id": 30,
+      "event_type": "相关文章",
+      "event_date": "2026-03",
+      "content": "Naavik播客对话Proxima创始人Ran Mo：Finding Success with AI Agents and Content Creators",
+      "url": "https://naavik.co/podcast/finding-success-with-ai-agents-and-content-creators",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 108,
+      "game_id": 38,
+      "event_type": "相关文章",
+      "event_date": "2025-11",
+      "content": "《绝地求生》引入AI队友：战术竞技游戏的革命性进化",
+      "url": "http://www.18play.com/news/202511/04p15a5865.html",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 109,
+      "game_id": 38,
+      "event_type": "相关文章",
+      "event_date": "2026-06",
+      "content": "绝地求生AI队友会聊天，比传统NPC强在哪？英伟达Krafton合作，RTX3060本地跑",
+      "url": "https://www.toutiao.com/article/7654203646850105882/",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 110,
+      "game_id": 33,
+      "event_type": "相关文章",
+      "event_date": "2025-12",
+      "content": "被质疑\"不懂游戏\"，张月光的「AI男友」已完成首轮内测",
+      "url": "https://aitntnews.com/newDetail.html?newId=20825",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 111,
+      "game_id": 33,
+      "event_type": "相关文章",
+      "event_date": "2026-03",
+      "content": "\"龙虾版\"男友出没小红书，批量制造的AI伴侣正在攻陷乙游圈",
+      "url": "https://new.qq.com/rain/a/20260309A06V7400",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 120,
+      "game_id": 31,
+      "event_type": "产品动态",
+      "event_date": "2023-03",
+      "content": "「病娇AI猫娘模拟器」demo上线，130万下载，视频播放量5亿，Steam好评率90%。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 121,
+      "game_id": 31,
+      "event_type": "融资动态",
+      "event_date": "2023-04",
+      "content": "完成天使轮TS。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 122,
+      "game_id": 31,
+      "event_type": "融资动态",
+      "event_date": "2024-03",
+      "content": "完成Pre-A轮TS。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 123,
+      "game_id": 31,
+      "event_type": "产品动态",
+      "event_date": "2025-01-26",
+      "content": "AI2U正式Steam上线（1.0版本），4个AI女友+谜题关卡，90%好评率。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 124,
+      "game_id": 31,
+      "event_type": "融资动态",
+      "event_date": "2026-01",
+      "content": "寻求本轮融资$45M美金，用于乙女向手游「异世界旅店」研发和移动端扩展。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 125,
+      "game_id": 31,
+      "event_type": "产品动态",
+      "event_date": "2026-06",
+      "content": "计划上线AI2U移动端，并向乙女向手游市场扩展。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 130,
+      "game_id": 25,
+      "event_type": "产品动态",
+      "event_date": "2018-01",
+      "content": "镜土TRPG成立，由游卡投资孵化，主打TRPG连锁业态。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 131,
+      "game_id": 25,
+      "event_type": "产品动态",
+      "event_date": "2025-11",
+      "content": "织之与镜土宣布成立新主体共同融资，联合开发线上AI TRPG业态。镜土贡献数百个TRPG剧本+道具经济系统。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 140,
+      "game_id": 8,
+      "event_type": "产品动态",
+      "event_date": "2024-01",
+      "content": "桌崽AI内测上线，二次元桌面陪伴宠物，支持20+游戏实时陪玩。内测一个月注册用户超1万，DAU超3000。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 141,
+      "game_id": 8,
+      "event_type": "融资动态",
+      "event_date": "2024-07",
+      "content": "完成种子轮融资30万美元，奇绩创坛投资。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 142,
+      "game_id": 8,
+      "event_type": "融资动态",
+      "event_date": "2025-06",
+      "content": "360/三六零战略投资。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 143,
+      "game_id": 8,
+      "event_type": "融资动态",
+      "event_date": "2026-01",
+      "content": "完成Pre-A+轮数千万人民币融资，星连资本领投，360超额跟投。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 144,
+      "game_id": 8,
+      "event_type": "产品动态",
+      "event_date": "2026-06",
+      "content": "公司转型世界模型方向，发布Looped World Model架构。100+学者联合署名背书，数据需求仅传统架构1%，参数效率提升100倍。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 145,
+      "game_id": 8,
+      "event_type": "相关文章",
+      "event_date": "2026-06",
+      "content": "FaceMind发布Looped World Model技术报告，100+学者联合署名",
+      "url": "https://nijigen.com.cn",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 150,
+      "game_id": 68,
+      "event_type": "产品动态",
+      "event_date": "2026-04",
+      "content": "LinearGame发布BP，定位全球首个「无引擎」视频游戏平台。自研Roll-01实时交互视频模型，三层混合引擎架构。正在寻求融资。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 160,
+      "game_id": 13,
+      "event_type": "融资动态",
+      "event_date": "2019-01",
+      "content": "母公司超参数科技成立于深圳。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 161,
+      "game_id": 13,
+      "event_type": "融资动态",
+      "event_date": "2019-05",
+      "content": "超参数科技完成A轮千万美元融资。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 162,
+      "game_id": 13,
+      "event_type": "融资动态",
+      "event_date": "2021-01",
+      "content": "超参数科技完成A+轮3000万美元融资。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 163,
+      "game_id": 13,
+      "event_type": "融资动态",
+      "event_date": "2022-04",
+      "content": "超参数科技完成B轮1亿美元融资，估值达独角兽级别。入选福布斯中国2022年独角兽榜单。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 164,
+      "game_id": 13,
+      "event_type": "产品动态",
+      "event_date": "2024-01",
+      "content": "阁道科技成立，刘寒从超参数科技WA studio独立创办，专注AI游戏开发。20人团队。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 165,
+      "game_id": 13,
+      "event_type": "产品动态",
+      "event_date": "2026-05-26",
+      "content": "《遥远行星：建造师》Steam/蒸汽平台抢先体验版上线。150+颗星球、600+智能NPC，纯买断制。",
+      "created_at": "2026-07-10 00:00:00"
+    },
+    {
+      "id": 200,
+      "game_id": 3,
+      "event_type": "产品动态",
+      "event_date": "2024-03",
+      "content": "《逆水寒》手游上线\"剧组模式\"，利用AI技术让玩家通过上传真人视频或打字即可让3D角色演绎动画，构建游戏内UGC短视频生态"
+    },
+    {
+      "id": 201,
+      "game_id": 3,
+      "event_type": "产品动态",
+      "event_date": "2025-08",
+      "content": "AI剧组模式UGC作品总量突破1000万条，#剧组模式抖音播放量超100亿次。云栖大会展示总传播数突破百亿"
+    },
+    {
+      "id": 202,
+      "game_id": 3,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "AI剧组站作品接近2000万条，AI门客超4000万位。网易联合浙江大学凭借智慧化三维数字人技术获国家科学技术进步奖二等奖"
+    },
+    {
+      "id": 203,
+      "game_id": 5,
+      "event_type": "产品动态",
+      "event_date": "2024-09",
+      "content": "《三角洲行动》国服9月26日正式公测，登陆iOS/Android/Windows平台，由腾讯天美琳琅天上团队基于虚幻引擎5研发"
+    },
+    {
+      "id": 204,
+      "game_id": 5,
+      "event_type": "产品动态",
+      "event_date": "2025-02",
+      "content": "单人战役\"黑鹰坠落\"模式2月21日免费上线PC端"
+    },
+    {
+      "id": 205,
+      "game_id": 5,
+      "event_type": "产品动态",
+      "event_date": "2025-08",
+      "content": "8月19日登陆PS5和Xbox Series X/S平台，实现跨平台进度共享"
+    },
+    {
+      "id": 206,
+      "game_id": 6,
+      "event_type": "产品动态",
+      "event_date": "2024-06",
+      "content": "\"定胜终测\"首次实装全球首个游戏Copilot——AI队友，支持自主跑图、搜物资、战斗及语音双向沟通"
+    },
+    {
+      "id": 207,
+      "game_id": 6,
+      "event_type": "产品动态",
+      "event_date": "2024-07",
+      "content": "7月25日正式公测上线，预下载阶段登顶App Store免费总榜TOP1"
+    },
+    {
+      "id": 208,
+      "game_id": 6,
+      "event_type": "产品动态",
+      "event_date": "2025-03",
+      "content": "PC版3月27日上线由NVIDIA ACE驱动的本地AI队友功能，RTX加速数字人技术"
+    },
+    {
+      "id": 209,
+      "game_id": 14,
+      "event_type": "产品动态",
+      "event_date": "2024-01",
+      "content": "上线AI伴侣\"灵宝\"，初期在大厅界面与玩家互动聊天，基于自研\"绝悟\"AI打造"
+    },
+    {
+      "id": 210,
+      "game_id": 14,
+      "event_type": "产品动态",
+      "event_date": "2024-09",
+      "content": "上线\"灵宝日记\"功能，AI随机记录玩家当日对局并生成风格各异的小漫画"
+    },
+    {
+      "id": 211,
+      "game_id": 14,
+      "event_type": "产品动态",
+      "event_date": "2025-06",
+      "content": "灵宝进化为全场景智能游戏伴侣，上线首日用户参与量突破千万。S39赛季上线\"指挥官模式\"支持语音指挥AI队友"
+    },
+    {
+      "id": 212,
+      "game_id": 10,
+      "event_type": "产品动态",
+      "event_date": "2024-07",
+      "content": "7月22日通过国家新闻出版署审批获得版号，定位星际生活模拟经营游戏"
+    },
+    {
+      "id": 213,
+      "game_id": 10,
+      "event_type": "产品动态",
+      "event_date": "2025-09",
+      "content": "9月25日开启首次\"宜居测试\"封闭测试（PC/iOS双端），发布首支预告PV"
+    },
+    {
+      "id": 214,
+      "game_id": 10,
+      "event_type": "产品动态",
+      "event_date": "2026-04",
+      "content": "4月21日开启第二次\"星旅测试\"删档测试，预计2026年内正式公测"
+    },
+    {
+      "id": 215,
+      "game_id": 40,
+      "event_type": "产品动态",
+      "event_date": "2025-01",
+      "content": "百度1月27日上线AI虚拟社交App\"月匣\"，主打高自由度AI对话与沉浸式剧本互动"
+    },
+    {
+      "id": 216,
+      "game_id": 40,
+      "event_type": "产品动态",
+      "event_date": "2025-06",
+      "content": "月匣业务被合并至其他业务线，产品组员工被抽调，产品进入维护状态"
+    },
+    {
+      "id": 217,
+      "game_id": 40,
+      "event_type": "产品动态",
+      "event_date": "2026-01",
+      "content": "月匣App于1月30日正式停止运营，网页版仍可使用"
+    },
+    {
+      "id": 218,
+      "game_id": 63,
+      "event_type": "产品动态",
+      "event_date": "2025-05",
+      "content": "5月16日上线AI驱动的Darth Vader NPC，使用Google Gemini 2.0 Flash和ElevenLabs Flash v2.5技术，复活James Earl Jones经典配音"
+    },
+    {
+      "id": 219,
+      "game_id": 63,
+      "event_type": "产品动态",
+      "event_date": "2025-06",
+      "content": "State of Unreal 2025大会公布\"Persona Device\"功能，允许创作者通过UEFN创建自定义AI NPC"
+    },
+    {
+      "id": 220,
+      "game_id": 63,
+      "event_type": "产品动态",
+      "event_date": "2026-01",
+      "content": "推出\"Conversations System\"实验功能，开发者可创建实时响应的AI NPC，由Gemini模型驱动"
+    },
+    {
+      "id": 221,
+      "game_id": 9,
+      "event_type": "产品动态",
+      "event_date": "2025-05",
+      "content": "5月28日在Steam和移动端以抢先体验模式免费上线，主打AI驱动的双人对战速配玩法"
+    },
+    {
+      "id": 222,
+      "game_id": 9,
+      "event_type": "产品动态",
+      "event_date": "2025-09",
+      "content": "游戏持续更新，支持PC/手机跨平台联机，支持9种语言，Steam评测为\"褒贬不一\"（64%好评）"
+    },
+    {
+      "id": 223,
+      "game_id": 11,
+      "event_type": "产品动态",
+      "event_date": "2025-05",
+      "content": "喵吉托工作室确认继续开发《喵呜岛》，采用自研MeowuAgent智能体框架赋予猫咪NPC真实情绪与记忆"
+    },
+    {
+      "id": 224,
+      "game_id": 11,
+      "event_type": "产品动态",
+      "event_date": "2026-06",
+      "content": "在TapTap开启首次公开试玩（第三轮测试），Steam页面显示预计2026年上线"
+    },
+    {
+      "id": 225,
+      "game_id": 15,
+      "event_type": "产品动态",
+      "event_date": "2025-09",
+      "content": "制作人胡景皓（前腾讯AI技术专家）于9月正式从腾讯离职创立臭皮匠工作室，已获奇绩创坛数百万融资"
+    },
+    {
+      "id": 226,
+      "game_id": 15,
+      "event_type": "产品动态",
+      "event_date": "2026-01",
+      "content": "1月2日发布首曝实机演示视频，B站播放量超30万，定位为AI驱动的历史模拟跑团游戏"
+    },
+    {
+      "id": 227,
+      "game_id": 17,
+      "event_type": "产品动态",
+      "event_date": "2025-08",
+      "content": "8月22日在Steam上线，玩家用4个汉字组合咒文，由AI判定伤害与效果，售价800日元"
+    },
+    {
+      "id": 228,
+      "game_id": 17,
+      "event_type": "产品动态",
+      "event_date": "2025-12",
+      "content": "12月19日更新加入排行榜功能，游戏获Steam\"特别好评\"（88%好评，124条评测）"
+    },
+    {
+      "id": 229,
+      "game_id": 28,
+      "event_type": "产品动态",
+      "event_date": "2024-02",
+      "content": "2月上线Steam页面，为AI驱动的派对对战游戏，玩家输入技能词指挥言灵战斗"
+    },
+    {
+      "id": 230,
+      "game_id": 28,
+      "event_type": "产品动态",
+      "event_date": "2024-03",
+      "content": "3月在Steam开放测试，后因Steam对AI内容敏感推迟，更名为《萌爪大乱斗》计划重新上线"
+    },
+    {
+      "id": 231,
+      "game_id": 29,
+      "event_type": "产品动态",
+      "event_date": "2025-08",
+      "content": "香港科技大学8月17日推出全球最大型AI多智能体社会模拟沙盒平台，开启为期6周的全球开放测试"
+    },
+    {
+      "id": 232,
+      "game_id": 29,
+      "event_type": "产品动态",
+      "event_date": "2025-09",
+      "content": "开放测试9月30日结束，玩家创建超10万个AI智能体，平均同时在线超2000人。获2025腾讯游戏创作大赛\"AI玩法创作奖\""
+    },
+    {
+      "id": 233,
+      "game_id": 34,
+      "event_type": "产品动态",
+      "event_date": "2025-10",
+      "content": "Demo于10月10日上线Steam，一人独立开发的AI生活恋爱模拟游戏，获\"特别好评\"（90%好评，606条评测）"
+    },
+    {
+      "id": 234,
+      "game_id": 34,
+      "event_type": "产品动态",
+      "event_date": "2026-03",
+      "content": "3月26日开启二测（限量不删档测试），预约人数达40万，正式版预计2026年Q2上线"
+    },
+    {
+      "id": 235,
+      "game_id": 35,
+      "event_type": "产品动态",
+      "event_date": "2025-03",
+      "content": "3月开启内测，定位为全球首款AI驱动3D乙女交互游戏，采用\"2D剧情+3D陪伴\"模式，主打自研长期记忆模型"
+    },
+    {
+      "id": 236,
+      "game_id": 35,
+      "event_type": "产品动态",
+      "event_date": "未知",
+      "content": "产品已进行二测，小规模测试次日留存73%、三日留存68%，正式上线时间尚未公布"
+    },
+    {
+      "id": 237,
+      "game_id": 36,
+      "event_type": "产品动态",
+      "event_date": "2026-02",
+      "content": "春节期间开启封闭技术内测，3D AI伴侣\"蕾伊\"B站实机演示播放量破百万，预约人数近2万"
+    },
+    {
+      "id": 238,
+      "game_id": 36,
+      "event_type": "产品动态",
+      "event_date": "2026-05",
+      "content": "5月25日第一轮三日内测结束，1000余人参与，次日留存69%、三日留存58%"
+    },
+    {
+      "id": 239,
+      "game_id": 18,
+      "event_type": "产品动态",
+      "event_date": "2024-09",
+      "content": "在Discord平台上线，上线3个月内吸引超2000万玩家，成为AI社交游戏现象级产品"
+    },
+    {
+      "id": 240,
+      "game_id": 37,
+      "event_type": "产品动态",
+      "event_date": "2024-06",
+      "content": "AI陪伴应用Tolan正式上线，主打与非拟人化外星生物\"交朋友\"概念"
+    },
+    {
+      "id": 241,
+      "game_id": 37,
+      "event_type": "产品动态",
+      "event_date": "2025-02",
+      "content": "全球下载量超500万，ARR超400万美元"
+    },
+    {
+      "id": 242,
+      "game_id": 43,
+      "event_type": "产品动态",
+      "event_date": "2025-12",
+      "content": "12月12日在Steam平台开启抢先体验，定价1400日元，2-6人协作绘图派对游戏，核心玩法为画出AI看不懂但人类能理解的图画"
+    },
+    {
+      "id": 243,
+      "game_id": 44,
+      "event_type": "产品动态",
+      "event_date": "2025-02",
+      "content": "Demo版发布，游戏接入智谱AI(GLM)生成AI顾客需求及游戏内容，定位为AI驱动的创意模拟游戏"
+    },
+    {
+      "id": 244,
+      "game_id": 44,
+      "event_type": "产品动态",
+      "event_date": "2026-01",
+      "content": "Steam商店页面更新，发行日期标注为\"即将推出\"，预计2026年Q1正式发售"
+    },
+    {
+      "id": 245,
+      "game_id": 58,
+      "event_type": "产品动态",
+      "event_date": "2025-03",
+      "content": "Wolf Games正式成立并完成400万美元种子轮融资，投资方包括Dick Wolf、Jimmy Iovine等"
+    },
+    {
+      "id": 246,
+      "game_id": 58,
+      "event_type": "产品动态",
+      "event_date": "2025-08",
+      "content": "Wolf Games与NBCUniversal达成合作协议，将利用生成式AI技术开发基于NBCUniversal影视IP的游戏"
+    },
+    {
+      "id": 247,
+      "game_id": 59,
+      "event_type": "产品动态",
+      "event_date": "2025-04",
+      "content": "Glass Bead Games正式成立，由前谷歌Stadia创始工程师创办，获Supercell投资，ElevenLabs为技术合作伙伴"
+    },
+    {
+      "id": 248,
+      "game_id": 59,
+      "event_type": "产品动态",
+      "event_date": "2025-06",
+      "content": "首发项目代号\"Project Shanhai\"曝光，定位为生成式AI驱动的生存建造沙盒游戏，背景设定古代中国，被描述为\"AI版《我的世界》\""
+    },
+    {
+      "id": 249,
+      "game_id": 60,
+      "event_type": "产品动态",
+      "event_date": "2024-06",
+      "content": "AI虚拟宠物应用Pengu上线，主打\"双人共养\"机制，用户需邀请朋友/伴侣共同抚养AI企鹅"
+    },
+    {
+      "id": 250,
+      "game_id": 60,
+      "event_type": "产品动态",
+      "event_date": "2025-09",
+      "content": "开发商Born完成1500万美元A轮融资，全球用户超1500万，次日留存率80%"
+    },
+    {
+      "id": 251,
+      "game_id": 64,
+      "event_type": "产品动态",
+      "event_date": "2024-06",
+      "content": "Astrocade正式公开AI游戏创作平台，完成1200万美元种子轮融资"
+    },
+    {
+      "id": 252,
+      "game_id": 64,
+      "event_type": "产品动态",
+      "event_date": "2025-07",
+      "content": "推出全新AI Agent驱动的游戏创作体验，支持自然语言生成可玩游戏及一键Remix功能。上线8个月用户突破2000万，月游玩量1.4亿次"
+    },
+    {
+      "id": 253,
+      "game_id": 39,
+      "event_type": "产品动态",
+      "event_date": "2025-12",
+      "content": "12月16日启动限量删档测试，由叠纸前主策白芷带队研发，定位为AI驱动3D演绎影视剧组模拟游戏"
+    },
+    {
+      "id": 254,
+      "game_id": 39,
+      "event_type": "产品动态",
+      "event_date": "2026-02",
+      "content": "获得国家新闻出版署颁发的游戏版号，预计2026年Q3正式上线"
+    },
+    {
+      "id": 255,
+      "game_id": 47,
+      "event_type": "产品动态",
+      "event_date": "2025-09",
+      "content": "试玩Demo发布，游戏接入豆包(火山方舟)AI服务，实装AI驱动的自由对话与动态线索生成系统"
+    },
+    {
+      "id": 256,
+      "game_id": 47,
+      "event_type": "产品动态",
+      "event_date": "2025-11",
+      "content": "11月26日在Steam正式发售，国区售价49元。获2025腾讯游戏创作大赛AI玩法创作奖与AI PC游戏创新奖"
+    },
+    {
+      "id": 257,
+      "game_id": 49,
+      "event_type": "产品动态",
+      "event_date": "2025-08",
+      "content": "参加2025科隆国际游戏展获大量关注，Steam秋季新品节试玩版开放1小时内容，吸引超1万玩家预约"
+    },
+    {
+      "id": 258,
+      "game_id": 49,
+      "event_type": "产品动态",
+      "event_date": "2025-12",
+      "content": "开发商美酷瑞(Gamercury AI)获连尚网络领投的次轮融资，计划2026年登陆iOS/安卓/Steam/PS5/Xbox/Switch 2全平台"
+    },
+    {
+      "id": 259,
+      "game_id": 50,
+      "event_type": "产品动态",
+      "event_date": "2026-04",
+      "content": "4月11日Demo在Steam发布，由Nutshell Game开发发行，是一款以AI意识觉醒为主题的AVG剧情游戏，融合悬疑与规则怪谈元素"
+    },
+    {
+      "id": 260,
+      "game_id": 51,
+      "event_type": "产品动态",
+      "event_date": "2024-12",
+      "content": "小Demo在Discord平台开启测试，接入豆包AI驱动即时生成问答题目和评论"
+    },
+    {
+      "id": 261,
+      "game_id": 51,
+      "event_type": "产品动态",
+      "event_date": "2025-06",
+      "content": "Steam商店页面上线，发行日期标注\"即将推出\""
+    },
+    {
+      "id": 262,
+      "game_id": 57,
+      "event_type": "产品动态",
+      "event_date": "2025-03",
+      "content": "Steam商店页开放，由深圳游心雕龙工作室研发，定位为全球首款AI捏卡功能的即时制策略卡牌对战游戏"
+    },
+    {
+      "id": 263,
+      "game_id": 67,
+      "event_type": "产品动态",
+      "event_date": "2026-04",
+      "content": "在直播平台走红，被称为\"赛博斗蛐蛐\"，AI原生实时联机PVP小游戏，支持评分战和沙盘推演两种核心玩法"
+    },
+    {
+      "id": 264,
+      "game_id": 67,
+      "event_type": "产品动态",
+      "event_date": "2026-07",
+      "content": "微信小游戏版正式登陆腾讯应用宝平台"
+    },
+    {
+      "id": 265,
+      "game_id": 46,
+      "event_type": "产品动态",
+      "event_date": "2025-11",
+      "content": "参加2025腾讯游戏创作大赛AI赛道，获AI玩法创作奖，游戏将AI引入恋综角色对话，产生涌现式剧情效果"
+    },
+    {
+      "id": 266,
+      "game_id": 61,
+      "event_type": "产品动态",
+      "event_date": "未知",
+      "content": "产品信息有限，仍在开发中。定位为语音驱动AI世界游戏，2025年12月完成€11M种子轮融资"
     }
   ],
   "insights": [
@@ -1613,7 +3050,7 @@
       "content": "AI-native的轻量社交游戏存在机会，本身就偏向恶搞无厘头。派对游戏天然是短单局、强社交、低学习成本，适合让AI来当“内容引擎、主持或表演者”。社交关系链本身能掩盖AI的不稳定性（不好笑也能靠朋友互相起哄把局撑住）。但这类产品留存深度及单个爆款的天花板有限，长期可复玩性不足，最终更可能跑出来的是“平台型/工具型”的赢家集合。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight5.png"
+      "image_url": "/images/insight5.png"
     },
     {
       "id": 4,
@@ -1623,7 +3060,7 @@
       "content": "模拟经营具有天然的AI融合优势：①低竞技压力，②高叙事容错（NPC胡说八道也能被包装成性格或随机事件），③高长尾内容需求，需要大量任务、事件、对话，AI能补齐内容池，④节奏可控，可做异步或半实时，时延更容易被接受。目前主要AI融入点为NPC生成、对话行为、剧情走向、道具生成，未来还可探索AI融入养殖/烹饪/制造等系统。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight4.png"
+      "image_url": "/images/insight4.png"
     },
     {
       "id": 3,
@@ -1633,7 +3070,7 @@
       "content": "以《逆水寒》AI剧组模式为例，利用视频生动作、TTS等AI技术，允许玩家零门槛创作高质量、个性化游戏短视频。通过游戏内分享平台、一键二创、日常奖励等功能形成闭环的分发与留存机制，占手游总玩家相当可观的比例参与了内容创作，显著激活了社区生态。这为大体量内容向MMO或开放世界游戏提供了一个极其成功的AI落地参考。",
       "date": "2025-10",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight3.png"
+      "image_url": "/images/insight3.png"
     },
     {
       "id": 2,
@@ -1643,7 +3080,7 @@
       "content": "AI陪伴型产品已从初代Chatbot类产品（如C.AI, Talkie等）转向具备IP化、场景化、游戏化特性的第二代产品。商业化路径更为明确：基本摒弃纯AI产品卖token的思路，采用角色爱+游戏化内购的思路。关键成功因素（KSF）在于产品工程层面knowhow及内容品质，如人设一致性、长期记忆、回答情商等，3D内容的体验观感及长期产能也是决胜因素。部分头部厂商已发生重大Pivot，将重心完全转向AI情感陪伴而非复杂的AI原生底层游戏。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight2.png"
+      "image_url": "/images/insight2.png"
     },
     {
       "id": 1,
@@ -1653,7 +3090,7 @@
       "content": "2025年到2026年初，行业整体对于“AI+游戏”的关注度持续提升，是从“概念验证”发展到“产品化落地”的过渡年。决定产品形态的硬约束没有变：成本、延迟、上下文、一致性与可控性。因此，当前阶段的产品普遍采用模型替换、异步玩法、记忆工程、混合架构等方式来规避这些硬约束。以LLM目前的技术进展去做全新游戏可创新的空间很小，要卖座还是需要传统艺能（IP/剧本/策划/美术等）。",
       "date": "2025-12",
       "created_at": "2026-06-17 07:37:37",
-      "image_url": "/ai-game-tracker/images/insight1.png"
+      "image_url": "/images/insight1.png"
     }
   ]
 }

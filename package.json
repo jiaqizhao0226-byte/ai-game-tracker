@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "node scripts/seed.js && node scripts/seed_events.js && node scripts/seed_additional_events.js && node scripts/migrate_url.js && node scripts/migrate_filters.js && node scripts/migrate_tags.js && node scripts/migrate_insights.js"
+    "seed": "node scripts/seed.js && node scripts/seed_events.js && node scripts/seed_additional_events.js && node scripts/migrate_url.js && node scripts/migrate_filters.js && node scripts/migrate_tags.js && node scripts/migrate_insights.js"
   },
   "dependencies": {
     "better-sqlite3": "^12.11.1",

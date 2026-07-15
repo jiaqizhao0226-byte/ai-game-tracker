@@ -14,7 +14,7 @@ export default function Header() {
           <Link 
             href="/"
             onClick={(e) => {
-              if (window.location.pathname === '/' || window.location.pathname === '/ai-game-tracker' || window.location.pathname === '/ai-game-tracker/') {
+              if (window.location.pathname === '/') {
                 e.preventDefault();
                 window.location.reload();
               }

@@ -1,8 +1,8 @@
 name: Deploy Next.js site to Pages
 
+# 已迁移至 Cloudflare Pages（私有部署）。
+# GitHub Pages 自动部署已禁用，仅保留手动触发入口以备回退。
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
 
 permissions:
