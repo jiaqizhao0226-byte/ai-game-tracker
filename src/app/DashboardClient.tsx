@@ -57,12 +57,35 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [games] = useState<any[]>(initialGames);
   const [events] = useState<any[]>(initialEvents);
   
-  const [search, setSearch] = useState('');
-  const [filterBatches, setFilterBatches] = useState<string[]>([]);
-  const [filterMainTypes, setFilterMainTypes] = useState<string[]>([]);
-  const [filterSubTypes, setFilterSubTypes] = useState<string[]>([]);
-  const [filterAiRoles, setFilterAiRoles] = useState<string[]>([]);
-  const [filterRegions, setFilterRegions] = useState<string[]>([]);
+  // 从 sessionStorage 恢复筛选状态（返回列表页时保留筛选）
+  const savedFilters = (() => {
+    if (typeof window === 'undefined') return null;
+    try {
+      const raw = sessionStorage.getItem('dashboardFilters');
+      return raw ? JSON.parse(raw) : null;
+    } catch {
+      return null;
+    }
+  })();
+
+  const [search, setSearch] = useState<string>(savedFilters?.search ?? '');
+  const [filterBatches, setFilterBatches] = useState<string[]>(savedFilters?.filterBatches ?? []);
+  const [filterMainTypes, setFilterMainTypes] = useState<string[]>(savedFilters?.filterMainTypes ?? []);
+  const [filterSubTypes, setFilterSubTypes] = useState<string[]>(savedFilters?.filterSubTypes ?? []);
+  const [filterAiRoles, setFilterAiRoles] = useState<string[]>(savedFilters?.filterAiRoles ?? []);
+  const [filterRegions, setFilterRegions] = useState<string[]>(savedFilters?.filterRegions ?? []);
+
+  // 筛选变化时写入 sessionStorage
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      sessionStorage.setItem('dashboardFilters', JSON.stringify({
+        search, filterBatches, filterMainTypes, filterSubTypes, filterAiRoles, filterRegions,
+      }));
+    } catch {
+      // ignore
+    }
+  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterAiRoles, filterRegions]);
 
   const filteredGames = games.filter(g => {
     const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) ||
