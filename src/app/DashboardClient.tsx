@@ -2,7 +2,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check } from 'lucide-react';
+import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check, Star } from 'lucide-react';
 import Link from 'next/link';
 import GameImage from '../components/GameImage';
 
@@ -217,8 +217,9 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
             {game.featured && (
-              <div className="absolute top-0 left-0 z-10 bg-amber-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 shadow-md rounded-br-lg">
-                ★ 重点关注
+              <div className="absolute top-2.5 left-2.5 z-10 inline-flex items-center gap-1 bg-white/95 backdrop-blur-sm text-amber-700 text-[10px] font-bold tracking-wide pl-1.5 pr-2 py-1 rounded-full shadow-sm ring-1 ring-amber-300/70">
+                <Star className="w-3 h-3 fill-amber-500 text-amber-500 shrink-0" />
+                重点关注
               </div>
             )}
             <GameImage

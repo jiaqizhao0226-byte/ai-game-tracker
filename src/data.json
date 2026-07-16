@@ -141,7 +141,13 @@
         }
       ],
       "batch": "常态跟踪·2026",
-      "gameplay_facets": "AI陪伴"
+      "gameplay_facets": "AI陪伴",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/d53e3faccf18ddf7f8fa5c9c89b23235cc240895/ss_d53e3faccf18ddf7f8fa5c9c89b23235cc240895.1920x1080.jpg?t=1783066995",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/8e87c0f0e7bc087d3776bc28afbc618ce4d973bf/ss_8e87c0f0e7bc087d3776bc28afbc618ce4d973bf.1920x1080.jpg?t=1783066995",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/f499c73822d30a40080121b51fe1db62f3ad70a0/ss_f499c73822d30a40080121b51fe1db62f3ad70a0.1920x1080.jpg?t=1783066995",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/71bb2e7acc7aef4c5a291437038a1a9450a4f64e/ss_71bb2e7acc7aef4c5a291437038a1a9450a4f64e.1920x1080.jpg?t=1783066995"
+      ]
     },
     {
       "id": 5,
@@ -346,7 +352,13 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "模拟经营",
-      "gameplay_facets": "AI陪伴"
+      "gameplay_facets": "AI陪伴",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743680/f948a0e5b55d0dcf2d26325c35f7f1d0c5ef2cd7/ss_f948a0e5b55d0dcf2d26325c35f7f1d0c5ef2cd7.1920x1080.jpg?t=1782400645",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743680/6497ed9dab6acde3853f365165b8df7a24bd40d0/ss_6497ed9dab6acde3853f365165b8df7a24bd40d0.1920x1080.jpg?t=1782400645",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743680/6be2e71a8a6a89a06fe424bc4f25701683d7d475/ss_6be2e71a8a6a89a06fe424bc4f25701683d7d475.1920x1080.jpg?t=1782400645",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743680/b74a74ceab3ecc07b9ba7ec049537c894d41a113/ss_b74a74ceab3ecc07b9ba7ec049537c894d41a113.1920x1080.jpg?t=1782400645"
+      ]
     },
     {
       "id": 13,
@@ -383,7 +395,13 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_theme": "模拟经营",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105960/2ff67251f4eb28167a37a974c8420067fabe502b/ss_2ff67251f4eb28167a37a974c8420067fabe502b.1920x1080.jpg?t=1783309687",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105960/bed7ec0b97767e98e930c201e0e114f03d7a068e/ss_bed7ec0b97767e98e930c201e0e114f03d7a068e.1920x1080.jpg?t=1783309687",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105960/0cfb3175e9a581f33d8ba6f6d48225ab4942b685/ss_0cfb3175e9a581f33d8ba6f6d48225ab4942b685.1920x1080.jpg?t=1783309687",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105960/880c378d05a34ee6989d36293a84418e83ece12e/ss_880c378d05a34ee6989d36293a84418e83ece12e.1920x1080.jpg?t=1783309687"
+      ]
     },
     {
       "id": 14,
@@ -470,7 +488,13 @@
       "platform": "PC端",
       "launch_date": "2025-08",
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/5f5d15c8dca8ad3620dbc19dddbab6271babd057/ss_5f5d15c8dca8ad3620dbc19dddbab6271babd057.1920x1080.jpg?t=1757665561",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/3cd564662d436a2a33ba0b1cb67f78d268e3f5e6/ss_3cd564662d436a2a33ba0b1cb67f78d268e3f5e6.1920x1080.jpg?t=1757665561",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/25d48f0477a81e7f03e574a63ddcdc34f3c20918/ss_25d48f0477a81e7f03e574a63ddcdc34f3c20918.1920x1080.jpg?t=1757665561",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/67df3332a8ab98f8e87c2d18ec43562414c24202/ss_67df3332a8ab98f8e87c2d18ec43562414c24202.1920x1080.jpg?t=1757665561"
+      ]
     },
     {
       "id": 18,
@@ -593,7 +617,13 @@
       "platform": "PC端",
       "launch_date": "2025-03",
       "batch": "常态跟踪·2025",
-      "gameplay_facets": "AI陪伴"
+      "gameplay_facets": "AI陪伴",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/83ee6a5e76b46967282b8717241ec4ebfc00635f/ss_83ee6a5e76b46967282b8717241ec4ebfc00635f.1920x1080.jpg?t=1764897761",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/c59c74bc7356c65c1ee10e5ba754f7a774d919f5/ss_c59c74bc7356c65c1ee10e5ba754f7a774d919f5.1920x1080.jpg?t=1764897761",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/2299763a9bbd92f1c9ed842200db90d66d69db68/ss_2299763a9bbd92f1c9ed842200db90d66d69db68.1920x1080.jpg?t=1764897761",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/57f89c8d2bd8df73d94a0b487916a491d255b7e3/ss_57f89c8d2bd8df73d94a0b487916a491d255b7e3.1920x1080.jpg?t=1764897761"
+      ]
     },
     {
       "id": 22,
@@ -666,7 +696,13 @@
       ],
       "batch": "常态跟踪·2026",
       "gameplay_theme": "历史模拟",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/f6e7ca0a1f01c4b0d6ac680daa68cdf3e7871903/ss_f6e7ca0a1f01c4b0d6ac680daa68cdf3e7871903.1920x1080.jpg?t=1782454913",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/59c005d90beca9863fff32b29584af0f64c5f598/ss_59c005d90beca9863fff32b29584af0f64c5f598.1920x1080.jpg?t=1782454913",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/0570786fbfe6ffd923a3c7cb5626de2d27335b3b/ss_0570786fbfe6ffd923a3c7cb5626de2d27335b3b.1920x1080.jpg?t=1782454913",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/5f150adc087584b5c0de400446a4d8fed97d72b9/ss_5f150adc087584b5c0de400446a4d8fed97d72b9.1920x1080.jpg?t=1782454913"
+      ]
     },
     {
       "id": 27,
@@ -841,7 +877,13 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/cd284bc1b2fe7fd35b2fc59022f07bb8d2460adc/ss_cd284bc1b2fe7fd35b2fc59022f07bb8d2460adc.1920x1080.jpg?t=1783990739",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/76b060e033729564c5f44b3cea0f0b4e226197c0/ss_76b060e033729564c5f44b3cea0f0b4e226197c0.1920x1080.jpg?t=1783990739",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/1cee5b3e3b9fc33498d1a651c4a2ac25ca1a9654/ss_1cee5b3e3b9fc33498d1a651c4a2ac25ca1a9654.1920x1080.jpg?t=1783990739",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/4bf1de2d371022a16fe3fc8a42deb4073500ad6e/ss_4bf1de2d371022a16fe3fc8a42deb4073500ad6e.1920x1080.jpg?t=1783990739"
+      ]
     },
     {
       "product_name": "Altera Bots",
@@ -946,7 +988,13 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "AI女友",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2776820/ss_3347aafafc33155bba143cb1cc9916d18bb93bb0.1920x1080.jpg?t=1707302195",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2776820/ss_63d6e6e00d0973f4c2c4b638024d4c4fee6b0401.1920x1080.jpg?t=1707302195",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2776820/ss_3272c362707d30335af621fa155b7078bcd241fb.1920x1080.jpg?t=1707302195",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2776820/ss_106b3fc7a2d49ed9f01d2a160124963bfa1932c2.1920x1080.jpg?t=1707302195"
+      ]
     },
     {
       "product_name": "如意情探",
@@ -1167,7 +1215,13 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "派对游戏",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/d7cafbafca931d1f6a9016ee35a5796f7dfa5442/ss_d7cafbafca931d1f6a9016ee35a5796f7dfa5442.1920x1080.jpg?t=1779855609",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/2bd6bcb449d66319184fec2aec849320f8756c72/ss_2bd6bcb449d66319184fec2aec849320f8756c72.1920x1080.jpg?t=1779855609",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/3157e2d3227b1d2f98a690cec5cce425570ec3a2/ss_3157e2d3227b1d2f98a690cec5cce425570ec3a2.1920x1080.jpg?t=1779855609",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/df16763778a1a37d2d0cf2104f25d4c48ac6f37f/ss_df16763778a1a37d2d0cf2104f25d4c48ac6f37f.1920x1080.jpg?t=1779855609"
+      ]
     },
     {
       "product_name": "像素梦工厂",
@@ -1548,7 +1602,13 @@
         }
       ],
       "batch": "常态跟踪·2026",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/c03b3df68bbecfa8034ada0f5d93a0fa32647d48/ss_c03b3df68bbecfa8034ada0f5d93a0fa32647d48.1920x1080.jpg?t=1779435736",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/bb0d1eeb6ba4819135fe4a9dc38044ca71a32440/ss_bb0d1eeb6ba4819135fe4a9dc38044ca71a32440.1920x1080.jpg?t=1779435736",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/3bbbb96caf458e182b2e49834512c9ea8dc5a17c/ss_3bbbb96caf458e182b2e49834512c9ea8dc5a17c.1920x1080.jpg?t=1779435736",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/401d8f52591ddf398a29b0545c5c414d3bbbe857/ss_401d8f52591ddf398a29b0545c5c414d3bbbe857.1920x1080.jpg?t=1779435736"
+      ]
     },
     {
       "id": 63,
@@ -1749,7 +1809,13 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4790720/ce8cb7bc603879018bc68602335a8c44ec5fdcb5/ss_ce8cb7bc603879018bc68602335a8c44ec5fdcb5.1920x1080.jpg?t=1782309654",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4790720/ae9e210095141a329e0ea31eba71b7c2a20d27a3/ss_ae9e210095141a329e0ea31eba71b7c2a20d27a3.1920x1080.jpg?t=1782309654",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4790720/793e93c965c42d4644fb52d4bd15238d81024c97/ss_793e93c965c42d4644fb52d4bd15238d81024c97.1920x1080.jpg?t=1782309654",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4790720/01b1da6a1eb79002becf2a6a40e6fd64ecbfbeda/ss_01b1da6a1eb79002becf2a6a40e6fd64ecbfbeda.1920x1080.jpg?t=1782309654"
+      ]
     },
     {
       "id": 70,
@@ -1773,7 +1839,13 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/e3dd449a64df5296c311ebb1ac48c83b8e90b70f/ss_e3dd449a64df5296c311ebb1ac48c83b8e90b70f.1920x1080.jpg?t=1781578212",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/189c49b9c90ffc6cd8a342661b7cff014463ab6a/ss_189c49b9c90ffc6cd8a342661b7cff014463ab6a.1920x1080.jpg?t=1781578212",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/d9b4c09c78e7f90a662db483e2d38be3cab7a75d/ss_d9b4c09c78e7f90a662db483e2d38be3cab7a75d.1920x1080.jpg?t=1781578212",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/900a92dc2cc7cd1c51572a5219c4ce0b7e998285/ss_900a92dc2cc7cd1c51572a5219c4ce0b7e998285.1920x1080.jpg?t=1781578212"
+      ]
     },
     {
       "id": 71,
@@ -1870,7 +1942,13 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4881270/31a7d8aa56bd2edc725792dc2ccdcf1c952aa614/ss_31a7d8aa56bd2edc725792dc2ccdcf1c952aa614.1920x1080.jpg?t=1783750647",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4881270/aea0f68c9c0e9d7fc6d268735e7ca346c285f005/ss_aea0f68c9c0e9d7fc6d268735e7ca346c285f005.1920x1080.jpg?t=1783750647",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4881270/88c3056f86602e0d00faedee61b440bbd2d6d721/ss_88c3056f86602e0d00faedee61b440bbd2d6d721.1920x1080.jpg?t=1783750647",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4881270/0e8be037e1cc836dc581d5e3363ccfe1cdcd2ea2/ss_0e8be037e1cc836dc581d5e3363ccfe1cdcd2ea2.1920x1080.jpg?t=1783750647"
+      ]
     },
     {
       "id": 75,
@@ -2020,7 +2098,13 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/788d72dc48ad43e59825d48264a0677b2b79c41b/ss_788d72dc48ad43e59825d48264a0677b2b79c41b.1920x1080.jpg?t=1783586344",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/82e0dbdcf0557c5e673e854b6cf913c3dc37e62e/ss_82e0dbdcf0557c5e673e854b6cf913c3dc37e62e.1920x1080.jpg?t=1783586344",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/32de1efcf0621040779c2a9bd6f4c2efca8f4a33/ss_32de1efcf0621040779c2a9bd6f4c2efca8f4a33.1920x1080.jpg?t=1783586344",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/986814777c70b2481bc4ebc3466af769caf6c564/ss_986814777c70b2481bc4ebc3466af769caf6c564.1920x1080.jpg?t=1783586344"
+      ]
     },
     {
       "id": 81,
@@ -2075,7 +2159,13 @@
       "team_members": [],
       "batch": "2026 ChinaJoy",
       "gameplay_facets": "",
-      "gameplay_theme": "推理探案"
+      "gameplay_theme": "推理探案",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4796220/f1811dae40448cfedc13732be0a7eda5ee96297e/ss_f1811dae40448cfedc13732be0a7eda5ee96297e.1920x1080.jpg?t=1783944050",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4796220/9640f7eef992f0d4cd3f2b52d22f1254301c8063/ss_9640f7eef992f0d4cd3f2b52d22f1254301c8063.1920x1080.jpg?t=1783944050",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4796220/e0bbd24522d80e2002323d54e82c3de89e04d7ca/ss_e0bbd24522d80e2002323d54e82c3de89e04d7ca.1920x1080.jpg?t=1783944050",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4796220/65d7cb24c516ccb60ccdb01c5cbbcffeb7dfa924/ss_65d7cb24c516ccb60ccdb01c5cbbcffeb7dfa924.1920x1080.jpg?t=1783944050"
+      ]
     },
     {
       "id": 83,
@@ -2138,7 +2228,13 @@
       "featured": false,
       "batch": "常态跟踪·2026",
       "gameplay_theme": "",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/8d561a810d3d503edda632defe8cae8cdc55e6f5/ss_8d561a810d3d503edda632defe8cae8cdc55e6f5.1920x1080.jpg?t=1784011351",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/9615b56730dcfce5718bca03bd1e03d8cee35302/ss_9615b56730dcfce5718bca03bd1e03d8cee35302.1920x1080.jpg?t=1784011351",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/72e89391d0f3ea3732854b8d41a0ea00ba834428/ss_72e89391d0f3ea3732854b8d41a0ea00ba834428.1920x1080.jpg?t=1784011351",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/87ea46e9ab3b63a7567397d5192486743eae7049/ss_87ea46e9ab3b63a7567397d5192486743eae7049.1920x1080.jpg?t=1784011351"
+      ]
     },
     {
       "id": 85,
@@ -2216,10 +2312,16 @@
       "platform": "PC端",
       "launch_date": "2026-07-13",
       "team_members": [],
-      "featured": false,
+      "featured": true,
       "batch": "常态跟踪·2026",
       "gameplay_theme": "AI女友",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/52c7f78864452f1787d3b47d36720e249843ffef/ss_52c7f78864452f1787d3b47d36720e249843ffef.1920x1080.jpg?t=1784109676",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/70f3d80a21c43df4567386c78ff1ec285a019e10/ss_70f3d80a21c43df4567386c78ff1ec285a019e10.1920x1080.jpg?t=1784109676",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/4f4dfde4868b0e37b2d00dd9f8fdb9facf8808e1/ss_4f4dfde4868b0e37b2d00dd9f8fdb9facf8808e1.1920x1080.jpg?t=1784109676",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/fcfff3f250bfd9c8cf65bb2096ce12f9016f5d8b/ss_fcfff3f250bfd9c8cf65bb2096ce12f9016f5d8b.1920x1080.jpg?t=1784109676"
+      ]
     }
   ],
   "events": [
@@ -3590,6 +3692,51 @@
       "content": "《405游局》播客：当AI遇上\"快穿\"——让玩家在万千世界中找到不同的自己（对话PixVerse秋实、创作者北北）",
       "url": "",
       "created_at": "2026-07-15 00:00:00"
+    },
+    {
+      "id": 285,
+      "game_id": 87,
+      "event_type": "产品动态",
+      "event_date": "2026-07-13",
+      "content": "Steam 开启抢先体验(免费,仅简体中文/Windows,国区独占)。定位「实用工具」而非游戏。",
+      "url": "https://store.steampowered.com/app/4532590/BSide_Olivia_Lin/",
+      "created_at": "2026-07-16 12:00:00"
+    },
+    {
+      "id": 286,
+      "game_id": 87,
+      "event_type": "产品动态",
+      "event_date": "2026-07-15",
+      "content": "官方首个更新公告:修复「快速创建通行证后无法绑定手机号」问题(即玩家高频吐槽的登录死循环)、新增信件蒙层滚动、新增 MIDI 上传小贴士。",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1838407329254235",
+      "created_at": "2026-07-16 12:00:00"
+    },
+    {
+      "id": 287,
+      "game_id": 87,
+      "event_type": "相关文章",
+      "event_date": "2026-07-14",
+      "content": "miHoYo launches AI companion app BSide: Olivia Lin on Steam Early Access(TechNode)",
+      "url": "https://technode.com/2026/07/14/mihoyo-launches-ai-companion-app-bside-olivia-lin-on-steam/",
+      "created_at": "2026-07-16 12:00:00"
+    },
+    {
+      "id": 288,
+      "game_id": 87,
+      "event_type": "相关文章",
+      "event_date": "2026-07-14",
+      "content": "米哈游 AI 陪伴互动软件《BSide: Olivia Lin》在 Steam 开启抢先体验:支持 MIDI 上传生成音乐视频(IT之家)",
+      "url": "https://www.ithome.com/0/976/033.htm",
+      "created_at": "2026-07-16 12:00:00"
+    },
+    {
+      "id": 289,
+      "game_id": 87,
+      "event_type": "相关文章",
+      "event_date": "2026-07-15",
+      "content": "如何评价林离Olivia桌面软件《BSide: Olivia Lin》登录Steam抢先体验?(知乎讨论)",
+      "url": "https://www.zhihu.com/question/2050995360852717840",
+      "created_at": "2026-07-16 12:00:00"
     }
   ],
   "insights": [

@@ -2,6 +2,7 @@
 import data from '../../../data.json';
 import Link from 'next/link';
 import GameImage from '../../../components/GameImage';
+import ProductIntro from '../../../components/ProductIntro';
 import { ArrowLeft, ChevronLeft, Link2 } from 'lucide-react';
 import EventsTabs from './EventsTabs';
 
@@ -81,31 +82,29 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                 <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-3 font-mono border-b-2 border-neutral-800 pb-2">
                   产品介绍
                 </h3>
-                <div className="text-sm text-neutral-700 leading-7">
-                  {game.product_intro.split('\n').map((line: string, i: number) => {
-                    const trimmed = line.trim();
-                    if (!trimmed) return <div key={i} className="h-3" />;
-                    if (trimmed.startsWith('- ')) {
-                      const content = trimmed.slice(2);
-                      return (
-                        <div key={i} className="flex gap-2 mb-1.5">
-                          <span className="text-neutral-400 shrink-0">•</span>
-                          <span className="flex-1" dangerouslySetInnerHTML={{ __html: content.replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-neutral-900">$1</strong>') }} />
-                        </div>
-                      );
-                    }
-                    if (trimmed.startsWith('  - ')) {
-                      const content = trimmed.slice(4);
-                      return (
-                        <div key={i} className="flex gap-2 mb-1 ml-4">
-                          <span className="text-neutral-300 shrink-0">◦</span>
-                          <span className="flex-1 text-neutral-600" dangerouslySetInnerHTML={{ __html: content.replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-neutral-800">$1</strong>') }} />
-                        </div>
-                      );
-                    }
-                    return <div key={i} className="mb-2" dangerouslySetInnerHTML={{ __html: trimmed.replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-neutral-900">$1</strong>') }} />;
-                  })}
+                <ProductIntro intro={game.product_intro} />
+              </div>
+            )}
+
+            {/* 实机截图（Steam 官方素材） */}
+            {game.screenshots && game.screenshots.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-3 font-mono border-b-2 border-neutral-800 pb-2">
+                  实机截图
+                </h3>
+                <div className="grid grid-cols-2 gap-2">
+                  {game.screenshots.map((src: string, i: number) => (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`${game.product_name} 实机截图 ${i + 1}`}
+                      loading="lazy"
+                      className="w-full aspect-video object-cover border border-neutral-200 bg-neutral-100"
+                    />
+                  ))}
                 </div>
+                <p className="text-[10px] text-neutral-400 font-mono mt-2">素材来源:Steam 官方商店页</p>
               </div>
             )}
 

@@ -1,21 +1,39 @@
 import data from '../../data.json';
 import changelog from '../../changelog.json';
+import ChangelogBox from './ChangelogBox';
 
 const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
 const NATIVE_MAINS = MAIN_ORDER.slice(0, 5);
+// AI Native 走靛蓝色阶、AI in Game 用青色区分，与看板既有配色一致
+const COLORS: Record<string, string> = {
+  'AI陪伴': '#4f46e5',
+  'AI叙事对话': '#6366f1',
+  'AI玩法机制': '#818cf8',
+  'AI Agent(智能体)': '#a5b4fc',
+  'AI生成UGC': '#c7d2fe',
+  '传统品类+AI': '#0d9488',
+};
 
 export default function OverviewPage() {
-  const { games, events, insights } = data;
+  const { games } = data;
 
-  // 统计口径全部实时从 data.json 计算，避免写死数字与数据脱节
-  const byMain = MAIN_ORDER.map(m => ({ name: m, count: games.filter(g => g.gameplay_main === m).length }))
-    .filter(x => x.count > 0);
+  // 统计口径实时从 data.json 计算，避免写死数字与数据脱节
+  const slices = MAIN_ORDER.map(m => ({ name: m, count: games.filter(g => g.gameplay_main === m).length }))
+    .filter(s => s.count > 0);
+  const total = slices.reduce((a, s) => a + s.count, 0);
   const nativeCount = games.filter(g => NATIVE_MAINS.includes(g.gameplay_main)).length;
   const inGameCount = games.filter(g => g.gameplay_main === '传统品类+AI').length;
-  const batches = Array.from(new Set(games.map(g => g.batch).filter(Boolean)));
-  const regions = ['国内', '海外'].map(r => ({ name: r, count: games.filter(g => g.region === r).length }));
   const lastUpdated = changelog[0]?.date ?? '';
-  const maxMain = Math.max(...byMain.map(x => x.count), 1);
+
+  // 环形图：用 stroke-dasharray 在圆环上依次铺开每个扇区
+  const R = 68, SW = 30, C = 2 * Math.PI * R;
+  let acc = 0;
+  const arcs = slices.map(s => {
+    const len = (s.count / total) * C;
+    const arc = { ...s, len, offset: -acc };
+    acc += len;
+    return arc;
+  });
 
   return (
     <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
@@ -29,100 +47,59 @@ export default function OverviewPage() {
         </div>
       </header>
 
-      {/* 核心统计 */}
-      <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-        {[
-          { label: '收录产品', value: games.length, sub: `AI Native ${nativeCount} · AI in Game ${inGameCount}` },
-          { label: '动态事件', value: events.length, sub: '产品动态 / 融资 / 相关文章' },
-          { label: '趋势洞察', value: insights.length, sub: '专题报告与判断' },
-          { label: '收录批次', value: batches.length, sub: batches.join(' · ') },
-        ].map(s => (
-          <div key={s.label} className="bg-white border border-neutral-200 shadow-sm p-5">
-            <div className="text-[10px] uppercase tracking-widest font-mono text-neutral-400">{s.label}</div>
-            <div className="text-3xl font-bold text-neutral-900 mt-1 tabular-nums">{s.value}</div>
-            <div className="text-[10px] text-neutral-500 mt-2 font-mono leading-relaxed line-clamp-2">{s.sub}</div>
-          </div>
-        ))}
-      </section>
-
-      {/* 玩法大类分布 */}
-      <section className="mb-12">
-        <h2 className="text-sm font-bold text-neutral-800 mb-4 font-mono border-l-4 border-indigo-600 pl-3 uppercase tracking-wider">
-          玩法大类分布
-        </h2>
-        <div className="bg-white border border-neutral-200 shadow-sm p-6 space-y-3">
-          {byMain.map(m => (
-            <div key={m.name} className="flex items-center gap-3">
-              <span className="text-xs font-mono text-neutral-600 w-40 shrink-0 truncate" title={m.name}>{m.name}</span>
-              <div className="flex-1 bg-neutral-100 h-4 relative">
-                <div
-                  className={`h-4 ${m.name === '传统品类+AI' ? 'bg-teal-600' : 'bg-indigo-600'}`}
-                  style={{ width: `${(m.count / maxMain) * 100}%` }}
-                />
-              </div>
-              <span className="text-xs font-mono text-neutral-900 font-bold w-8 text-right tabular-nums">{m.count}</span>
+      {/* 左：收录产品数 / 右：玩法大类占比 */}
+      <section className="bg-white border border-neutral-200 shadow-sm mb-12 grid grid-cols-1 md:grid-cols-[minmax(0,260px)_minmax(0,1fr)]">
+        <div className="p-8 flex flex-col justify-center border-b md:border-b-0 md:border-r border-neutral-100">
+          <div className="text-[10px] uppercase tracking-widest font-mono text-neutral-400">收录产品</div>
+          <div className="text-6xl font-bold text-neutral-900 mt-2 tabular-nums leading-none">{games.length}</div>
+          <div className="mt-5 space-y-1.5 text-xs font-mono">
+            <div className="flex items-center gap-2 text-neutral-600">
+              <span className="w-2.5 h-2.5 bg-indigo-600 inline-block shrink-0" />
+              AI Native <span className="text-neutral-900 font-bold ml-auto tabular-nums">{nativeCount}</span>
             </div>
-          ))}
-          <div className="pt-3 mt-1 border-t border-neutral-100 flex gap-5 text-[10px] font-mono text-neutral-400">
-            <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 bg-indigo-600 inline-block" />AI Native</span>
-            <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 bg-teal-600 inline-block" />AI in Game</span>
-            <span className="ml-auto">区域: 国内 {regions[0].count} · 海外 {regions[1].count}</span>
+            <div className="flex items-center gap-2 text-neutral-600">
+              <span className="w-2.5 h-2.5 bg-teal-600 inline-block shrink-0" />
+              AI in Game <span className="text-neutral-900 font-bold ml-auto tabular-nums">{inGameCount}</span>
+            </div>
           </div>
+        </div>
+
+        <div className="p-8 flex flex-col sm:flex-row items-center gap-8">
+          <svg viewBox="0 0 180 180" className="w-[180px] h-[180px] shrink-0" role="img" aria-label={`玩法大类占比：${slices.map(s => `${s.name} ${s.count}`).join('，')}`}>
+            {arcs.map(a => (
+              <circle
+                key={a.name}
+                cx="90" cy="90" r={R}
+                fill="none"
+                stroke={COLORS[a.name]}
+                strokeWidth={SW}
+                strokeDasharray={`${a.len} ${C - a.len}`}
+                strokeDashoffset={a.offset}
+                transform="rotate(-90 90 90)"
+              />
+            ))}
+            <text x="90" y="85" textAnchor="middle" className="fill-neutral-900" style={{ fontSize: 22, fontWeight: 700 }}>{total}</text>
+            <text x="90" y="102" textAnchor="middle" className="fill-neutral-400" style={{ fontSize: 9, letterSpacing: 1 }}>PRODUCTS</text>
+          </svg>
+
+          <ul className="flex-1 w-full space-y-2">
+            {slices.map(s => (
+              <li key={s.name} className="flex items-center gap-2.5 text-xs font-mono">
+                <span className="w-2.5 h-2.5 shrink-0" style={{ background: COLORS[s.name] }} />
+                <span className="text-neutral-600 truncate">{s.name}</span>
+                <span className="ml-auto text-neutral-900 font-bold tabular-nums">{s.count}</span>
+                <span className="text-neutral-400 tabular-nums w-11 text-right">{((s.count / total) * 100).toFixed(1)}%</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* 更新时间线 */}
       <section>
         <h2 className="text-sm font-bold text-neutral-800 mb-6 font-mono border-l-4 border-indigo-600 pl-3 uppercase tracking-wider">
           版本更新记录
         </h2>
-        <div className="relative">
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-neutral-200" aria-hidden="true" />
-          <div className="space-y-8">
-            {changelog.map((e, i) => (
-              <div key={e.date} className="relative pl-8">
-                <div className={`absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-2 ${i === 0 ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-neutral-300'}`} />
-                <div className="flex flex-wrap items-baseline gap-3 mb-3">
-                  <span className="font-mono text-sm font-bold text-neutral-900">{e.date}</span>
-                  <span className="text-sm font-bold text-neutral-700">{e.title}</span>
-                  {i === 0 && (
-                    <span className="text-[10px] font-mono uppercase tracking-wider bg-indigo-600 text-white px-1.5 py-0.5">最新</span>
-                  )}
-                  <span className="text-[10px] font-mono text-neutral-400 ml-auto">
-                    收录 {e.count}
-                    {e.delta && e.delta !== '0' && <span className="ml-1 text-neutral-500">({e.delta})</span>}
-                  </span>
-                </div>
-
-                {e.data.length > 0 && (
-                  <div className="mb-3">
-                    <div className="text-[10px] uppercase tracking-widest font-mono text-neutral-400 mb-1.5">数据</div>
-                    <ul className="space-y-1">
-                      {e.data.map((d, j) => (
-                        <li key={j} className="text-xs text-neutral-600 leading-relaxed flex gap-2">
-                          <span className="text-neutral-300 shrink-0">·</span><span>{d}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {e.feature.length > 0 && (
-                  <div>
-                    <div className="text-[10px] uppercase tracking-widest font-mono text-neutral-400 mb-1.5">功能</div>
-                    <ul className="space-y-1">
-                      {e.feature.map((f, j) => (
-                        <li key={j} className="text-xs text-neutral-600 leading-relaxed flex gap-2">
-                          <span className="text-neutral-300 shrink-0">·</span><span>{f}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        <ChangelogBox entries={changelog} />
       </section>
     </main>
   );
