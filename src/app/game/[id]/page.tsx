@@ -54,15 +54,13 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
           />
           <div className="flex-1 flex flex-col justify-end">
             <div className="flex flex-wrap gap-2 mb-3">
-              {game.ai_role && (
-                <span className={`text-[10px] uppercase font-mono px-2 py-1 ${game.ai_role === '核心驱动' ? 'bg-indigo-600 text-white' : game.ai_role === '深度增强' ? 'bg-sky-100 text-sky-700 border border-sky-200' : 'bg-neutral-100 text-neutral-500 border border-neutral-200'}`} title="AI 介入度">
-                  AI {game.ai_role}
-                </span>
-              )}
               <span className="text-[10px] uppercase font-mono px-2 py-1 bg-neutral-900 text-white">{game.gameplay_main}</span>
               {game.gameplay_sub && (
                 <span className="text-[10px] uppercase font-mono px-2 py-1 bg-neutral-200 text-neutral-700">{game.gameplay_sub}</span>
               )}
+              {game.gameplay_facets && game.gameplay_facets.split(/[,，]+/).map((f: string) => f.trim()).filter(Boolean).map((f: string) => (
+                <span key={f} className="text-[10px] uppercase font-mono px-2 py-1 bg-neutral-100 text-neutral-500 border border-neutral-200" title="次品类标签">+{f}</span>
+              ))}
               <span className="text-[10px] uppercase font-mono px-2 py-1 border border-neutral-300 text-neutral-600 bg-white">{game.status}</span>
               {game.platform && game.platform !== '未知' && (
                 <span className="text-[10px] uppercase font-mono px-2 py-1 border border-neutral-300 text-neutral-600 bg-white">{game.platform}</span>
@@ -173,10 +171,10 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
                   <span className="text-neutral-500 text-xs whitespace-nowrap">玩法分类</span>
                   <span className="text-neutral-900 text-right">{game.gameplay_main}{game.gameplay_sub ? ` / ${game.gameplay_sub}` : ''}</span>
                 </div>
-                {game.ai_role && (
+                {game.gameplay_facets && (
                   <div className="flex justify-between gap-2">
-                    <span className="text-neutral-500 text-xs whitespace-nowrap">AI介入度</span>
-                    <span className="text-neutral-900 text-right">{game.ai_role}</span>
+                    <span className="text-neutral-500 text-xs whitespace-nowrap">次品类</span>
+                    <span className="text-neutral-900 text-right">{game.gameplay_facets.split(/[,，]+/).map((f: string) => f.trim()).filter(Boolean).join('、')}</span>
                   </div>
                 )}
                 <div className="flex justify-between gap-2">

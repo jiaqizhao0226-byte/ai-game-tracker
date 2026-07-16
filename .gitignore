@@ -37,3 +37,6 @@ next-env.d.ts
 
 # local sqlite db (源数据以 src/data.json 为准，本地库不入库)
 /data.db
+
+# 体检脚本临时产物
+scripts/_*.json

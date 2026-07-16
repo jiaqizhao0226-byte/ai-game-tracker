@@ -79,7 +79,6 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>(savedFilters?.filterMainTypes ?? []);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>(savedFilters?.filterSubTypes ?? []);
   const [filterThemes, setFilterThemes] = useState<string[]>(savedFilters?.filterThemes ?? []);
-  const [filterAiRoles, setFilterAiRoles] = useState<string[]>(savedFilters?.filterAiRoles ?? []);
   const [filterRegions, setFilterRegions] = useState<string[]>(savedFilters?.filterRegions ?? []);
 
   // 筛选变化时写入 sessionStorage
@@ -87,12 +86,12 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     if (typeof window === 'undefined') return;
     try {
       sessionStorage.setItem('dashboardFilters', JSON.stringify({
-        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterAiRoles, filterRegions,
+        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterRegions,
       }));
     } catch {
       // ignore
     }
-  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterAiRoles, filterRegions]);
+  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterRegions]);
 
   const filteredGames = games.filter(g => {
     const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) ||
@@ -102,19 +101,22 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       (g.tags && g.tags.toLowerCase().includes(search.toLowerCase()));
 
     const matchBatch = filterBatches.length === 0 || filterBatches.includes(g.batch);
-    const matchType = (filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)) && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
+    // 玩法大类：主品类命中，或任一次品类(facets)命中都算——让多标签产品(如 Whispers 的次标签「AI陪伴」)在筛该品类时也出现
+    const matchMain = filterMainTypes.length === 0
+      || filterMainTypes.includes(g.gameplay_main)
+      || (g.gameplay_facets && g.gameplay_facets.split(/[,，]+/).some((f: string) => filterMainTypes.includes(f.trim())));
+    const matchType = matchMain && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
     const matchTheme = filterThemes.length === 0 || (g.gameplay_theme && g.gameplay_theme.split(/[,，]+/).some((t: string) => filterThemes.includes(t.trim())));
-    const matchAiRole = filterAiRoles.length === 0 || filterAiRoles.includes(g.ai_role);
     const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
 
-    return matchSearch && matchBatch && matchType && matchTheme && matchAiRole && matchRegion;
+    return matchSearch && matchBatch && matchType && matchTheme && matchRegion;
   });
 
 
   const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
 
   // 玩法主题：固定顺序展示，只保留数据中实际存在的
-  const themeOrder = ['二次元', '派对游戏', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
+  const themeOrder = ['二次元', '派对游戏', '推理探案', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
   const themesInData = new Set(games.flatMap(g => g.gameplay_theme ? g.gameplay_theme.split(/[,，]+/).map((t: string) => t.trim()) : []));
   const uniqueThemes = themeOrder.filter(t => themesInData.has(t));
 
@@ -158,7 +160,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             
             <MultiSelect
               label="玩法大类"
-              options={["AI陪伴", "传统玩法+AI", "AI原生玩法", "生成式AI驱动UGC", "其他"]}
+              options={["AI陪伴", "AI叙事对话", "AI玩法机制", "AI Agent(智能体)", "AI生成UGC", "传统品类+AI"]}
               selected={filterMainTypes}
               onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }}
             />
@@ -177,13 +179,6 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={setFilterThemes}
             />
 
-            <MultiSelect
-              label="AI介入度"
-              options={["核心驱动", "深度增强", "外围辅助"]}
-              selected={filterAiRoles}
-              onChange={setFilterAiRoles}
-            />
-
           </div>
         </div>
 
@@ -196,11 +191,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
         {filteredGames.map((game) => {
           const gameEvents = events.filter(e => e.game_id === game.id);
           const hasRecentEvents = gameEvents.length > 0;
-          const roleCls = game.ai_role === '核心驱动'
-            ? 'bg-indigo-600 text-white'
-            : game.ai_role === '深度增强'
-            ? 'bg-sky-100 text-sky-700 border border-sky-200'
-            : 'bg-neutral-100 text-neutral-500 border border-neutral-200';
+          const facets = game.gameplay_facets ? game.gameplay_facets.split(/[,，]+/).map((f: string) => f.trim()).filter(Boolean) : [];
           return (
           <Link
             key={game.id}
@@ -242,14 +233,14 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               <p className="text-xs font-mono text-neutral-500 mb-3">{game.company_name}</p>
               
               <div className="mb-3 flex flex-wrap gap-1">
-                {game.ai_role && (
-                  <span className={`inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 ${roleCls}`} title="AI 介入度">
-                    {game.ai_role}
-                  </span>
-                )}
                 <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-800 text-neutral-100">
                   {game.gameplay_main}{game.gameplay_sub && game.gameplay_sub !== "通用" ? ` - ${game.gameplay_sub}` : ""}
                 </span>
+                {facets.map((f: string) => (
+                  <span key={f} className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-100 text-neutral-500 border border-neutral-200" title="次品类标签">
+                    +{f}
+                  </span>
+                ))}
                 {game.funding_round && game.funding_round !== '未知' && game.funding_round !== '未披露' && (
                   <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 border border-neutral-300 text-neutral-600 bg-white">
                     {game.funding_round}
