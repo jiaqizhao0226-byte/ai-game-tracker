@@ -6,7 +6,8 @@ import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Ch
 import Link from 'next/link';
 import GameImage from '../components/GameImage';
 
-function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: string[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
+type MSOption = string | { group: string };
+function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: MSOption[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   
@@ -38,7 +39,7 @@ function MultiSelect({ label, options, selected, onChange, className = "" }: { l
         <ChevronDown className="w-3 h-3 text-neutral-400 shrink-0" />
       </button>
       {isOpen && (
-        <div className="absolute top-full left-0 mt-1 bg-white border border-neutral-200 shadow-lg z-20 min-w-[150px] max-h-60 overflow-y-auto">
+        <div className="absolute top-full left-0 mt-1 bg-white border border-neutral-200 shadow-lg z-20 min-w-[150px] max-h-96 overflow-y-auto">
           <div className="px-3 py-2 flex items-center gap-2 hover:bg-neutral-50 cursor-pointer border-b border-neutral-100" onClick={() => onChange([])}>
             <div className={`w-3 h-3 border flex items-center justify-center shrink-0 ${selected.length === 0 ? 'bg-neutral-900 border-neutral-900' : 'border-neutral-300'}`}>
               {selected.length === 0 && <Check className="w-2 h-2 text-white" />}
@@ -46,12 +47,18 @@ function MultiSelect({ label, options, selected, onChange, className = "" }: { l
             <span className="text-xs font-mono truncate text-neutral-700">全部</span>
           </div>
           {options.map(opt => (
-            <div key={opt} className="px-3 py-2 flex items-center gap-2 hover:bg-neutral-50 cursor-pointer" onClick={() => toggle(opt)}>
-              <div className={`w-3 h-3 border flex items-center justify-center shrink-0 ${selected.includes(opt) ? 'bg-neutral-900 border-neutral-900' : 'border-neutral-300'}`}>
-                {selected.includes(opt) && <Check className="w-2 h-2 text-white" />}
+            typeof opt === 'object' ? (
+              <div key={`g:${opt.group}`} className="px-3 pt-2 pb-1 text-[10px] font-mono uppercase tracking-wider text-neutral-400 bg-neutral-50 border-b border-neutral-100 select-none">
+                {opt.group}
               </div>
-              <span className="text-xs font-mono truncate text-neutral-700">{opt}</span>
-            </div>
+            ) : (
+              <div key={opt} className="pl-5 pr-3 py-2 flex items-center gap-2 hover:bg-neutral-50 cursor-pointer" onClick={() => toggle(opt)}>
+                <div className={`w-3 h-3 border flex items-center justify-center shrink-0 ${selected.includes(opt) ? 'bg-neutral-900 border-neutral-900' : 'border-neutral-300'}`}>
+                  {selected.includes(opt) && <Check className="w-2 h-2 text-white" />}
+                </div>
+                <span className="text-xs font-mono truncate text-neutral-700">{opt}</span>
+              </div>
+            )
           ))}
         </div>
       )}
@@ -79,19 +86,18 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>(savedFilters?.filterMainTypes ?? []);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>(savedFilters?.filterSubTypes ?? []);
   const [filterThemes, setFilterThemes] = useState<string[]>(savedFilters?.filterThemes ?? []);
-  const [filterRegions, setFilterRegions] = useState<string[]>(savedFilters?.filterRegions ?? []);
 
   // 筛选变化时写入 sessionStorage
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
       sessionStorage.setItem('dashboardFilters', JSON.stringify({
-        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterRegions,
+        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes,
       }));
     } catch {
       // ignore
     }
-  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterRegions]);
+  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes]);
 
   const filteredGames = games.filter(g => {
     const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) ||
@@ -107,15 +113,29 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       || (g.gameplay_facets && g.gameplay_facets.split(/[,，]+/).some((f: string) => filterMainTypes.includes(f.trim())));
     const matchType = matchMain && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
     const matchTheme = filterThemes.length === 0 || (g.gameplay_theme && g.gameplay_theme.split(/[,，]+/).some((t: string) => filterThemes.includes(t.trim())));
-    const matchRegion = filterRegions.length === 0 || filterRegions.includes(g.region);
-
-    return matchSearch && matchBatch && matchType && matchTheme && matchRegion;
+    return matchSearch && matchBatch && matchType && matchTheme;
   });
 
 
-  const uniqueSubTypes = Array.from(new Set(games.filter(g => filterMainTypes.length === 0 || filterMainTypes.includes(g.gameplay_main)).flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []))).filter(Boolean);
+  // 分类固定顺序：AI Native 5 类在前，AI in Game 在后；子类按大类顺序分组展示
+  const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
+  const SUB_ORDER: Record<string, string[]> = {
+    'AI陪伴': ['AI游戏陪玩', 'AI伴侣', 'AI宠物'],
+    'AI叙事对话': ['对话模拟', '互动叙事'],
+    'AI玩法机制': ['派对竞猜', '机制生成', '卡牌构筑'],
+    'AI Agent(智能体)': ['智能体社会'],
+    'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
+    '传统品类+AI': ['AI NPC', 'AI 队友'],
+  };
+  const subsInData = new Set(games.flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []).filter(Boolean));
+  const activeMains = filterMainTypes.length ? MAIN_ORDER.filter(m => filterMainTypes.includes(m)) : MAIN_ORDER;
+  const groupedSubOptions: MSOption[] = [];
+  for (const m of activeMains) {
+    const subs = (SUB_ORDER[m] || []).filter(s => subsInData.has(s));
+    if (subs.length) { groupedSubOptions.push({ group: m }); groupedSubOptions.push(...subs); }
+  }
 
-  // 玩法主题：固定顺序展示，只保留数据中实际存在的
+  // #重点tag（字段仍为 gameplay_theme）：固定顺序展示，只保留数据中实际存在的
   const themeOrder = ['二次元', '派对游戏', '推理探案', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
   const themesInData = new Set(games.flatMap(g => g.gameplay_theme ? g.gameplay_theme.split(/[,，]+/).map((t: string) => t.trim()) : []));
   const uniqueThemes = themeOrder.filter(t => themesInData.has(t));
@@ -151,29 +171,27 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               onChange={setFilterBatches}
             />
 
-            <MultiSelect 
-              label="全部区域" 
-              options={["国内", "海外", "未知"]} 
-              selected={filterRegions} 
-              onChange={setFilterRegions} 
-            />
-            
             <MultiSelect
               label="玩法大类"
-              options={["AI陪伴", "AI叙事对话", "AI玩法机制", "AI Agent(智能体)", "AI生成UGC", "传统品类+AI"]}
+              options={[
+                { group: "AI Native" },
+                "AI陪伴", "AI叙事对话", "AI玩法机制", "AI Agent(智能体)", "AI生成UGC",
+                { group: "AI in Game" },
+                "传统品类+AI",
+              ]}
               selected={filterMainTypes}
               onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }}
             />
 
             <MultiSelect
               label="玩法子类"
-              options={uniqueSubTypes as string[]}
+              options={groupedSubOptions}
               selected={filterSubTypes}
               onChange={setFilterSubTypes}
             />
 
             <MultiSelect
-              label="玩法主题"
+              label="#重点tag"
               options={uniqueThemes as string[]}
               selected={filterThemes}
               onChange={setFilterThemes}

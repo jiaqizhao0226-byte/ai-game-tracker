@@ -11,11 +11,11 @@ const ENUM = {
 };
 // gameplay_sub 依赖 gameplay_main（'' 表示允许留空）
 const SUB = {
-  'AI陪伴': ['游戏陪玩', 'AI伴侣', 'AI宠物'],
+  'AI陪伴': ['AI游戏陪玩', 'AI伴侣', 'AI宠物'],
   'AI叙事对话': ['对话模拟', '互动叙事'],
   'AI玩法机制': ['派对竞猜', '机制生成', '卡牌构筑'],
-  'AI Agent(智能体)': ['智能体社会', '生成沙盒'],
-  'AI生成UGC': ['内容/视频生成', '零代码造游戏'],
+  'AI Agent(智能体)': ['智能体社会'],
+  'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
   '传统品类+AI': ['AI NPC', 'AI 队友', ''],
 };
 const FACET_ENUM = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];

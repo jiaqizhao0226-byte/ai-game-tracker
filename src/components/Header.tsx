@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Database, Lightbulb } from 'lucide-react';
+import { Database, Lightbulb, LayoutGrid } from 'lucide-react';
 
 export default function Header() {
   const pathname = usePathname();
@@ -33,8 +33,15 @@ export default function Header() {
           </Link>
           
           <nav className="hidden sm:flex items-center gap-1">
-            <Link 
-              href="/" 
+            <Link
+              href="/overview"
+              className={`px-4 py-2 text-sm font-bold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2 ${pathname === '/overview' ? 'bg-neutral-100 text-neutral-900' : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50'}`}
+            >
+              <LayoutGrid className="w-4 h-4" />
+              概览
+            </Link>
+            <Link
+              href="/"
               className={`px-4 py-2 text-sm font-bold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2 ${pathname === '/' ? 'bg-neutral-100 text-neutral-900' : 'text-neutral-400 hover:text-neutral-900 hover:bg-neutral-50'}`}
             >
               <Database className="w-4 h-4" />

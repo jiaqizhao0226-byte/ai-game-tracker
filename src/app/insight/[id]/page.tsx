@@ -2,6 +2,7 @@
 import data from '../../../data.json';
 import Link from 'next/link';
 import { ArrowLeft, ChevronLeft } from 'lucide-react';
+import { assetUrl } from '../../../lib/asset';
 
 export function generateStaticParams() {
   return data.insights.map((insight) => ({
@@ -54,7 +55,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
         {insight.image_url && (
           <div className="mb-8 border border-neutral-200 overflow-hidden bg-white">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={insight.image_url} alt={insight.title} className="w-full h-auto" />
+            <img src={assetUrl(insight.image_url)} alt={insight.title} className="w-full h-auto" />
             <div className="px-4 py-2 text-[10px] text-neutral-400 font-mono bg-neutral-50 border-t border-neutral-200">
               信息来源：策略组分析，公开资料整理
             </div>
