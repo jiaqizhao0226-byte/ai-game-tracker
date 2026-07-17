@@ -40,7 +40,7 @@ export default function OverviewPage() {
       <header className="mb-8 border-b-2 border-neutral-800 pb-4 flex justify-between items-end">
         <div>
           <h1 className="text-2xl font-bold font-sans text-neutral-900 tracking-tight">概览</h1>
-          <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">收录统计与版本更新记录 / 光子策略分析组</p>
+          <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">收录统计与版本更新记录</p>
         </div>
         <div className="text-right text-xs font-mono text-neutral-500">
           <div>最后更新: <span className="text-neutral-900 font-bold">{lastUpdated}</span></div>

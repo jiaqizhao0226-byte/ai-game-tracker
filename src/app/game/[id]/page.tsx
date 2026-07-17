@@ -3,6 +3,7 @@ import data from '../../../data.json';
 import Link from 'next/link';
 import GameImage from '../../../components/GameImage';
 import ProductIntro from '../../../components/ProductIntro';
+import ScreenshotGallery from '../../../components/ScreenshotGallery';
 import { ArrowLeft, ChevronLeft, Link2 } from 'lucide-react';
 import EventsTabs from './EventsTabs';
 
@@ -75,36 +76,24 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
 
         {/* Two column: left long text, right sidebar */}
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Left column: product intro + team background */}
+          {/* Left column: screenshots + product intro + team background */}
           <div className="flex-1 min-w-0">
+            {/* 实机截图（官方商店素材，点击看大图） */}
+            {game.screenshots && game.screenshots.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-3 font-mono border-b-2 border-neutral-800 pb-2">
+                  实机截图
+                </h3>
+                <ScreenshotGallery name={game.product_name} shots={game.screenshots} />
+              </div>
+            )}
+
             {game.product_intro && (
               <div className="mb-6">
                 <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-3 font-mono border-b-2 border-neutral-800 pb-2">
                   产品介绍
                 </h3>
                 <ProductIntro intro={game.product_intro} />
-              </div>
-            )}
-
-            {/* 实机截图（Steam 官方素材） */}
-            {game.screenshots && game.screenshots.length > 0 && (
-              <div className="mb-6">
-                <h3 className="text-xs uppercase tracking-widest font-bold text-neutral-900 mb-3 font-mono border-b-2 border-neutral-800 pb-2">
-                  实机截图
-                </h3>
-                <div className="grid grid-cols-2 gap-2">
-                  {game.screenshots.map((src: string, i: number) => (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
-                      key={i}
-                      src={src}
-                      alt={`${game.product_name} 实机截图 ${i + 1}`}
-                      loading="lazy"
-                      className="w-full aspect-video object-cover border border-neutral-200 bg-neutral-100"
-                    />
-                  ))}
-                </div>
-                <p className="text-[10px] text-neutral-400 font-mono mt-2">素材来源:Steam 官方商店页</p>
               </div>
             )}
 

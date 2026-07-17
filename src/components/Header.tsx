@@ -14,7 +14,7 @@ export default function Header() {
           <Link 
             href="/"
             onClick={(e) => {
-              try { sessionStorage.removeItem('dashboardFilters'); } catch {}
+              try { sessionStorage.removeItem('dashboardFilters'); sessionStorage.removeItem('dashboardScroll'); } catch {}
               if (window.location.pathname === '/' || window.location.pathname === '/ai-game-tracker' || window.location.pathname === '/ai-game-tracker/') {
                 e.preventDefault();
                 window.location.reload();

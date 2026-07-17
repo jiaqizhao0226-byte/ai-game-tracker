@@ -22,7 +22,7 @@ export default function InsightsPage() {
           <h1 className="text-2xl font-bold font-sans text-neutral-900 tracking-tight flex items-center gap-2">
             趋势洞察
           </h1>
-          <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">专题报告与趋势判断 / 光子策略分析组</p>
+          <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">专题报告与趋势判断</p>
         </div>
       </header>
 

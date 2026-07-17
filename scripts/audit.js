@@ -13,7 +13,7 @@ const ENUM = {
 const SUB = {
   'AI陪伴': ['AI游戏陪玩', 'AI伴侣', 'AI宠物'],
   'AI叙事对话': ['对话模拟', '互动叙事'],
-  'AI玩法机制': ['派对竞猜', '机制生成', '卡牌构筑'],
+  'AI玩法机制': ['AI裁定/主持', 'AI生成元素'],
   'AI Agent(智能体)': ['智能体社会'],
   'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
   '传统品类+AI': ['AI NPC', 'AI 队友', ''],
@@ -44,7 +44,7 @@ for (const g of d.games) {
     }
   }
   // gameplay_theme 是活跃维度(首页筛选用),校验取值是否在允许集合内
-  const THEMES = ['二次元', '派对游戏', '推理探案', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
+  const THEMES = ['多模态玩法', '腾讯系', '网易系', '米哈游系', '二次元', '派对游戏', '推理探案', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
   if (g.gameplay_theme) {
     for (const t of String(g.gameplay_theme).split(/[,，]+/).map(s => s.trim()).filter(Boolean)) {
       if (!THEMES.includes(t)) add('主题', g.id, tag, 'gameplay_theme', `非法主题「${t}」`);

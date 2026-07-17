@@ -40,8 +40,14 @@
       ],
       "featured": true,
       "batch": "常态跟踪·2025",
-      "gameplay_theme": "二次元",
-      "gameplay_facets": ""
+      "gameplay_theme": "二次元,多模态玩法",
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/f8/3b/edf83b7a-b7c8-d988-28f7-e3320038d487/1.png/1286x0w.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/f2/50/34f250c4-ba07-b000-be2e-47a378c9ba33/2.png/1286x0w.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/ef/46/ccef468c-5b5b-25f0-9b16-2b4702833ecd/3.png/1286x0w.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/58/74/7b587425-5025-c32a-cea8-61cdd1b422fa/4.png/1286x0w.jpg"
+      ]
     },
     {
       "id": 2,
@@ -73,8 +79,14 @@
       ],
       "featured": true,
       "batch": "常态跟踪·2025",
-      "gameplay_theme": "AI女友",
-      "gameplay_facets": ""
+      "gameplay_theme": "AI女友,多模态玩法",
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/e4/45/e0e445ce-7c22-1cc7-9055-54dd834975ee/1.jpg/1286x0w.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/14/af/d714af9c-3f26-5c74-3ef5-9735af796ee2/2.jpg/1286x0w.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/e6/51/44e6515e-8358-d4e0-1c60-990c2e3d0132/3.jpg/1286x0w.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/18/b3/2618b320-c17d-9a61-df0a-d452e04a3442/4.jpg/1286x0w.jpg"
+      ]
     },
     {
       "id": 3,
@@ -110,7 +122,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "gameplay_theme": "网易系,多模态玩法"
     },
     {
       "id": 4,
@@ -147,7 +160,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/8e87c0f0e7bc087d3776bc28afbc618ce4d973bf/ss_8e87c0f0e7bc087d3776bc28afbc618ce4d973bf.1920x1080.jpg?t=1783066995",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/f499c73822d30a40080121b51fe1db62f3ad70a0/ss_f499c73822d30a40080121b51fe1db62f3ad70a0.1920x1080.jpg?t=1783066995",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/71bb2e7acc7aef4c5a291437038a1a9450a4f64e/ss_71bb2e7acc7aef4c5a291437038a1a9450a4f64e.1920x1080.jpg?t=1783066995"
-      ]
+      ],
+      "gameplay_theme": "腾讯系,多模态玩法"
     },
     {
       "id": 5,
@@ -178,7 +192,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "gameplay_theme": "腾讯系"
     },
     {
       "id": 6,
@@ -214,7 +229,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "gameplay_theme": "网易系"
     },
     {
       "id": 7,
@@ -262,7 +278,7 @@
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3189430/721331afa7fe911edf0db05b36d7986c64d475d9/header.jpg",
       "region": "海外",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "派对竞猜",
+      "gameplay_sub": "AI裁定/主持",
       "team_background": "开发商为 Optillusion。该工作室在独立游戏界享有盛誉，此前曾开发过斩获无数大奖的视觉解谜神作《笼中窥梦 Moncage》。此次他们凭借极其扎实的游戏设计功底转型探索 AI 原生多人游戏领域。",
       "product_intro": "《Pick Me Pick Me》打破了传统的单机 AI 聊天框架，创新性地引入了“恋爱 PVP”和“双人成仇”的概念。玩家与好友在一场快速相亲中争夺由大语言模型驱动的 AI 角色的好感。游戏不仅仅是“与 AI 聊天”，玩家还需要打出战略技能卡牌（例如给对手施加干扰、或给自己加 buff）来影响 AI 的判断。游戏首发即支持 Steam 创意工坊（Steam Workshop），允许玩家自行导入并自定义 3D 虚拟形象，极大地拓展了 UGC 生态。",
       "funding_amount": "",
@@ -314,7 +330,7 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_theme": "模拟经营",
+      "gameplay_theme": "模拟经营,米哈游系",
       "gameplay_facets": ""
     },
     {
@@ -432,7 +448,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "gameplay_theme": "腾讯系"
     },
     {
       "id": 15,
@@ -480,7 +497,7 @@
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/17577f0d292ed3838d9ac8caa7923821de0136f7/header.jpg",
       "region": "海外",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "机制生成",
+      "gameplay_sub": "AI生成元素",
       "team_background": "由热爱脑洞与技术结合的日本独立个人游戏开发者 MONO ENTERTAINMENT 制作，此前曾开发过多款玩法新颖的独立作品，此次尝试接入 ChatGPT API 带来新突破。",
       "product_intro": "这是一款中二病浓度爆表的“AI 汉字战斗”模拟游戏。\n\n在对战中，系统会随机分发几个汉字给玩家。玩家的任务是发挥自己天马行空的想象力，用这 4 个汉字组合成一个看起来很唬人的“咒语”。提交后，后台接入的 AI 会非常严肃地分析这个词的含义，并根据它判定出这招的元素属性、具体效果以及最终伤害值，甚至还会帮你生成一段极为热血中二的招式解说文案。把传统的拼字游戏玩出了花。",
       "funding_amount": "",
@@ -510,7 +527,7 @@
       "image_url": "https://framerusercontent.com/images/XcEX3CnCE1j7lpiZKjXqQHdJvA.png",
       "region": "海外",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "派对竞猜",
+      "gameplay_sub": "AI裁定/主持",
       "team_background": "由初创的社交与 AI 游戏工作室 Little Umbrella 开发，凭借该产品一炮而红。公司最近刚斩获 200 万美元的种子轮融资，并推出了其配套的跨平台无服务器社交游戏引擎 Playroom Kit。",
       "product_intro": "一款玩法极简但欢乐拉满的多人 AI 派对生存游戏。\n\n一局游戏中，系统或玩家会提出一个极其离谱或致命的绝境场景（例如：被绑在一颗正在倒计时的核弹上）。随后，每位玩家必须快速输入一段能让自己“绝处逢生”的神奇操作。最后，大模型将化身毫无感情的判官，对每一位玩家的脑洞进行实时解析，并宣布你的方案到底是让你死里逃生，还是落得个更滑稽的下场。上线仅三个月便席卷了 2000 万玩家。",
       "funding_amount": "$2M",
@@ -623,7 +640,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/c59c74bc7356c65c1ee10e5ba754f7a774d919f5/ss_c59c74bc7356c65c1ee10e5ba754f7a774d919f5.1920x1080.jpg?t=1764897761",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/2299763a9bbd92f1c9ed842200db90d66d69db68/ss_2299763a9bbd92f1c9ed842200db90d66d69db68.1920x1080.jpg?t=1764897761",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/57f89c8d2bd8df73d94a0b487916a491d255b7e3/ss_57f89c8d2bd8df73d94a0b487916a491d255b7e3.1920x1080.jpg?t=1764897761"
-      ]
+      ],
+      "gameplay_theme": "米哈游系"
     },
     {
       "id": 22,
@@ -681,7 +699,7 @@
       "region": "国内",
       "gameplay_main": "AI叙事对话",
       "gameplay_sub": "互动叙事",
-      "team_background": "由国内独立团队「青干工作室」研发，团队规模不足 10 人，除制作人追青兼任策划外，其余全为技术人员。团队专门针对大模型应用在长篇历史推演中的记忆遗忘和逻辑崩坏问题，自主研发了一套“步进式状态机”架构。",
+      "team_background": "由国内独立团队「青干工作室」研发，团队规模不足 10 人，除制作人追青兼任策划外，其余全为技术人员。团队专门针对大模型应用在长篇历史推演中的记忆遗忘和逻辑崩坏问题，自主研发了一套“步进式状态机”架构。 AI 技术由网易伏羲提供。",
       "product_intro": "这是市面上为数不多的将大模型推演作为“硬核机制”的买断制独立游戏。玩家扮演明朝末代皇帝崇祯，通过输入自然语言“下旨”来治国。AI 会判断诏书对国库、民心、派系、军事的综合影响，并转化为数值反馈给游戏系统。游戏有着极高的自由度，不设剧本上限（比如有玩家硬核攀科技树，最终在大明朝造出了原子弹）。收费模式采用“游戏本体买断 + 模型 Token 用量计费”，但官方也计划开放 API 允许玩家接入自己的大模型。",
       "funding_amount": "",
       "funding_detail": "未披露（疑似关联公司：北京闻和网络科技）",
@@ -695,7 +713,7 @@
         }
       ],
       "batch": "常态跟踪·2026",
-      "gameplay_theme": "历史模拟",
+      "gameplay_theme": "历史模拟,网易系",
       "gameplay_facets": "",
       "screenshots": [
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/f6e7ca0a1f01c4b0d6ac680daa68cdf3e7871903/ss_f6e7ca0a1f01c4b0d6ac680daa68cdf3e7871903.1920x1080.jpg?t=1782454913",
@@ -745,7 +763,7 @@
       "tags": "AI原生",
       "region": "未知",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "机制生成",
+      "gameplay_sub": "AI生成元素",
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2894910/header.jpg",
       "id": 28,
       "updated_at": "2026-06-18 03:04:12",
@@ -780,8 +798,8 @@
       "funding_round": "未知",
       "tags": "策略, 传统+AI",
       "region": "海外",
-      "gameplay_main": "传统品类+AI",
-      "gameplay_sub": "AI NPC",
+      "gameplay_main": "AI Agent(智能体)",
+      "gameplay_sub": "智能体社会",
       "image_url": "/images/Aivilization.jpg",
       "id": 29,
       "updated_at": "2026-06-18 03:04:12",
@@ -800,7 +818,7 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": "AI Agent(智能体)"
+      "gameplay_facets": ""
     },
     {
       "product_name": "Suck Up!",
@@ -883,7 +901,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/76b060e033729564c5f44b3cea0f0b4e226197c0/ss_76b060e033729564c5f44b3cea0f0b4e226197c0.1920x1080.jpg?t=1783990739",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/1cee5b3e3b9fc33498d1a651c4a2ac25ca1a9654/ss_1cee5b3e3b9fc33498d1a651c4a2ac25ca1a9654.1920x1080.jpg?t=1783990739",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/4bf1de2d371022a16fe3fc8a42deb4073500ad6e/ss_4bf1de2d371022a16fe3fc8a42deb4073500ad6e.1920x1080.jpg?t=1783990739"
-      ]
+      ],
+      "gameplay_theme": "多模态玩法"
     },
     {
       "product_name": "Altera Bots",
@@ -1151,7 +1170,7 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_theme": "模拟经营",
+      "gameplay_theme": "模拟经营,多模态玩法",
       "gameplay_facets": "AI生成UGC"
     },
     {
@@ -1195,7 +1214,7 @@
       "tags": "派对游戏, CV图像识别, 你画我猜",
       "region": "海外",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "派对竞猜",
+      "gameplay_sub": "AI裁定/主持",
       "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3104020/851ca91fa6b40409c9c5a78098a29e5403e8b9df/capsule_616x353.jpg?t=1779855609",
       "id": 43,
       "updated_at": "2026-06-18 03:04:12",
@@ -1214,7 +1233,7 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_theme": "派对游戏",
+      "gameplay_theme": "派对游戏,多模态玩法",
       "gameplay_facets": "",
       "screenshots": [
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/d7cafbafca931d1f6a9016ee35a5796f7dfa5442/ss_d7cafbafca931d1f6a9016ee35a5796f7dfa5442.1920x1080.jpg?t=1779855609",
@@ -1233,7 +1252,7 @@
       "tags": "游戏制作模拟",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "机制生成",
+      "gameplay_sub": "AI裁定/主持",
       "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419000/071b30f9356f8b2c9ca33582368c34b9cdbac214/capsule_616x353.jpg?t=1766763194",
       "id": 44,
       "updated_at": "2026-06-18 03:04:12",
@@ -1390,7 +1409,7 @@
       "tags": "派对游戏, 问答",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "派对竞猜",
+      "gameplay_sub": "AI裁定/主持",
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/header.jpg",
       "id": 51,
       "updated_at": "2026-06-18 03:04:12",
@@ -1427,7 +1446,7 @@
       "tags": "卡牌对战, 技能生成",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "卡牌构筑",
+      "gameplay_sub": "AI生成元素",
       "image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3693060/81b5274d12ede68802874ce5d9db12036fd3e752/capsule_616x353.jpg?t=1781050633",
       "id": 57,
       "updated_at": "2026-06-18 03:04:12",
@@ -1540,7 +1559,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "gameplay_theme": "腾讯系"
     },
     {
       "product_name": "Iconic",
@@ -1587,7 +1607,7 @@
       "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/720cb8d1de9888979cdba139054d9d92fa01c596/header.jpg",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "机制生成",
+      "gameplay_sub": "AI生成元素",
       "team_background": "由 Meshy Game Studio 开发。这是一个致力于探索“AI实时策划”概念的独立游戏团队。",
       "product_intro": "这是一款硬核的“AI原生肉鸽幸存者”游戏。游戏舍弃了传统肉鸽中设计师提前写好的“技能树与固定搭配”，转而让 AI 充当实时游戏策划（Agent）。\n\n在游戏的核心“Socket（插槽）系统”中，玩家搜集到的导弹、黑洞、风暴等原子机制组件，可以随意镶嵌组合。底层的 AI 逻辑引擎会即时解析玩家的策略意图，将这些底层机制进行逻辑编排，实时生成自洽且全新的弹幕特效与元素反应（例如分裂爆炸+全向追踪的黑洞风暴）。千万种组合意味着每一次游玩都是“绝版”体验。",
       "funding_amount": "",
@@ -1699,7 +1719,7 @@
       "platform": "多平台",
       "launch_date": "2026-Q2",
       "batch": "常态跟踪·2026",
-      "gameplay_theme": "二次元",
+      "gameplay_theme": "二次元,米哈游系",
       "gameplay_facets": ""
     },
     {
@@ -1716,7 +1736,7 @@
       "image_url": "/images/王国战争.png",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "机制生成",
+      "gameplay_sub": "AI生成元素",
       "product_intro": "行业首款AI原生实时联机PVP小游戏。游戏抛弃了传统复杂的数值和动作操作，将AI大模型直接作为战局的“裁判与推演者”。\n\n核心包含“评分战”与“沙盘推演”两种模式：玩家搭配出包含历史人物（如貂蝉、诸葛亮等）的阵容，AI根据人物属性实时演算战局变量，如安排貂蝉做间谍可能会触发“美人计”。这种高度依赖AI涌现能力的脑洞玩法极具观赏性，为PVP游戏提供了全新的直播互动生态。",
       "team_background": "开发团队暂未在公开渠道高调露面，但该游戏凭借在各大直播平台的“赛博斗蛐蛐”玩法迅速走红，是国内小游戏出海与AI原生玩法结合的早期先驱探路者。",
       "funding_amount": "",
@@ -1785,7 +1805,8 @@
       "product_intro": "全球首个「无引擎」视频游戏平台，让视频本身成为游戏。\n\n- **核心定位**：不是做视频工具，而是让视频本身成为游戏。定位AI时代的Roblox+Netflix，让人人都能成为小岛秀夫\n\n- **技术架构（三层混合引擎）**：\n  - 表现层 World Model：世界模型(如Genie 3)实时生成视频画面，模拟光影、材质、物理效果\n  - 判定层 VLM Observer：VLM实时分析视频流，识别碰撞/死亡/拾取等关键事件，输出结构化JSON\n  - 状态层 Traditional Game Logic：游戏逻辑引擎管理背包、等级、血条、任务等数值模块\n\n- **自研模型 Roll-01**：\n  - 基于开源模型训练微调的实时交互视频模型，专门适配游戏场景\n  - 支持实时交互生成、保持场景和物体3D一致、长期空间记忆\n  - AutoRegressive DiT + Context as Memory + Action Conditioning + DMD\n\n- **产品战略（隆中对）**：\n  - 01 验证AI玩法：通过PC端游戏开发，搭建AI游戏设计管线\n  - 02 筑护城河：沉淀专有的生成工作流、Prompt库、游戏组件库与创作编辑器\n  - 03 长线运营型AI游戏：多款AI游戏长线运营\n  - 04 平台化：UGC内容平台，玩家构建和发布自己的AI游戏，获取收益\n\n- **三大赛道交汇**：游戏($2000亿) + 互动视频 + UGC平台\n\n- **WHY NOW**：成本下降(VEO3/Sora2成本降至$6/min) + 一致性突破(Nano Banana) + 时效性提升(预生成+实时混合) + 个性化驱动(长期记忆Embedding)\n\n- **产品矩阵**：\n  - LinearGame Studio：自研和交付高质量AI视频互动游戏\n  - Yoroll.ai：UGC内容平台，玩家构建和发布AI游戏\n  - Yoroll Games：借助世界模型扩展到大型动作游戏",
       "updated_at": "2026-07-10",
       "batch": "常态跟踪·2026",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "gameplay_theme": "多模态玩法"
     },
     {
       "id": 69,
@@ -1831,7 +1852,7 @@
       "image_url": "/images/cj_混想局.jpg",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "卡牌构筑",
+      "gameplay_sub": "AI生成元素",
       "team_background": "",
       "product_intro": "ChinaJoy 2026参展AI原生Roguelite自走棋。\n\n- **核心玩法**：复古卡通风格，融合角色生成、策略、Roguelite、\"电子斗蛐蛐\"等元素。玩家通过自由输入/词条组合，让AI即时生成脑洞大开的角色、技能与流派\n\n- **成长系统**：在不断变化的养成系统与随机事件中组建专属梦幻战队，挑战层层晋级的\"王选杯赛\"（64人赛制）\n\n- **技术支持**：AI技术由生成式AI游戏平台 Astrocade 提供支持\n\n- **状态**：Steam + TapTap Demo已上线，预计2026年8月上线。理念是让玩家创意成为游戏内容与乐趣的驱动力",
       "funding_detail": "",
@@ -2217,7 +2238,7 @@
       "image_url": "",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
-      "gameplay_sub": "卡牌构筑",
+      "gameplay_sub": "AI生成元素",
       "team_background": "作者臧天培，赛后加入腾讯游戏。",
       "product_intro": "**一句话定位**\n以「AI 实时生成卡牌机制」为核心的 roguelike 构筑游戏，玩家扮演逃逸的流氓 AI，自造前所未有的卡牌效果。\n\n**核心玩法机制**（AI介入：核心驱动）\n不使用固定卡池——玩家收集散落的知识碎片与数据晶体，用它们向 AI 描述/选择关键词，实时生成从未存在过的卡牌效果，拼凑专属机制与卡组，对抗不断进化的敌人，每局不重复。\n- 作者谈设计取舍：项目最早为「自由打字描述机制」，落地后体验差（离不开键盘、伤害无法锚定），后改为「从掉落物里选关键词生成机制」，牺牲部分自由度换回设计锚点与玩家契约。\n- 离线后已生成的卡仍可继续战斗，只是无法再体验「做卡」这一核心循环——属「含 AI 原生玩法」而非离了 AI 完全不能玩。\n\n**数据表现**\n暂无公开数据（Steam 页面已上线、测试中；2025 腾讯游戏创作大赛「AI玩法创作奖」）。\n\n**策略启示**\n「输入设计」而非「输出质量」才是 AI 原生玩法落地的最难点——把无限自由输入收敛为有锚点的受控输入（选关键词而非自由打字），是让 AI 玩法可玩、可用手柄、可被设计师调控的关键一步。",
       "funding_amount": "",
@@ -2287,7 +2308,7 @@
       "team_members": [],
       "featured": false,
       "batch": "常态跟踪·2026",
-      "gameplay_theme": "",
+      "gameplay_theme": "网易系",
       "gameplay_facets": ""
     },
     {
@@ -2295,7 +2316,7 @@
       "product_name": "林离 (BSide: Olivia Lin)",
       "company_name": "米哈游 (miHoYo / HoYoverse)",
       "status": "测试中",
-      "description": "米哈游推出的 AI 桌面陪伴软件,Steam 免费上架、国区独占(仅简体中文 / 仅 Windows)。围绕虚拟角色「林离」展开:听她演奏 HoYo-MiX 曲库、上传 MIDI 生成演奏视频、写信获 AI 个性化回信、可设为桌面动态壁纸。2026-07-13 开启抢先体验,好评率 80.7%(1006 条评测),当前在线 5243。",
+      "description": "米哈游推出的 AI 桌面陪伴软件,Steam 免费上架、国区独占(仅简体中文 / 仅 Windows)。围绕虚拟角色「林离」展开:听她演奏 HoYo-MiX 曲库、上传 MIDI 生成演奏视频、写信获 AI 个性化回信、可设为桌面动态壁纸。2026-07-13 开启抢先体验。",
       "updated_at": "2026-07-16",
       "url": "https://store.steampowered.com/app/4532590/BSide_Olivia_Lin/",
       "company_size": "大厂",
@@ -2314,7 +2335,7 @@
       "team_members": [],
       "featured": true,
       "batch": "常态跟踪·2026",
-      "gameplay_theme": "AI女友",
+      "gameplay_theme": "AI女友,米哈游系,多模态玩法",
       "gameplay_facets": "",
       "screenshots": [
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/52c7f78864452f1787d3b47d36720e249843ffef/ss_52c7f78864452f1787d3b47d36720e249843ffef.1920x1080.jpg?t=1784109676",

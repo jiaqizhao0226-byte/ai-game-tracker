@@ -99,6 +99,20 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     }
   }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes]);
 
+  // 从卡片详情页返回时，恢复离开前的滚动位置（点卡片时写入，恢复后即清除）
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const y = sessionStorage.getItem('dashboardScroll');
+      if (y) {
+        sessionStorage.removeItem('dashboardScroll');
+        window.scrollTo(0, parseInt(y, 10));
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
+
   const filteredGames = games.filter(g => {
     const matchSearch = g.product_name.toLowerCase().includes(search.toLowerCase()) ||
       g.company_name.toLowerCase().includes(search.toLowerCase()) ||
@@ -122,7 +136,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const SUB_ORDER: Record<string, string[]> = {
     'AI陪伴': ['AI游戏陪玩', 'AI伴侣', 'AI宠物'],
     'AI叙事对话': ['对话模拟', '互动叙事'],
-    'AI玩法机制': ['派对竞猜', '机制生成', '卡牌构筑'],
+    'AI玩法机制': ['AI裁定/主持', 'AI生成元素'],
     'AI Agent(智能体)': ['智能体社会'],
     'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
     '传统品类+AI': ['AI NPC', 'AI 队友'],
@@ -136,7 +150,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   }
 
   // #重点tag（字段仍为 gameplay_theme）：固定顺序展示，只保留数据中实际存在的
-  const themeOrder = ['二次元', '派对游戏', '推理探案', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
+  const themeOrder = ['多模态玩法', '腾讯系', '网易系', '米哈游系', '二次元', '派对游戏', '推理探案', '模拟经营', 'AI男友', 'AI女友', '历史模拟'];
   const themesInData = new Set(games.flatMap(g => g.gameplay_theme ? g.gameplay_theme.split(/[,，]+/).map((t: string) => t.trim()) : []));
   const uniqueThemes = themeOrder.filter(t => themesInData.has(t));
 
@@ -214,6 +228,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
           <Link
             key={game.id}
             href={`/game/${game.id}`}
+            onClick={() => { try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); } catch {} }}
             className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
             {game.featured && (
