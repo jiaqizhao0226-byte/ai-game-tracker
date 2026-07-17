@@ -1806,7 +1806,8 @@
       "updated_at": "2026-07-10",
       "batch": "常态跟踪·2026",
       "gameplay_facets": "",
-      "gameplay_theme": "多模态玩法"
+      "gameplay_theme": "多模态玩法",
+      "image_url": "/images/Yoroll.jpg"
     },
     {
       "id": 69,
@@ -2235,7 +2236,7 @@
       "company_size": "独立开发者",
       "funding_round": "未融资",
       "tags": "roguelike,卡牌构筑,AI原生玩法,运行时生成,腾讯创作大赛,独立游戏",
-      "image_url": "",
+      "image_url": "/images/觉醒AI.jpg",
       "region": "国内",
       "gameplay_main": "AI玩法机制",
       "gameplay_sub": "AI生成元素",
@@ -2255,7 +2256,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/9615b56730dcfce5718bca03bd1e03d8cee35302/ss_9615b56730dcfce5718bca03bd1e03d8cee35302.1920x1080.jpg?t=1784011351",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/72e89391d0f3ea3732854b8d41a0ea00ba834428/ss_72e89391d0f3ea3732854b8d41a0ea00ba834428.1920x1080.jpg?t=1784011351",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/87ea46e9ab3b63a7567397d5192486743eae7049/ss_87ea46e9ab3b63a7567397d5192486743eae7049.1920x1080.jpg?t=1784011351"
-      ]
+      ],
+      "sort_weight": 29.5
     },
     {
       "id": 85,
@@ -2268,7 +2270,7 @@
       "company_size": "独立开发者",
       "funding_round": "未知",
       "tags": "AI原生叙事,言出法随,对话模拟,Steam,一千零一夜,开创性",
-      "image_url": "",
+      "image_url": "/images/千夜之书.jpg",
       "region": "海外",
       "gameplay_main": "AI叙事对话",
       "gameplay_sub": "对话模拟",
@@ -2282,7 +2284,8 @@
       "featured": false,
       "batch": "常态跟踪·2026",
       "gameplay_theme": "",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "sort_weight": 30.5
     },
     {
       "id": 86,
@@ -2295,7 +2298,7 @@
       "company_size": "大厂",
       "funding_round": "已上市",
       "tags": "开放世界,武侠,智能NPC,涌现式叙事,网易,出海,AI捏脸,多平台",
-      "image_url": "",
+      "image_url": "/images/燕云十六声.jpg",
       "region": "国内",
       "gameplay_main": "传统品类+AI",
       "gameplay_sub": "AI NPC",
@@ -2309,7 +2312,14 @@
       "featured": false,
       "batch": "常态跟踪·2026",
       "gameplay_theme": "网易系",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "screenshots": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/8e15fb0595c13e25e221f58ee49823e77551b277/ss_8e15fb0595c13e25e221f58ee49823e77551b277.1920x1080.jpg?t=1784257976",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/569380e92ad76b83ad1b9a424d33ab95a51b65dd/ss_569380e92ad76b83ad1b9a424d33ab95a51b65dd.1920x1080.jpg?t=1784257976",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/f13a0f6b342fb580dd86f4813c0b56f6b3ef0c4c/ss_f13a0f6b342fb580dd86f4813c0b56f6b3ef0c4c.1920x1080.jpg?t=1784257976",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/f4a5a06a62e68382de417fb9ca88ef2223b78b94/ss_f4a5a06a62e68382de417fb9ca88ef2223b78b94.1920x1080.jpg?t=1784257976"
+      ],
+      "sort_weight": 31.5
     },
     {
       "id": 87,

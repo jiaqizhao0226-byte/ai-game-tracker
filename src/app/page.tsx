@@ -5,8 +5,9 @@ import data from '../data.json';
 export default function Home() {
   const { games, events } = data;
 
-  // 按收录时间倒序：新收录的在前（id 越大收录越晚）。重点关注不置顶，仅作角标标记。
-  const sortedGames = [...games].sort((a: any, b: any) => b.id - a.id);
+  // 按收录顺序倒序（新在前）。老项目补录时用 sort_weight 手动指定排序位，缺省回落到 id。
+  const weight = (g: any) => (g.sort_weight ?? g.id);
+  const sortedGames = [...games].sort((a: any, b: any) => weight(b) - weight(a));
 
   return (
     <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
