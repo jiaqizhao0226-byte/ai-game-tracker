@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Database, Lightbulb, LayoutGrid } from 'lucide-react';
+import LogoMark from './LogoMark';
 
 export default function Header() {
   const pathname = usePathname();
@@ -23,9 +24,7 @@ export default function Header() {
             className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
             title="点击返回并重置筛选"
           >
-            <div className="w-8 h-8 bg-neutral-900 flex items-center justify-center rounded-sm shadow-inner">
-              <Database className="w-4 h-4 text-white" />
-            </div>
+            <LogoMark className="w-8 h-8 shrink-0" />
             <div>
               <h1 className="font-bold text-sm tracking-tight text-neutral-900 leading-tight">AI+游戏玩法</h1>
               <p className="text-[10px] uppercase tracking-widest text-neutral-500 font-mono">常态化监控</p>

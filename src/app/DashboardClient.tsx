@@ -86,18 +86,19 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterMainTypes, setFilterMainTypes] = useState<string[]>(savedFilters?.filterMainTypes ?? []);
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>(savedFilters?.filterSubTypes ?? []);
   const [filterThemes, setFilterThemes] = useState<string[]>(savedFilters?.filterThemes ?? []);
+  const [filterTiers, setFilterTiers] = useState<string[]>(savedFilters?.filterTiers ?? []);
 
   // 筛选变化时写入 sessionStorage
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
       sessionStorage.setItem('dashboardFilters', JSON.stringify({
-        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes,
+        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterTiers,
       }));
     } catch {
       // ignore
     }
-  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes]);
+  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterTiers]);
 
   // 从卡片详情页返回时，恢复离开前的滚动位置（点卡片时写入，恢复后即清除）
   useEffect(() => {
@@ -127,7 +128,8 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
       || (g.gameplay_facets && g.gameplay_facets.split(/[,，]+/).some((f: string) => filterMainTypes.includes(f.trim())));
     const matchType = matchMain && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
     const matchTheme = filterThemes.length === 0 || (g.gameplay_theme && g.gameplay_theme.split(/[,，]+/).some((t: string) => filterThemes.includes(t.trim())));
-    return matchSearch && matchBatch && matchType && matchTheme;
+    const matchTier = filterTiers.length === 0 || filterTiers.includes(g.scale_tier);
+    return matchSearch && matchBatch && matchType && matchTheme && matchTier;
   });
 
 
@@ -183,6 +185,13 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               options={uniqueBatches as string[]}
               selected={filterBatches}
               onChange={setFilterBatches}
+            />
+
+            <MultiSelect
+              label="团队规模"
+              options={["大厂/大厂孵化", "融资创业", "独立/Indie"]}
+              selected={filterTiers}
+              onChange={setFilterTiers}
             />
 
             <MultiSelect

@@ -47,7 +47,8 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/f2/50/34f250c4-ba07-b000-be2e-47a378c9ba33/2.png/1286x0w.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/ef/46/ccef468c-5b5b-25f0-9b16-2b4702833ecd/3.png/1286x0w.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/58/74/7b587425-5025-c32a-cea8-61cdd1b422fa/4.png/1286x0w.jpg"
-      ]
+      ],
+      "scale_tier": "融资创业"
     },
     {
       "id": 2,
@@ -60,7 +61,7 @@
       "company_size": "创业公司",
       "funding_round": "A轮",
       "tags": "3D AI男友, 女性向, 情感陪伴, Vibe对话模型, Echo记忆模型, 多模态交互, 破次元Agent, 奇点时代",
-      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/40/40/8440400a-450d-063f-a51d-11d27b3068a2/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "image_url": "/images/EVE.jpg",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "AI伴侣",
@@ -86,7 +87,8 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/14/af/d714af9c-3f26-5c74-3ef5-9735af796ee2/2.jpg/1286x0w.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/e6/51/44e6515e-8358-d4e0-1c60-990c2e3d0132/3.jpg/1286x0w.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/18/b3/2618b320-c17d-9a61-df0a-d452e04a3442/4.jpg/1286x0w.jpg"
-      ]
+      ],
+      "scale_tier": "融资创业"
     },
     {
       "id": 3,
@@ -123,7 +125,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_facets": "",
-      "gameplay_theme": "网易系,多模态玩法"
+      "gameplay_theme": "网易系,多模态玩法",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 4,
@@ -161,7 +164,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/f499c73822d30a40080121b51fe1db62f3ad70a0/ss_f499c73822d30a40080121b51fe1db62f3ad70a0.1920x1080.jpg?t=1783066995",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2990190/71bb2e7acc7aef4c5a291437038a1a9450a4f64e/ss_71bb2e7acc7aef4c5a291437038a1a9450a4f64e.1920x1080.jpg?t=1783066995"
       ],
-      "gameplay_theme": "腾讯系,多模态玩法"
+      "gameplay_theme": "腾讯系,多模态玩法",
+      "scale_tier": "融资创业"
     },
     {
       "id": 5,
@@ -193,7 +197,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_facets": "",
-      "gameplay_theme": "腾讯系"
+      "gameplay_theme": "腾讯系",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 6,
@@ -206,7 +211,7 @@
       "company_size": "大厂",
       "funding_round": "大厂孵化",
       "tags": "动作竞技, AI队友, 语音Copilot",
-      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/d6/45/8bd64568-2de0-ce6f-d75f-e22f192ddcf4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "image_url": "/images/永劫无间手游.jpg",
       "region": "国内",
       "gameplay_main": "传统品类+AI",
       "gameplay_sub": "AI 队友",
@@ -230,7 +235,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_facets": "",
-      "gameplay_theme": "网易系"
+      "gameplay_theme": "网易系",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 7,
@@ -262,7 +268,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "AI男友",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 9,
@@ -294,7 +301,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "派对游戏",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 10,
@@ -331,7 +339,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_theme": "模拟经营,米哈游系",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 11,
@@ -374,7 +383,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743680/6497ed9dab6acde3853f365165b8df7a24bd40d0/ss_6497ed9dab6acde3853f365165b8df7a24bd40d0.1920x1080.jpg?t=1782400645",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743680/6be2e71a8a6a89a06fe424bc4f25701683d7d475/ss_6be2e71a8a6a89a06fe424bc4f25701683d7d475.1920x1080.jpg?t=1782400645",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3743680/b74a74ceab3ecc07b9ba7ec049537c894d41a113/ss_b74a74ceab3ecc07b9ba7ec049537c894d41a113.1920x1080.jpg?t=1782400645"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 13,
@@ -382,7 +392,7 @@
       "company_name": "阁道科技 (超参数科技全资控股)",
       "status": "测试中",
       "description": "首款AI动态世界策略类RPG游戏，基于自研Knit平台开发。150+颗星球、600+智能NPC，每个NPC有独立性格、目标和行为逻辑。玩家可扮演任意角色并动态改写世界线。母公司超参数科技为独角兽企业，Game Agent年服务累计50亿次。",
-      "updated_at": "2026-07-10",
+      "updated_at": "2026-07-17",
       "url": "https://store.steampowered.com/app/3105960/",
       "company_size": "创业公司",
       "funding_round": "天使轮",
@@ -392,7 +402,7 @@
       "gameplay_main": "AI Agent(智能体)",
       "gameplay_sub": "智能体社会",
       "team_background": "阁道科技20人小型团队，模块齐全经验丰富。母公司超参数科技2019年成立于深圳，入选福布斯中国2022年独角兽榜单，Game Agent同时在线峰值突破300万，年服务累计人次超50亿。与全球顶尖游戏公司合作。",
-      "product_intro": "首款AI动态世界策略类RPG游戏，基于自研Knit平台开发。\n\n- **核心定位**：首款让玩家真正扮演游戏中任意角色，并可动态改写世界线的策略游戏。以题材、风格切入全球市场，以即时操作切入年轻用户市场\n\n- **AI原生体验**：\n  - AI-NPC自由对话：基于生涯和游戏经历演绎行为，交互具备高度合理性以及多样性\n  - 策略博弈：NPC有独立性格、目标和行为逻辑，可自由对话、记忆映射\n  - 动态世界：每次体验都独一无二，世界任务/主线任务/NPC交互/演出对白/私人任务均可改变状态，触发剧情生成和支线任务\n\n- **技术平台 Knit**：\n  - 自研AI-NPC研运平台，支持AI-NPC体验实现、迭代、在线运营等全生命周期\n  - 可复用AI-NPC体验设计，支持模型选择和知识库存储调用\n  - 全自研模型私有化部署，无第三方API\n  - 150+颗星球，600+智能NPC\n\n- **市场定位**：策略RPG是AI游戏重要方向，海外竞品极少。对标《边境之旅》(680万销量)、《波西米亚时光》(100万)等\n\n- **商业化**：纯买断制，Token成本由开发商承担",
+      "product_intro": "**一句话定位**\n首款让玩家扮演任意角色、并可动态改写世界线的 AI 动态世界策略 RPG——600+ 智能 NPC 各有性格、目标与行为逻辑。\n\n**核心玩法机制**(AI介入:核心驱动)\n- **AI-NPC 自由对话**:NPC 基于自身生涯与游戏经历演绎行为,交互具高度合理性与多样性\n- **策略博弈**:NPC 有独立性格、目标和行为逻辑,可自由对话、记忆映射\n- **动态世界**:世界任务/主线/NPC 交互/演出对白/私人任务均可改变世界状态,触发剧情生成与支线\n- 规模:150+ 颗星球、600+ 智能 NPC。抽掉 AI,这个自运转的世界即刻坍塌\n\n**数据表现**(Steam 官方 API,2026-07-17 采集)\n- 2026-05-25 发行;评测 **Very Positive / 好评率 90.5%**(316 好评、33 差评、共 349 条)——**本库中好评率最高的 AI 原生项目之一**\n- 当前在线 3 人;评测样本量偏小(349 条),口碑虽好但盘子有限\n\n**商业化**\n纯买断制,**Token 成本由开发商承担**——与崇祯把成本转嫁玩家形成鲜明对照。\n\n**技术与数据壁垒**\n自研 **Knit** AI-NPC 研运平台:支持 AI-NPC 体验的实现/迭代/在线运营全生命周期,可复用体验设计,支持模型选择与知识库调用,**全自研模型私有化部署、无第三方 API**。母公司超参数科技的 Game Agent 同时在线峰值破 300 万、年服务累计超 50 亿人次——这套 Agent 工业化能力是真壁垒。\n\n**用户画像与核心需求**\n策略 RPG 是 AI 游戏重要方向且海外竞品极少。对标《边境之旅》(680 万销量)、《波西米亚时光》(100 万)。\n\n**风险与局限**\n好评率 90.5% 但在线仅个位数、评测仅 349 条——**叫好不叫座**,声量与规模不匹配。\n\n**策略启示**\n- **「开发商承担 Token 成本 + 全自研私有化部署」是一条与崇祯截然相反的路**:牺牲毛利换体验完整与口碑(90.5% vs 52.7%),代价是规模化时的成本压力。谁对谁错要看 LTV,但**口碑差距 38 个百分点足以说明成本转嫁的杀伤力**。\n- 有母公司 Agent 工业化能力打底(50 亿次/年服务)的团队,才敢自研模型私有化部署——这是**中小团队学不来的壁垒**。",
       "funding_amount": "",
       "funding_detail": "阁道科技由超参数科技全资控股，正在进行天使轮融资。母公司超参数科技融资历程：A轮(2019,千万美元)→A+轮(2021,万)→B轮(2022,亿)，估值达独角兽级别。投资方含五源资本、高榕创投、红杉资本等。",
       "platform": "未知",
@@ -417,7 +427,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105960/bed7ec0b97767e98e930c201e0e114f03d7a068e/ss_bed7ec0b97767e98e930c201e0e114f03d7a068e.1920x1080.jpg?t=1783309687",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105960/0cfb3175e9a581f33d8ba6f6d48225ab4942b685/ss_0cfb3175e9a581f33d8ba6f6d48225ab4942b685.1920x1080.jpg?t=1783309687",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105960/880c378d05a34ee6989d36293a84418e83ece12e/ss_880c378d05a34ee6989d36293a84418e83ece12e.1920x1080.jpg?t=1783309687"
-      ]
+      ],
+      "scale_tier": "融资创业"
     },
     {
       "id": 14,
@@ -449,7 +460,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_facets": "",
-      "gameplay_theme": "腾讯系"
+      "gameplay_theme": "腾讯系",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 15,
@@ -481,7 +493,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "历史模拟",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 17,
@@ -511,7 +524,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/3cd564662d436a2a33ba0b1cb67f78d268e3f5e6/ss_3cd564662d436a2a33ba0b1cb67f78d268e3f5e6.1920x1080.jpg?t=1757665561",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/25d48f0477a81e7f03e574a63ddcdc34f3c20918/ss_25d48f0477a81e7f03e574a63ddcdc34f3c20918.1920x1080.jpg?t=1757665561",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3622760/67df3332a8ab98f8e87c2d18ec43562414c24202/ss_67df3332a8ab98f8e87c2d18ec43562414c24202.1920x1080.jpg?t=1757665561"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 18,
@@ -543,7 +557,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_theme": "派对游戏",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 19,
@@ -556,7 +571,7 @@
       "company_size": "创业公司",
       "funding_round": "被收购",
       "tags": "初代Chatbot, 情感陪伴, 独角兽",
-      "image_url": "https://character.ai/character-ai.jpg",
+      "image_url": "/images/CharacterAI.jpg",
       "region": "海外",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "AI伴侣",
@@ -579,7 +594,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 20,
@@ -592,7 +608,7 @@
       "company_size": "创业公司",
       "funding_round": "已上市",
       "tags": "出海, 情感陪伴, 虚拟社交",
-      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f0/04/05f0042e-4c28-2db6-823b-415803a3dd80/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "image_url": "/images/Talkie.jpg",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "AI伴侣",
@@ -610,7 +626,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 21,
@@ -618,7 +635,7 @@
       "company_name": "Anuttacon",
       "status": "已上线",
       "description": "由米哈游联合创始人蔡浩宇在美国创立的AI公司Anuttacon于2025年3月推出的互动科幻生存游戏。玩家通过语音、文字或视频与外星落难女大学生Stella进行实时无剧本的AI动态对话，玩家的选择决定了角色的生存与故事走向。",
-      "updated_at": "2026-06-17 07:23:42",
+      "updated_at": "2026-07-17",
       "url": "https://store.steampowered.com/app/3730100/Whispers_from_the_Star/",
       "company_size": "创业公司",
       "funding_round": "大厂孵化",
@@ -628,7 +645,7 @@
       "gameplay_main": "AI叙事对话",
       "gameplay_sub": "对话模拟",
       "team_background": "这可能是近年来最受瞩目的“明星创业”项目之一。由国内二次元游戏霸主米哈游（miHoYo）联合创始人蔡浩宇离职后，在美国加州创立的 AI 游戏初创公司 Anuttacon 研发，拥有近乎无限的技术资本支持。",
-      "product_intro": "被定义为探索下一代互动叙事边界的科幻生存游戏。\n\n游戏摒弃了传统 RPG 里的分支对话树，玩家通过完全开放式的自然语言（打字、语音甚至视频）与在外星球遇险的女大学生 Stella 交流。底层搭载的强大自研模型会精准识别玩家语言中的情绪和逻辑，实时反映在 Stella 的动画表情、语音回复和求生决策中。玩家的一句话，可能拯救她，也可能将她推向万劫不复。虽然目前在剧情框架上仍有局限，但这无疑是展示完全动态叙事野心的里程碑之作。",
+      "product_intro": "**一句话定位**\n蔡浩宇离开米哈游后创立的 Anuttacon 出品——摒弃对话树、用完全开放式自然语言与外星遇险女大学生 Stella 交流的互动科幻生存游戏。\n\n**核心玩法机制**(AI介入:核心驱动)\n玩家通过打字、语音甚至视频与 Stella 实时交流,底层自研模型识别玩家语言中的**情绪与逻辑**,实时反映在她的动画表情、语音回复和求生决策上。你的一句话可能救她,也可能把她推向万劫不复。\n- 抽掉 AI,整个交互闭环不存在——是标准的 AI Native\n- 按我们的判据归「叙事对话」而非「陪伴」:它有**明确的生存目标与结局**,Stella 是你要搞定的场景,不是无限期陪你的伴侣\n\n**数据表现**(Steam 官方 API,2026-07-17 采集)\n- 2025-08-14 发行;评测 **Very Positive / 好评率 82.0%**(1337 好评、294 差评、共 1631 条)\n- **当前在线仅 4 人**——口碑不差,但留存已近乎归零\n\n**技术与数据壁垒**\n自研模型 + 米哈游系的美术与资本厚度。蔡浩宇的明星效应本身即为获客资产。\n\n**风险与局限**\n剧情框架仍有局限;更严峻的是**留存**:82% 好评与 4 人在线并存,说明它被当作「体验一次的技术演示」而非可长期游玩的产品。夜话中吕欣即以本作类比,指出玩家易转向「挑逗 AI」而非投入叙事。\n\n**策略启示**\n- **AI 原生叙事的「一次性」诅咒最赤裸的样本**:好评率高(体验新奇)与在线归零(没有复玩理由)可以同时成立——**好评率根本不度量留存**。\n- 印证夜话的留存二元论:它既没有「情感羁绊」(有结局、非陪伴),也没有「玩家创造」(不能生成可持有的东西),于是新鲜感一过就没有回来的理由。\n- 对我们的意义:评估 AI 叙事项目时,**必须把在线数/复玩率与好评率分开看**,否则会被高分误导。",
       "funding_amount": "",
       "funding_detail": "",
       "platform": "PC端",
@@ -641,7 +658,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/2299763a9bbd92f1c9ed842200db90d66d69db68/ss_2299763a9bbd92f1c9ed842200db90d66d69db68.1920x1080.jpg?t=1764897761",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/57f89c8d2bd8df73d94a0b487916a491d255b7e3/ss_57f89c8d2bd8df73d94a0b487916a491d255b7e3.1920x1080.jpg?t=1764897761"
       ],
-      "gameplay_theme": "米哈游系"
+      "gameplay_theme": "米哈游系",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 22,
@@ -654,7 +672,7 @@
       "company_size": "创业公司",
       "funding_round": "B轮及以上",
       "tags": "AI社交, 虚拟恋人, 独角兽, 出海",
-      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/f0/04/05f0042e-4c28-2db6-823b-415803a3dd80/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "image_url": "/images/星野.jpg",
       "region": "国内",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "AI伴侣",
@@ -682,27 +700,28 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 26,
       "product_name": "历史模拟器：崇祯",
-      "company_name": "青干工作室",
+      "company_name": "青干工作室(网易雷火)",
       "status": "已上线",
       "description": "一款AI原生的文字策略模拟游戏。玩家通过自然语言下达圣旨，AI大模型会判断诏书对国库、民心、官员关系等各维度的影响，并反写进世界状态数值中。高自由度下甚至可以点出原子弹科技。游戏于Steam上线，采用买断制+token计费（后期计划开放API）。",
-      "updated_at": "2026-06-18 02:30:14",
+      "updated_at": "2026-07-17",
       "url": "https://store.steampowered.com/app/4304230/",
-      "company_size": "独立开发者",
-      "funding_round": "未知",
+      "company_size": "大厂",
+      "funding_round": "大厂孵化",
       "tags": "文字模拟, 历史推演, Steam, 大模型",
       "image_url": "/images/崇祯.jpg",
       "region": "国内",
       "gameplay_main": "AI叙事对话",
       "gameplay_sub": "互动叙事",
-      "team_background": "由国内独立团队「青干工作室」研发，团队规模不足 10 人，除制作人追青兼任策划外，其余全为技术人员。团队专门针对大模型应用在长篇历史推演中的记忆遗忘和逻辑崩坏问题，自主研发了一套“步进式状态机”架构。 AI 技术由网易伏羲提供。",
-      "product_intro": "这是市面上为数不多的将大模型推演作为“硬核机制”的买断制独立游戏。玩家扮演明朝末代皇帝崇祯，通过输入自然语言“下旨”来治国。AI 会判断诏书对国库、民心、派系、军事的综合影响，并转化为数值反馈给游戏系统。游戏有着极高的自由度，不设剧本上限（比如有玩家硬核攀科技树，最终在大明朝造出了原子弹）。收费模式采用“游戏本体买断 + 模型 Token 用量计费”，但官方也计划开放 API 允许玩家接入自己的大模型。",
+      "team_background": "网易雷火孵化项目,「青干工作室」为对外发行马甲,Steam 开发/发行均署名青干。AI 技术由网易伏羲提供。团队针对大模型在长篇历史推演中的记忆遗忘与逻辑崩坏问题,自研了一套「步进式状态机」架构。",
+      "product_intro": "**一句话定位**\n让玩家扮演崇祯、用自然语言「下旨」治国的 AI 原生文字策略模拟游戏——大模型推演是硬核机制,不是点缀。\n\n**核心玩法机制**(AI介入:核心驱动)\n玩家输入自然语言诏书,AI 判断其对国库、民心、派系、军事的综合影响,并**反写进世界状态数值**,再由数值驱动下一回合。不设剧本上限——有玩家硬核攀科技树,最终在大明朝造出了原子弹。\n- 团队自研「步进式状态机」架构,专门对抗大模型在长篇历史推演中的**记忆遗忘与逻辑崩坏**\n- 收费:游戏本体买断 + 模型 Token 用量计费,官方称计划开放 API 允许玩家接入自己的大模型(BYOK)\n\n**数据表现**(Steam 官方 API,2026-07-17 采集)\n- 2026-05-07 发行;评测 **Mixed(褒贬不一)/ 好评率 52.7%**(1225 好评、1101 差评、共 2326 条)\n- 当前在线 **1,479 人**——是本库中在线规模领先的 AI 原生项目\n- 口碑严重分化:好评方多为历史爱好者(有玩家 191 小时通关、称「制作组没意识到这款游戏的历史意义」);差评方集中在架构、收费与 AI 质量三处\n\n**商业化**\n先买断制、后改为本体免费 + Token 计费。**改制直接得罪首发付费玩家**(高赞差评:「先是两次收费得罪喜欢买断制的,又变成免费本体来愚弄之前花钱买游戏的」)。玩家实测:用主流模型一局约十元量级,成本敏感。\n\n**技术与数据壁垒**\n「步进式状态机」是团队面对长程推演一致性问题的自研解法,是其技术叙事的核心。**本作为网易雷火内部孵化项目**,以「青干工作室」名义对外发行(Steam 开发/发行均署名青干);AI 技术由**网易伏羲**提供——雷火的孵化能力 + 伏羲的模型能力是其真实底座。\n\n**风险与局限**\n- ⚠️ **BYOK 宣称与实际架构的落差**(最高赞差评 502 赞,基于客户端反编译):称国策、存档、BYOK AI 流程等核心功能**大量依赖官方线上网关**——前端把诏书发到官方服务器、由服务器返回请求再调用模型。若属实,则「接入自己的模型」的开放性存疑。**该结论来自玩家单方分析,官方未见公开回应,本条仅记录争议,不作事实认定**\n- **AI 推演质量**:高频差评为「每个季度都在纠正 AI 的错误」「AI 漏推演」「记忆错乱」,甚至有玩家称权威度过低时 AI 会反过来指责玩家\n- **Token 成本**:玩家需自付模型费用,不同模型体验与成本差异大(听话的贵、便宜的「死犟」)\n\n**策略启示**\n- **它是「AI 当裁判改写世界状态」这条路线目前跑得最远的样本,且背后是网易雷火的孵化**:1479 在线证明需求真实,52.7% 证明代价也真实——**长程推演的一致性(漏推演/记忆错乱)是直接转化为差评的头号杀手**,呼应吕欣「可辨识性/融合性」的诊断。\n- **Token 转嫁给玩家的模式极其脆弱**:玩家会精算「一局十块」,并把成本焦虑写进差评。\n- **收费模式中途改制的代价**:买断转免费在首发玩家处的信任损耗,可能比定价本身更贵。",
       "funding_amount": "",
-      "funding_detail": "未披露（疑似关联公司：北京闻和网络科技）",
+      "funding_detail": "网易雷火内部孵化项目,以独立工作室名义对外发行。",
       "platform": "PC端",
       "launch_date": "2026-05-08",
       "team_members": [
@@ -720,7 +739,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/59c005d90beca9863fff32b29584af0f64c5f598/ss_59c005d90beca9863fff32b29584af0f64c5f598.1920x1080.jpg?t=1782454913",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/0570786fbfe6ffd923a3c7cb5626de2d27335b3b/ss_0570786fbfe6ffd923a3c7cb5626de2d27335b3b.1920x1080.jpg?t=1782454913",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304230/5f150adc087584b5c0de400446a4d8fed97d72b9/ss_5f150adc087584b5c0de400446a4d8fed97d72b9.1920x1080.jpg?t=1782454913"
-      ]
+      ],
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 27,
@@ -733,7 +753,7 @@
       "company_size": "创业公司",
       "funding_round": "未知",
       "tags": "情感陪伴, a16z, 韩国, 高收入, 梦女向",
-      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/91/f7/8091f7f4-8691-9bab-b95a-07c6e203419f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "image_url": "/images/LoveyDovey.jpg",
       "region": "海外",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "AI伴侣",
@@ -751,7 +771,8 @@
       "product_intro": "韩国TainAI开发的AI情感陪伴应用，中文名「卿卿我我」。\n\n- **核心定位**：日韩市场大获成功的AI陪伴产品，a16z《TOP 100 AI Consumer App》亚洲第一\n\n- **产品机制**：\n  - 好感度系统：熟人→朋友→心动→恋人→结婚五级\n  - 聊天按句收费（果酱货币），非订阅制\n  - 三种聊天模式：绝配(短句)、长句、刺激模式\n  - 内心深处功能：查看AI角色心理活动\n  - 支持照片分享、日记共享\n\n- **商业化**：月流水76万美元，全球月活仅10万，ARPU是Character.AI的5倍。96%自然安装量",
       "team_background": "韩国TainAI Inc.，总部首尔江南区，15人团队。主打东亚情感市场，放弃美国市场策略。",
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "言灵计划",
@@ -787,7 +808,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "Aivilization",
@@ -818,7 +840,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "Suck Up!",
@@ -849,7 +872,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "AI2U",
@@ -902,7 +926,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/1cee5b3e3b9fc33498d1a651c4a2ac25ca1a9654/ss_1cee5b3e3b9fc33498d1a651c4a2ac25ca1a9654.1920x1080.jpg?t=1783990739",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2880730/4bf1de2d371022a16fe3fc8a42deb4073500ad6e/ss_4bf1de2d371022a16fe3fc8a42deb4073500ad6e.1920x1080.jpg?t=1783990739"
       ],
-      "gameplay_theme": "多模态玩法"
+      "gameplay_theme": "多模态玩法",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "Altera Bots",
@@ -943,7 +968,8 @@
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "星眠",
@@ -975,7 +1001,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "AI男友,模拟经营",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "妹居物语",
@@ -1013,7 +1040,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2776820/ss_63d6e6e00d0973f4c2c4b638024d4c4fee6b0401.1920x1080.jpg?t=1707302195",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2776820/ss_3272c362707d30335af621fa155b7078bcd241fb.1920x1080.jpg?t=1707302195",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2776820/ss_106b3fc7a2d49ed9f01d2a160124963bfa1932c2.1920x1080.jpg?t=1707302195"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "如意情探",
@@ -1045,7 +1073,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "AI男友",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "星夜颂歌",
@@ -1077,38 +1106,50 @@
       ],
       "batch": "常态跟踪·2026",
       "gameplay_theme": "AI女友",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "Tolan",
-      "company_name": "未知",
-      "status": "未知",
-      "description": "定位为AI宠物的第二代AI陪伴产品，涵盖日常与虚拟世界场景并重。",
-      "company_size": "未知",
-      "funding_round": "未知",
-      "tags": "AI宠物",
+      "company_name": "Portola",
+      "status": "已上线",
+      "description": "刻意做成\"卡通外星人\"而非拟人角色的 AI 陪伴产品——用非人类形象规避恋人替代品定位,主张陪伴应把用户推回现实关系。上线半年下载超 300 万、付费用户超 10 万、月收入超 100 万美元,累计融资 $30M。",
+      "company_size": "创业公司",
+      "funding_round": "A轮",
+      "tags": "AI宠物,外星人设定,非拟人化,反成瘾设计,订阅制,Gen Z,女性向",
       "region": "海外",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "AI宠物",
-      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/1b/e1/f21be167-d05b-7898-b79b-74983fb393f3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "image_url": "/images/Tolan.jpg",
       "id": 37,
-      "updated_at": "2026-06-18 03:04:12",
+      "updated_at": "2026-07-20",
       "url": "https://tolans.com",
-      "team_background": "定位为面向海外市场的初创型项目，目前在公开资料中尚未披露明确的团队主创背景及大型融资经历。",
-      "product_intro": "这是一款主打“AI 宠物（AI Pet）”概念的第二代情感陪伴产品。\n\n与第一代以文字 Bot 为主的陪伴产品相比，Tolan 将核心放在了场景化与视觉表现上。玩家在虚拟世界中不仅能与自己的 AI 宠物进行拟真对话，还需要照顾它的虚拟日常生活（如喂食、抚摸、互动）。这种将传统“电子宠物机（Tamagotchi）”玩法与大模型语义理解深度结合的尝试，旨在解决纯聊天类 AI 应用长线留存率低下、用户极易流失的通病。",
-      "funding_amount": "",
-      "funding_detail": "新一轮融资(金额未披露)",
+      "team_background": "12 人小团队(工程、文案、创意)。创始人 Quinten Farmer 曾创办金融科技公司 Even(2014 年于哥伦比亚大学创立,2022 年被沃尔玛以 3 亿美元收购);CTO Evan Goldschmidt 为前 Google 高级工程师;总裁 Ajay Mehta 为连续创业者。",
+      "product_intro": "**一句话定位**\n刻意不做成\"人\"的 AI 陪伴产品——一只卡通外星人,用非拟人化设计规避恋人替代品定位,并把用户推回现实关系。\n\n**核心玩法机制**(AI介入:核心驱动)\n把电子宠物(Tamagotchi)玩法与大模型语义理解结合:玩家在虚拟世界中与专属 AI 宠物拟真对话,同时照顾它的虚拟日常(喂食、抚摸、互动)。\n- **关键设计选择:非人类形象**。官方表述——\"它不尝试完全模仿你。它的品味可能与你略有不同,但它是你能产生共鸣的对象\"\n- **反成瘾主张**:产品鼓励用户放下手机去做现实活动;AI 会主动询问用户与朋友的互动、阅读爱好等,引导现实社交\n\n**数据表现**\n- 上线约半年:**下载超 300 万、付费用户超 10 万、月收入超 100 万美元**,预期年收入约 1200 万美元(订阅)\n- 用户以**年轻女性**为主\n- 官方追踪的指标不是时长,而是「**用户自主性与自信心的变化、以及现实关系稳定性/健康状况的变化**」;其 602 人调研中 **72.5% 认同该产品有助于管理或改善现实生活关系**\n\n**用户画像与核心需求**\n针对年轻人的\"被压倒感\"(overwhelm)——不是传统孤独,而是**生活复杂性与信息密度造成的压力**。产品提供的是\"被理解、被倾听\"的感受,而非情感替代。\n\n**商业化**\n订阅制。300 万下载 → 10 万付费,付费转化约 3.3%;月收入超 $1M。计划推出免费版本扩大漏斗。\n\n**技术与数据壁垒**\n12 人小团队,技术上无显著独占;真正的壁垒是**产品哲学与人群定位**——非拟人化的角色设定与\"推回现实\"的价值主张,构成了与主流陪伴产品的差异化站位。\n\n**风险与局限**\n- 团队仅 12 人,面对大厂入场的规模化竞争抗压能力有限\n- \"反成瘾\"主张与订阅制商业模式存在内在张力:留住用户与推开用户的目标方向相反,长期如何平衡待观察\n\n**策略启示**\n- **它给出了 AI 陪伴的第二条路**:主流做法是把 AI 做得越像人越好(EVE、林离、Character.AI),Tolan 反其道而行——**用\"非人\"设定主动放弃恋人替代品市场**,换取更安全的定位与更宽的受众。\n- **它把北极星指标从\"时长\"换成了\"用户现实关系是否变好\"**,这在陪伴赛道极为罕见。呼应夜话中吕欣的判断:游戏/虚拟角色是情感 AI 的良好容器,但需要\"安全垫\"——Tolan 的外星人外壳就是显式的安全垫。\n- 商业上已验证:**非拟人化不影响付费**(300万下载/10万付费/月入百万美元),说明\"陪伴\"的需求未必要靠\"像人\"来满足。",
+      "funding_amount": "$30M",
+      "funding_detail": "种子轮 $10M(2025-02,Lachy Groom 领投)→ A轮 $20M(2025-07,Khosla Ventures & Keith Rabois 领投,NFDG 参投),半年内累计 $30M。天使阵容含 Nat Friedman(前 GitHub CEO)、Daniel Gross(前 Apple AI)、Mike Krieger(Instagram 联创)、Amjad Masad(Replit CEO)、David Luan(OpenAI/Amazon)。",
       "platform": "移动端",
       "launch_date": "2024-06",
       "team_members": [
         {
-          "name": "Portola",
-          "role": "开发团队",
-          "background": "独立游戏工作室"
+          "name": "Quinten Farmer",
+          "role": "创始人 / CEO",
+          "background": "曾创办金融科技公司 Even(2014 年创立于哥伦比亚大学),2022 年被沃尔玛以 3 亿美元收购。"
+        },
+        {
+          "name": "Evan Goldschmidt",
+          "role": "联合创始人 / CTO",
+          "background": "前 Google 高级工程师。"
+        },
+        {
+          "name": "Ajay Mehta",
+          "role": "联合创始人 / 总裁",
+          "background": "连续创业者。"
         }
       ],
       "batch": "常态跟踪·2024",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "PUBG Ally",
@@ -1139,7 +1180,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "product_name": "量子跃迁：米乐光年",
@@ -1171,7 +1213,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_theme": "模拟经营,多模态玩法",
-      "gameplay_facets": "AI生成UGC"
+      "gameplay_facets": "AI生成UGC",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "月匣",
@@ -1202,7 +1245,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "product_name": "Deviation Game",
@@ -1240,7 +1284,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/2bd6bcb449d66319184fec2aec849320f8756c72/ss_2bd6bcb449d66319184fec2aec849320f8756c72.1920x1080.jpg?t=1779855609",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/3157e2d3227b1d2f98a690cec5cce425570ec3a2/ss_3157e2d3227b1d2f98a690cec5cce425570ec3a2.1920x1080.jpg?t=1779855609",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3104020/df16763778a1a37d2d0cf2104f25d4c48ac6f37f/ss_df16763778a1a37d2d0cf2104f25d4c48ac6f37f.1920x1080.jpg?t=1779855609"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "像素梦工厂",
@@ -1271,7 +1316,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "我的恋综超失控！",
@@ -1302,7 +1348,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": "AI Agent(智能体)"
+      "gameplay_facets": "AI Agent(智能体)",
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "诡秘推理",
@@ -1334,7 +1381,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_facets": "",
-      "gameplay_theme": "推理探案"
+      "gameplay_theme": "推理探案",
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "神探夏洛克：暗夜追踪者",
@@ -1366,7 +1414,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_facets": "",
-      "gameplay_theme": "推理探案"
+      "gameplay_theme": "推理探案",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "推演：七日谈",
@@ -1397,7 +1446,8 @@
         }
       ],
       "batch": "常态跟踪·2026",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "萌爪派对：欢乐问答",
@@ -1434,7 +1484,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_theme": "派对游戏",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "星海自走牌",
@@ -1465,7 +1516,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "product_name": "Public Eye",
@@ -1497,7 +1549,8 @@
       ],
       "batch": "常态跟踪·2025",
       "gameplay_facets": "",
-      "gameplay_theme": "推理探案"
+      "gameplay_theme": "推理探案",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "Project Shanhai",
@@ -1510,7 +1563,7 @@
       "region": "海外",
       "gameplay_main": "AI Agent(智能体)",
       "gameplay_sub": "智能体社会",
-      "image_url": null,
+      "image_url": "/images/ProjectShanhai.jpg",
       "id": 59,
       "updated_at": "2026-06-18 03:04:12",
       "url": null,
@@ -1528,7 +1581,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "Pengu",
@@ -1541,7 +1595,7 @@
       "region": "海外",
       "gameplay_main": "AI陪伴",
       "gameplay_sub": "AI宠物",
-      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/9f/6f/a49f6fe5-336b-5c8a-acd3-8f79f3023632/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "image_url": "/images/Pengu.jpg",
       "id": 60,
       "updated_at": "2026-06-18 03:04:12",
       "url": "https://born.com",
@@ -1560,7 +1614,8 @@
       ],
       "batch": "常态跟踪·2024",
       "gameplay_facets": "",
-      "gameplay_theme": "腾讯系"
+      "gameplay_theme": "腾讯系",
+      "scale_tier": "融资创业"
     },
     {
       "product_name": "Iconic",
@@ -1591,7 +1646,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 62,
@@ -1599,7 +1655,7 @@
       "company_name": "Meshy Game Studio",
       "status": "研发中",
       "description": "一款AI原生的类吸血鬼幸存者游戏。游戏将AI进化为实时策划Agent，取代了传统的“固定配置”体验。AI能深度解析玩家在核心武器Socket（插槽）系统中的策略意图，将数百种底层原子机制进行逻辑编排，实时生成严谨、自洽的专属武器与元素连锁反应，实现“万物皆可合成”与“言出法随”的高自由度动态肉鸽体验。",
-      "updated_at": "2026-06-18 03:10:04",
+      "updated_at": "2026-07-17",
       "url": "https://store.steampowered.com/app/4437020/",
       "company_size": "独立开发者",
       "funding_round": "未知",
@@ -1609,7 +1665,7 @@
       "gameplay_main": "AI玩法机制",
       "gameplay_sub": "AI生成元素",
       "team_background": "由 Meshy Game Studio 开发。这是一个致力于探索“AI实时策划”概念的独立游戏团队。",
-      "product_intro": "这是一款硬核的“AI原生肉鸽幸存者”游戏。游戏舍弃了传统肉鸽中设计师提前写好的“技能树与固定搭配”，转而让 AI 充当实时游戏策划（Agent）。\n\n在游戏的核心“Socket（插槽）系统”中，玩家搜集到的导弹、黑洞、风暴等原子机制组件，可以随意镶嵌组合。底层的 AI 逻辑引擎会即时解析玩家的策略意图，将这些底层机制进行逻辑编排，实时生成自洽且全新的弹幕特效与元素反应（例如分裂爆炸+全向追踪的黑洞风暴）。千万种组合意味着每一次游玩都是“绝版”体验。",
+      "product_intro": "**一句话定位**\n把 AI 当「实时游戏策划」的 AI 原生类吸血鬼幸存者——舍弃设计师预写的技能树,让 AI 实时编排出自洽的专属武器。\n\n**核心玩法机制**(AI介入:核心驱动)\n核心是 **Socket(插槽)系统**:玩家搜集到的导弹、黑洞、风暴等**原子机制组件**可随意镶嵌组合;底层 AI 逻辑引擎即时解析玩家的策略意图,把这些原子机制进行**逻辑编排**,实时生成自洽且全新的弹幕特效与元素连锁反应(例如分裂爆炸 + 全向追踪的黑洞风暴)。千万种组合意味着每局都是「绝版」体验。\n- 生成物是**可持有的玩法元素**(武器/连锁),拿去战斗 → 归「AI生成元素」\n\n**数据表现**\nSteam 页面状态为**「即将推出」,尚未发行,暂无评测与在线数据**(2026-07-17 核)。非免费。\n\n**技术与数据壁垒**\n由 Meshy Game Studio 开发——探索「AI 实时策划」概念的独立团队。难点在于让 AI 编排出的组合**既新颖又不破坏数值平衡**。\n\n**风险与局限**\n尚未发行。「万物皆可合成」的自由度与肉鸽必需的数值平衡天然冲突——夜话共识「绝对的自由 = 绝对的不好玩」正是悬在这类设计头上的剑,能否收敛住待上线验证。\n\n**策略启示**\n- 它把 AI 放在**机制编排层**而非内容生成层,是「AI 生成元素」路线里最激进的一种:不是生成一张卡的文案,而是生成一套**能跑起来的机制逻辑**。\n- 真正的考验不是能不能生成,而是**能不能收敛**——参照觉醒AI 从「自由打字」退回「选关键词」换取锚点的教训,黑箱的 Socket 系统本身就是一种预设边界,方向是对的。",
       "funding_amount": "",
       "funding_detail": "未披露",
       "platform": "PC端",
@@ -1628,7 +1684,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/bb0d1eeb6ba4819135fe4a9dc38044ca71a32440/ss_bb0d1eeb6ba4819135fe4a9dc38044ca71a32440.1920x1080.jpg?t=1779435736",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/3bbbb96caf458e182b2e49834512c9ea8dc5a17c/ss_3bbbb96caf458e182b2e49834512c9ea8dc5a17c.1920x1080.jpg?t=1779435736",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437020/401d8f52591ddf398a29b0545c5c414d3bbbe857/ss_401d8f52591ddf398a29b0545c5c414d3bbbe857.1920x1080.jpg?t=1779435736"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 63,
@@ -1659,7 +1716,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 65,
@@ -1695,7 +1753,8 @@
         }
       ],
       "batch": "常态跟踪·2025",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 66,
@@ -1720,7 +1779,8 @@
       "launch_date": "2026-Q2",
       "batch": "常态跟踪·2026",
       "gameplay_theme": "二次元,米哈游系",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 67,
@@ -1751,7 +1811,8 @@
         }
       ],
       "batch": "常态跟踪·2026",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 68,
@@ -1807,7 +1868,8 @@
       "batch": "常态跟踪·2026",
       "gameplay_facets": "",
       "gameplay_theme": "多模态玩法",
-      "image_url": "/images/Yoroll.jpg"
+      "image_url": "/images/Yoroll.jpg",
+      "scale_tier": "融资创业"
     },
     {
       "id": 69,
@@ -1837,7 +1899,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4790720/ae9e210095141a329e0ea31eba71b7c2a20d27a3/ss_ae9e210095141a329e0ea31eba71b7c2a20d27a3.1920x1080.jpg?t=1782309654",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4790720/793e93c965c42d4644fb52d4bd15238d81024c97/ss_793e93c965c42d4644fb52d4bd15238d81024c97.1920x1080.jpg?t=1782309654",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4790720/01b1da6a1eb79002becf2a6a40e6fd64ecbfbeda/ss_01b1da6a1eb79002becf2a6a40e6fd64ecbfbeda.1920x1080.jpg?t=1782309654"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 70,
@@ -1867,7 +1930,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/189c49b9c90ffc6cd8a342661b7cff014463ab6a/ss_189c49b9c90ffc6cd8a342661b7cff014463ab6a.1920x1080.jpg?t=1781578212",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/d9b4c09c78e7f90a662db483e2d38be3cab7a75d/ss_d9b4c09c78e7f90a662db483e2d38be3cab7a75d.1920x1080.jpg?t=1781578212",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/900a92dc2cc7cd1c51572a5219c4ce0b7e998285/ss_900a92dc2cc7cd1c51572a5219c4ce0b7e998285.1920x1080.jpg?t=1781578212"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 71,
@@ -1892,7 +1956,8 @@
       "team_members": [],
       "batch": "2026 ChinaJoy",
       "gameplay_theme": "模拟经营",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 72,
@@ -1916,7 +1981,8 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 73,
@@ -1940,7 +2006,8 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 74,
@@ -1970,7 +2037,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4881270/aea0f68c9c0e9d7fc6d268735e7ca346c285f005/ss_aea0f68c9c0e9d7fc6d268735e7ca346c285f005.1920x1080.jpg?t=1783750647",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4881270/88c3056f86602e0d00faedee61b440bbd2d6d721/ss_88c3056f86602e0d00faedee61b440bbd2d6d721.1920x1080.jpg?t=1783750647",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4881270/0e8be037e1cc836dc581d5e3363ccfe1cdcd2ea2/ss_0e8be037e1cc836dc581d5e3363ccfe1cdcd2ea2.1920x1080.jpg?t=1783750647"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 75,
@@ -2000,7 +2068,8 @@
         }
       ],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 76,
@@ -2024,7 +2093,8 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 77,
@@ -2048,7 +2118,8 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 78,
@@ -2072,7 +2143,8 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 79,
@@ -2096,7 +2168,8 @@
       "launch_date": "",
       "team_members": [],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "融资创业"
     },
     {
       "id": 80,
@@ -2104,7 +2177,7 @@
       "company_name": "Nuverse (字节跳动/朝夕光年)",
       "status": "研发中",
       "description": "超写实AI修仙互动作品，采用超写实美术搭建恢弘细腻的玄幻修仙大世界。玩家以凡尘修士身份踏入修真之路，既能体验策略回合制仙法对战，也可观赏高品质剧情动画，收集灵材炼制丹药。支持自由修行、道侣共鸣，依托AI驱动的独特NPC说服玩法。",
-      "updated_at": "2026-07-15",
+      "updated_at": "2026-07-17",
       "url": "https://store.steampowered.com/app/4209920/",
       "company_size": "创业公司",
       "funding_round": "大厂孵化",
@@ -2114,7 +2187,7 @@
       "gameplay_main": "传统品类+AI",
       "gameplay_sub": "AI NPC",
       "team_background": "Nuverse（字节跳动旗下朝夕光年）出品。",
-      "product_intro": "ChinaJoy 2026参展的超写实AI修仙互动作品。\n\n- **核心定位**：采用超写实美术搭建恢弘细腻的玄幻修仙大世界，打造沉浸感十足的正统修仙冒险体验\n\n- **玩法**：玩家以凡尘修士身份踏入修真之路，既能体验策略回合制（+QTE）仙法对战，也可观赏高品质剧情动画，收集灵材炼制丹药、打造神兵稳固修为\n\n- **AI玩法**：支持自由修行、道侣共鸣，依托AI驱动的独特NPC说服玩法（NPC具记忆/情绪/逻辑），世界永久记忆机制，预设超50种结局\n\n- **技术**：据称\"AI浓度最高的大型游戏\"，AI覆盖90%+内容生产（剧情/建模/场景/UI/配音），依托火山引擎SeeDance 2.0。Steam即将推出，免费开玩",
+      "product_intro": "**一句话定位**\n字节跳动 Nuverse(朝夕光年)出品的超写实 AI 修仙互动作品,自称「AI 浓度最高的大型游戏」。\n\n**核心玩法机制**(AI介入:深度增强)\n玩家以凡尘修士身份踏入修真之路:策略回合制(+QTE)仙法对战、观赏高品质剧情动画、收集灵材炼制丹药、打造神兵稳固修为。\n- **AI 层**:自由修行、道侣共鸣,依托 AI 驱动的**独特 NPC 说服玩法**(NPC 具记忆/情绪/逻辑)、世界永久记忆机制,预设超 50 种结局\n- 按我们的判据:抽掉 AI,回合制修仙 RPG 的核心玩法与游玩体系依然成立 → 归「传统品类+AI」\n\n**数据表现**\nSteam 页面状态为**「即将推出」,尚未发行,暂无评测与在线数据**(2026-07-17 核)。免费开玩。\n\n**技术与数据壁垒**\n据称 AI 覆盖 90%+ 内容生产(剧情/建模/场景/UI/配音),依托**火山引擎 SeeDance 2.0**——字节自有模型与算力是其底座。\n\n**风险与局限**\n- 「AI 覆盖 90%+ 内容生产」是**研发侧提效**的口径,与玩家侧体验并非一回事;宣发口径与实际体验的落差需待上线验证\n- 尚未发行,一切数据未经市场检验\n\n**策略启示**\n- 大厂做 AI 游戏的典型路径:**AI 主要用在生产端降本(90% 内容生产),玩家侧只叠加 NPC 说服等增强玩法**,核心品类仍是成熟的回合制修仙——风险可控,但天花板也止于「体验增强」。\n- 「AI 浓度最高」这类营销口径,应拆开看是**生产侧浓度**还是**玩家侧浓度**,二者的战略含义完全不同。",
       "funding_detail": "字节跳动旗下Nuverse（朝夕光年）自研，依托火山引擎SeeDance 2.0。",
       "platform": "PC端",
       "launch_date": "",
@@ -2126,7 +2199,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/82e0dbdcf0557c5e673e854b6cf913c3dc37e62e/ss_82e0dbdcf0557c5e673e854b6cf913c3dc37e62e.1920x1080.jpg?t=1783586344",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/32de1efcf0621040779c2a9bd6f4c2efca8f4a33/ss_32de1efcf0621040779c2a9bd6f4c2efca8f4a33.1920x1080.jpg?t=1783586344",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/986814777c70b2481bc4ebc3466af769caf6c564/ss_986814777c70b2481bc4ebc3466af769caf6c564.1920x1080.jpg?t=1783586344"
-      ]
+      ],
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 81,
@@ -2156,7 +2230,8 @@
         }
       ],
       "batch": "2026 ChinaJoy",
-      "gameplay_facets": ""
+      "gameplay_facets": "",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 82,
@@ -2187,26 +2262,27 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4796220/9640f7eef992f0d4cd3f2b52d22f1254301c8063/ss_9640f7eef992f0d4cd3f2b52d22f1254301c8063.1920x1080.jpg?t=1783944050",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4796220/e0bbd24522d80e2002323d54e82c3de89e04d7ca/ss_e0bbd24522d80e2002323d54e82c3de89e04d7ca.1920x1080.jpg?t=1783944050",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4796220/65d7cb24c516ccb60ccdb01c5cbbcffeb7dfa924/ss_65d7cb24c516ccb60ccdb01c5cbbcffeb7dfa924.1920x1080.jpg?t=1783944050"
-      ]
+      ],
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 83,
       "product_name": "万千世界 (代号\"万千\")",
-      "company_name": "独立团队 (PixVerse互动娱乐引擎支持)",
+      "company_name": "万千世界制作组(PixVerse 孵化)",
       "status": "研发中",
-      "description": "女性向\"快穿\"题材3D乙游项目（正式名未定，内部代号\"万千\"，取自\"万千世界，与你同行\"）。玩家进入不同世界观、拥有不同身份、遇见不同类型男主，在每段关系里做出不一样的选择，在无限人生体验中\"找到不同的自己\"。由创作者北北主导，依托AI多模态生产管线打破传统重管线枷锁。",
-      "updated_at": "2026-07-15",
+      "description": "三名\"野生制作人\"用AI做出的女性向\"快穿\"题材乙游。脚本、分镜、玩法由团队自己完成,画面用AI辅助生成;已包含基础交互机制与玩法设计,并非单纯的视频生成。技术支持来自爱诗科技(PixVerse),团队由其孵化并独立运作。PV在B站获近2万播放、小红书5000+点赞。",
+      "updated_at": "2026-07-20",
       "url": "",
-      "company_size": "创业公司",
+      "company_size": "独立开发者",
       "funding_round": "未知",
-      "tags": "女性向,乙游,快穿,3D,多世界观,AI Native,自定义剧情,PixVerse,多模态生成",
-      "image_url": "",
+      "tags": "女性向,乙游,快穿,3D,多世界观,AI Native,自定义剧情,PixVerse,多模态生成,实时视频驱动",
+      "image_url": "/images/万千世界.jpg",
       "region": "国内",
       "gameplay_main": "AI叙事对话",
       "gameplay_sub": "互动叙事",
-      "team_background": "由创作者\"北北\"主导的独立小团队，经历过传统游戏制作流程，现以AI多模态工作流打造快穿乙游。AI引擎由PixVerse互动娱乐（负责人秋实）提供支持——PixVerse自研多模态生成引擎，主打用多模态能力做游戏，以项目制推进沉淀商业化引擎。团队处于创意驱动阶段，协作自由。",
-      "product_intro": "女性向\"快穿\"题材3D乙游项目，主打\"在有限的生命里体验无限种人生\"。\n\n- **核心定位**：正式名未定，内部代号\"万千\"（取自\"万千世界，与你同行\"）。玩家可进入不同世界观、拥有不同身份、遇见不同类型的男主，在每段关系里做出不一样的选择，在过程中\"找到不同的自己\"、获得成长\n\n- **快穿玩法**：把网文中火热但游戏中罕见的\"快穿\"搬进游戏——古代/民国/现代/星际/兽人等多世界观，不再用人数限制男主。宫斗（生存争宠）、娱乐圈（舆论中自我生长）、末世（承担责任建基地）、仙侠（夯实基础实现抱负）等副本，让玩家在一款作品里\"一直成长、积淀\"\n\n- **AI Native体验（核心野心）**：\n  - 自定义剧情：官方给定选项外，玩家可输入一段话反击/回应，AI实时生成对应剧情，传达\"我是谁\"\n  - IF线：AI记住玩家的另一种选择并生成剧情（传统游戏做不到）\n  - 自定义世界：玩家可创造心目中的角色与世界，一起生活\n  - 理想形态类比Cursor：低门槛、高品质，不止\"言出法随\"，而是比创作者更懂、补全想象不到的细节、创造超出预期的共创\n\n- **生产力革命**：传统3D人物建模需4-5个月、15秒动画至少2个月，女性向内容消耗极快而产能跟不上。AI多模态管线让\"多副本、多男主、海量剧情\"的快穿项目从不可能变为可能（PV仅3名女生完成）。AI负责理清思路、落地执行，核心创意与高光时刻仍由人把控（会合作画师\"手搓\"独特非标审美）\n\n- **发行策略**：计划\"边做边发、边玩边改\"，不必等所有世界做完，玩家对下一个世界的期待可直接研发\n\n- **状态**：研发中，已发布PV/Demo验证，收获一批\"同频\"愿接受AI游戏形态的玩家。信息来源：《405游局》播客（2026-07-15）",
-      "funding_detail": "未披露。AI引擎由PixVerse互动娱乐提供支持。",
+      "team_background": "三名\"仅仅爱玩游戏爱做梦\"的女生组成,自称\"三个野生制作人\"——没有公司,也没有成熟研发团队,出于兴趣拉上闺蜜,自己写脚本、画分镜、策划玩法,再用AI辅助生成画面。创作者北北主导。技术支持来自专注AI视频生成的爱诗科技(PixVerse),团队由PixVerse孵化、目前保持独立运作;对PixVerse而言,与这类制作组合作也是其探索AI多模态生成与游戏引擎技术、推进实时交互体验的一部分。",
+      "product_intro": "**一句话定位**\n三名\"野生制作人\"用 AI 手搓出的快穿题材乙游——没有公司、没有研发团队,却跑出了近 2 万播放的 PV 和一场关于\"AI 内容该被怎么看待\"的公共讨论。\n\n**核心玩法机制**(AI介入:核心驱动)\n女性向\"快穿\"题材 3D 乙游:玩家进入不同世界观、拥有不同身份、遇见不同类型男主,在每段关系里做出不一样的选择,在\"无限人生体验\"中找到不同的自己。\n- **快穿玩法**:把网文中火热但游戏中罕见的\"快穿\"搬进游戏——古代/民国/现代/星际/兽人等多世界观,不再用人数限制男主\n- **AI Native 体验**:①自定义剧情——官方选项之外,玩家可输入一段话反击/回应,AI 实时生成对应剧情 ②IF 线——AI 记住玩家的另一种选择并生成剧情 ③自定义世界——玩家可创造心目中的角色与世界\n- ✅ **已包含基础交互机制与玩法设计,并非单纯的视频生成**(此前存疑点已由公开报道澄清)\n\n**数据表现**\n- PV 在 **B站近 2 万播放、小红书 5000+ 点赞**\n- PV 中出现 5 位男主:带耳麦的偶像、泛舟莲塘的军阀、水中沐浴的兽耳裸男,以及同一古代架空世界里的白发军师与黑发帝王\n- 生产效率:传统流程中一个 3D 人物从建模到能演出需 3–6 个月,该团队用 **3 周**完成(爱范儿,2026-07)\n\n**用户画像与核心需求**\n乙游受众。值得注意的是评论区呈现出的态度——**受众没有因为粗糙立刻划走,而是开始认真设想角色、剧情和玩法应该怎样做才更好玩**。有评论直言:\"AI?半成品?是问题吗?\"\n- 吸引力落点是**百无禁忌的自由度**:PV 最后一幕,国王长出一对狼耳,女主用金手指\"点\"出一把金光闪闪的气垫梳为傲娇皇帝顺毛;制作组自陈\"主打一个雷区蹦迪,爽之爽之\"\n- 这种自由、大胆、丰富的体验,很难在传统乙游产品中出现\n\n**技术与数据壁垒**\n技术支持来自 **爱诗科技(PixVerse)**——专注 AI 视频生成,团队由其孵化并保持独立运作。PixVerse 的 **PixVerse Game** 被称为\"全球首个实时视频驱动的游戏引擎\":由「游戏机制」判定能否执行与输赢、「世界模型」把规则变成可见可听的画面、「智能体」充当实时导演兼场记(爱范儿实测)。\n- 对 PixVerse 而言,与这类制作组合作是其探索 AI 多模态生成与游戏引擎技术的一部分\n- 团队自身壁垒有限——真正的稀缺性在\"野生创作者 + AI 管线\"这个组合本身\n\n**风险与局限**\n- **与商业化产品差距明显**:5 位男主时代背景五花八门,世界观谈不上严密;比起成熟乙游的角色塑造、长线运营与付费设计,它更像一场个人兴趣驱动的创作实验\n- **玩家对 AI 的接受度仍低**,画面表现算不上成熟,批评声音不少\n- 无公司、无成熟研发团队,长线交付能力未经验证\n\n**策略启示**\n- **这是\"AI 让个人创作者进入重管线赛道\"最有说服力的样本**:乙游本是最依赖工业化管线的品类(3D 建模、海量剧情、长线运营),按行业逻辑下一个主战场应发生在几家有成熟管线和宣发资源的厂商之间——而三个女生用 AI 挤进了这场对话。\n- **受众态度的转变比产品本身更值得关注**:抛开消费关系、纯从观众视角出发时,粗糙不必然导致划走,反而激发了\"应该怎么做才更好玩\"的共创式讨论。这为 AI 内容的早期发布策略提供了反直觉的依据——**先发布不完美版本换取真实反馈,可能优于闭门打磨**。\n- **差异化不在技术,在\"百无禁忌\"**:它能提供的自由、大胆、丰富,恰恰是成熟商业乙游因合规与运营考量而做不出来的——这是小团队真正的缝隙。\n\n信息来源:《405游局》播客(2026-07-15)、爱范儿 PixVerse Game 实测(2026-07)、行业观察报道(2026-07)",
+      "funding_detail": "由爱诗科技(PixVerse)孵化,目前保持独立运作。",
       "platform": "未知",
       "launch_date": "",
       "team_members": [
@@ -2222,8 +2298,9 @@
         }
       ],
       "batch": "常态跟踪·2026",
-      "gameplay_theme": "AI男友",
-      "gameplay_facets": "AI陪伴"
+      "gameplay_theme": "AI男友,多模态玩法",
+      "gameplay_facets": "AI陪伴",
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 84,
@@ -2257,7 +2334,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/72e89391d0f3ea3732854b8d41a0ea00ba834428/ss_72e89391d0f3ea3732854b8d41a0ea00ba834428.1920x1080.jpg?t=1784011351",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193330/87ea46e9ab3b63a7567397d5192486743eae7049/ss_87ea46e9ab3b63a7567397d5192486743eae7049.1920x1080.jpg?t=1784011351"
       ],
-      "sort_weight": 29.5
+      "sort_weight": 29.5,
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 85,
@@ -2285,7 +2363,8 @@
       "batch": "常态跟踪·2026",
       "gameplay_theme": "",
       "gameplay_facets": "",
-      "sort_weight": 30.5
+      "sort_weight": 30.5,
+      "scale_tier": "独立/Indie"
     },
     {
       "id": 86,
@@ -2319,7 +2398,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/f13a0f6b342fb580dd86f4813c0b56f6b3ef0c4c/ss_f13a0f6b342fb580dd86f4813c0b56f6b3ef0c4c.1920x1080.jpg?t=1784257976",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/f4a5a06a62e68382de417fb9ca88ef2223b78b94/ss_f4a5a06a62e68382de417fb9ca88ef2223b78b94.1920x1080.jpg?t=1784257976"
       ],
-      "sort_weight": 31.5
+      "sort_weight": 31.5,
+      "scale_tier": "大厂/大厂孵化"
     },
     {
       "id": 87,
@@ -2352,7 +2432,8 @@
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/70f3d80a21c43df4567386c78ff1ec285a019e10/ss_70f3d80a21c43df4567386c78ff1ec285a019e10.1920x1080.jpg?t=1784109676",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/4f4dfde4868b0e37b2d00dd9f8fdb9facf8808e1/ss_4f4dfde4868b0e37b2d00dd9f8fdb9facf8808e1.1920x1080.jpg?t=1784109676",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4532590/fcfff3f250bfd9c8cf65bb2096ce12f9016f5d8b/ss_fcfff3f250bfd9c8cf65bb2096ce12f9016f5d8b.1920x1080.jpg?t=1784109676"
-      ]
+      ],
+      "scale_tier": "大厂/大厂孵化"
     }
   ],
   "events": [
@@ -3768,6 +3849,15 @@
       "content": "如何评价林离Olivia桌面软件《BSide: Olivia Lin》登录Steam抢先体验?(知乎讨论)",
       "url": "https://www.zhihu.com/question/2050995360852717840",
       "created_at": "2026-07-16 12:00:00"
+    },
+    {
+      "id": 290,
+      "game_id": 83,
+      "event_type": "相关文章",
+      "event_date": "2026-07",
+      "content": "实测 PixVerse Game:当游戏可以「随玩随做」,是什么体验——开篇即为「万千」三名女生用AI做快穿乙游PV、3周完成传统3-6个月3D演出的故事(爱范儿)",
+      "url": "https://www.ifanr.com/1672092",
+      "created_at": "2026-07-17 12:00:00"
     }
   ],
   "insights": [

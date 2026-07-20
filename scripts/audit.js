@@ -8,6 +8,7 @@ const ENUM = {
   region: ['国内', '海外', '未知'],
   platform: ['PC端', '移动端', '网页', '多平台', '未知'],
   gameplay_main: ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'],
+  scale_tier: ['大厂/大厂孵化', '融资创业', '独立/Indie'],
 };
 // gameplay_sub 依赖 gameplay_main（'' 表示允许留空）
 const SUB = {
@@ -19,7 +20,7 @@ const SUB = {
   '传统品类+AI': ['AI NPC', 'AI 队友', ''],
 };
 const FACET_ENUM = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
-const REQUIRED = ['product_name', 'company_name', 'status', 'region', 'gameplay_main', 'platform'];
+const REQUIRED = ['product_name', 'company_name', 'status', 'region', 'gameplay_main', 'platform', 'scale_tier'];
 const INTRO_REQUIRED = ['一句话定位', '策略启示']; // 必填小标题(核心玩法/数据表现标题措辞不一,单列告警)
 
 const issues = [];
