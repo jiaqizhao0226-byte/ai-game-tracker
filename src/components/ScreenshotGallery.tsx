@@ -1,21 +1,30 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { assetUrl } from '@/lib/asset';
 
 /**
  * 实机截图画廊：网格缩略图 + 点击放大的灯箱。
- * Steam 素材为 16:9 横屏走 2 列；App Store(mzstatic)与 TapTap 为手机竖屏走 4 列窄栏。
+ * 竖图（手机端素材）走 4 列窄栏，横图（PC/主机素材）走 2 列 16:9。
+ * 方向不能只按来源猜——TapTap 既有手游竖图（乌托）也有 PC 游戏横图（言灵计划），
+ * 故以来源作初值避免首屏跳动，首图加载后再用真实宽高比校正。
  * 注：TapTap CDN 有 Referer 防盗链，外链在本站必然 567，故其素材一律转存本地 /images/shots/tt_*。
  */
 export default function ScreenshotGallery({ name, shots }: { name: string; shots: string[] }) {
   const host = shots[0];
   const isAppStore = host.includes('mzstatic.com');
   const isTapTap = host.includes('tapimg.com') || host.includes('/shots/tt_');
-  const isPortrait = isAppStore || isTapTap;
   const source = isAppStore ? 'App Store 官方商店页' : isTapTap ? 'TapTap 官方商店页' : 'Steam 官方商店页';
+  const [isPortrait, setIsPortrait] = useState(isAppStore || isTapTap);
   const [idx, setIdx] = useState<number | null>(null);
+  const firstRef = useRef<HTMLImageElement>(null);
+
+  // SSR 出的 img 常在水合前就加载完，此时 onLoad 不再触发——挂载后主动补测一次
+  useEffect(() => {
+    const im = firstRef.current;
+    if (im?.complete && im.naturalWidth) setIsPortrait(im.naturalHeight > im.naturalWidth);
+  }, []);
 
   useEffect(() => {
     if (idx === null) return;
@@ -39,9 +48,11 @@ export default function ScreenshotGallery({ name, shots }: { name: string; shots
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
             key={i}
+            ref={i === 0 ? firstRef : undefined}
             src={assetUrl(src)}
             alt={`${name} 实机截图 ${i + 1}`}
-            loading="lazy"
+            loading={i === 0 ? 'eager' : 'lazy'}
+            onLoad={i === 0 ? e => setIsPortrait(e.currentTarget.naturalHeight > e.currentTarget.naturalWidth) : undefined}
             onClick={() => setIdx(i)}
             className={`w-full border border-neutral-200 bg-neutral-100 cursor-zoom-in hover:opacity-90 transition-opacity ${isPortrait ? 'h-auto' : 'aspect-video object-cover'}`}
           />
