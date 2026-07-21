@@ -241,7 +241,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             key={game.id}
             href={`/game/${game.id}`}
             onClick={() => { try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); } catch {} }}
-            className="bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-md cursor-pointer transition-all flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
+            className="card-interactive bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-lg cursor-pointer flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
           >
             {game.featured && (
               <div className="absolute top-2.5 left-2.5 z-10 inline-flex items-center gap-1 bg-white/95 backdrop-blur-sm text-amber-700 text-[10px] font-bold tracking-wide pl-1.5 pr-2 py-1 rounded-full shadow-sm ring-1 ring-amber-300/70">

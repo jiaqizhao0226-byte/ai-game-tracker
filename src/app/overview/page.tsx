@@ -1,6 +1,7 @@
 import data from '../../data.json';
 import changelog from '../../changelog.json';
 import ChangelogBox from './ChangelogBox';
+import RollingNumber from '../../components/RollingNumber';
 
 const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
 const NATIVE_MAINS = MAIN_ORDER.slice(0, 5);
@@ -33,10 +34,14 @@ export default function OverviewPage() {
   // 比 2πR 短约 0.7px，若按 2πR 算 dash，最后一段会超出末端绕回起点，
   // 在 12 点方向叠出一个台阶状缺口。
   const R = 68, SW = 30, LEN = 100;
+  // 绘制动画：每段的 delay 取它前面所有段的累计占比、duration 取自身占比，
+  // 接力起来就是一支笔匀速画完一圈。缓动必须 linear——若每段各自 ease，
+  // 会在每个扇区边界重新加减速，一圈下来是顿挫的而不是匀速的。
+  const DRAW_MS = 1100;
   let acc = 0;
   const arcs = slices.map(s => {
     const len = (s.count / total) * LEN;
-    const arc = { ...s, len, offset: -acc };
+    const arc = { ...s, len, offset: -acc, delay: (acc / LEN) * DRAW_MS, dur: (len / LEN) * DRAW_MS };
     acc += len;
     return arc;
   });
@@ -57,20 +62,19 @@ export default function OverviewPage() {
       <section className="bg-white border border-neutral-200 shadow-sm mb-12 grid grid-cols-1 md:grid-cols-[minmax(0,260px)_minmax(0,1fr)]">
         <div className="p-8 flex flex-col justify-center border-b md:border-b-0 md:border-r border-neutral-100">
           <div className="text-[10px] uppercase tracking-widest font-mono text-neutral-400">收录产品</div>
-          <div className="text-6xl font-bold text-neutral-900 mt-2 tabular-nums leading-none">{games.length}</div>
+          <RollingNumber value={games.length} className="text-6xl font-bold text-neutral-900 mt-2 leading-none" />
           <div className="mt-5 space-y-1.5 text-xs font-mono">
-            <div className="flex items-center gap-2 text-neutral-600">
-              <span className="w-2.5 h-2.5 bg-indigo-600 inline-block shrink-0" />
-              AI Native <span className="text-neutral-900 font-bold ml-auto tabular-nums">{nativeCount}</span>
-            </div>
-            <div className="flex items-center gap-2 text-neutral-600">
-              <span className="w-2.5 h-2.5 bg-teal-600 inline-block shrink-0" />
-              AI in Game <span className="text-neutral-900 font-bold ml-auto tabular-nums">{inGameCount}</span>
-            </div>
-            <div className="flex items-center gap-2 text-neutral-600">
-              <span className="w-2.5 h-2.5 inline-block shrink-0" style={{ background: COLORS['AI for Game'] }} />
-              AI for Game <span className="text-neutral-900 font-bold ml-auto tabular-nums">{toolCount}</span>
-            </div>
+            {[
+              { label: 'AI Native', n: nativeCount, bg: '#4f46e5' },
+              { label: 'AI in Game', n: inGameCount, bg: '#0d9488' },
+              { label: 'AI for Game', n: toolCount, bg: COLORS['AI for Game'] },
+            ].map((t, i) => (
+              <div key={t.label} className="anim-rise flex items-center gap-2 text-neutral-600"
+                style={{ ['--d' as string]: `${360 + i * 80}ms` } as React.CSSProperties}>
+                <span className="w-2.5 h-2.5 inline-block shrink-0" style={{ background: t.bg }} />
+                {t.label} <span className="text-neutral-900 font-bold ml-auto tabular-nums">{t.n}</span>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -87,15 +91,20 @@ export default function OverviewPage() {
                 strokeDasharray={`${a.len} ${LEN - a.len}`}
                 strokeDashoffset={a.offset}
                 transform="rotate(-90 90 90)"
+                style={{ animation: `draw-arc ${a.dur}ms linear ${a.delay}ms both` }}
               />
             ))}
-            <text x="90" y="85" textAnchor="middle" className="fill-neutral-900" style={{ fontSize: 22, fontWeight: 700 }}>{total}</text>
-            <text x="90" y="102" textAnchor="middle" className="fill-neutral-400" style={{ fontSize: 9, letterSpacing: 1 }}>PRODUCTS</text>
+            {/* 中心文字等笔画到大半圈再浮现，避免与绘制过程争夺视线 */}
+            <text x="90" y="85" textAnchor="middle" className="fill-neutral-900"
+              style={{ fontSize: 22, fontWeight: 700, animation: `fade-in var(--dur-slow) var(--ease-entrance) ${DRAW_MS * 0.55}ms both` }}>{total}</text>
+            <text x="90" y="102" textAnchor="middle" className="fill-neutral-400"
+              style={{ fontSize: 9, letterSpacing: 1, animation: `fade-in var(--dur-slow) var(--ease-entrance) ${DRAW_MS * 0.7}ms both` }}>PRODUCTS</text>
           </svg>
 
           <ul className="flex-1 w-full space-y-2">
-            {slices.map(s => (
-              <li key={s.name} className="flex items-center gap-2.5 text-xs font-mono">
+            {slices.map((s, i) => (
+              <li key={s.name} className="anim-rise flex items-center gap-2.5 text-xs font-mono"
+                style={{ ['--d' as string]: `${DRAW_MS * 0.25 + i * 70}ms` } as React.CSSProperties}>
                 <span className="w-2.5 h-2.5 shrink-0" style={{ background: COLORS[s.name] }} />
                 <span className="text-neutral-600 truncate">{s.name}</span>
                 <span className="ml-auto text-neutral-900 font-bold tabular-nums">{s.count}</span>

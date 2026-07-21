@@ -2,8 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * 动效 token
+ * 时长参考 IBM Carbon Motion：productive（频繁重复的交互，要快到不被注意）
+ * 与 expressive（每次访问只发生一次的开场，允许有存在感）两档分开。
+ * 缓动用 Material Design 3 的 emphasized decelerate，入场手感比线性更沉。
+ */
+:root {
+  --dur-fast: 120ms;   /* 颜色、透明度等微反馈 */
+  --dur-base: 220ms;   /* hover 位移、阴影 */
+  --dur-slow: 480ms;   /* 元素入场 */
+  --dur-story: 900ms;  /* 叙事级：数字滚动、圆盘绘制 */
+
+  --ease-standard: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --ease-entrance: cubic-bezier(0.05, 0.7, 0.1, 1); /* M3 emphasized decelerate */
+}
+
 @layer base {
   body {
     @apply bg-[#F9FAFB] text-neutral-900 font-sans antialiased;
   }
+}
+
+@layer components {
+  /* 入场：淡入 + 轻微上移。用 --d 控制错开延迟 */
+  .anim-rise {
+    opacity: 0;
+    animation: rise var(--dur-slow) var(--ease-entrance) forwards;
+    animation-delay: var(--d, 0ms);
+  }
+
+  /* 环形图扇区：从零长度画到目标，配合 pathLength=100 使用 */
+  .anim-arc {
+    animation: draw-arc var(--dur-story) var(--ease-entrance) forwards;
+    animation-delay: var(--d, 0ms);
+  }
+
+  /* 数字滚轮的单列：最终 transform 写在内联 style 上（SSR 即最终态），
+     keyframes 只给 from，to 自动取元素计算值，避免水合时数字闪跳 */
+  .digit-col {
+    animation: digit-roll var(--dur-story) var(--ease-entrance) both;
+    animation-delay: var(--d, 0ms);
+  }
+
+  /*
+   * 可交互卡片。只列出实际会变的属性——transition-all 会监听每个属性，
+   * 布局类属性一旦被带上就会触发重排。位移控制在 2px：
+   * Carbon 对 productive motion 的要求是「能被感知，但不该被注意到」。
+   */
+  .card-interactive {
+    transition:
+      transform var(--dur-base) var(--ease-standard),
+      box-shadow var(--dur-base) var(--ease-standard),
+      border-color var(--dur-base) var(--ease-standard);
+  }
+  .card-interactive:hover {
+    transform: translateY(-2px);
+  }
+  /* 封面缓慢推近，比卡片本身慢一档，形成层次而不是整体平移 */
+  .card-interactive img {
+    transition: transform var(--dur-slow) var(--ease-standard);
+  }
+  .card-interactive:hover img {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes digit-roll {
+  from { transform: translateY(0); }
+}
+
+/* SVG 内的元素只做透明度——SVG 上的 CSS transform 各浏览器基准点不一致 */
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes draw-arc {
+  from { stroke-dasharray: 0 100; }
+}
+
+/*
+ * WCAG 2.3.3：系统开启「减弱动态效果」时一律降级为瞬时。
+ * 位移与旋转会诱发前庭功能障碍用户的眩晕，这是无障碍硬要求，不是可选项。
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .anim-rise { opacity: 1; transform: none; }
 }
