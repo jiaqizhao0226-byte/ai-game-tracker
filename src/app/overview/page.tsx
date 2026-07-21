@@ -28,11 +28,14 @@ export default function OverviewPage() {
   const toolCount = games.filter(g => g.gameplay_main === TOOL_MAIN).length;
   const lastUpdated = changelog[0]?.date ?? '';
 
-  // 环形图：用 stroke-dasharray 在圆环上依次铺开每个扇区
-  const R = 68, SW = 30, C = 2 * Math.PI * R;
+  // 环形图：用 stroke-dasharray 在圆环上依次铺开每个扇区。
+  // 长度一律以 pathLength=100 归一化——浏览器把 <circle> 转成贝塞尔路径后的实际长度
+  // 比 2πR 短约 0.7px，若按 2πR 算 dash，最后一段会超出末端绕回起点，
+  // 在 12 点方向叠出一个台阶状缺口。
+  const R = 68, SW = 30, LEN = 100;
   let acc = 0;
   const arcs = slices.map(s => {
-    const len = (s.count / total) * C;
+    const len = (s.count / total) * LEN;
     const arc = { ...s, len, offset: -acc };
     acc += len;
     return arc;
@@ -80,7 +83,8 @@ export default function OverviewPage() {
                 fill="none"
                 stroke={COLORS[a.name]}
                 strokeWidth={SW}
-                strokeDasharray={`${a.len} ${C - a.len}`}
+                pathLength={LEN}
+                strokeDasharray={`${a.len} ${LEN - a.len}`}
                 strokeDashoffset={a.offset}
                 transform="rotate(-90 90 90)"
               />
