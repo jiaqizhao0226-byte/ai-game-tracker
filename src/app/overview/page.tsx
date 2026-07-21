@@ -2,9 +2,10 @@ import data from '../../data.json';
 import changelog from '../../changelog.json';
 import ChangelogBox from './ChangelogBox';
 
-const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
+const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
 const NATIVE_MAINS = MAIN_ORDER.slice(0, 5);
-// AI Native 走靛蓝色阶、AI in Game 用青色区分，与看板既有配色一致
+const TOOL_MAIN = 'AI for Game';
+// AI Native 走靛蓝色阶、AI in Game 用青色、AI for Game(研发侧)用琥珀色区分
 const COLORS: Record<string, string> = {
   'AI陪伴': '#4f46e5',
   'AI叙事对话': '#6366f1',
@@ -12,6 +13,7 @@ const COLORS: Record<string, string> = {
   'AI Agent(智能体)': '#a5b4fc',
   'AI生成UGC': '#c7d2fe',
   '传统品类+AI': '#0d9488',
+  'AI for Game': '#d97706',
 };
 
 export default function OverviewPage() {
@@ -23,6 +25,7 @@ export default function OverviewPage() {
   const total = slices.reduce((a, s) => a + s.count, 0);
   const nativeCount = games.filter(g => NATIVE_MAINS.includes(g.gameplay_main)).length;
   const inGameCount = games.filter(g => g.gameplay_main === '传统品类+AI').length;
+  const toolCount = games.filter(g => g.gameplay_main === TOOL_MAIN).length;
   const lastUpdated = changelog[0]?.date ?? '';
 
   // 环形图：用 stroke-dasharray 在圆环上依次铺开每个扇区
@@ -60,6 +63,10 @@ export default function OverviewPage() {
             <div className="flex items-center gap-2 text-neutral-600">
               <span className="w-2.5 h-2.5 bg-teal-600 inline-block shrink-0" />
               AI in Game <span className="text-neutral-900 font-bold ml-auto tabular-nums">{inGameCount}</span>
+            </div>
+            <div className="flex items-center gap-2 text-neutral-600">
+              <span className="w-2.5 h-2.5 inline-block shrink-0" style={{ background: COLORS['AI for Game'] }} />
+              AI for Game <span className="text-neutral-900 font-bold ml-auto tabular-nums">{toolCount}</span>
             </div>
           </div>
         </div>

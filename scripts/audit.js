@@ -7,7 +7,7 @@ const ENUM = {
   funding_round: ['未融资', '天使轮', 'A轮', 'B轮及以上', '已上市', '被收购', '大厂孵化', '未知'],
   region: ['国内', '海外', '未知'],
   platform: ['PC端', '移动端', '网页', '多平台', '未知'],
-  gameplay_main: ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'],
+  gameplay_main: ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI', 'AI for Game'],
   scale_tier: ['大厂/大厂孵化', '融资创业', '独立/Indie'],
 };
 // gameplay_sub 依赖 gameplay_main（'' 表示允许留空）
@@ -18,6 +18,7 @@ const SUB = {
   'AI Agent(智能体)': ['智能体社会'],
   'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
   '传统品类+AI': ['AI NPC', 'AI 队友', ''],
+  'AI for Game': ['游戏基础模型', '一站式生成平台', '创意孵化平台', '创作与分发平台', '资产与动捕'],
 };
 const FACET_ENUM = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
 const REQUIRED = ['product_name', 'company_name', 'status', 'region', 'gameplay_main', 'platform', 'scale_tier'];

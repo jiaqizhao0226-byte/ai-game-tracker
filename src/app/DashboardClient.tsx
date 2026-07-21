@@ -134,7 +134,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 
 
   // 分类固定顺序：AI Native 5 类在前，AI in Game 在后；子类按大类顺序分组展示
-  const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
+  const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
   const SUB_ORDER: Record<string, string[]> = {
     'AI陪伴': ['AI游戏陪玩', 'AI伴侣', 'AI宠物'],
     'AI叙事对话': ['对话模拟', '互动叙事'],
@@ -142,6 +142,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     'AI Agent(智能体)': ['智能体社会'],
     'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
     '传统品类+AI': ['AI NPC', 'AI 队友'],
+    'AI for Game': ['游戏基础模型', '一站式生成平台', '创意孵化平台', '创作与分发平台', '资产与动捕'],
   };
   const subsInData = new Set(games.flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []).filter(Boolean));
   const activeMains = filterMainTypes.length ? MAIN_ORDER.filter(m => filterMainTypes.includes(m)) : MAIN_ORDER;
@@ -201,6 +202,8 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 "AI陪伴", "AI叙事对话", "AI玩法机制", "AI Agent(智能体)", "AI生成UGC",
                 { group: "AI in Game" },
                 "传统品类+AI",
+                { group: "AI for Game (研发侧)" },
+                "AI for Game",
               ]}
               selected={filterMainTypes}
               onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }}

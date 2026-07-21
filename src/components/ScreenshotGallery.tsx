@@ -2,14 +2,19 @@
 
 import { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { assetUrl } from '@/lib/asset';
 
 /**
  * 实机截图画廊：网格缩略图 + 点击放大的灯箱。
- * Steam 素材为 16:9 横屏走 2 列；App Store(mzstatic) 为手机竖屏走 4 列窄栏。
+ * Steam 素材为 16:9 横屏走 2 列；App Store(mzstatic)与 TapTap 为手机竖屏走 4 列窄栏。
+ * 注：TapTap CDN 有 Referer 防盗链，外链在本站必然 567，故其素材一律转存本地 /images/shots/tt_*。
  */
 export default function ScreenshotGallery({ name, shots }: { name: string; shots: string[] }) {
-  const isPortrait = shots[0].includes('mzstatic.com');
-  const source = isPortrait ? 'App Store 官方商店页' : 'Steam 官方商店页';
+  const host = shots[0];
+  const isAppStore = host.includes('mzstatic.com');
+  const isTapTap = host.includes('tapimg.com') || host.includes('/shots/tt_');
+  const isPortrait = isAppStore || isTapTap;
+  const source = isAppStore ? 'App Store 官方商店页' : isTapTap ? 'TapTap 官方商店页' : 'Steam 官方商店页';
   const [idx, setIdx] = useState<number | null>(null);
 
   useEffect(() => {
@@ -34,7 +39,7 @@ export default function ScreenshotGallery({ name, shots }: { name: string; shots
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
             key={i}
-            src={src}
+            src={assetUrl(src)}
             alt={`${name} 实机截图 ${i + 1}`}
             loading="lazy"
             onClick={() => setIdx(i)}
@@ -53,7 +58,7 @@ export default function ScreenshotGallery({ name, shots }: { name: string; shots
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={shots[idx]}
+            src={assetUrl(shots[idx])}
             alt={`${name} 实机截图大图 ${idx + 1}`}
             onClick={e => e.stopPropagation()}
             className="max-w-[92vw] max-h-[88vh] object-contain shadow-2xl"
