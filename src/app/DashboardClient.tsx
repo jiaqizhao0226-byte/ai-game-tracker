@@ -272,7 +272,12 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                     </span>
                   )}
                 </div>
-                <span className="text-[10px] uppercase tracking-wider px-1.5 py-0.5 bg-neutral-100 text-neutral-600 border border-neutral-200 font-mono whitespace-nowrap">
+                {/* 已停运需与在营状态一眼可分，否则读者会把退场产品当成在跑的 */}
+                <span className={`text-[10px] uppercase tracking-wider px-1.5 py-0.5 border font-mono whitespace-nowrap ${
+                  game.status === '已停运'
+                    ? 'bg-white text-neutral-400 border-neutral-300 border-dashed line-through decoration-neutral-300'
+                    : 'bg-neutral-100 text-neutral-600 border-neutral-200'
+                }`}>
                   {game.status}
                 </span>
               </div>

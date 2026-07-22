@@ -63,7 +63,11 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
               {game.gameplay_facets && game.gameplay_facets.split(/[,，]+/).map((f: string) => f.trim()).filter(Boolean).map((f: string) => (
                 <span key={f} className="text-[10px] uppercase font-mono px-2 py-1 bg-neutral-100 text-neutral-500 border border-neutral-200" title="次品类标签">+{f}</span>
               ))}
-              <span className="text-[10px] uppercase font-mono px-2 py-1 border border-neutral-300 text-neutral-600 bg-white">{game.status}</span>
+              <span className={`text-[10px] uppercase font-mono px-2 py-1 border bg-white ${
+                game.status === '已停运'
+                  ? 'border-neutral-300 border-dashed text-neutral-400 line-through decoration-neutral-300'
+                  : 'border-neutral-300 text-neutral-600'
+              }`}>{game.status}</span>
               {game.platform && game.platform !== '未知' && (
                 <span className="text-[10px] uppercase font-mono px-2 py-1 border border-neutral-300 text-neutral-600 bg-white">{game.platform}</span>
               )}
