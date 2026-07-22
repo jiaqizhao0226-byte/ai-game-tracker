@@ -66,6 +66,15 @@
   .card-interactive:hover img {
     transform: scale(1.04);
   }
+
+  /* 横向滚动区：隐藏滚动条但保留滚动能力（含触摸板/触屏滑动） */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes rise {
