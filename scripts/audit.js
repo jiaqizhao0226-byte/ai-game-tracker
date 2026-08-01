@@ -22,7 +22,8 @@ const SUB = {
 };
 const FACET_ENUM = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
 const REQUIRED = ['product_name', 'company_name', 'status', 'region', 'gameplay_main', 'platform', 'scale_tier'];
-const INTRO_REQUIRED = ['一句话定位', '策略启示']; // 必填小标题(核心玩法/数据表现标题措辞不一,单列告警)
+const INTRO_REQUIRED = ['策略启示']; // 必填小标题（「一句话定位」已提升为 description 简介）
+const DESC_MAX = 60; // 简介上限：目标一句话(≤50)，超 60 视为过长
 
 const issues = [];
 const add = (sev, id, name, field, msg) => issues.push({ sev, id, name, field, msg });
@@ -68,6 +69,10 @@ for (const g of d.games) {
       if (!intro.includes(`**${h}**`)) add('骨架', g.id, tag, 'product_intro', `缺小标题 **${h}**`);
     }
   }
+  // description 简介：名字下方那句概览，过长会在卡片/详情页变成一堵墙
+  const dlen = (g.description || '').length;
+  if (!dlen) add('缺失', g.id, tag, 'description', '简介为空');
+  else if (dlen > DESC_MAX) add('简介', g.id, tag, 'description', `简介 ${dlen} 字，超过 ${DESC_MAX}（应压成一句话）`);
   // url 格式
   if (g.url && !/^https?:\/\//.test(g.url)) add('链接', g.id, tag, 'url', `非法 URL「${g.url}」`);
 }
@@ -83,7 +88,7 @@ for (const e of d.events) {
 const bySev = {};
 for (const i of issues) (bySev[i.sev] ??= []).push(i);
 console.log(`\n共 ${issues.length} 处问题\n${'='.repeat(60)}`);
-for (const sev of ['缺失', '枚举', '主题', '次品类', '骨架', '引用', '链接']) {
+for (const sev of ['缺失', '枚举', '主题', '次品类', '骨架', '简介', '引用', '链接']) {
   const list = bySev[sev] || [];
   if (!list.length) continue;
   console.log(`\n【${sev}】${list.length} 处`);
