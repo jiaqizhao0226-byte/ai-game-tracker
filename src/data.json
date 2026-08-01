@@ -772,7 +772,13 @@
    "team_background": "韩国TainAI Inc.，总部首尔江南区，15人团队。主打东亚情感市场，放弃美国市场策略。",
    "batch": "常态跟踪·2024",
    "gameplay_facets": "",
-   "scale_tier": "融资创业"
+   "scale_tier": "融资创业",
+   "screenshots": [
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/07/7e/fb/077efbe0-3386-50dd-79c2-30a2a04e0308/d2126e71-8d72-4941-b301-2dca395261da_5.5_U1112_U1167_U11bc_-01.jpg/1286x0w.jpg",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/10/eb/2d/10eb2d55-fe67-d737-9353-4bf5c29b8f99/79a53533-12b8-4f09-88cb-03c184d3d3b9_5.5_U1112_U1167_U11bc_-02.jpg/1286x0w.jpg",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/14/24/c7/1424c7e2-9a92-188c-680e-f7ac603f837a/f93b2bb4-0c0a-44de-b953-62669fb94eeb_5.5_U1112_U1167_U11bc_-03.jpg/1286x0w.jpg",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2c/40/5c/2c405c65-75c2-d66c-d889-0e07cec8589d/2533426d-ce2e-4e9e-b2ec-7293a5362c73_5.5_U1112_U1167_U11bc_-04.jpg/1286x0w.jpg"
+   ]
   },
   {
    "product_name": "言灵计划",
@@ -882,7 +888,15 @@
    ],
    "batch": "常态跟踪·2024",
    "gameplay_facets": "",
-   "scale_tier": "融资创业"
+   "scale_tier": "融资创业",
+   "screenshots": [
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2726370/5bf0cb874972e30bd761c00a9247582cfd93fd9f/ss_5bf0cb874972e30bd761c00a9247582cfd93fd9f.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2726370/ss_a2de70538c9520c96fcb76d882f84819665b69b5.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2726370/ss_8fe55477cfce9234001d130eddf369675fe4c689.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2726370/746e3a029049861cdfc3ca465d236e3f1f9f153c/ss_746e3a029049861cdfc3ca465d236e3f1f9f153c.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2726370/b5917b355e3aee4cd03514ba5e4ac4b3f1dcbeb2/ss_b5917b355e3aee4cd03514ba5e4ac4b3f1dcbeb2.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2726370/ss_65cc10b2df4a743dacac433159b65be7939c9319.1920x1080.jpg"
+   ]
   },
   {
    "product_name": "AI2U",
@@ -1496,7 +1510,15 @@
    "batch": "常态跟踪·2024",
    "gameplay_theme": "派对游戏",
    "gameplay_facets": "AI陪伴",
-   "scale_tier": "融资创业"
+   "scale_tier": "融资创业",
+   "screenshots": [
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/ss_4465163e418fc00328af26a6ad0295b2c1f74ce1.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/ss_db71d5d4f5f857b02bd6474d25b909d530d420e8.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/ss_b974e661094c3b72d99a67589f035db2d6daefdf.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/ss_def83ab353d6c2c6dea1902eb343c47dacd503f6.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/ss_c3577eb64f06118e7337e24b2c3c4d62d6ded0d6.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2957820/ss_bf87fbfccd44607773c817f490345e90b9ba3f5d.1920x1080.jpg"
+   ]
   },
   {
    "product_name": "星海自走牌",
@@ -3548,7 +3570,15 @@
    "gameplay_sub": "AI NPC",
    "description": "「把语言课变成 RPG」——用 AI 引擎做的、对齐 CEFR 标准的沉浸式语言学习游戏。",
    "team_background": "Moonspire Games，加拿大温哥华。联合创始人 Manuel Tausch（多语者、艾美奖视效总监）与 Philipp Amelung（美术总监）。获 Game Con Canada 2024/2025 奖项。预计 2027-03 发售。ChinaJoy 2026 参展项目，展位 N2-AI-68。",
-   "product_intro": "**核心玩法机制**(AI介入:核心驱动)\n- 底盘是**叙事 RPG**：扮演 Zero 拯救地球，探索 Babyl Moon、战斗、推进剧情\n- 语言学习被做进**进程核心**：把词汇/语法练习嵌入战斗与任务，学得越好、推进越快，教学内容对齐 CEFR 国际标准\n- 融合艾美奖级创意制作与自研 AI 引擎，面向全球学校及机构级语言项目（含 B2B）\n\n**数据表现**\n预计 **2027 年 3 月发售**，尚未上线。荣誉：Game Con Canada 2024「最具创新独立游戏」、2025「最佳工作室」。\n\n**用户画像与核心需求**\n语言学习者与学校/机构——痛点是「背单词枯燥、坚持不下来」，用 RPG 进程把学习动机内化。\n\n**商业化**\n面向学校与机构的语言项目（B2B），2025 Q4 启动 Kickstarter；C 端商业模式待定。\n\n**风险与局限**\n- 教育 + 游戏的老难题：**游戏性与教学有效性容易互相拖累**——太像游戏则学不到，太像课件则不好玩\n- 发售排到 2027，周期长\n\n**策略启示**\n- 展会新品、未发行。它是本批少见的**海外、教育垂类**样本：AI 用在「个性化教学内容生成 + 对齐标准」上，商业模式偏 B2B 机构——与库里 C 端娱乐向 AI 产品是两套逻辑，可作对照。"
+   "product_intro": "**核心玩法机制**(AI介入:核心驱动)\n- 底盘是**叙事 RPG**：扮演 Zero 拯救地球，探索 Babyl Moon、战斗、推进剧情\n- 语言学习被做进**进程核心**：把词汇/语法练习嵌入战斗与任务，学得越好、推进越快，教学内容对齐 CEFR 国际标准\n- 融合艾美奖级创意制作与自研 AI 引擎，面向全球学校及机构级语言项目（含 B2B）\n\n**数据表现**\n预计 **2027 年 3 月发售**，尚未上线。荣誉：Game Con Canada 2024「最具创新独立游戏」、2025「最佳工作室」。\n\n**用户画像与核心需求**\n语言学习者与学校/机构——痛点是「背单词枯燥、坚持不下来」，用 RPG 进程把学习动机内化。\n\n**商业化**\n面向学校与机构的语言项目（B2B），2025 Q4 启动 Kickstarter；C 端商业模式待定。\n\n**风险与局限**\n- 教育 + 游戏的老难题：**游戏性与教学有效性容易互相拖累**——太像游戏则学不到，太像课件则不好玩\n- 发售排到 2027，周期长\n\n**策略启示**\n- 展会新品、未发行。它是本批少见的**海外、教育垂类**样本：AI 用在「个性化教学内容生成 + 对齐标准」上，商业模式偏 B2B 机构——与库里 C 端娱乐向 AI 产品是两套逻辑，可作对照。",
+   "screenshots": [
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2521500/18ca50aaa2c90a85cfa27a8f34d777059f7be71e/ss_18ca50aaa2c90a85cfa27a8f34d777059f7be71e.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2521500/cd63281d6d4968e40e28b6cec42b06b348c2cd10/ss_cd63281d6d4968e40e28b6cec42b06b348c2cd10.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2521500/f5a0ebc42014ecd6bb3bfc5701679ebf3ad7610c/ss_f5a0ebc42014ecd6bb3bfc5701679ebf3ad7610c.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2521500/00729c64f2068f6f4ba93c4b15d4c721a91147a3/ss_00729c64f2068f6f4ba93c4b15d4c721a91147a3.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2521500/6044b47a758888e1ec78fc84ea7ff4995fdfef3b/ss_6044b47a758888e1ec78fc84ea7ff4995fdfef3b.1920x1080.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2521500/d1493862ac55c4e84bc8952c8b78d40ab74414e3/ss_d1493862ac55c4e84bc8952c8b78d40ab74414e3.1920x1080.jpg"
+   ]
   },
   {
    "updated_at": "2026-07-27 12:30:00",
