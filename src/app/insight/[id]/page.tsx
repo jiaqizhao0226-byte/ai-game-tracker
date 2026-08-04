@@ -84,7 +84,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
 
         {/* Content */}
         <div className="bg-white border border-neutral-200 p-8">
-          <InsightContent content={insight.content} />
+          <InsightContent content={insight.content} insightId={insight.id} insightTitle={insight.title} />
         </div>
 
         {/* Back button */}

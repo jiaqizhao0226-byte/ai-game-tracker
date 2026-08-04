@@ -274,7 +274,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
           <Link
             key={game.id}
             href={`/game/${game.id}`}
-            onClick={() => { try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); } catch {} }}
+            onClick={() => { try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); sessionStorage.setItem('backTo', JSON.stringify({ href: '/', label: '看板' })); } catch {} }}
             className={`card-interactive bg-white cursor-pointer flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden ${
               game.featured
                 ? 'border-2 border-amber-400 hover:border-amber-500 shadow-[0_0_0_3px_rgba(251,191,36,0.12)] hover:shadow-[0_0_0_3px_rgba(251,191,36,0.2),0_10px_20px_-8px_rgba(0,0,0,0.25)]'

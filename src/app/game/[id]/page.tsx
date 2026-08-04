@@ -4,8 +4,9 @@ import Link from 'next/link';
 import GameImage from '../../../components/GameImage';
 import ProductIntro from '../../../components/ProductIntro';
 import ScreenshotGallery from '../../../components/ScreenshotGallery';
-import { ArrowLeft, ChevronLeft, Link2 } from 'lucide-react';
+import { ChevronLeft, Link2 } from 'lucide-react';
 import EventsTabs from './EventsTabs';
+import BackLink, { BackBreadcrumb } from '../../../components/BackLink';
 import type { Metadata } from 'next';
 import { SITE_URL } from '../../../lib/site';
 
@@ -57,9 +58,10 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
       {/* Breadcrumb bar */}
       <div className="bg-white border-b border-neutral-200">
         <div className="max-w-[1200px] mx-auto px-6 sm:px-12 py-3 flex items-center gap-2 text-xs font-mono text-neutral-500">
-          <Link href="/" className="hover:text-neutral-900 transition-colors flex items-center gap-1">
-            <ChevronLeft className="w-3 h-3" /> 看板
-          </Link>
+          <span className="hover:text-neutral-900 transition-colors flex items-center gap-1">
+            <ChevronLeft className="w-3 h-3" />
+            <BackBreadcrumb className="hover:text-neutral-900 transition-colors" />
+          </span>
           <span className="text-neutral-300">/</span>
           <span className="text-neutral-700">{game.product_name}</span>
         </div>
@@ -243,9 +245,7 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
 
         {/* Back button */}
         <div className="mt-8 pt-6 border-t border-neutral-200">
-          <Link href="/" className="inline-flex items-center gap-2 px-6 py-2 text-xs font-bold uppercase tracking-wider bg-neutral-900 text-white hover:bg-neutral-800 transition-colors">
-            <ArrowLeft className="w-4 h-4" /> 返回看板
-          </Link>
+          <BackLink className="inline-flex items-center gap-2 px-6 py-2 text-xs font-bold uppercase tracking-wider bg-neutral-900 text-white hover:bg-neutral-800 transition-colors" />
         </div>
       </div>
     </main>

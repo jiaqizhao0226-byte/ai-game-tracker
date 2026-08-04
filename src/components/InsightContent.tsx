@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Link from 'next/link';
+import TrackedLink from './TrackedLink';
 import data from '../data.json';
 
 /**
@@ -20,7 +20,7 @@ const GAME_NAME: Record<number, string> = Object.fromEntries(
 );
 
 /** 把一行文本切成：普通文本 / **加粗** / #编号链接 */
-function renderInline(text: string, keyPrefix: string) {
+function renderInline(text: string, keyPrefix: string, nav?: { from: string; fromLabel: string }) {
   const out: React.ReactNode[] = [];
   // 同时匹配 **粗体** 与 #数字
   const re = /\*\*(.+?)\*\*|#(\d+)/g;
@@ -40,13 +40,15 @@ function renderInline(text: string, keyPrefix: string) {
       const name = GAME_NAME[id];
       out.push(
         name ? (
-          <Link
+          <TrackedLink
             key={`${keyPrefix}-g${i}`}
             href={`/game/${id}`}
+            from={nav?.from ?? '/'}
+            fromLabel={nav?.fromLabel ?? '看板'}
             className="text-indigo-600 hover:text-indigo-800 underline decoration-indigo-300 underline-offset-2 hover:decoration-indigo-600 font-medium"
           >
             {name}
-          </Link>
+          </TrackedLink>
         ) : (
           <span key={`${keyPrefix}-g${i}`}>#{id}</span>
         ),
@@ -59,8 +61,47 @@ function renderInline(text: string, keyPrefix: string) {
   return out;
 }
 
+/**
+ * 条形图块。正文里写：
+ *   ::bar 图表标题
+ *   标签|数值
+ *   ...
+ *   ::
+ * 纯 CSS 横向条形——中文标签横排更好读，也省掉一个图表库依赖。
+ */
+function BarChart({ title, rows }: { title: string; rows: Array<[string, number]> }) {
+  const max = Math.max(...rows.map(r => r[1]), 1);
+  const total = rows.reduce((s, r) => s + r[1], 0);
+  return (
+    <figure className="my-4 rounded-lg border border-neutral-200 bg-neutral-50/60 px-4 py-4">
+      {title && (
+        <figcaption className="text-xs font-bold text-neutral-700 mb-3 flex items-baseline gap-2">
+          {title}
+          <span className="font-mono text-[10px] font-normal text-neutral-400">n={total}</span>
+        </figcaption>
+      )}
+      <div className="space-y-1.5">
+        {rows.map(([label, v], i) => (
+          <div key={i} className="flex items-center gap-2 text-[13px]">
+            <span className="w-[112px] shrink-0 text-right text-neutral-600 leading-tight">{label}</span>
+            <div className="flex-1 h-5 bg-neutral-200/50 rounded-sm overflow-hidden">
+              <div
+                className="h-full bg-indigo-500 rounded-sm"
+                style={{ width: `${Math.max((v / max) * 100, 2)}%` }}
+              />
+            </div>
+            <span className="w-[64px] shrink-0 font-mono text-[11px] text-neutral-500 tabular-nums">
+              {v} · {((v / total) * 100).toFixed(1)}%
+            </span>
+          </div>
+        ))}
+      </div>
+    </figure>
+  );
+}
+
 /** 「> 案例：#70 #94 #75」→ 一排可点的案例卡片 */
-function CaseRow({ raw, keyPrefix }: { raw: string; keyPrefix: string }) {
+function CaseRow({ raw, keyPrefix, nav }: { raw: string; keyPrefix: string; nav: { from: string; fromLabel: string } }) {
   const ids = Array.from(raw.matchAll(/#(\d+)/g)).map(m => Number(m[1])).filter(id => GAME_NAME[id]);
   if (!ids.length) return null;
   const label = raw.replace(/^>\s*/, '').split(/[:：]/)[0].trim() || '案例';
@@ -69,14 +110,16 @@ function CaseRow({ raw, keyPrefix }: { raw: string; keyPrefix: string }) {
       <div className="text-[10px] font-mono uppercase tracking-widest text-neutral-400 mb-2">{label}</div>
       <div className="flex flex-wrap gap-2">
         {ids.map(id => (
-          <Link
+          <TrackedLink
             key={`${keyPrefix}-c${id}`}
             href={`/game/${id}`}
+            from={nav.from}
+            fromLabel={nav.fromLabel}
             className="inline-flex items-center gap-1.5 bg-white border border-neutral-300 hover:border-indigo-500 hover:bg-indigo-50 px-2.5 py-1 rounded text-xs text-neutral-700 hover:text-indigo-700 transition-colors"
           >
             <span className="font-mono text-[10px] text-neutral-400">#{id}</span>
             {GAME_NAME[id]}
-          </Link>
+          </TrackedLink>
         ))}
       </div>
     </div>
@@ -101,39 +144,55 @@ function parse(content: string): Block[] {
   return blocks;
 }
 
-function Body({ lines, kp }: { lines: string[]; kp: string }) {
-  return (
-    <>
-      {lines.map((line, i) => {
-        const t = line.trim();
-        if (!t) return <div key={`${kp}-s${i}`} className="h-1.5" />;
-        if (t.startsWith('>')) return <CaseRow key={`${kp}-c${i}`} raw={t} keyPrefix={`${kp}-${i}`} />;
-        if (t.startsWith('- ')) {
-          return (
-            <div key={`${kp}-l${i}`} className="flex gap-2 mb-1.5">
-              <span className="text-indigo-400 shrink-0 mt-0.5">▪</span>
-              <span className="flex-1">{renderInline(t.slice(2), `${kp}-${i}`)}</span>
-            </div>
-          );
-        }
-        return (
-          <p key={`${kp}-p${i}`} className="mb-2.5">
-            {renderInline(t, `${kp}-${i}`)}
-          </p>
-        );
-      })}
-    </>
-  );
+function Body({ lines, kp, nav }: { lines: string[]; kp: string; nav: { from: string; fromLabel: string } }) {
+  const out: React.ReactNode[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    const t = lines[i].trim();
+
+    // ::bar 标题 … :: → 条形图，整块一次消费掉
+    const bar = t.match(/^::bar\s*(.*)$/);
+    if (bar) {
+      const rows: Array<[string, number]> = [];
+      let j = i + 1;
+      for (; j < lines.length && lines[j].trim() !== '::'; j++) {
+        const m = lines[j].trim().match(/^(.+?)\|\s*(-?\d+(?:\.\d+)?)\s*$/);
+        if (m) rows.push([m[1].trim(), Number(m[2])]);
+      }
+      if (rows.length) out.push(<BarChart key={`${kp}-bar${i}`} title={bar[1].trim()} rows={rows} />);
+      i = j; // 跳过收尾的 ::
+      continue;
+    }
+
+    if (!t) { out.push(<div key={`${kp}-s${i}`} className="h-1.5" />); continue; }
+    if (t.startsWith('>')) { out.push(<CaseRow key={`${kp}-c${i}`} raw={t} keyPrefix={`${kp}-${i}`} nav={nav} />); continue; }
+    if (t.startsWith('- ')) {
+      out.push(
+        <div key={`${kp}-l${i}`} className="flex gap-2 mb-1.5">
+          <span className="text-indigo-400 shrink-0 mt-0.5">▪</span>
+          <span className="flex-1">{renderInline(t.slice(2), `${kp}-${i}`, nav)}</span>
+        </div>,
+      );
+      continue;
+    }
+    out.push(
+      <p key={`${kp}-p${i}`} className="mb-2.5">
+        {renderInline(t, `${kp}-${i}`, nav)}
+      </p>,
+    );
+  }
+  return <>{out}</>;
 }
 
-export default function InsightContent({ content }: { content: string }) {
+export default function InsightContent({ content, insightId, insightTitle }: { content: string; insightId: number; insightTitle: string }) {
+  const from = `/insight/${insightId}`;
+  const fromLabel = insightTitle.length > 12 ? insightTitle.slice(0, 12) + '…' : insightTitle;
   const blocks = parse(content);
   const structured = blocks.some(b => b.title);
 
   if (!structured) {
     return (
       <div className="text-[15px] text-neutral-700 leading-8">
-        <Body lines={blocks.flatMap(b => b.lines)} kp="f" />
+        <Body lines={blocks.flatMap(b => b.lines)} kp="f" nav={{ from, fromLabel }} />
       </div>
     );
   }
@@ -147,7 +206,7 @@ export default function InsightContent({ content }: { content: string }) {
         if (!b.title) {
           return (
             <div key={i} className="text-[15px] text-neutral-700 leading-8">
-              <Body lines={b.lines} kp={`b${i}`} />
+              <Body lines={b.lines} kp={`b${i}`} nav={{ from, fromLabel }} />
             </div>
           );
         }
@@ -168,7 +227,7 @@ export default function InsightContent({ content }: { content: string }) {
               <h3 className="text-base font-bold text-neutral-900 leading-snug">{heading}</h3>
             </div>
             <div className="px-4 py-4 text-[15px] text-neutral-700 leading-8">
-              <Body lines={b.lines} kp={`b${i}`} />
+              <Body lines={b.lines} kp={`b${i}`} nav={{ from, fromLabel }} />
             </div>
           </section>
         );
