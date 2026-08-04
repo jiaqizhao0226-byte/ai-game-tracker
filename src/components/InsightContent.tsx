@@ -138,20 +138,41 @@ export default function InsightContent({ content }: { content: string }) {
     );
   }
 
+  // 有标题的段落各自成卡片，并抽出「一、」这类前缀做序号徽章——
+  // 洞察通常是几条并列的判断，仅靠间距区分会糊成一片长文
+  let seq = 0;
   return (
-    <div className="space-y-7">
-      {blocks.map((b, i) => (
-        <section key={i}>
-          {b.title && (
-            <h3 className="text-base font-bold text-neutral-900 border-l-4 border-indigo-600 pl-3 mb-3">
-              {b.title}
-            </h3>
-          )}
-          <div className="text-[15px] text-neutral-700 leading-8">
-            <Body lines={b.lines} kp={`b${i}`} />
-          </div>
-        </section>
-      ))}
+    <div className="space-y-5">
+      {blocks.map((b, i) => {
+        if (!b.title) {
+          return (
+            <div key={i} className="text-[15px] text-neutral-700 leading-8">
+              <Body lines={b.lines} kp={`b${i}`} />
+            </div>
+          );
+        }
+        seq += 1;
+        // 「一、展区构成与整体判断」→ 徽章「一」+ 标题「展区构成与整体判断」
+        const m = b.title.match(/^([一二三四五六七八九十]+|\d+)[、.．]\s*(.+)$/);
+        const badge = m ? m[1] : String(seq);
+        const heading = m ? m[2] : b.title;
+        return (
+          <section
+            key={i}
+            className="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+          >
+            <div className="flex items-center gap-3 bg-neutral-50 border-b border-neutral-200 px-4 py-3">
+              <span className="shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center">
+                {badge}
+              </span>
+              <h3 className="text-base font-bold text-neutral-900 leading-snug">{heading}</h3>
+            </div>
+            <div className="px-4 py-4 text-[15px] text-neutral-700 leading-8">
+              <Body lines={b.lines} kp={`b${i}`} />
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }
