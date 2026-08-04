@@ -143,7 +143,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     'AI Agent(智能体)': ['智能体社会'],
     'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
     '传统品类+AI': ['AI NPC', 'AI 队友'],
-    'AI for Game': ['游戏基础模型', '一站式生成平台', '创意孵化平台', '创作与分发平台', '资产与动捕'],
+    'AI for Game': ['vibe game', '游戏资产平台'],
   };
   const subsInData = new Set(games.flatMap(g => g.gameplay_sub ? g.gameplay_sub.split(/[,，]+/).map((s: string) => s.trim()) : []).filter(Boolean));
   const activeMains = filterMainTypes.length ? MAIN_ORDER.filter(m => filterMainTypes.includes(m)) : MAIN_ORDER;

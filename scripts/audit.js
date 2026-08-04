@@ -18,7 +18,7 @@ const SUB = {
   'AI Agent(智能体)': ['智能体社会'],
   'AI生成UGC': ['AI UGC玩法', '零代码造游戏'],
   '传统品类+AI': ['AI NPC', 'AI 队友', ''],
-  'AI for Game': ['游戏基础模型', '一站式生成平台', '创意孵化平台', '创作与分发平台', '资产与动捕'],
+  'AI for Game': ['vibe game', '游戏资产平台'],
 };
 const FACET_ENUM = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
 const REQUIRED = ['product_name', 'company_name', 'status', 'region', 'gameplay_main', 'platform', 'scale_tier'];
