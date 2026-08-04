@@ -7,7 +7,7 @@ import Link from 'next/link';
 import GameImage from '../components/GameImage';
 
 type MSOption = string | { group: string };
-function MultiSelect({ label, options, selected, onChange, className = "" }: { label: string, options: MSOption[], selected: string[], onChange: (s: string[]) => void, className?: string }) {
+function MultiSelect({ label, options, selected, onChange, counts, className = "" }: { label: string, options: MSOption[], selected: string[], onChange: (s: string[]) => void, counts?: Record<string, number>, className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   
@@ -56,7 +56,8 @@ function MultiSelect({ label, options, selected, onChange, className = "" }: { l
                 <div className={`w-3 h-3 border flex items-center justify-center shrink-0 ${selected.includes(opt) ? 'bg-neutral-900 border-neutral-900' : 'border-neutral-300'}`}>
                   {selected.includes(opt) && <Check className="w-2 h-2 text-white" />}
                 </div>
-                <span className="text-xs font-mono truncate text-neutral-700">{opt}</span>
+                <span className="text-xs font-mono truncate text-neutral-700 flex-1">{opt}</span>
+                {counts && <span className="text-[10px] font-mono text-neutral-400 shrink-0">({counts[opt] ?? 0})</span>}
               </div>
             )
           ))}
@@ -157,6 +158,22 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const themesInData = new Set(games.flatMap(g => g.gameplay_theme ? g.gameplay_theme.split(/[,，]+/).map((t: string) => t.trim()) : []));
   const uniqueThemes = themeOrder.filter(t => themesInData.has(t));
 
+  // 各筛选项的产品数。统计口径必须与上面 filteredGames 里对应的匹配逻辑一致，
+  // 否则会出现「显示 (8) 但筛出 9 条」这类对不上的情况。
+  const tally = (pick: (g: any) => string[]) => {
+    const m: Record<string, number> = {};
+    for (const g of games) for (const k of Array.from(new Set(pick(g)))) if (k) m[k] = (m[k] || 0) + 1;
+    return m;
+  };
+  const splitList = (v: unknown) => (typeof v === 'string' ? v.split(/[,，]+/).map(s => s.trim()).filter(Boolean) : []);
+
+  const batchCounts = tally(g => [g.batch]);
+  const tierCounts = tally(g => [g.scale_tier]);
+  // 玩法大类：主品类 + 次品类(facets) 都算命中，与 matchMain 一致
+  const mainCounts = tally(g => [g.gameplay_main, ...splitList(g.gameplay_facets)]);
+  const subCounts = tally(g => splitList(g.gameplay_sub));
+  const themeCounts = tally(g => splitList(g.gameplay_theme));
+
   const uniqueBatches = Array.from(new Set(games.map(g => g.batch).filter(Boolean))).sort((a: string, b: string) => {
     const ca = a.startsWith('常态跟踪') ? 0 : 1;
     const cb = b.startsWith('常态跟踪') ? 0 : 1;
@@ -184,6 +201,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             <MultiSelect
               label="收录批次"
               options={uniqueBatches as string[]}
+              counts={batchCounts}
               selected={filterBatches}
               onChange={setFilterBatches}
             />
@@ -191,6 +209,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             <MultiSelect
               label="团队规模"
               options={["大厂/大厂孵化", "融资创业", "独立/Indie"]}
+              counts={tierCounts}
               selected={filterTiers}
               onChange={setFilterTiers}
             />
@@ -205,6 +224,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                 { group: "AI for Game (研发侧)" },
                 "AI for Game",
               ]}
+              counts={mainCounts}
               selected={filterMainTypes}
               onChange={types => { setFilterMainTypes(types); setFilterSubTypes([]); }}
             />
@@ -212,6 +232,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             <MultiSelect
               label="玩法子类"
               options={groupedSubOptions}
+              counts={subCounts}
               selected={filterSubTypes}
               onChange={setFilterSubTypes}
             />
@@ -219,6 +240,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             <MultiSelect
               label="#重点tag"
               options={uniqueThemes as string[]}
+              counts={themeCounts}
               selected={filterThemes}
               onChange={setFilterThemes}
             />
