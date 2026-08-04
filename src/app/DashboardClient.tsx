@@ -6,6 +6,8 @@ import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Ch
 import Link from 'next/link';
 import GameImage from '../components/GameImage';
 
+const FOCUS_LABEL = '重点关注';
+
 type MSOption = string | { group: string };
 function MultiSelect({ label, options, selected, onChange, counts, className = "" }: { label: string, options: MSOption[], selected: string[], onChange: (s: string[]) => void, counts?: Record<string, number>, className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,18 +90,19 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const [filterSubTypes, setFilterSubTypes] = useState<string[]>(savedFilters?.filterSubTypes ?? []);
   const [filterThemes, setFilterThemes] = useState<string[]>(savedFilters?.filterThemes ?? []);
   const [filterTiers, setFilterTiers] = useState<string[]>(savedFilters?.filterTiers ?? []);
+  const [filterFocus, setFilterFocus] = useState<string[]>(savedFilters?.filterFocus ?? []);
 
   // 筛选变化时写入 sessionStorage
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
       sessionStorage.setItem('dashboardFilters', JSON.stringify({
-        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterTiers,
+        search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterTiers, filterFocus,
       }));
     } catch {
       // ignore
     }
-  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterTiers]);
+  }, [search, filterBatches, filterMainTypes, filterSubTypes, filterThemes, filterTiers, filterFocus]);
 
   // 从卡片详情页返回时，恢复离开前的滚动位置（点卡片时写入，恢复后即清除）
   useEffect(() => {
@@ -130,7 +133,9 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     const matchType = matchMain && (filterSubTypes.length === 0 || (g.gameplay_sub && g.gameplay_sub.split(/[,，]+/).some((s: string) => filterSubTypes.includes(s.trim()))));
     const matchTheme = filterThemes.length === 0 || (g.gameplay_theme && g.gameplay_theme.split(/[,，]+/).some((t: string) => filterThemes.includes(t.trim())));
     const matchTier = filterTiers.length === 0 || filterTiers.includes(g.scale_tier);
-    return matchSearch && matchBatch && matchType && matchTheme && matchTier;
+    // 关注度：只有「重点关注」一个可选项，选中即只看 featured
+    const matchFocus = filterFocus.length === 0 || (filterFocus.includes(FOCUS_LABEL) && !!g.featured);
+    return matchSearch && matchBatch && matchType && matchTheme && matchTier && matchFocus;
   });
 
 
@@ -171,6 +176,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
   const mainCounts = tally(g => [g.gameplay_main, ...splitList(g.gameplay_facets)]);
   const subCounts = tally(g => splitList(g.gameplay_sub));
   const themeCounts = tally(g => splitList(g.gameplay_theme));
+  const focusCounts = { [FOCUS_LABEL]: games.filter(g => g.featured).length };
 
   const uniqueBatches = Array.from(new Set(games.map(g => g.batch).filter(Boolean))).sort((a: string, b: string) => {
     const ca = a.startsWith('常态跟踪') ? 0 : 1;
@@ -210,6 +216,14 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               counts={tierCounts}
               selected={filterTiers}
               onChange={setFilterTiers}
+            />
+
+            <MultiSelect
+              label="关注度"
+              options={[FOCUS_LABEL]}
+              counts={focusCounts}
+              selected={filterFocus}
+              onChange={setFilterFocus}
             />
 
             <MultiSelect
