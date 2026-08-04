@@ -3,11 +3,30 @@ import data from '../../../data.json';
 import Link from 'next/link';
 import { ArrowLeft, ChevronLeft } from 'lucide-react';
 import { assetUrl } from '../../../lib/asset';
+import type { Metadata } from 'next';
+import { SITE_URL } from '../../../lib/site';
 
 export function generateStaticParams() {
   return data.insights.map((insight) => ({
     id: insight.id.toString(),
   }));
+}
+
+// 分享单条洞察时，卡片显示该洞察的标题与摘要
+export function generateMetadata({ params }: { params: { id: string } }): Metadata {
+  const insight: any = data.insights.find((i) => i.id === parseInt(params.id));
+  if (!insight) return { title: '未找到该洞察 | AI+游戏玩法常态化监控' };
+
+  const description = insight.summary || '';
+  const image = insight.image_url ? `${SITE_URL}${insight.image_url}` : `${SITE_URL}/og-default.png`;
+  const url = `${SITE_URL}/insight/${insight.id}`;
+
+  return {
+    title: `${insight.title} | 趋势洞察`,
+    description,
+    openGraph: { type: 'article', title: insight.title, description, url, images: [{ url: image }] },
+    twitter: { card: 'summary_large_image', title: insight.title, description, images: [image] },
+  };
 }
 
 export default function InsightDetailPage({ params }: { params: { id: string } }) {

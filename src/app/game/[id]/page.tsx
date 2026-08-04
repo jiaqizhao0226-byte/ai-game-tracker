@@ -6,11 +6,32 @@ import ProductIntro from '../../../components/ProductIntro';
 import ScreenshotGallery from '../../../components/ScreenshotGallery';
 import { ArrowLeft, ChevronLeft, Link2 } from 'lucide-react';
 import EventsTabs from './EventsTabs';
+import type { Metadata } from 'next';
+import { SITE_URL } from '../../../lib/site';
 
 export function generateStaticParams() {
   return data.games.map((game) => ({
     id: game.id.toString(),
   }));
+}
+
+// 分享单个产品时，卡片显示该产品的名称/简介/封面，而不是站点默认信息
+export function generateMetadata({ params }: { params: { id: string } }): Metadata {
+  const game: any = data.games.find((g) => g.id === parseInt(params.id));
+  if (!game) return { title: '未找到该产品 | AI+游戏玩法常态化监控' };
+
+  const title = `${game.product_name}｜${game.company_name}`;
+  const description = game.description || '';
+  // OG 图必须是绝对 URL；本地封面要带上 basePath
+  const image = game.image_url ? `${SITE_URL}${game.image_url}` : `${SITE_URL}/og-default.png`;
+  const url = `${SITE_URL}/game/${game.id}`;
+
+  return {
+    title: `${title} | AI 游戏产品情报`,
+    description,
+    openGraph: { type: 'article', title, description, url, images: [{ url: image }] },
+    twitter: { card: 'summary_large_image', title, description, images: [image] },
+  };
 }
 
 export default function GameDetailPage({ params }: { params: { id: string } }) {
