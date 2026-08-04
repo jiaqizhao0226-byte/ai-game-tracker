@@ -19,7 +19,13 @@ export default function ScreenshotGallery({ name, shots }: { name: string; shots
   const host = shots[0];
   const isAppStore = host.includes('mzstatic.com');
   const isTapTap = host.includes('tapimg.com') || host.includes('/shots/tt_');
-  const source = isAppStore ? 'App Store 官方商店页' : isTapTap ? 'TapTap 官方商店页' : 'Steam 官方商店页';
+  // 现场实拍/展会物料：本地转存且以 _booth/_ppt/_onsite 结尾，不是商店页素材，来源要另标
+  const isOnsite = /\/shots\/[^/]*_(booth|ppt|onsite)\d*\.(jpg|jpeg|png|webp)$/i.test(host);
+  const source = isOnsite
+    ? '展会现场实拍'
+    : isAppStore ? 'App Store 官方商店页'
+    : isTapTap ? 'TapTap 官方商店页'
+    : 'Steam 官方商店页';
   const [isPortrait, setIsPortrait] = useState(isAppStore || isTapTap);
   const [idx, setIdx] = useState<number | null>(null);
   const firstRef = useRef<HTMLImageElement>(null);
