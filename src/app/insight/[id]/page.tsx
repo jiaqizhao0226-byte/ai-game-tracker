@@ -3,6 +3,7 @@ import data from '../../../data.json';
 import Link from 'next/link';
 import { ArrowLeft, ChevronLeft } from 'lucide-react';
 import { assetUrl } from '../../../lib/asset';
+import InsightContent from '../../../components/InsightContent';
 import type { Metadata } from 'next';
 import { SITE_URL } from '../../../lib/site';
 
@@ -83,7 +84,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
 
         {/* Content */}
         <div className="bg-white border border-neutral-200 p-8">
-          <div className="text-sm text-neutral-700 leading-8 whitespace-pre-wrap">{insight.content}</div>
+          <InsightContent content={insight.content} />
         </div>
 
         {/* Back button */}

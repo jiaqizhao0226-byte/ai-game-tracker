@@ -261,11 +261,17 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             key={game.id}
             href={`/game/${game.id}`}
             onClick={() => { try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); } catch {} }}
-            className="card-interactive bg-white border border-neutral-200 hover:border-neutral-900 hover:shadow-lg cursor-pointer flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden"
+            className={`card-interactive bg-white cursor-pointer flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden ${
+              game.featured
+                ? 'border-2 border-amber-400 hover:border-amber-500 shadow-[0_0_0_3px_rgba(251,191,36,0.12)] hover:shadow-[0_0_0_3px_rgba(251,191,36,0.2),0_10px_20px_-8px_rgba(0,0,0,0.25)]'
+                : 'border border-neutral-200 hover:border-neutral-900 hover:shadow-lg'
+            }`}
           >
+            {/* 重点关注：实心琥珀徽章 + 卡片描边。原来的白底胶囊压在花哨封面上会糊掉，
+                故改为高对比实心色，并让整张卡片在网格里可被一眼扫到 */}
             {game.featured && (
-              <div className="absolute top-2.5 left-2.5 z-10 inline-flex items-center gap-1 bg-white/95 backdrop-blur-sm text-amber-700 text-[10px] font-bold tracking-wide pl-1.5 pr-2 py-1 rounded-full shadow-sm ring-1 ring-amber-300/70">
-                <Star className="w-3 h-3 fill-amber-500 text-amber-500 shrink-0" />
+              <div className="absolute top-0 left-0 z-10 inline-flex items-center gap-1 bg-amber-400 text-neutral-900 text-[10px] font-bold tracking-wide pl-2 pr-2.5 py-1 rounded-br-lg shadow-sm">
+                <Star className="w-3 h-3 fill-neutral-900 text-neutral-900 shrink-0" />
                 重点关注
               </div>
             )}
