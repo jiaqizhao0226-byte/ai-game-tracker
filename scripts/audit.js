@@ -7,7 +7,7 @@ const ENUM = {
   funding_round: ['未融资', '天使轮', 'A轮', 'B轮及以上', '已上市', '被收购', '大厂孵化', '未知'],
   region: ['国内', '海外', '未知'],
   platform: ['PC端', '移动端', '网页', '多平台', '未知'],
-  gameplay_main: ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI', 'AI for Game'],
+  gameplay_main: ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI社会/沙盒', 'AI生成UGC', '传统品类+AI', 'AI for Game'],
   scale_tier: ['大厂/大厂孵化', '融资创业', '独立/Indie'],
 };
 // gameplay_sub 依赖 gameplay_main（'' 表示允许留空）
@@ -15,12 +15,12 @@ const SUB = {
   'AI陪伴': ['AI游戏陪玩', 'AI伴侣', 'AI宠物'],
   'AI叙事对话': ['对话模拟', '互动叙事'],
   'AI玩法机制': ['AI裁定/主持', 'AI生成元素'],
-  'AI Agent(智能体)': [''],
+  'AI社会/沙盒': [''],
   'AI生成UGC': [''],
   '传统品类+AI': ['AI NPC', 'AI 队友', ''],
   'AI for Game': ['vibe game', '游戏资产平台'],
 };
-const FACET_ENUM = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI'];
+const FACET_ENUM = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI社会/沙盒', 'AI生成UGC', '传统品类+AI'];
 const REQUIRED = ['product_name', 'company_name', 'status', 'region', 'gameplay_main', 'platform', 'scale_tier'];
 const INTRO_REQUIRED = ['策略启示']; // 必填小标题（「一句话定位」已提升为 description 简介）
 const DESC_MAX = 60; // 简介上限：目标一句话(≤50)，超 60 视为过长

@@ -135,7 +135,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 
 
   // 分类固定顺序：AI Native 5 类在前，AI in Game 在后；子类按大类顺序分组展示
-  const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
+  const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI社会/沙盒', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
   const SUB_ORDER: Record<string, string[]> = {
     'AI陪伴': ['AI游戏陪玩', 'AI伴侣', 'AI宠物'],
     'AI叙事对话': ['对话模拟', '互动叙事'],
@@ -216,7 +216,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               label="玩法大类"
               options={[
                 { group: "AI Native" },
-                "AI陪伴", "AI叙事对话", "AI玩法机制", "AI Agent(智能体)", "AI生成UGC",
+                "AI陪伴", "AI叙事对话", "AI玩法机制", "AI社会/沙盒", "AI生成UGC",
                 { group: "AI in Game" },
                 "传统品类+AI",
                 { group: "AI for Game (研发侧)" },

@@ -1,6 +1,22 @@
 import data from '../../data.json';
 import Link from 'next/link';
 
+/**
+ * 列表卡片里的正文预览：正文带 Markdown 标记（## 小标题、**加粗**、> 案例行、
+ * #编号），直接截断会把这些符号原样露出来。这里剥成纯文本再截。
+ */
+function plainPreview(content: string): string {
+  return content
+    .split('\n')
+    .filter(l => !l.trim().startsWith('##') && !l.trim().startsWith('>'))
+    .join(' ')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/^-\s+/gm, '')
+    .replace(/#\d+/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export default function InsightsPage() {
   const { insights } = data;
 
@@ -37,7 +53,7 @@ export default function InsightsPage() {
                 <Link
                   key={insight.id}
                   href={`/insight/${insight.id}`}
-                  className="bg-white border border-neutral-200 p-6 shadow-sm hover:shadow-md hover:border-neutral-900 transition-all flex flex-col h-full relative group cursor-pointer"
+                  className="bg-white border border-neutral-200 shadow-sm hover:shadow-md hover:border-neutral-900 transition-all flex flex-col h-full max-h-[420px] overflow-hidden relative group cursor-pointer"
                 >
                   <div className="absolute top-0 left-0 w-full h-1 bg-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
                   <div className="p-6 flex-1 flex flex-col">
@@ -61,13 +77,13 @@ export default function InsightsPage() {
                       {insight.title}
                     </h3>
 
-                    <p className="text-sm font-semibold text-neutral-600 mb-4 border-l-2 border-indigo-200 pl-3 leading-relaxed">
+                    <p className="text-sm font-semibold text-neutral-600 mb-4 border-l-2 border-indigo-200 pl-3 leading-relaxed line-clamp-4">
                       {insight.summary}
                     </p>
 
                     <div className="mt-auto pt-4 border-t border-neutral-100">
-                      <p className="text-sm text-neutral-500 leading-relaxed line-clamp-3">
-                        {insight.content}
+                      <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2">
+                        {plainPreview(insight.content)}
                       </p>
                       <div className="mt-3 text-xs text-indigo-600 font-mono uppercase tracking-wider group-hover:text-indigo-800 transition-colors">
                         查看详情 →

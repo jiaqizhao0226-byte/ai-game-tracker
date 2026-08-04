@@ -3,7 +3,7 @@ import changelog from '../../changelog.json';
 import ChangelogBox from './ChangelogBox';
 import RollingNumber from '../../components/RollingNumber';
 
-const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI Agent(智能体)', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
+const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI社会/沙盒', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
 const NATIVE_MAINS = MAIN_ORDER.slice(0, 5);
 const TOOL_MAIN = 'AI for Game';
 // AI Native 走靛蓝色阶、AI in Game 用青色、AI for Game(研发侧)用琥珀色区分
@@ -11,7 +11,7 @@ const COLORS: Record<string, string> = {
   'AI陪伴': '#4f46e5',
   'AI叙事对话': '#6366f1',
   'AI玩法机制': '#818cf8',
-  'AI Agent(智能体)': '#a5b4fc',
+  'AI社会/沙盒': '#a5b4fc',
   'AI生成UGC': '#c7d2fe',
   '传统品类+AI': '#0d9488',
   'AI for Game': '#d97706',
