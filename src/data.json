@@ -126,7 +126,8 @@
    "batch": "常态跟踪·2024",
    "gameplay_facets": "",
    "gameplay_theme": "网易系,多模态玩法",
-   "scale_tier": "大厂/大厂孵化"
+   "scale_tier": "大厂/大厂孵化",
+   "featured": true
   },
   {
    "id": 4,
@@ -340,7 +341,8 @@
    "batch": "常态跟踪·2024",
    "gameplay_theme": "模拟经营,米哈游系",
    "gameplay_facets": "",
-   "scale_tier": "大厂/大厂孵化"
+   "scale_tier": "大厂/大厂孵化",
+   "featured": true
   },
   {
    "id": 11,
@@ -659,7 +661,8 @@
     "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3730100/57f89c8d2bd8df73d94a0b487916a491d255b7e3/ss_57f89c8d2bd8df73d94a0b487916a491d255b7e3.1920x1080.jpg?t=1764897761"
    ],
    "gameplay_theme": "米哈游系",
-   "scale_tier": "大厂/大厂孵化"
+   "scale_tier": "大厂/大厂孵化",
+   "featured": true
   },
   {
    "id": 22,
