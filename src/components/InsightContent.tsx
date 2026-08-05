@@ -69,28 +69,65 @@ function renderInline(text: string, keyPrefix: string, nav?: { from: string; fro
  *   ::
  * 纯 CSS 横向条形——中文标签横排更好读，也省掉一个图表库依赖。
  */
-function BarChart({ title, rows }: { title: string; rows: Array<[string, number]> }) {
+function BarChart({ title, rows, vertical }: { title: string; rows: Array<[string, number]>; vertical?: boolean }) {
   const max = Math.max(...rows.map(r => r[1]), 1);
   const total = rows.reduce((s, r) => s + r[1], 0);
+
+  // ::bar! → 竖向柱状，项数少时比横向条形省一半纵向空间
+  if (vertical) {
+    return (
+      <figure className="my-4 rounded-lg border border-neutral-200 bg-neutral-50/60 px-4 pt-4 pb-3">
+        {title && (
+          <figcaption className="text-xs font-bold text-neutral-700 mb-2.5 flex items-baseline gap-2">
+            {title}
+            <span className="font-mono text-[10px] font-normal text-neutral-400">n={total}</span>
+          </figcaption>
+        )}
+        {/* 数值另起一行、柱子只占固定高的容器——否则数值会挤压柱区，
+            让 13 与 12 这种小差异被压成同高 */}
+        <div className="flex items-end gap-2">
+          {rows.map(([label, v], i) => (
+            <div key={i} className="flex-1 flex flex-col items-center min-w-0">
+              <span className="font-mono text-[11px] text-neutral-500 mb-1 tabular-nums">{v}</span>
+              <div className="w-full h-[68px] flex items-end">
+                <div
+                  className="w-full bg-indigo-500 rounded-t-sm"
+                  style={{ height: `${Math.max((v / max) * 100, 4)}%` }}
+                  title={`${label}：${v}（${((v / total) * 100).toFixed(1)}%）`}
+                />
+              </div>
+              <span
+                className="mt-1.5 text-center text-[10px] text-neutral-600 leading-none whitespace-nowrap overflow-hidden text-ellipsis w-full"
+                title={label}
+              >
+                {label}
+              </span>
+            </div>
+          ))}
+        </div>
+      </figure>
+    );
+  }
+
   return (
-    <figure className="my-4 rounded-lg border border-neutral-200 bg-neutral-50/60 px-4 py-4">
+    <figure className="my-4 rounded-lg border border-neutral-200 bg-neutral-50/60 px-4 py-3.5 leading-normal">
       {title && (
-        <figcaption className="text-xs font-bold text-neutral-700 mb-3 flex items-baseline gap-2">
+        <figcaption className="text-xs font-bold text-neutral-700 mb-2.5 flex items-baseline gap-2 leading-snug">
           {title}
           <span className="font-mono text-[10px] font-normal text-neutral-400">n={total}</span>
         </figcaption>
       )}
-      <div className="space-y-1.5">
+      <div className="space-y-1">
         {rows.map(([label, v], i) => (
-          <div key={i} className="flex items-center gap-2 text-[13px]">
-            <span className="w-[112px] shrink-0 text-right text-neutral-600 leading-tight">{label}</span>
-            <div className="flex-1 h-5 bg-neutral-200/50 rounded-sm overflow-hidden">
+          <div key={i} className="flex items-center gap-2 text-[13px] leading-none">
+            <span className="w-[112px] shrink-0 text-right text-neutral-600 leading-tight whitespace-nowrap overflow-hidden text-ellipsis" title={label}>{label}</span>
+            <div className="flex-1 h-[18px] bg-neutral-200/50 rounded-sm overflow-hidden">
               <div
                 className="h-full bg-indigo-500 rounded-sm"
                 style={{ width: `${Math.max((v / max) * 100, 2)}%` }}
               />
             </div>
-            <span className="w-[64px] shrink-0 font-mono text-[11px] text-neutral-500 tabular-nums">
+            <span className="w-[74px] shrink-0 font-mono text-[11px] text-neutral-500 tabular-nums whitespace-nowrap text-right">
               {v} · {((v / total) * 100).toFixed(1)}%
             </span>
           </div>
@@ -150,7 +187,7 @@ function Body({ lines, kp, nav }: { lines: string[]; kp: string; nav: { from: st
     const t = lines[i].trim();
 
     // ::bar 标题 … :: → 条形图，整块一次消费掉
-    const bar = t.match(/^::bar\s*(.*)$/);
+    const bar = t.match(/^::bar(!?)\s*(.*)$/);
     if (bar) {
       const rows: Array<[string, number]> = [];
       let j = i + 1;
@@ -158,7 +195,7 @@ function Body({ lines, kp, nav }: { lines: string[]; kp: string; nav: { from: st
         const m = lines[j].trim().match(/^(.+?)\|\s*(-?\d+(?:\.\d+)?)\s*$/);
         if (m) rows.push([m[1].trim(), Number(m[2])]);
       }
-      if (rows.length) out.push(<BarChart key={`${kp}-bar${i}`} title={bar[1].trim()} rows={rows} />);
+      if (rows.length) out.push(<BarChart key={`${kp}-bar${i}`} title={bar[2].trim()} rows={rows} vertical={bar[1] === '!'} />);
       i = j; // 跳过收尾的 ::
       continue;
     }
