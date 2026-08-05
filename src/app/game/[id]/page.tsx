@@ -42,7 +42,7 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
 
   if (!game) {
     return (
-      <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
+      <main className="min-h-screen bg-[#F9FAFB] py-6 sm:py-8 px-4 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
         <p className="text-neutral-500">未找到该产品。</p>
         <Link href="/" className="text-indigo-600 hover:underline mt-4 inline-block">返回看板</Link>
       </main>
@@ -57,7 +57,7 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
     <main className="min-h-screen bg-[#F9FAFB]">
       {/* Breadcrumb bar */}
       <div className="bg-white border-b border-neutral-200">
-        <div className="max-w-[1200px] mx-auto px-6 sm:px-12 py-3 flex items-center gap-2 text-xs font-mono text-neutral-500">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-12 py-3 flex items-center gap-2 text-xs font-mono text-neutral-500">
           <span className="hover:text-neutral-900 transition-colors flex items-center gap-1">
             <ChevronLeft className="w-3 h-3" />
             <BackBreadcrumb className="hover:text-neutral-900 transition-colors" />
@@ -67,7 +67,7 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-6 sm:px-12 py-8">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-12 py-6 sm:py-8">
         {/* Hero section: image + title + key tags */}
         <div className="mb-8 flex flex-col md:flex-row gap-6">
           <GameImage

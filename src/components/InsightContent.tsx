@@ -120,15 +120,15 @@ function BarChart({ title, rows, vertical }: { title: string; rows: Array<[strin
       <div className="space-y-1">
         {rows.map(([label, v], i) => (
           <div key={i} className="flex items-center gap-2 text-[13px] leading-none">
-            <span className="w-[112px] shrink-0 text-right text-neutral-600 leading-tight whitespace-nowrap overflow-hidden text-ellipsis" title={label}>{label}</span>
+            <span className="w-[74px] sm:w-[112px] shrink-0 text-right text-neutral-600 leading-tight whitespace-nowrap overflow-hidden text-ellipsis text-[11px] sm:text-[13px]" title={label}>{label}</span>
             <div className="flex-1 h-[18px] bg-neutral-200/50 rounded-sm overflow-hidden">
               <div
                 className="h-full bg-indigo-500 rounded-sm"
                 style={{ width: `${Math.max((v / max) * 100, 2)}%` }}
               />
             </div>
-            <span className="w-[74px] shrink-0 font-mono text-[11px] text-neutral-500 tabular-nums whitespace-nowrap text-right">
-              {v} · {((v / total) * 100).toFixed(1)}%
+            <span className="w-[34px] sm:w-[74px] shrink-0 font-mono text-[11px] text-neutral-500 tabular-nums whitespace-nowrap text-right">
+              {v}<span className="hidden sm:inline"> · {((v / total) * 100).toFixed(1)}%</span>
             </span>
           </div>
         ))}

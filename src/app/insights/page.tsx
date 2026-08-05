@@ -32,10 +32,10 @@ export default function InsightsPage() {
   const sortedYears = Object.keys(insightsByYear).sort((a, b) => Number(b) - Number(a));
 
   return (
-    <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
-      <header className="mb-8 border-b-2 border-neutral-800 pb-4 flex justify-between items-end">
+    <main className="min-h-screen bg-[#F9FAFB] py-6 sm:py-8 px-4 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
+      <header className="mb-6 sm:mb-8 border-b-2 border-neutral-800 pb-4 flex flex-col sm:flex-row sm:justify-between sm:items-end gap-2">
         <div>
-          <h1 className="text-2xl font-bold font-sans text-neutral-900 tracking-tight flex items-center gap-2">
+          <h1 className="text-xl sm:text-2xl font-bold font-sans text-neutral-900 tracking-tight flex items-center gap-2">
             趋势洞察
           </h1>
           <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">专题报告与趋势判断</p>

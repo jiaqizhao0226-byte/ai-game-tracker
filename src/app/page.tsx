@@ -10,15 +10,15 @@ export default function Home() {
   const sortedGames = [...games].sort((a: any, b: any) => weight(b) - weight(a));
 
   return (
-    <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
-      <header className="mb-8 border-b-2 border-neutral-800 pb-4 flex justify-between items-end">
+    <main className="min-h-screen bg-[#F9FAFB] py-6 sm:py-8 px-4 sm:px-12 lg:px-16 mx-auto max-w-[1400px]">
+      <header className="mb-6 sm:mb-8 border-b-2 border-neutral-800 pb-4 flex flex-col sm:flex-row sm:justify-between sm:items-end gap-2">
         <div>
-          <h1 className="text-2xl font-bold font-sans text-neutral-900 tracking-tight flex items-center gap-2">
+          <h1 className="text-xl sm:text-2xl font-bold font-sans text-neutral-900 tracking-tight flex items-center gap-2">
             AI游戏产品情报看板
           </h1>
           <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">AI游戏产品数据库</p>
         </div>
-        <div className="text-right">
+        <div className="flex gap-4 sm:block sm:text-right shrink-0">
           <p className="text-xs font-mono text-neutral-400">最后更新： {new Date().toISOString().split('T')[0]}</p>
           <p className="text-xs font-mono text-neutral-400">收录总数： {sortedGames.length}</p>
         </div>

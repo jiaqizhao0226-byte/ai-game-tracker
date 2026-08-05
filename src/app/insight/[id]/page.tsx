@@ -36,7 +36,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
 
   if (!insight) {
     return (
-      <main className="min-h-screen bg-[#F9FAFB] py-8 px-6 sm:px-12 lg:px-16 mx-auto max-w-[1200px]">
+      <main className="min-h-screen bg-[#F9FAFB] py-6 sm:py-8 px-4 sm:px-12 lg:px-16 mx-auto max-w-[1200px]">
         <p className="text-neutral-500">未找到该洞察。</p>
         <Link href="/insights" className="text-indigo-600 hover:underline mt-4 inline-block">返回趋势洞察</Link>
       </main>
@@ -47,7 +47,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
     <main className="min-h-screen bg-[#F9FAFB]">
       {/* Breadcrumb bar */}
       <div className="bg-white border-b border-neutral-200">
-        <div className="max-w-[1000px] mx-auto px-6 sm:px-12 py-3 flex items-center gap-2 text-xs font-mono text-neutral-500">
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-12 py-3 flex items-center gap-2 text-xs font-mono text-neutral-500">
           <Link href="/insights" className="hover:text-neutral-900 transition-colors flex items-center gap-1">
             <ChevronLeft className="w-3 h-3" /> 趋势洞察
           </Link>
@@ -56,7 +56,7 @@ export default function InsightDetailPage({ params }: { params: { id: string } }
         </div>
       </div>
 
-      <div className="max-w-[1000px] mx-auto px-6 sm:px-12 py-8">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-12 py-6 sm:py-8">
         {/* Header */}
         <div className="mb-8">
           <div className="flex flex-wrap items-center gap-2 mb-4">
