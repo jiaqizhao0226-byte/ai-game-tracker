@@ -22,6 +22,8 @@ export default function ScreenshotGallery({ name, shots }: { name: string; shots
   const isSteam = /steamstatic|steampowered|store_item_assets/.test(host);
   // 现场实拍/展会物料：本地转存且以 _booth/_ppt/_onsite 结尾，不是商店页素材
   const isOnsite = /\/shots\/[^/]*_(booth|ppt|onsite)\d*\.(jpg|jpeg|png|webp)$/i.test(host);
+  // 官网/官方 PV 素材：以 _site 结尾。不是玩家实机，标注上要跟实机画面区分开
+  const isOfficialSite = /\/shots\/[^/]*_site\d*\.(jpg|jpeg|png|webp)$/i.test(host);
   /*
    * 来源必须按实际域名/命名判断，不能兜底成某个商店——本地转存的媒体截图、
    * 官方物料都会落进兜底分支，被错标成「Steam 官方商店页」。
@@ -29,6 +31,7 @@ export default function ScreenshotGallery({ name, shots }: { name: string; shots
    */
   const source = isOnsite
     ? '展会现场实拍'
+    : isOfficialSite ? '官网 / 官方 PV 素材'
     : isAppStore ? 'App Store 官方商店页'
     : isTapTap ? 'TapTap 官方商店页'
     : isSteam ? 'Steam 官方商店页'
