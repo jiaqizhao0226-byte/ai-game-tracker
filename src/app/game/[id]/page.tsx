@@ -9,6 +9,7 @@ import EventsTabs from './EventsTabs';
 import BackLink, { BackBreadcrumb } from '../../../components/BackLink';
 import type { Metadata } from 'next';
 import { SITE_URL } from '../../../lib/site';
+import { companyOf } from '../../../lib/company';
 
 export function generateStaticParams() {
   return data.games.map((game) => ({
@@ -39,6 +40,8 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
   const gameId = parseInt(params.id);
   const game = data.games.find((g) => g.id === gameId);
   const gameEvents = data.events.filter((e) => e.game_id === gameId);
+  // 「未披露 / 未知」不是公司，companyOf 返回 null，此时公司名保持纯文本不可点
+  const company = game ? companyOf(game.company_name) : null;
 
   if (!game) {
     return (
@@ -96,7 +99,13 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
               )}
             </div>
             <h1 className="text-3xl font-bold text-neutral-900 tracking-tight mb-2">{game.product_name}</h1>
-            <p className="text-sm text-neutral-500 mb-3">{game.company_name}</p>
+            {company ? (
+              <Link href={`/company/${company.slug}`} className="text-sm text-neutral-500 mb-3 inline-block hover:text-indigo-700 hover:underline underline-offset-2 transition-colors">
+                {game.company_name}
+              </Link>
+            ) : (
+              <p className="text-sm text-neutral-500 mb-3">{game.company_name}</p>
+            )}
             <p className="text-sm text-neutral-600 leading-relaxed">{game.description}</p>
           </div>
         </div>
@@ -180,7 +189,16 @@ export default function GameDetailPage({ params }: { params: { id: string } }) {
               <div className="flex flex-col gap-3 text-sm">
                 <div className="flex justify-between gap-2">
                   <span className="text-neutral-500 text-xs whitespace-nowrap">公司</span>
-                  <span className="text-neutral-900 text-right">{game.company_name}</span>
+                  <span className="text-neutral-900 text-right">
+                    {company ? (
+                      <Link href={`/company/${company.slug}`} className="hover:text-indigo-700 hover:underline underline-offset-2 transition-colors">
+                        {game.company_name}
+                        {company.gameIds.length > 1 && (
+                          <span className="text-neutral-400 font-mono text-xs ml-1">· 另 {company.gameIds.length - 1} 款</span>
+                        )}
+                      </Link>
+                    ) : game.company_name}
+                  </span>
                 </div>
                 <div className="flex justify-between gap-2">
                   <span className="text-neutral-500 text-xs whitespace-nowrap">玩法分类</span>

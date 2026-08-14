@@ -4,6 +4,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { Search, TerminalSquare, Activity, ExternalLink, Filter, ChevronDown, Check, Star } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { companyOf } from '../lib/company';
 import GameImage from '../components/GameImage';
 
 const FOCUS_LABEL = '重点关注';
@@ -72,6 +74,7 @@ function MultiSelect({ label, options, selected, onChange, counts, className = "
 export default function DashboardClient({ initialGames, initialEvents }: { initialGames: any[], initialEvents: any[] }) {
   const [games] = useState<any[]>(initialGames);
   const [events] = useState<any[]>(initialEvents);
+  const router = useRouter();
   
   // 从 sessionStorage 恢复筛选状态（返回列表页时保留筛选）
   const savedFilters = (() => {
@@ -321,7 +324,35 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                   {game.status}
                 </span>
               </div>
-              <p className="text-xs font-mono text-neutral-500 mb-3">{game.company_name}</p>
+              {/*
+                整张卡片已经是一个 <a>，里面不能再嵌 <a>（无效 HTML）。
+                故用 span + role="link" 手动跳转，并阻止冒泡以免同时触发卡片本身的跳转。
+              */}
+              {(() => {
+                const co = companyOf(game.company_name);
+                if (!co) return <p className="text-xs font-mono text-neutral-500 mb-3">{game.company_name}</p>;
+                const go = (e: React.SyntheticEvent) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); } catch {}
+                  router.push(`/company/${co.slug}`);
+                };
+                return (
+                  <p className="mb-3">
+                    <span
+                      role="link"
+                      tabIndex={0}
+                      title={co.gameIds.length > 1 ? `查看 ${co.name} 的 ${co.gameIds.length} 款产品` : `查看 ${co.name}`}
+                      onClick={go}
+                      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') go(e); }}
+                      className="text-xs font-mono text-neutral-500 hover:text-indigo-700 hover:underline underline-offset-2 cursor-pointer transition-colors"
+                    >
+                      {game.company_name}
+                      {co.gameIds.length > 1 && <span className="text-neutral-400"> · {co.gameIds.length} 款</span>}
+                    </span>
+                  </p>
+                );
+              })()}
               
               <div className="mb-3 flex flex-wrap gap-1">
                 <span className="inline-block text-[10px] uppercase font-mono px-1.5 py-0.5 bg-neutral-800 text-neutral-100">

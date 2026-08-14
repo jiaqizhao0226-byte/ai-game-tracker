@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="bg-white border-b border-neutral-200 sticky top-0 z-40 shadow-sm">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-12 lg:px-16 h-14 sm:h-16 flex items-center justify-between gap-3">
+      <div className="relative max-w-[1400px] mx-auto px-4 sm:px-12 lg:px-16 h-14 sm:h-16 flex items-center justify-between gap-3">
         <Link
           href="/"
           onClick={(e) => {
@@ -43,8 +43,15 @@ export default function Header() {
         {/*
           导航此前是 hidden sm:flex——移动端被整个藏掉且没有替代入口，
           页面之间无从切换。现在窄屏改为图标+短标签，始终可见。
+
+          宽屏用 absolute 居中：三个 tab 要相对「整个页面」居中，
+          而不是相对 logo 与右侧留白之间的剩余空间——后者会因为左侧
+          logo 宽度而整体偏右。窄屏回退到普通流式布局占满剩余宽度。
         */}
-        <nav className="flex items-center gap-1 flex-1 sm:flex-none justify-end">
+        <nav
+          className="flex items-center gap-1 sm:gap-2 flex-1 sm:flex-none justify-end
+            sm:absolute sm:left-1/2 sm:-translate-x-1/2"
+        >
           {NAV.map(({ href, label, short, Icon }) => {
             const active = isActive(href);
             return (
@@ -53,11 +60,11 @@ export default function Header() {
                 href={href}
                 aria-current={active ? 'page' : undefined}
                 className={`flex-1 sm:flex-none flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-2
-                  px-2 sm:px-4 py-1.5 sm:py-2 rounded-md transition-colors
-                  text-[11px] sm:text-sm font-bold sm:uppercase sm:tracking-wider
+                  px-2 sm:px-5 py-1.5 sm:py-2.5 rounded-md transition-colors
+                  text-[11px] sm:text-base font-bold sm:tracking-wide
                   ${active ? 'bg-neutral-100 text-neutral-900' : 'text-neutral-500 hover:text-neutral-900 hover:bg-neutral-50'}`}
               >
-                <Icon className="w-[18px] h-[18px] sm:w-4 sm:h-4 shrink-0" />
+                <Icon className="w-[18px] h-[18px] sm:w-[18px] sm:h-[18px] shrink-0" />
                 <span className="sm:hidden leading-none">{short ?? label}</span>
                 <span className="hidden sm:inline">{label}</span>
               </Link>
