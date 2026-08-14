@@ -8,8 +8,25 @@
 
 type Block = { title: string | null; suffix: string; lines: string[] };
 
+const esc = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+/**
+ * 行内富文本：**加粗** 与 [文字](链接)。
+ *
+ * 正文走 dangerouslySetInnerHTML，故 href 必须白名单——只放行站内绝对路径与
+ * http(s)，挡掉 javascript:/data: 一类；链接文字与地址都要转义后再拼进 HTML。
+ * 站外链接开新标签并带 noopener。
+ */
 const inline = (s: string) =>
-  s.replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-neutral-900">$1</strong>');
+  s
+    .replace(/\[([^\]\n]+)\]\(([^)\s]+)\)/g, (whole, text: string, href: string) => {
+      const external = /^https?:\/\//i.test(href);
+      if (!external && !href.startsWith('/')) return whole; // 认不出的协议原样留着，不生成链接
+      const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+      return `<a href="${esc(href)}"${attrs} class="text-indigo-600 hover:text-indigo-800 underline decoration-indigo-300 underline-offset-2 hover:decoration-indigo-600">${esc(text)}</a>`;
+    })
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-neutral-900">$1</strong>');
 
 function parse(intro: string): Block[] {
   const blocks: Block[] = [];
