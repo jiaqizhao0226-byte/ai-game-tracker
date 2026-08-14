@@ -1967,8 +1967,7 @@
     "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/d9b4c09c78e7f90a662db483e2d38be3cab7a75d/ss_d9b4c09c78e7f90a662db483e2d38be3cab7a75d.1920x1080.jpg?t=1781578212",
     "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4424310/900a92dc2cc7cd1c51572a5219c4ce0b7e998285/ss_900a92dc2cc7cd1c51572a5219c4ce0b7e998285.1920x1080.jpg?t=1781578212"
    ],
-   "scale_tier": "独立/Indie",
-   "sort_weight": 8998
+   "scale_tier": "独立/Indie"
   },
   {
    "id": 71,
@@ -2010,8 +2009,7 @@
    "batch": "2026 ChinaJoy",
    "gameplay_theme": "模拟经营",
    "gameplay_facets": "",
-   "scale_tier": "融资创业",
-   "sort_weight": 8999
+   "scale_tier": "融资创业"
   },
   {
    "id": 72,
@@ -2123,8 +2121,7 @@
    ],
    "batch": "2026 ChinaJoy",
    "gameplay_facets": "",
-   "scale_tier": "融资创业",
-   "sort_weight": 8996
+   "scale_tier": "融资创业"
   },
   {
    "id": 76,
@@ -2256,8 +2253,7 @@
     "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4209920/986814777c70b2481bc4ebc3466af769caf6c564/ss_986814777c70b2481bc4ebc3466af769caf6c564.1920x1080.jpg?t=1783586344"
    ],
    "scale_tier": "大厂/大厂孵化",
-   "featured": true,
-   "sort_weight": 9000
+   "featured": true
   },
   {
    "id": 81,
@@ -3289,7 +3285,6 @@
    "gameplay_sub": "",
    "gameplay_theme": "",
    "product_intro": "**核心玩法机制**(AI介入:核心驱动)\n- 在幻想世界中**自由探索**，随机触发**奇遇事件**\n- 与**拥有独立性格的 AI 角色**进行自然交流\n- **可表达任何想法**，与角色建立羁绊、影响事件发展\n- 官方定位：共同经历一段**无法预先定义**的冒险\n- **引擎：Unreal Engine 5**\n\n**实机观察**(2026-08，据实机画面)\n- 3D 卡通渲染的开放村庄场景，有**昼夜与日期系统**（画面显示「第 1 天 09:33 白天」）与**罗盘导航**\n- NPC 头顶显示**身份标签**（巡夜人、刘药师、商队护卫等），可走近**交互对话**\n- 对话为**自由输入**（画面中输入框内容为「给我药材」），非选项式\n- NPC 会依时间与人设作出反应（夜里遇到 NPC 说「这么晚了，快回去歇着吧」）\n- 玩家有**血量条**与**快捷栏**，说明含战斗/道具系统\n- 官方演示旁白提到玩家行为会**塑造主角（爱丽丝）的人格**、并**提升魅力值**——即交互会反向影响主角属性与性格\n\n**分类说明**\n它与库内其它 3D 沙盒同属一类：有可自由探索的世界、有自主行动且带身份人设的 AI NPC，玩家在其中生活与互动——故主品类归 **AI社会/沙盒**，叙事降为次品类。\n\n**数据表现**\n研发中，确认参展 ChinaJoy 2026(展位 N2-AI-57)，暂无公开数据。\n\n**策略启示**\n它把 AI 对话放进了 **3D 探索**而非纯文字场景，这比库内多数互动叙事产品难一个量级——**AI 不仅要理解玩家意图，还要理解玩家所处的空间状态与刚触发的事件**(参见 #65 育碧用 EQS 环境查询系统解决空间理解、#59 Project Shanhai 同样面临这个问题)。\n「无法预先定义的冒险」是这类产品共同的叙事，但真正的分水岭在于：**随机奇遇是 AI 生成的，还是预制事件池里抽的**。前者内容无限但质量不可控，后者反之。这一点公开物料仍未说明，需上手验证后才能判断 AI 介入的实际深度。\n从实机看，它至少已把「**自由文本输入 + 有身份人设的 NPC + 昼夜状态**」跑通在 UE5 的 3D 场景里；而「玩家行为塑造主角人格与魅力值」这条设计，意味着 AI 对话不只是叙事装饰，而是**接进了角色养成的数值层**——这是与纯对话型产品的关键区别，值得盯它做到多深。",
-   "sort_weight": 8997,
    "screenshots": [
     "/images/shots/echoshell_1.jpg",
     "/images/shots/echoshell_2.jpg",
@@ -4088,7 +4083,7 @@
   },
   {
    "id": 140,
-   "product_name": "蛋仔派对 AI 玩法",
+   "product_name": "蛋仔 AI MV 玩法",
    "company_name": "网易",
    "status": "已上线",
    "region": "国内",
