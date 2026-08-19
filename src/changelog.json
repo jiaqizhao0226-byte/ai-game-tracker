@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-08-19",
+  "title": "新产品与融资动态刷新",
+  "count": 133,
+  "delta": "+7",
+  "items": [
+   "新增 #144-147：ZeroPrompt、Eruin、Rideshare Stimulator、Liminal",
+   "新增 #148-150：Astrocade、Breaking Change、Origin Lab 三个产业平台样本",
+   "补录 Astrocade 5600 万美元融资及公司自报 2000 万参与用户；补录 Breaking Change、Origin Lab 融资",
+   "新增趋势洞察 #9：AI 生成玩法从无限生成转向受控构筑",
+   "Astrocade 经明确确认设为重点关注；其余 6 款新增产品保持普通跟踪"
+  ]
+ },
+ {
+  "date": "2026-08-18",
+  "title": "自然语言生成玩法 + 持久社会模拟",
+  "count": 126,
+  "delta": "+3",
+  "items": [
+   "新增 #141 YOU vs Zombies：一句描述生成可操作英雄、技能、宿敌与个性化关卡",
+   "新增 #142 SEED：24/7 持久社会模拟 MMO；按去掉 AI 后玩法仍成立归传统品类+AI",
+   "新增 #143 Pharos Night：以有限元机制、结构化 JSON 和确定数值约束自然语言卡牌",
+   "Pharos Night 明确标记为 13 人试玩的研究原型；三款均未设置重点关注"
+  ]
+ },
+ {
   "date": "2026-08-15",
   "title": "公司/工作室主页 + 导航居中放大",
   "count": 123,

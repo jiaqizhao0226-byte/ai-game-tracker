@@ -8,6 +8,8 @@
 
 type Block = { title: string | null; suffix: string; lines: string[] };
 
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/ai-game-tracker' : '';
+
 const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -24,7 +26,8 @@ const inline = (s: string) =>
       const external = /^https?:\/\//i.test(href);
       if (!external && !href.startsWith('/')) return whole; // 认不出的协议原样留着，不生成链接
       const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
-      return `<a href="${esc(href)}"${attrs} class="text-indigo-600 hover:text-indigo-800 underline decoration-indigo-300 underline-offset-2 hover:decoration-indigo-600">${esc(text)}</a>`;
+      const resolvedHref = external ? href : `${BASE_PATH}${href}`;
+      return `<a href="${esc(resolvedHref)}"${attrs} class="text-indigo-600 hover:text-indigo-800 underline decoration-indigo-300 underline-offset-2 hover:decoration-indigo-600">${esc(text)}</a>`;
     })
     .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-neutral-900">$1</strong>');
 

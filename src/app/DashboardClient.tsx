@@ -37,7 +37,8 @@ function MultiSelect({ label, options, selected, onChange, counts, className = "
     <div className="relative" ref={dropdownRef}>
       <button 
         onClick={() => setIsOpen(!isOpen)} 
-        className={`bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none hover:border-neutral-400 font-mono shadow-sm flex items-center justify-between gap-2 min-w-[110px] max-w-[150px] ${className}`}
+        aria-expanded={isOpen}
+        className={`bg-white border border-neutral-300 text-xs py-1.5 px-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-800 focus-visible:ring-offset-1 hover:border-neutral-500 font-mono shadow-sm flex items-center justify-between gap-2 min-w-[104px] max-w-[138px] transition-colors ${className}`}
       >
         <span className="truncate flex-1 text-left">{selected.length === 0 ? label : `${label} (${selected.length})`}</span>
         <ChevronDown className="w-3 h-3 text-neutral-400 shrink-0" />
@@ -190,20 +191,20 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full md:w-auto">
-          <div className="relative w-full sm:w-64">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 mb-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full md:flex-1 md:min-w-0">
+          <div className="relative w-full sm:w-56 lg:w-60 shrink-0">
             <Search className="absolute left-3 top-2.5 h-4 w-4 text-neutral-400" />
             <input 
               type="text" 
               placeholder="搜索产品、公司、标签..." 
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-9 pr-4 py-1.5 bg-white border border-neutral-300 shadow-sm text-sm focus:outline-none focus:ring-1 focus:ring-neutral-900 font-mono"
+              className="w-full pl-9 pr-4 py-1.5 bg-white border border-neutral-300 shadow-sm text-sm focus:outline-none focus:ring-2 focus:ring-neutral-800 focus:ring-offset-1 font-mono transition-shadow"
             />
           </div>
           
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2 min-w-0">
             <Filter className="h-4 w-4 text-neutral-400 shrink-0" />
             <MultiSelect
               label="收录批次"
@@ -262,10 +263,6 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
 
           </div>
         </div>
-
-        <div className="flex gap-2 text-xs font-mono text-neutral-400 border border-neutral-200 px-3 py-1.5 bg-white shadow-sm">
-          <span>静态看板模式 (只读)</span>
-        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -278,18 +275,17 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             key={game.id}
             href={`/game/${game.id}`}
             onClick={() => { try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); sessionStorage.setItem('backTo', JSON.stringify({ href: '/', label: '看板' })); } catch {} }}
-            className={`card-interactive bg-white cursor-pointer flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden ${
+            className={`card-interactive bg-white cursor-pointer flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-800 focus-visible:ring-offset-2 ${
               game.featured
-                ? 'border-2 border-amber-400 hover:border-amber-500 shadow-[0_0_0_3px_rgba(251,191,36,0.12)] hover:shadow-[0_0_0_3px_rgba(251,191,36,0.2),0_10px_20px_-8px_rgba(0,0,0,0.25)]'
+                ? 'border border-neutral-200 hover:border-[#6E40C9] hover:shadow-lg'
                 : 'border border-neutral-200 hover:border-neutral-900 hover:shadow-lg'
             }`}
           >
-            {/* 重点关注：实心琥珀徽章 + 卡片描边。原来的白底胶囊压在花哨封面上会糊掉，
-                故改为高对比实心色，并让整张卡片在网格里可被一眼扫到 */}
+            {/* 重点关注只使用单层高对比角标，不叠加外框或顶部信号条。 */}
             {game.featured && (
-              <div className="absolute top-0 left-0 z-10 inline-flex items-center gap-1 bg-amber-400 text-neutral-900 text-[10px] font-bold tracking-wide pl-2 pr-2.5 py-1 rounded-br-lg shadow-sm">
-                <Star className="w-3 h-3 fill-neutral-900 text-neutral-900 shrink-0" />
-                重点关注
+              <div className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 bg-[#6E40C9] text-white text-[11px] font-bold tracking-wide px-3 py-1.5 rounded-md shadow-md">
+                <Star className="w-3.5 h-3.5 fill-current shrink-0" />
+                <span>重点关注</span>
               </div>
             )}
             <GameImage
@@ -308,7 +304,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
                       role="link"
                       tabIndex={0}
                       onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(game.url, '_blank', 'noopener,noreferrer'); }}
-                      className="text-neutral-400 hover:text-indigo-600 transition-colors cursor-pointer"
+                      className="text-neutral-400 hover:text-indigo-600 focus-visible:text-indigo-700 focus-visible:outline-none transition-colors cursor-pointer shrink-0"
                       title="访问外部链接"
                     >
                       <ExternalLink className="h-4 w-4" />
@@ -381,7 +377,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
               </p>
             </div>
             
-            <div className="px-5 py-3 border-t border-neutral-100 bg-neutral-50 flex items-center justify-between text-[10px] text-neutral-400 font-mono uppercase tracking-wider group-hover:bg-neutral-100 transition-colors shrink-0">
+            <div className="px-5 py-3 border-t border-neutral-100 bg-neutral-50 flex items-center justify-between text-[10px] text-neutral-500 font-mono uppercase tracking-wider group-hover:bg-neutral-100 transition-colors shrink-0">
               <span className="flex items-center gap-1"><TerminalSquare className="h-3 w-3" /> 查看详情</span>
               <div className="flex items-center gap-3">
                 <span title="最新数据更新时间">更新:{game.updated_at ? game.updated_at.split(' ')[0] : '未知'}</span>
@@ -394,4 +390,3 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
     </div>
   );
 }
-
