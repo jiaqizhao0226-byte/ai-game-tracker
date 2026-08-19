@@ -275,7 +275,7 @@ export default function DashboardClient({ initialGames, initialEvents }: { initi
             key={game.id}
             href={`/game/${game.id}`}
             onClick={() => { try { sessionStorage.setItem('dashboardScroll', String(window.scrollY)); sessionStorage.setItem('backTo', JSON.stringify({ href: '/', label: '看板' })); } catch {} }}
-            className={`card-interactive bg-white cursor-pointer flex flex-col justify-between h-full min-h-[240px] relative group overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-800 focus-visible:ring-offset-2 ${
+            className={`card-interactive bg-white cursor-pointer flex flex-col justify-between h-[395px] relative group overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-800 focus-visible:ring-offset-2 ${
               game.featured
                 ? 'border border-neutral-200 hover:border-[#6E40C9] hover:shadow-lg'
                 : 'border border-neutral-200 hover:border-neutral-900 hover:shadow-lg'
