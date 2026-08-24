@@ -4487,6 +4487,74 @@
     }
    ],
    "product_intro": "**一句话定位**\n由约 70 万粉 AI 内容创作者单人开发、借助多种生成式工具完成的免费武侠幸存者游戏，也是一个带有 KOL 冷启动条件的 Vibe Coding 产品化案例。\n\n**核心玩法机制 & AI 介入点**\n玩家在 20 波围攻中走位、修炼武学、购买道具并围绕门派与武学共鸣构筑流派。AI 不在运行时生成玩法：官方披露 Codex、Claude Code 辅助代码，GPT-IMAGE-2、Nano Banana、Seedance、Suno、ElevenLabs 等参与美术、动画、音乐、配音与音效生产；玩法设计、平衡、手感及数百轮试玩筛选由开发者完成。\n\n**数据表现**\nSteam 于 2026-08-11 以抢先体验形式免费上线；Steam 商店在 2026-08-21 抓取时显示 **514 条评价、94% 好评**。SteamDB 记录的阶段性历史同时在线峰值为 **1,548**。上线前开发者已用约 70 万粉的 B 站主账号宣传，因此首批安装与评价不能视为完全自然流量；公开数据也无法拆分 B 站导流与 Steam 后续推荐各自占比。\n\n**用户画像与核心需求**\n核心受众包括武侠与幸存者 Like 玩家，以及关注 AI 创作、Vibe Coding 和开发者个人经历的粉丝。后一人群构成了产品上线时的重要种子用户。\n\n**商业化**\n抢先体验阶段完全免费且无内购，开发者称正式版也可能继续免费。免费显著降低尝试和评价门槛，因此当前口碑不能直接推导付费意愿或商业成功。\n\n**技术与数据壁垒**\n优势不只来自模型调用，而是开发者已有的 AI 工具熟练度、内容筛选能力、持续迭代，以及可直接触达约 70 万粉丝的分发渠道；这些条件并非普通零粉丝 Vibe Coding 开发者天然拥有。\n\n**风险与局限**\n早期版本仍暴露性能、判定和动画延迟等问题；生成式资产也存在风格、品质与玩家接受度风险。更重要的是，粉丝冷启动和免费策略共同抬高了初期采用，不能据此证明任意 AI 辅助游戏都能获得自然增长。\n\n**策略启示**\n该案例更接近“**KOL 把既有影响力转化为产品冷启动，AI 把开发成本压低**”，而不是“AI 自动带来流量”。AI 让个人更容易完成产品，但选题、品味、试玩筛选和首批分发仍是稀缺能力；零粉丝团队需要另行解决社区积累、主播传播、平台活动或发行合作。"
+  },
+  {
+   "id": 152,
+   "product_name": "AI Ranch / NHPs",
+   "company_name": "Egofold / Snail Games",
+   "status": "早期·原型",
+   "region": "海外",
+   "platform": "未知",
+   "company_size": "大厂",
+   "funding_round": "已上市",
+   "scale_tier": "大厂/大厂孵化",
+   "gameplay_main": "AI陪伴",
+   "gameplay_sub": "AI游戏陪玩",
+   "gameplay_theme": "",
+   "gameplay_facets": "传统品类+AI",
+   "tags": "Non-Human Players,AI队友,AI对手,AI教练,长期陪伴,持续学习,多品类Agent,Ai4 2026",
+   "url": "https://investor.snail.com/news-releases/news-release-details/snail-inc-subsidiary-egofold-introduces-ai-ranch-and-nhpstm-new",
+   "launch_date": "2026-08 Demo",
+   "featured": false,
+   "batch": "常态跟踪·2026",
+   "updated_at": "2026-08-24",
+   "image_url": "https://investor.snail.com/sites/g/files/knoqqb76541/themes/site/nir_pid7793/dist/images/snail_logo.png",
+   "screenshots": [
+    "https://investor.snail.com/sites/g/files/knoqqb76541/themes/site/nir_pid7793/dist/images/snail_logo.png"
+   ],
+   "description": "把会学习、适应并与玩家共同成长的 AI 队友、对手和教练定义为“非人类玩家”。",
+   "team_background": "由 Snail, Inc.（蜗牛游戏）旗下 Egofold 开发；Snail, Inc. 为 Nasdaq 上市游戏公司。",
+   "funding_amount": "",
+   "funding_detail": "上市公司内部项目，不适用创业融资轮次。",
+   "team_members": [],
+   "product_intro": "**一句话定位**\n面向多种游戏提供会学习、适应并与玩家长期共同成长的 Non-Human Players（NHPs，非人类玩家）平台。\n\n**核心玩法机制 & AI 介入点**\n官方把 NHP 与传统 NPC、脚本 Bot 区分开：NHP 可作为队友、对手、教练或伙伴，通过共同游戏持续学习玩家并形成个性化关系。Ai4 2026 展示披露了两种执行模式——Coach 模式负责指导，Autonomous 模式可完整控制 NHP；现场 Demo 覆盖 FPS、肉鸽卡组构筑和 4X 策略。\n\n**数据表现**\n2026-08-04 至 08-06 在 Ai4 2026 完成首次公开实操演示。尚未公布接入游戏、开放测试、用户数量、延迟、留存或长期学习效果。\n\n**用户画像与核心需求**\n目标包括需要陪练、指导或补足多人队伍的玩家，以及希望在不同游戏中获得持续伙伴关系的用户。\n\n**商业化**\n尚未披露面向玩家订阅、面向工作室授权或与 Snail 自有游戏整合的具体方案。\n\n**技术与数据壁垒**\n潜在壁垒在跨品类环境理解、行动执行、玩家偏好记忆，以及把同一关系连续迁移到不同游戏中的能力；目前官方尚未披露模型架构和跨游戏身份实现方式。\n\n**风险与局限**\n现阶段证据只有公司公告、现场 Demo 和官方社交媒体描述。“持续学习”“长期共同成长”仍是待验证目标，不能当成已经实现的留存结果；自主模式的稳定性、公平性和接入成本也未知。\n\n**策略启示**\nNHP 的价值在于把 AI 从“世界里的角色”推进为“和玩家一起玩的人”。真正的分水岭不是更会聊天，而是能否可靠操作游戏、积累共同经历，并让关系在多局甚至多游戏之间延续。"
+  },
+  {
+   "id": 153,
+   "product_name": "Pops",
+   "company_name": "Pops / Undefined Software, Inc.",
+   "status": "已上线",
+   "region": "海外",
+   "platform": "移动端",
+   "company_size": "创业公司",
+   "funding_round": "天使轮",
+   "scale_tier": "融资创业",
+   "gameplay_main": "AI for Game",
+   "gameplay_sub": "vibe game",
+   "gameplay_theme": "派对游戏,多模态玩法",
+   "gameplay_facets": "AI生成UGC",
+   "tags": "自然语言造游戏,短软件,反应视频,动作控制,摄像头交互,AI UGC,社交挑战,YC S26",
+   "url": "https://pops.fyi/",
+   "launch_date": "2026",
+   "featured": false,
+   "batch": "常态跟踪·2026",
+   "updated_at": "2026-08-24",
+   "image_url": "/images/pops.jpg",
+   "screenshots": [
+    "/images/pops.jpg"
+   ],
+   "description": "把自然语言生成的小游戏、身体动作交互和自动反应视频串成社交传播闭环。",
+   "team_background": "由 Alon Zuman 创办，YC Spring 2026 项目；YC 当前列示团队规模为 1 人。创始人此前在 Playground AI 从事产品工程与研究，并参与过面向数百万用户的创作工具。",
+   "funding_amount": "未披露",
+   "funding_detail": "入选 Y Combinator Spring 2026；具体融资金额与其他投资方未公开。",
+   "team_members": [
+    {
+     "name": "Alon Zuman",
+     "role": "创始人",
+     "background": "有约六年创作工具经验，曾在 Playground AI 负责产品工程与研究。"
+    }
+   ],
+   "product_intro": "**一句话定位**\n让用户用自然语言创建或 remix 手机小游戏，并把每次游玩自动转成可分享反应视频的 AI 社交游戏平台。\n\n**核心玩法机制 & AI 介入点**\n用户描述想法即可生成短小可玩的体验，也能 remix 他人作品。部分游戏直接读取摄像头动作：例如抬手控制飞行、眨眼拧螺丝、用头部动作驾驶 3D 赛车。每次游玩会自动生成带玩家反应的短视频，可回传创作者、挑战朋友或发布到社交平台。\n\n**数据表现**\nPops 已在 iOS 和 Android 上线。官网单个作品显示从几十到约 **9.8K** 不等的公开计数，但页面未解释其为播放、游玩还是浏览，因此不据此汇总用户规模；MAU、留存、创作者数和总作品量暂无公开数据。\n\n**用户画像与核心需求**\n目标不是专业开发者，而是希望快速制造朋友间笑料、挑战和反应内容的移动社交用户。创作动机更接近发滤镜、梗图或短视频，而非完成传统独立游戏。\n\n**商业化**\n官网通过创作者社区和每周奖金鼓励供给，但订阅、平台抽成、广告和创作者分成方案尚未公开。\n\n**技术与数据壁垒**\n潜在壁垒是把生成、移动端运行时、摄像头动作识别、自动录制反应视频和社交分发做成同一条低摩擦链路，而不只是生成模型本身。\n\n**风险与局限**\n当前缺乏规模和留存数据；小游戏可能依赖一次性新鲜感，摄像头权限也会增加使用门槛。自动生成反应视频能否持续带来自然分发，尚未有公开数据证明。\n\n**策略启示**\nPops 比普通 Vibe Game 平台多解决了一层“生成后谁来玩”：作品天然成为朋友挑战和反应视频素材。它指向的趋势是，AI 小游戏的竞争重心正从生成能力转向可传播格式与社交回路。"
   }
  ],
  "events": [
@@ -6929,6 +6997,33 @@
    "content": "Steam 商店 2026-08-21 抓取显示 514 条评价、94% 好评；SteamDB 记录阶段性历史同时在线峰值 1,548。开发者上线前曾通过约 70 万粉 B 站主账号预热，首批流量并非完全自然",
    "url": "https://mp.weixin.qq.com/s/ZdD5epEW8xOFzl2lEpNHkg",
    "created_at": "2026-08-24 12:00:00"
+  },
+  {
+   "id": 405,
+   "game_id": 152,
+   "event_type": "产品动态",
+   "event_date": "2026-08-04",
+   "content": "Egofold 在 Ai4 2026 首次公开展示 AI Ranch 与 NHPs，并提供现场实操 Demo",
+   "url": "https://investor.snail.com/news-releases/news-release-details/snail-inc-subsidiary-egofold-introduces-ai-ranch-and-nhpstm-new",
+   "created_at": "2026-08-24 16:30:00"
+  },
+  {
+   "id": 406,
+   "game_id": 152,
+   "event_type": "产品动态",
+   "event_date": "2026-08",
+   "content": "官方社交媒体披露 Demo 支持 Coach 与 Autonomous 两种执行模式，并跨 FPS、肉鸽卡组构筑和 4X 策略展示",
+   "url": "https://www.linkedin.com/company/snail-games-usa/",
+   "created_at": "2026-08-24 16:30:00"
+  },
+  {
+   "id": 407,
+   "game_id": 153,
+   "event_type": "产品动态",
+   "event_date": "2026",
+   "content": "Pops 在 iOS、Android 上线：自然语言生成或 remix 小游戏，支持身体动作控制，并自动把游玩过程转成反应视频",
+   "url": "https://www.ycombinator.com/launches/QPl-pops-ai-games-with-real-friends",
+   "created_at": "2026-08-24 16:30:00"
   }
  ],
  "insights": [
