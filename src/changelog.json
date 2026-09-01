@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-09-01",
+  "title": "Playworlds、Pressure Point 与 General Intuition 动态",
+  "count": 137,
+  "delta": "+1",
+  "items": [
+   "新增 #154 Playworlds：AI 游戏主持人负责解释与裁定自由行动，AI 队友参与持续的单人火星冒险",
+   "明确发布边界：Steam 标注计划 2026 Q3 进入 Early Access，但截至 2026-09-01 仍为 Coming Soon、尚未上线，无用户评价或运营数据",
+   "补充 4 张 Steam 官方实机图；产品未设置重点关注",
+   "行业动态：General Intuition 据报道正洽谈以 60 亿美元投前估值融资，新投资方包括 Valor、Point72 Ventures 与 Seven Seven Six；本轮尚未完成，不建立产品卡",
+   "General Intuition 已确认的上一轮为 2026-06 完成 3.2 亿美元融资、23 亿美元投后估值；其基于 Medal 游戏视频与按键行为数据训练时空动作模型，当前重点延伸至机器人",
+   "将原 #61 Iconic 公司占位卡升级为 Pressure Point：短篇、基本线性的公开 Digital Actor Demo，玩家在故障潜艇中以自然语音与军官 James 互动",
+   "补充 3 张官方实机图，并修正部署边界：当前浏览器 Demo 运行在 AWS GPU 并通过 Pixel Streaming 传输；CTTS 可端侧运行，完整模型栈整体端侧化属于未来部署方向",
+   "Pressure Point 未设置重点关注；总产品数不因占位卡升级而增加"
+  ]
+ },
+ {
   "date": "2026-08-24",
   "title": "AI 游戏伙伴与社交生成平台",
   "count": 136,

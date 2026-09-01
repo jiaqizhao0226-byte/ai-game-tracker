@@ -1654,36 +1654,43 @@
    "scale_tier": "融资创业"
   },
   {
-   "product_name": "Iconic",
+   "id": 61,
+   "product_name": "Pressure Point",
    "company_name": "Iconic",
-   "status": "研发中",
-   "description": "端侧语音驱动的 AI 原生游戏世界——模型跑在本地，不走云端。",
+   "status": "早期·原型",
+   "region": "海外",
+   "platform": "网页",
    "company_size": "创业公司",
    "funding_round": "天使轮",
-   "tags": "端侧语音, AI世界",
-   "region": "海外",
+   "scale_tier": "融资创业",
    "gameplay_main": "AI叙事对话",
    "gameplay_sub": "对话模拟",
-   "image_url": "https://theoversightbureau.com/images/og_image.webp",
-   "id": 61,
-   "updated_at": "2026-06-18 03:04:12",
-   "url": "https://iconicgames.ai",
-   "team_background": "团队总部位于伦敦，核心成员大多具备剑桥大学与帝国理工学院的深厚技术背景。公司已于近期完成1300万美元的种子轮融资，领投方包括 Kindred Ventures 和 Northzone，甚至吸引了 Google AI Futures Fund 等科技巨头基金的注资。",
-   "product_intro": "**核心玩法机制**(AI介入:核心驱动)\n- 打破屏幕点击的束缚，玩家以**自然语音对话**与游戏内 AI 智能体及世界环境交互\n- **核心模型在本地端侧运行**，大幅降低云端推理带来的延迟，以支撑实时叙事与互动\n\n**数据表现**\n2025-12 完成 1300 万美元(€11M)种子轮融资，Kindred Ventures 与 Northzone 领投，**Google AI Futures Fund 参投**。产品仍在开发中，公开信息有限，无可玩版本数据。\n\n**技术与数据壁垒**\n总部伦敦，核心成员多具剑桥大学与帝国理工学院技术背景。宣称壁垒在**端侧部署(on-device)的低延迟架构**与**语音驱动交互范式**。\n\n**策略启示**\n端侧部署是它押的核心变量，理由与本库 #6《永劫无间手游》一致：**实时语音交互对延迟的容忍度极低，云端往返很难支撑自然对话的节奏**。\n区别在于永劫是在成熟品类里加一个 AI 队友，而它要做完全 AI 原生的世界——后者对端侧模型能力的要求高出一个量级。融资规模与 Google AI Futures Fund 的参与说明资本认可这个技术方向，但产品形态尚未公开，**现阶段可判断的只是押注方向，不是执行质量**。",
-   "funding_amount": "",
-   "funding_detail": "€11M种子轮(2025.12)",
-   "platform": "移动端",
-   "launch_date": "未知",
+   "gameplay_theme": "",
+   "gameplay_facets": "",
+   "tags": "Digital Actor,受控开放叙事,语音交互,动态表演,端侧TTS,潜艇,Pixel Streaming",
+   "url": "https://iconicgames.io/blog/pressure-point/",
+   "launch_date": "2026-07 Demo",
+   "featured": false,
+   "batch": "常态跟踪·2025",
+   "updated_at": "2026-09-01",
+   "image_url": "/images/pressure-point.webp",
+   "screenshots": [
+    "/images/pressure-point-01.webp",
+    "/images/pressure-point-02.webp",
+    "/images/pressure-point-03.webp"
+   ],
+   "description": "在故障潜艇中，用自然语音与 Digital Actor 推进受编剧约束的互动场景。",
+   "team_background": "Iconic 总部位于伦敦，核心成员多具剑桥大学与帝国理工学院技术背景；公司于 2025-12 完成 1100 万欧元种子轮融资，由 Kindred Ventures 与 Northzone 领投，Google AI Futures Fund 等参投。",
+   "funding_amount": "€11M",
+   "funding_detail": "€11M 种子轮（2025-12），Kindred Ventures 与 Northzone 领投，Google AI Futures Fund 等参投。",
    "team_members": [
     {
-     "name": "Iconic",
-     "role": "开发团队",
-     "background": "语音驱动AI世界游戏"
+     "name": "Martin Connor",
+     "role": "创意总监",
+     "background": "负责 Pressure Point 的创作方向与 Digital Actor 叙事方法。"
     }
    ],
-   "batch": "常态跟踪·2025",
-   "gameplay_facets": "",
-   "scale_tier": "融资创业"
+   "product_intro": "**一句话定位**\nIconic 首个公开可试玩的 Digital Actor 技术 Demo：玩家被困在故障潜艇中，通过无线电与军官 James 自然对话，在编剧预设的戏剧节点内共同面对一个艰难决定。\n\n**核心玩法机制 & AI 介入点**\nPressure Point 是一段数分钟、基本线性的单场景体验。路径与结局由人类编剧控制，但玩家可以说任何话；James 会理解玩家输入、保持角色身份并即兴回应，同时把场景引向预设的叙事节点。Iconic 将这种方法称为 **directed open-endedness（受导演约束的开放表演）**：人类提供角色人格与叙事蓝图，AI 负责每一轮的具体表演，而不是自由生成整段故事。\n\n**数据表现**\n2026-07-14 公开浏览器 Demo，并标注为限时技术展示。截至 2026-09-01，官方未披露访问量、完成率、复玩率、留存或商业化数据。公司自报当前版本的语音到语音中位延迟约 **1.2 秒**，其中约 100ms 用于语音识别与情绪处理、700ms 用于 LLM 生成及状态更新、300ms 用于语音合成；该数字尚无独立测试。\n\n**用户画像与核心需求**\n面向重视剧情表演、角色可信度和语言自由的互动叙事玩家，也是一项供游戏开发者评估 AI NPC 可控性与生产部署可行性的技术展示。\n\n**商业化**\nPressure Point 本身是免费、限时开放的 Demo，未披露收费计划。更可能的商业价值在于验证 Iconic 的 Digital Actor 技术，并为后续自研体验或与游戏公司的合作提供样板；具体授权模式尚未公开。\n\n**技术与数据壁垒**\n运行链路为 ASR → LLM 编排 → TTS：定制编排器逐轮约束角色与叙事，CTTS 根据情境控制音高、音色、强度、节奏、停顿和自我修正，并维持跨场景的情绪状态。官方称 CTTS 可在标准消费级硬件上与 Unreal Engine、SLM 同时运行；完整模型栈可部署在单 GPU，并可近用户部署或在未来整体端侧化。**当前公开浏览器 Demo 实际运行在 AWS GPU 上，通过 Pixel Streaming 把画面、输入和麦克风数据传输到浏览器，不能描述为当前版本全部端侧运行。**\n\n**风险与局限**\n它仍是单角色、单场景、基本线性的技术演示，环境把玩家限制在潜艇内，也借水下无线电设定吸收了部分响应延迟。官方展示的专家评价由公司自行选择，不能替代大规模用户测试；角色能否在更开放的世界、更多角色并存和更长时间跨度下继续守住人设与剧情，尚未验证。\n\n**策略启示**\n它把 AI NPC 的问题从“能否无限聊天”改成“能否在编剧意图内即兴表演”。这与 AI 生成玩法从无限生成转向受控构筑的趋势同构：真正有价值的不是模型拥有多少自由，而是玩家获得语言自由之后，作品仍能保持节奏、人物弧光和结局质量。Pressure Point 已证明这套方法可以做成短场景 Demo，但距离完整游戏仍需验证规模化、多角色和长期一致性。"
   },
   {
    "id": 62,
@@ -4555,6 +4562,40 @@
     }
    ],
    "product_intro": "**一句话定位**\n让用户用自然语言创建或 remix 手机小游戏，并把每次游玩自动转成可分享反应视频的 AI 社交游戏平台。\n\n**核心玩法机制 & AI 介入点**\n用户描述想法即可生成短小可玩的体验，也能 remix 他人作品。部分游戏直接读取摄像头动作：例如抬手控制飞行、眨眼拧螺丝、用头部动作驾驶 3D 赛车。每次游玩会自动生成带玩家反应的短视频，可回传创作者、挑战朋友或发布到社交平台。\n\n**数据表现**\nPops 已在 iOS 和 Android 上线。官网单个作品显示从几十到约 **9.8K** 不等的公开计数，但页面未解释其为播放、游玩还是浏览，因此不据此汇总用户规模；MAU、留存、创作者数和总作品量暂无公开数据。\n\n**用户画像与核心需求**\n目标不是专业开发者，而是希望快速制造朋友间笑料、挑战和反应内容的移动社交用户。创作动机更接近发滤镜、梗图或短视频，而非完成传统独立游戏。\n\n**商业化**\n官网通过创作者社区和每周奖金鼓励供给，但订阅、平台抽成、广告和创作者分成方案尚未公开。\n\n**技术与数据壁垒**\n潜在壁垒是把生成、移动端运行时、摄像头动作识别、自动录制反应视频和社交分发做成同一条低摩擦链路，而不只是生成模型本身。\n\n**风险与局限**\n当前缺乏规模和留存数据；小游戏可能依赖一次性新鲜感，摄像头权限也会增加使用门槛。自动生成反应视频能否持续带来自然分发，尚未有公开数据证明。\n\n**策略启示**\nPops 比普通 Vibe Game 平台多解决了一层“生成后谁来玩”：作品天然成为朋友挑战和反应视频素材。它指向的趋势是，AI 小游戏的竞争重心正从生成能力转向可传播格式与社交回路。"
+  },
+  {
+   "id": 154,
+   "product_name": "Playworlds",
+   "company_name": "ElserAI",
+   "status": "研发中",
+   "region": "海外",
+   "platform": "PC端",
+   "company_size": "创业公司",
+   "funding_round": "未知",
+   "scale_tier": "独立/Indie",
+   "gameplay_main": "AI玩法机制",
+   "gameplay_sub": "AI裁定/主持",
+   "gameplay_theme": "",
+   "gameplay_facets": "AI叙事对话,传统品类+AI",
+   "tags": "未上线,AI游戏主持人,AI队友,语音交互,持久战役,动态叙事,火星冒险,Google Gemini,MiniMax",
+   "url": "https://store.steampowered.com/app/4911480/Playworlds/",
+   "launch_date": "预计 2026 Q3",
+   "featured": false,
+   "batch": "常态跟踪·2026",
+   "updated_at": "2026-09-01",
+   "image_url": "/images/playworlds.jpg",
+   "screenshots": [
+    "/images/playworlds-01.jpg",
+    "/images/playworlds-02.jpg",
+    "/images/playworlds-03.jpg",
+    "/images/playworlds-04.jpg"
+   ],
+   "description": "未上线：由 AI 游戏主持人和 AI 队友共同驱动、支持语音或文字自由行动的单人冒险 RPG。",
+   "team_background": "由 ElserAI 开发与发行；目前未查到可核实的团队规模、核心成员或融资信息。",
+   "funding_amount": "",
+   "funding_detail": "暂无公开融资信息。",
+   "team_members": [],
+   "product_intro": "**一句话定位**\n一款尚未上线的语音优先单人 AI 冒险 RPG：玩家自由描述行动，AI 游戏主持人负责解释、裁定并推进持续战役，AI 队友则以角色身份共同冒险。\n\n**核心玩法机制 & AI 介入点**\n玩家可用麦克风或键盘表达行动、与队友制定计划；AI 游戏主持人根据输入生成旁白、结果、风险和后续场景，AI 队友则保持角色身份回应。产品同时保留玩家与队伍状态、骰子与行动结算、物品栏、对话记录、存档和续玩等传统 RPG 结构。Steam 披露运行时生成使用 Google Gemini 与 MiniMax。\n\n**数据表现**\n**截至 2026-09-01 尚未在 Steam 上线**，页面标注计划于 2026 Q3 进入 Early Access，当前无用户评价、销量、在线人数、留存或愿望单数据。Steam 对“当前 Early Access 构建”的描述属于开发方计划与构建说明，不能视为公众已经可以下载游玩。\n\n**用户画像与核心需求**\n面向喜欢桌面角色扮演、开放行动和动态叙事，但难以长期召集真人主持人与队友的单人玩家；语音优先设计也试图降低长篇打字的操作负担。\n\n**商业化**\n开发方计划在 Early Access 期间免费游玩，并称 1.0 后基础游戏也预计保持免费；长期商业化方案仍在评估，尚未公布订阅、内购或内容付费结构。\n\n**技术与数据壁垒**\n潜在难点不只是生成文案，而是让主持人的自由裁定与结构化状态保持一致：生命、物品、队伍关系、骰子结果和长期战役需要跨回合持续保存。语音输入、实时生成语音和不同硬件环境又进一步增加可靠性要求。\n\n**风险与局限**\n产品尚未上线，公开材料主要来自开发方 Steam 页面和官网。生成式叙事的逻辑一致性、延迟、语音识别、内容安全、存档兼容与长期可玩性均未经过公开用户数据验证；开发方也明确提示生成内容的质量和一致性可能波动，Steam 商店部分宣传美术使用了生成式 AI。\n\n**策略启示**\nPlayworlds 的可观察点是“AI 主持 + 传统状态机”的组合：开放语言负责扩大行动空间，骰子、背包、队伍状态和持久存档负责给自由生成加边界。它是否成立，要等上线后检验 AI 裁定能否长期一致，以及玩家是否愿意持续经营同一段战役，而不能由当前的功能清单提前下结论。"
   }
  ],
  "events": [
@@ -7024,6 +7065,24 @@
    "content": "Pops 在 iOS、Android 上线：自然语言生成或 remix 小游戏，支持身体动作控制，并自动把游玩过程转成反应视频",
    "url": "https://www.ycombinator.com/launches/QPl-pops-ai-games-with-real-friends",
    "created_at": "2026-08-24 16:30:00"
+  },
+  {
+   "id": 408,
+   "game_id": 154,
+   "event_type": "产品动态",
+   "event_date": "2026-08",
+   "content": "Steam 页面公开并标注计划于 2026 Q3 进入 Early Access；截至 2026-09-01 仍显示 Coming Soon、尚未推出，无公开用户评价或运营数据",
+   "url": "https://store.steampowered.com/app/4911480/Playworlds/",
+   "created_at": "2026-09-01 12:00:00"
+  },
+  {
+   "id": 409,
+   "game_id": 61,
+   "event_type": "产品动态",
+   "event_date": "2026-07-14",
+   "content": "Iconic 发布首个公开 Digital Actor 技术 Demo《Pressure Point》：玩家以自然语音与军官 James 互动，在人类编写的角色与叙事蓝图内即兴推进潜艇危机场景",
+   "url": "https://iconicgames.io/blog/pressure-point/",
+   "created_at": "2026-09-01 13:00:00"
   }
  ],
  "insights": [
