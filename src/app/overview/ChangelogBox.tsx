@@ -29,7 +29,7 @@ export default function ChangelogBox({ entries }: { entries: Entry[] }) {
             {visible.map((e, i) => {
               const isLatest = page === 0 && i === 0;
               return (
-                <div key={e.date} className="relative pl-8">
+                <div key={`${e.date}-${e.title}`} className="relative pl-8">
                   <div className={`absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-2 ${isLatest ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-neutral-300'}`} />
                   <div className="flex flex-wrap items-baseline gap-2.5 mb-2">
                     <span className="font-mono text-sm font-bold text-neutral-900">{e.date}</span>

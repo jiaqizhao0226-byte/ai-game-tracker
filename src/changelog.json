@@ -1,114 +1,114 @@
 [
   {
-    "date": "2026-09-01",
-    "title": "产品与行业动态更新",
-    "count": 133,
-    "delta": "+1",
-    "items": ["新增 Playworlds，更新 Pressure Point 与 General Intuition 动态"]
+    "date": "2026-09-02",
+    "title": "产品清理与资料更新",
+    "count": 127,
+    "delta": "-3",
+    "items": ["完成全库状态核对，清理信息不足项目并刷新重点产品资料"]
   },
   {
     "date": "2026-08-24",
     "title": "新增社交生成产品",
-    "count": 132,
+    "count": 126,
     "delta": "+1",
     "items": ["新增 Pops"]
   },
   {
     "date": "2026-08-24",
     "title": "新增 AI 辅助独游",
-    "count": 131,
+    "count": 125,
     "delta": "+1",
     "items": ["新增《群侠传：幸存者》"]
   },
   {
     "date": "2026-08-19",
     "title": "新产品与融资动态",
-    "count": 130,
+    "count": 124,
     "delta": "+5",
     "items": ["新增 5 款产品，补充融资动态与趋势洞察"]
   },
   {
     "date": "2026-08-18",
     "title": "新增 AI 玩法产品",
-    "count": 125,
+    "count": 119,
     "delta": "+3",
     "items": ["新增 YOU vs Zombies、SEED 与 Pharos Night"]
   },
   {
     "date": "2026-08-15",
     "title": "公司主页上线",
-    "count": 122,
+    "count": 116,
     "delta": "0",
     "items": ["新增公司主页，优化导航与公司名称归类"]
   },
   {
     "date": "2026-08-14",
     "title": "内容与排序优化",
-    "count": 122,
+    "count": 116,
     "delta": "+1",
     "items": ["新增蛋仔 AI MV 玩法，优化看板排序"]
   },
   {
     "date": "2026-08-11",
     "title": "产品批量更新",
-    "count": 121,
+    "count": 115,
     "delta": "+9",
     "items": ["新增 9 款产品，更新部分产品状态与资料"]
   },
   {
     "date": "2026-08-04",
     "title": "ChinaJoy 专题更新",
-    "count": 112,
+    "count": 106,
     "delta": "+3",
     "items": ["补充现场调研产品、趋势洞察与看板功能"]
   },
   {
     "date": "2026-07-24",
     "title": "ChinaJoy 产品补录",
-    "count": 103,
+    "count": 98,
     "delta": "+7",
     "items": ["新增 zeta 与 6 款参展产品"]
   },
   {
     "date": "2026-07-23",
     "title": "参展产品更新",
-    "count": 96,
+    "count": 91,
     "delta": "+5",
     "items": ["新增 5 款参展产品，补充重点案例资料"]
   },
   {
     "date": "2026-07-21",
     "title": "ChinaJoy 专题录入",
-    "count": 91,
-    "delta": "+20",
+    "count": 86,
+    "delta": "+16",
     "items": ["新增 20 款产品并完成基础信息核实"]
   },
   {
     "date": "2026-07-20",
     "title": "资料与视觉优化",
-    "count": 71,
+    "count": 70,
     "delta": "0",
     "items": ["补充团队规模、封面图与重点产品资料"]
   },
   {
     "date": "2026-07-17",
     "title": "分类与浏览优化",
-    "count": 71,
+    "count": 70,
     "delta": "0",
     "items": ["优化玩法分类、标签与浏览体验"]
   },
   {
     "date": "2026-07-16",
     "title": "分类体系重构",
-    "count": 71,
+    "count": 70,
     "delta": "+4 / -3",
     "items": ["重构玩法分类，新增概览页并优化详情结构"]
   },
   {
     "date": "2026-07-15",
     "title": "筛选体验优化",
-    "count": 70,
-    "delta": "+16",
+    "count": 69,
+    "delta": "+15",
     "items": ["新增收录批次维度，补充参展案例"]
   },
   {
