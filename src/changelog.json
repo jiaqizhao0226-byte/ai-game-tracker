@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-04",
+    "title": "新增 AI 叙事项目",
+    "count": 128,
+    "delta": "+1",
+    "items": ["新增 TaleSpark / Project S"]
+  },
+  {
     "date": "2026-09-02",
     "title": "产品清理与资料更新",
     "count": 127,
