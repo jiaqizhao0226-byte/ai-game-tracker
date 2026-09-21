@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-09-21",
+    "title": "新增产品与资料更新",
+    "count": 133,
+    "delta": "+4",
+    "items": [
+      "新增《图灵证言》、Voyage、Bobium Brawlers、Boundless AI Fantasy，刷新《不问凡尘》《星眠》资料"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "title": "新增实时生成影游实验",
+    "count": 129,
+    "delta": "+1",
+    "items": ["新增秘塔 H3 实时生成影游实验"]
+  },
+  {
+    "date": "2026-09-15",
+    "title": "团队资料更新",
+    "count": 128,
+    "delta": "0",
+    "items": ["补充 3 款产品的团队信息"]
+  },
+  {
     "date": "2026-09-04",
     "title": "新增 AI 叙事项目",
     "count": 128,

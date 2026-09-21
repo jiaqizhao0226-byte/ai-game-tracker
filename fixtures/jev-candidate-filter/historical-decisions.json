@@ -1,0 +1,146 @@
+{
+  "description": "Policy fixtures based on prior tracker decisions. Mock answers test routing code only, not Jev accuracy.",
+  "cases": [
+    {
+      "id": "exact-source-duplicate",
+      "note": "The same source and event are already recorded.",
+      "incoming": { "source_type": "independent_reporting" },
+      "deterministic": {
+        "exact_url_duplicate": true,
+        "exact_content_duplicate": false,
+        "exact_duplicate": true,
+        "ambiguous_shortlist": false
+      },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "same_event_duplicate", "confidence": 0.96, "probabilities": { "same_event_duplicate": 0.97, "new_event_same_product": 0.02, "different_product_or_entity": 0.01, "unclear": 0 } },
+        "event_type": { "type": "choice", "choice": "article_or_opinion", "confidence": 0.9, "probabilities": { "article_or_opinion": 0.94, "other_or_unclear": 0.06 } },
+        "novelty_to_tracker": { "type": "score", "score": 0.05, "confidence": 0.96 },
+        "change_materiality": { "type": "score", "score": 0.1, "confidence": 0.93 },
+        "market_scope": { "type": "score", "score": 0.2, "confidence": 0.88 },
+        "source_support": { "type": "choice", "choice": "supports", "confidence": 0.91, "probabilities": { "supports": 0.95, "contradicts": 0.01, "says_nothing": 0.02, "mixed_or_unclear": 0.02 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.85 },
+        "existing_fact_relation": { "type": "choice", "choice": "supports_existing", "confidence": 0.92, "probabilities": { "supports_existing": 0.94, "contradicts_existing": 0.01, "temporal_update": 0.02, "unrelated_or_not_addressed": 0.02, "mixed_or_unclear": 0.01 } }
+      },
+      "expected": { "route": "ignore", "monthly_importance": 0, "is_duplicate": true }
+    },
+    {
+      "id": "routine-release-known-product",
+      "note": "A known product reaches an ordinary release milestone; update the database but do not promote it into the monthly report by default.",
+      "incoming": { "source_type": "independent_primary_record" },
+      "deterministic": { "exact_duplicate": false, "ambiguous_shortlist": false },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "new_event_same_product", "confidence": 0.9, "probabilities": { "same_event_duplicate": 0.03, "new_event_same_product": 0.93, "different_product_or_entity": 0.02, "unclear": 0.02 } },
+        "event_type": { "type": "choice", "choice": "routine_release_or_marketing", "confidence": 0.92, "probabilities": { "routine_release_or_marketing": 0.95, "new_product": 0.03, "other_or_unclear": 0.02 } },
+        "novelty_to_tracker": { "type": "score", "score": 1.1, "confidence": 0.72 },
+        "change_materiality": { "type": "score", "score": 0.8, "confidence": 0.7 },
+        "market_scope": { "type": "score", "score": 0.4, "confidence": 0.74 },
+        "source_support": { "type": "choice", "choice": "supports", "confidence": 0.93, "probabilities": { "supports": 0.96, "contradicts": 0.01, "says_nothing": 0.02, "mixed_or_unclear": 0.01 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.88 },
+        "existing_fact_relation": { "type": "choice", "choice": "temporal_update", "confidence": 0.86, "probabilities": { "supports_existing": 0.06, "contradicts_existing": 0.01, "temporal_update": 0.89, "unrelated_or_not_addressed": 0.03, "mixed_or_unclear": 0.01 } }
+      },
+      "expected": { "route": "candidate", "monthly_importance": 1, "is_duplicate": false }
+    },
+    {
+      "id": "shutdown-official-only",
+      "note": "A shutdown is always a major candidate, but official-only evidence keeps it in human review.",
+      "incoming": { "source_type": "official_self_disclosure" },
+      "deterministic": { "exact_duplicate": false, "ambiguous_shortlist": false },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "new_event_same_product", "confidence": 0.95, "probabilities": { "same_event_duplicate": 0.01, "new_event_same_product": 0.97, "different_product_or_entity": 0.01, "unclear": 0.01 } },
+        "event_type": { "type": "choice", "choice": "shutdown_or_delisting", "confidence": 0.97, "probabilities": { "shutdown_or_delisting": 0.98, "core_product_change": 0.01, "other_or_unclear": 0.01 } },
+        "novelty_to_tracker": { "type": "score", "score": 2.9, "confidence": 0.91 },
+        "change_materiality": { "type": "score", "score": 3, "confidence": 0.96 },
+        "market_scope": { "type": "score", "score": 2, "confidence": 0.68 },
+        "source_support": { "type": "choice", "choice": "supports", "confidence": 0.96, "probabilities": { "supports": 0.98, "contradicts": 0, "says_nothing": 0.01, "mixed_or_unclear": 0.01 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.12 },
+        "existing_fact_relation": { "type": "choice", "choice": "temporal_update", "confidence": 0.93, "probabilities": { "supports_existing": 0.02, "contradicts_existing": 0.01, "temporal_update": 0.95, "unrelated_or_not_addressed": 0.01, "mixed_or_unclear": 0.01 } }
+      },
+      "expected": { "route": "human_review", "monthly_importance": 3, "is_duplicate": false }
+    },
+    {
+      "id": "shutdown-independently-confirmed",
+      "note": "An independently confirmed shutdown is a major monthly candidate; publication still remains human-controlled.",
+      "incoming": { "source_type": "independent_reporting" },
+      "deterministic": { "exact_duplicate": false, "ambiguous_shortlist": false },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "new_event_same_product", "confidence": 0.94, "probabilities": { "same_event_duplicate": 0.01, "new_event_same_product": 0.96, "different_product_or_entity": 0.02, "unclear": 0.01 } },
+        "event_type": { "type": "choice", "choice": "shutdown_or_delisting", "confidence": 0.96, "probabilities": { "shutdown_or_delisting": 0.98, "core_product_change": 0.01, "other_or_unclear": 0.01 } },
+        "novelty_to_tracker": { "type": "score", "score": 3, "confidence": 0.92 },
+        "change_materiality": { "type": "score", "score": 3, "confidence": 0.95 },
+        "market_scope": { "type": "score", "score": 2, "confidence": 0.66 },
+        "source_support": { "type": "choice", "choice": "supports", "confidence": 0.94, "probabilities": { "supports": 0.97, "contradicts": 0.01, "says_nothing": 0.01, "mixed_or_unclear": 0.01 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.91 },
+        "existing_fact_relation": { "type": "choice", "choice": "temporal_update", "confidence": 0.91, "probabilities": { "supports_existing": 0.02, "contradicts_existing": 0.01, "temporal_update": 0.94, "unrelated_or_not_addressed": 0.02, "mixed_or_unclear": 0.01 } }
+      },
+      "expected": { "route": "candidate", "monthly_importance": 3, "is_duplicate": false }
+    },
+    {
+      "id": "vendor-benchmark-no-independent-test",
+      "note": "A meaningful vendor benchmark may enter the candidate pool, while evidence remains explicitly primary-source-only.",
+      "incoming": { "source_type": "official_self_disclosure" },
+      "deterministic": { "exact_duplicate": false, "ambiguous_shortlist": false },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "new_event_same_product", "confidence": 0.86, "probabilities": { "same_event_duplicate": 0.05, "new_event_same_product": 0.89, "different_product_or_entity": 0.03, "unclear": 0.03 } },
+        "event_type": { "type": "choice", "choice": "major_metric", "confidence": 0.84, "probabilities": { "major_metric": 0.88, "core_product_change": 0.07, "other_or_unclear": 0.05 } },
+        "novelty_to_tracker": { "type": "score", "score": 2.4, "confidence": 0.65 },
+        "change_materiality": { "type": "score", "score": 1.8, "confidence": 0.59 },
+        "market_scope": { "type": "score", "score": 1.8, "confidence": 0.6 },
+        "source_support": { "type": "choice", "choice": "supports", "confidence": 0.9, "probabilities": { "supports": 0.94, "contradicts": 0.01, "says_nothing": 0.02, "mixed_or_unclear": 0.03 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.15 },
+        "existing_fact_relation": { "type": "choice", "choice": "unrelated_or_not_addressed", "confidence": 0.78, "probabilities": { "supports_existing": 0.06, "contradicts_existing": 0.03, "temporal_update": 0.08, "unrelated_or_not_addressed": 0.8, "mixed_or_unclear": 0.03 } }
+      },
+      "expected": { "route": "candidate", "monthly_importance": 2, "is_duplicate": false }
+    },
+    {
+      "id": "claim-conflicts-with-current-record",
+      "note": "A strongly supported conflict must be reviewed rather than silently overwriting the database.",
+      "incoming": { "source_type": "independent_reporting" },
+      "deterministic": { "exact_duplicate": false, "ambiguous_shortlist": false },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "new_event_same_product", "confidence": 0.87, "probabilities": { "same_event_duplicate": 0.04, "new_event_same_product": 0.9, "different_product_or_entity": 0.03, "unclear": 0.03 } },
+        "event_type": { "type": "choice", "choice": "team_or_ownership_change", "confidence": 0.81, "probabilities": { "team_or_ownership_change": 0.86, "funding_or_acquisition": 0.09, "other_or_unclear": 0.05 } },
+        "novelty_to_tracker": { "type": "score", "score": 2.2, "confidence": 0.61 },
+        "change_materiality": { "type": "score", "score": 2.1, "confidence": 0.62 },
+        "market_scope": { "type": "score", "score": 1.2, "confidence": 0.57 },
+        "source_support": { "type": "choice", "choice": "supports", "confidence": 0.85, "probabilities": { "supports": 0.9, "contradicts": 0.02, "says_nothing": 0.03, "mixed_or_unclear": 0.05 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.8 },
+        "existing_fact_relation": { "type": "choice", "choice": "contradicts_existing", "confidence": 0.9, "probabilities": { "supports_existing": 0.03, "contradicts_existing": 0.93, "temporal_update": 0.01, "unrelated_or_not_addressed": 0.01, "mixed_or_unclear": 0.02 } }
+      },
+      "expected": { "route": "human_review", "monthly_importance": 2, "is_duplicate": false }
+    },
+    {
+      "id": "team-growth-is-temporal-update",
+      "note": "Early solo development and a later team expansion are different time stages, not a factual contradiction.",
+      "incoming": { "source_type": "independent_reporting" },
+      "deterministic": { "exact_duplicate": false, "ambiguous_shortlist": false },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "new_event_same_product", "confidence": 0.92, "probabilities": { "same_event_duplicate": 0.02, "new_event_same_product": 0.95, "different_product_or_entity": 0.02, "unclear": 0.01 } },
+        "event_type": { "type": "choice", "choice": "team_or_ownership_change", "confidence": 0.85, "probabilities": { "team_or_ownership_change": 0.9, "routine_release_or_marketing": 0.05, "other_or_unclear": 0.05 } },
+        "novelty_to_tracker": { "type": "score", "score": 1.8, "confidence": 0.63 },
+        "change_materiality": { "type": "score", "score": 1.2, "confidence": 0.58 },
+        "market_scope": { "type": "score", "score": 0.3, "confidence": 0.76 },
+        "source_support": { "type": "choice", "choice": "supports", "confidence": 0.91, "probabilities": { "supports": 0.95, "contradicts": 0.01, "says_nothing": 0.02, "mixed_or_unclear": 0.02 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.83 },
+        "existing_fact_relation": { "type": "choice", "choice": "temporal_update", "confidence": 0.89, "probabilities": { "supports_existing": 0.04, "contradicts_existing": 0.02, "temporal_update": 0.91, "unrelated_or_not_addressed": 0.02, "mixed_or_unclear": 0.01 } }
+      },
+      "expected": { "route": "candidate", "monthly_importance": 1, "is_duplicate": false }
+    },
+    {
+      "id": "ambiguous-product-identity",
+      "note": "When two existing products are similarly plausible, identity resolution must go to a person.",
+      "incoming": { "source_type": "secondary_commentary" },
+      "deterministic": { "exact_duplicate": false, "ambiguous_shortlist": true },
+      "mock_answers": {
+        "record_relation": { "type": "choice", "choice": "unclear", "confidence": 0.34, "probabilities": { "same_event_duplicate": 0.26, "new_event_same_product": 0.3, "different_product_or_entity": 0.23, "unclear": 0.21 } },
+        "event_type": { "type": "choice", "choice": "new_product", "confidence": 0.62, "probabilities": { "new_product": 0.7, "core_product_change": 0.12, "routine_release_or_marketing": 0.1, "other_or_unclear": 0.08 } },
+        "novelty_to_tracker": { "type": "score", "score": 2.3, "confidence": 0.38 },
+        "change_materiality": { "type": "score", "score": 1.7, "confidence": 0.42 },
+        "market_scope": { "type": "score", "score": 1.2, "confidence": 0.52 },
+        "source_support": { "type": "choice", "choice": "mixed_or_unclear", "confidence": 0.41, "probabilities": { "supports": 0.34, "contradicts": 0.1, "says_nothing": 0.2, "mixed_or_unclear": 0.36 } },
+        "independent_corroboration": { "type": "noul", "noul": 0.36 },
+        "existing_fact_relation": { "type": "choice", "choice": "mixed_or_unclear", "confidence": 0.3, "probabilities": { "supports_existing": 0.19, "contradicts_existing": 0.2, "temporal_update": 0.18, "unrelated_or_not_addressed": 0.21, "mixed_or_unclear": 0.22 } }
+      },
+      "expected": { "route": "human_review", "monthly_importance": 2, "is_duplicate": null }
+    }
+  ]
+}

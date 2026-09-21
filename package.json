@@ -7,9 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "jev:fixture": "node scripts/jev-candidate-filter.mjs --fixture",
+    "jev:dry-run": "node scripts/jev-candidate-filter.mjs --input fixtures/jev-candidate-filter/sample-input.json --dry-run",
+    "jev:test": "node --test scripts/jev-candidate-filter.test.mjs",
     "seed": "node scripts/seed.js && node scripts/seed_events.js && node scripts/seed_additional_events.js && node scripts/migrate_url.js && node scripts/migrate_filters.js && node scripts/migrate_tags.js && node scripts/migrate_insights.js"
   },
   "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0",
     "better-sqlite3": "^12.11.1",
     "lucide-react": "^1.20.0",
     "mammoth": "^1.12.0",

@@ -1,0 +1,11 @@
+{
+  "title": "秘塔 H3 实时生成影游实验",
+  "product_name": "H3 实时生成影游实验",
+  "company_name": "秘塔科技（MetaSo）",
+  "source_url": "https://mp.weixin.qq.com/s/4bOxX4duAmRzyMxS8xzEBA",
+  "source_type": "official_self_disclosure",
+  "published_at": "2026-09-17",
+  "primary_claim": "团队使用 8 张 H200 将约 10 秒视频的生成时间压缩至约 9.07 秒。",
+  "content": "文章披露秘塔使用 8 张 H200、6 步推理，把约 10 秒视频生成压到约 9.07 秒。该数据为团队披露，材料中未提供独立复测。",
+  "independent_sources": []
+}
