@@ -24,6 +24,7 @@ export type Company = {
 
 /** 母公司归一规则。命中即归入该组，顺序敏感（先匹配到的赢）。 */
 const GROUPS: Array<{ slug: string; name: string; test: RegExp }> = [
+  { slug: 'meshy', name: 'Meshy', test: /Meshy/i },
   { slug: 'netease', name: '网易', test: /网易|Everstone/i },
   { slug: 'tencent', name: '腾讯', test: /腾讯|光子工作室/ },
   { slug: 'bytedance', name: '字节跳动', test: /字节跳动|朝夕光年|Nuverse/i },

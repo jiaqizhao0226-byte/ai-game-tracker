@@ -2,6 +2,7 @@ import data from '../../data.json';
 import changelog from '../../changelog.json';
 import ChangelogBox from './ChangelogBox';
 import RollingNumber from '../../components/RollingNumber';
+import Link from 'next/link';
 
 const MAIN_ORDER = ['AI陪伴', 'AI叙事对话', 'AI玩法机制', 'AI社会/沙盒', 'AI生成UGC', '传统品类+AI', 'AI for Game'];
 const NATIVE_MAINS = MAIN_ORDER.slice(0, 5);
@@ -51,7 +52,7 @@ export default function OverviewPage() {
       <header className="mb-6 sm:mb-8 border-b-2 border-neutral-800 pb-4 flex flex-col sm:flex-row sm:justify-between sm:items-end gap-2">
         <div>
           <h1 className="text-2xl font-bold font-sans text-neutral-900 tracking-tight">概览</h1>
-          <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">收录统计与版本更新记录</p>
+          <p className="text-neutral-500 mt-2 text-xs uppercase tracking-widest font-mono">收录统计、行业动态与版本更新记录</p>
         </div>
         <div className="text-right text-xs font-mono text-neutral-500">
           <div>最后更新: <span className="text-neutral-900 font-bold">{lastUpdated}</span></div>
@@ -114,6 +115,32 @@ export default function OverviewPage() {
           </ul>
         </div>
       </section>
+
+      {data.industry_events.length > 0 && (
+        <section className="mb-12" aria-labelledby="industry-events-title">
+          <h2 id="industry-events-title" className="text-sm font-bold text-neutral-800 mb-6 font-mono border-l-4 border-indigo-600 pl-3 tracking-wider">
+            行业动态
+          </h2>
+          <div className="bg-white border border-neutral-200 divide-y divide-neutral-100">
+            {[...data.industry_events].sort((a, b) => b.event_date.localeCompare(a.event_date)).map(event => (
+              <article key={event.id} className="p-4 sm:p-5">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-2">
+                  <h3 className="text-sm font-bold text-neutral-900">{event.company_name}</h3>
+                  <span className="text-xs font-mono text-neutral-500">{event.event_date} · {event.event_type}</span>
+                </div>
+                <p className="text-sm text-neutral-600 leading-relaxed">{event.content}</p>
+                <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs">
+                  <a href={event.url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">查看来源 ↗</a>
+                  {event.related_game_ids.map(id => {
+                    const game = games.find(g => g.id === id);
+                    return game ? <Link key={id} href={`/game/${id}`} className="text-indigo-600 hover:underline">{game.product_name}</Link> : null;
+                  })}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section>
         <h2 className="text-sm font-bold text-neutral-800 mb-6 font-mono border-l-4 border-indigo-600 pl-3 uppercase tracking-wider">

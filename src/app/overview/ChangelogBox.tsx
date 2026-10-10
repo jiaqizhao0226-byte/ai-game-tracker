@@ -57,11 +57,11 @@ export default function ChangelogBox({ entries }: { entries: Entry[] }) {
       </div>
 
       {/* 翻页 */}
-      <div className="border-t border-neutral-100 bg-neutral-50 px-4 py-2.5 flex items-center justify-between">
+      <div className="border-t border-neutral-100 bg-neutral-50 px-4 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2">
         <span className="text-[10px] font-mono text-neutral-400">
           共 {entries.length} 次更新
         </span>
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-center justify-center gap-1 max-w-full">
           <button
             onClick={() => setPage(p => Math.max(0, p - 1))}
             disabled={page === 0}

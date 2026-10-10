@@ -84,6 +84,22 @@ for (const e of d.events) {
   if (e.url && !/^https?:\/\//.test(e.url)) add('链接', e.id, `event#${e.id}`, 'url', `非法 URL「${e.url}」`);
 }
 
+// 行业动态独立于产品，不用虚构 game_id；可选关联必须指向已有产品。
+const industryIds = new Set();
+for (const e of d.industry_events || []) {
+  if (!Number.isInteger(e.id) || industryIds.has(e.id)) add('引用', e.id, 'industry_event', 'id', '行业事件 ID 非整数或重复');
+  industryIds.add(e.id);
+  for (const f of ['company_name', 'event_type', 'event_date', 'content', 'url']) {
+    if (!e[f]) add('缺失', e.id, 'industry_event', f, '必填为空');
+  }
+  if (!['产品动态', '融资动态', '相关文章'].includes(e.event_type)) add('枚举', e.id, 'industry_event', 'event_type', '非法事件类型');
+  if (e.url && !/^https?:\/\//.test(e.url)) add('链接', e.id, 'industry_event', 'url', '非法 URL');
+  if (!Array.isArray(e.related_game_ids)) add('缺失', e.id, 'industry_event', 'related_game_ids', '必须为数组，无关联时填空数组');
+  else for (const id of e.related_game_ids) {
+    if (!gameIds.has(id)) add('引用', e.id, 'industry_event', 'related_game_ids', `指向不存在的 game ${id}`);
+  }
+}
+
 // ---- 汇总输出 ----
 const bySev = {};
 for (const i of issues) (bySev[i.sev] ??= []).push(i);
@@ -99,6 +115,7 @@ for (const sev of ['缺失', '枚举', '主题', '次品类', '骨架', '简介'
 const links = [
   ...d.games.filter(g => g.url).map(g => ({ id: g.id, name: g.product_name, url: g.url })),
   ...d.events.filter(e => e.url).map(e => ({ id: 'e' + e.id, name: 'event', url: e.url })),
+  ...(d.industry_events || []).filter(e => e.url).map(e => ({ id: 'i' + e.id, name: e.company_name, url: e.url })),
 ];
 require('fs').writeFileSync(__dirname + '/../scripts/_links.json', JSON.stringify(links, null, 1));
 console.log(`\n外链共 ${links.length} 条,已写入 scripts/_links.json 供连通性检测`);

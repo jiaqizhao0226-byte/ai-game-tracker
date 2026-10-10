@@ -1,6 +1,6 @@
 # 当前状态
 
-更新时间：2026-08-19
+更新时间：2026-10-10
 
 ## 项目形态
 
@@ -14,15 +14,18 @@
 
 ## 当前 Git 状态
 
-当前存在未提交改动，尚未 commit、push 或 deploy。主要包括：
+本版基于已发布提交 `5bf38f9`，用户于 2026-10-10 授权发布。发布前构建、数据审计与差异检查已通过；GitHub 命令行状态查询返回 401，HTTPS Git 推送检查无法取得授权，因此尚未 push 或 deploy。改动保存在本地，恢复 `gh auth login` 后可继续；最新本地提交以 `git log -1` 为准。主要包括：
 
-- 新增 7 款产品与产业平台，当前收录总数 133
-- 新增融资/产品动态与趋势洞察 #9
-- Astrocade 经用户明确确认设为重点关注
-- ProductIntro 的 GitHub Pages basePath 修复
-- 已撤回全站视觉重构，仅保留原有风格上的轻量角标优化
+- 新增 #161 Google Playground / Unity Spark（合并记录）、#163 Mora / Mora 1、#164 Pax Historia、#165 Playabl，共收录 137 款
+- #162 Unity Spark 已按用户确认合入 #161，图片与动态保留；旧详情地址兼容展示 #161，不计作独立产品
+- Pax Historia 为既有产品补录，使用 `sort_weight=142.5`，不占据新品首位
+- Playabl 为上半年产品补录，使用 `sort_weight=130.5`，与既有创作平台相邻，不冒充最新首曝
+- 刷新《不问凡尘》《星眠》《图灵证言》及 Meshy 公司动态，保留来源与统计口径
+- 新增独立 `industry_events`，在概览页展示 General Intuition 融资与 Meshy 经营数据；不建立 General Intuition 产品卡
+- 新增 6 张官方素材及 1 张 Playabl 社区作品实机截图，统一 Meshy 公司主页，修复更新记录页码的窄屏换行
+- 新卡 `featured=false`；既有重点关注与玩法分类保留
 
-最近提交围绕：
+历史已发布工作包括：
 
 - 产品与公司主页补充
 - 看板排序和老产品归位
@@ -37,21 +40,30 @@
 - 概览页与分类分布
 - 趋势/洞察页
 - 更新记录
+- 概览页的行业动态（不计入产品数量）
 - AI Native、AI in Game 和 AI for Game 分类体系
 
 ## 最近验证
 
-- `npm run build`：成功，生成 245 个静态页面
+- `npm run build`：成功，生成 267 个静态页面（含 #162 旧地址兼容页）
 - `node scripts/audit.js`：0 个问题
-- 桌面首页、375px 窄屏、概览和洞察页完成浏览器检查
-- 窄屏无横向溢出，浏览器控制台无错误
-- 本地预览：`npm run dev` → `http://localhost:3000/`
+- 已检查正式导出：首页、新卡详情、概览行业动态与本地图片的 `/ai-game-tracker` 路径
+- 375px 首页筛选、新旧卡详情、概览及 Meshy 公司页无横向溢出；更新记录第 10 页可正常切换，控制台无错误
+- Playabl #165 已检查桌面与 375px 详情、首页搜索、图片加载及大图打开；本地图片使用 `/ai-game-tracker` 路径，总数与更新记录均为 137
+- 当前正式导出预览：`http://127.0.0.1:3000/ai-game-tracker/`；预览服务为临时运行进程，源码与数据保存在本项目
+- 重开开发预览：`npm run dev` → `http://localhost:3000/`；GitHub Pages 上仍是此前已发布版本
 
 ## 视觉规则
 
 - “重点关注”仅在用户明确指定时设置
 - 重点关注使用单层紫色星标标签，不使用 warning/danger 的黄红状态色
 - 保持既有页面结构、紧凑筛选与卡片尺寸；后续视觉调整以局部微调为主
+
+## 新产品研究
+
+- 2026-10-09 已保存 Instaplay 与 Playabl 的原始来源、公开作品观察、商业化边界及收录建议：`docs/research/2026-10-09-instaplay-playabl.md`
+- Playabl 已按用户确认建立 #165 卡片（AI for Game / vibe game），使用公开作品 Orbit Loop 的实机截图；Instaplay 尚未建卡。两者均未设置重点关注，增长数字主要为团队披露，生成和联机流程尚未实测验证
+- Instaplay 已有分阶段创作者奖励计划，不再沿用 8 月文章中“没有创作者变现”的旧描述
 
 ## 历史上下文
 

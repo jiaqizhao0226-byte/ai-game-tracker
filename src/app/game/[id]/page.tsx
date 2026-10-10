@@ -12,14 +12,15 @@ import { SITE_URL } from '../../../lib/site';
 import { companyOf } from '../../../lib/company';
 
 export function generateStaticParams() {
-  return data.games.map((game) => ({
+  return [...data.games.map((game) => ({
     id: game.id.toString(),
-  }));
+  })), { id: '162' }]; // 已合并的 Unity Spark 旧地址，兼容展示 #161
 }
 
 // 分享单个产品时，卡片显示该产品的名称/简介/封面，而不是站点默认信息
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
-  const game: any = data.games.find((g) => g.id === parseInt(params.id));
+  const gameId = params.id === '162' ? 161 : parseInt(params.id);
+  const game: any = data.games.find((g) => g.id === gameId);
   if (!game) return { title: '未找到该产品 | AI+游戏玩法常态化监控' };
 
   const title = `${game.product_name}｜${game.company_name}`;
@@ -31,13 +32,14 @@ export function generateMetadata({ params }: { params: { id: string } }): Metada
   return {
     title: `${title} | AI 游戏产品情报`,
     description,
+    alternates: { canonical: url },
     openGraph: { type: 'article', title, description, url, images: [{ url: image }] },
     twitter: { card: 'summary_large_image', title, description, images: [image] },
   };
 }
 
 export default function GameDetailPage({ params }: { params: { id: string } }) {
-  const gameId = parseInt(params.id);
+  const gameId = params.id === '162' ? 161 : parseInt(params.id);
   const game = data.games.find((g) => g.id === gameId);
   const gameEvents = data.events.filter((e) => e.game_id === gameId);
   // 「未披露 / 未知」不是公司，companyOf 返回 null，此时公司名保持纯文本不可点
